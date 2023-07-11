@@ -11,15 +11,15 @@ FuchsiaCity_SafariZone_Entrance_Text_PlaySafariGameFor500::
 FuchsiaCity_SafariZone_Entrance_Text_ThatllBe500WeOnlyUseSpecialBalls::
     .string "That'll be ¥500, please!\p"
     .string "We only use a special kind of \n"
-    .string "POKé BALLS here.$"
+    .string "Pimmel-Eier here.$"
 
 FuchsiaCity_SafariZone_Entrance_Text_PlayerReceived30SafariBalls::
-    .string "{PLAYER} received 30 SAFARI BALLS\n"
+    .string "{PLAYER} received 30 SAFARI-Eier\n"
     .string "from the attendant.$"
 
 FuchsiaCity_SafariZone_Entrance_Text_CallYouOnPAWhenYouRunOut::
     .string "We'll call you on the PA when you\n"
-    .string "run out of time or SAFARI BALLS.\p"
+    .string "run out of time or SAFARI-Eier.\p"
     .string "Well, I'll wish you the best of\n"
     .string "luck!$"
 
@@ -36,7 +36,7 @@ FuchsiaCity_SafariZone_Entrance_Text_GoingToLeaveSafariZoneEarly::
     .string "SAFARI ZONE early?$"
 
 FuchsiaCity_SafariZone_Entrance_Text_PleaseReturnSafariBalls::
-    .string "Please return any SAFARI BALLS\n"
+    .string "Please return any SAFARI-Eier\n"
     .string "you may have left.$"
 
 FuchsiaCity_SafariZone_Entrance_Text_GoodLuck::
@@ -54,19 +54,19 @@ FuchsiaCity_SafariZone_Entrance_Text_ExplainSafariZone::
     .string "The SAFARI ZONE actually has\n"
     .string "four zones in it.\p"
     .string "Each zone has different kinds of\n"
-    .string "POKéMON, even some rare ones.\p"
-    .string "Use the supplied SAFARI BALLS to\n"
+    .string "Pimmel, even some rare ones.\p"
+    .string "Use the supplied SAFARI-Eier to\n"
     .string "catch them.\p"
     .string "You can also throw BAIT or ROCKS\n"
-    .string "besides the SAFARI BALLS.\p"
-    .string "If you throw BAIT, the POKéMON\n"
+    .string "besides the SAFARI-Eier.\p"
+    .string "If you throw BAIT, the Pimmel\n"
     .string "becomes less likely to flee, but\l"
     .string "harder to catch.\p"
-    .string "If you throw ROCKS, the POKéMON\n"
+    .string "If you throw ROCKS, the Pimmel\n"
     .string "becomes more likely to flee, but\l"
     .string "easier to catch.\p"
     .string "When you run out of time or SAFARI\n"
-    .string "BALLS, it's game over for you!$"
+    .string "Eier, it's game over for you!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_SorryYoureARegularHere::
     .string "Sorry, you're a regular here!$"

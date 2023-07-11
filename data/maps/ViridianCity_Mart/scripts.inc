@@ -32,7 +32,41 @@ ViridianCity_Mart_EventScript_ParcelScene::
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 1
 	giveitem_msg ViridianCity_Mart_Text_ReceivedOaksParcelFromClerk, ITEM_OAKS_PARCEL, 1, MUS_OBTAIN_KEY_ITEM
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 5
+	checkitemspace ITEM_HM01
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Mart_EventScript_NoRoomForHM0
+	giveitem_msg ViridianCity_Mart_Text_ReceivedHM01, ITEM_HM01
+	setflag FLAG_GOT_HM01
+	checkitemspace ITEM_HM02
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Mart_EventScript_NoRoomForHM0
+	giveitem_msg ViridianCity_Mart_Text_ReceivedHM02, ITEM_HM02
+	setflag FLAG_GOT_HM02
+	checkitemspace ITEM_HM03
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Mart_EventScript_NoRoomForHM0
+	giveitem_msg ViridianCity_Mart_Text_ReceivedHM03, ITEM_HM03
+	setflag FLAG_GOT_HM03
+	checkitemspace ITEM_HM04
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Mart_EventScript_NoRoomForHM0
+	giveitem_msg ViridianCity_Mart_Text_ReceivedHM04, ITEM_HM04
+	setflag FLAG_GOT_HM04
+	checkitemspace ITEM_HM05
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Mart_EventScript_NoRoomForHM0
+	giveitem_msg ViridianCity_Mart_Text_ReceivedHM05, ITEM_HM05
+	setflag FLAG_GOT_HM05
+	checkitemspace ITEM_HM06
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Mart_EventScript_NoRoomForHM0
+	giveitem_msg ViridianCity_Mart_Text_ReceivedHM06, ITEM_HM06
+	checkitemspace ITEM_HM07
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Mart_EventScript_NoRoomForHM0
+	giveitem_msg ViridianCity_Mart_Text_ReceivedHM07, ITEM_HM07
+	checkitemspace ITEM_HM08
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Mart_EventScript_NoRoomForHM0
+	giveitem_msg ViridianCity_Mart_Text_ReceivedHM08, ITEM_HM08
 	releaseall
+	end
+
+ViridianCity_Mart_EventScript_NoRoomForHM0::
+	msgbox ViridianCity_Mart_Text_DontHaveRoomForThis
+	release
 	end
 
 ViridianCity_Mart_Movement_ApproachCounter::
@@ -66,7 +100,7 @@ ViridianCity_Mart_EventScript_Clerk::
 	.align 2
 ViridianCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
-	.2byte ITEM_POTION
+	.2byte ITEM_MAX_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_NONE

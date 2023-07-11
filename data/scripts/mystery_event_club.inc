@@ -4,7 +4,7 @@ MysteryEventClub_EventScript_Woman::
 	lock
 	faceplayer
 	goto_if_eq GAVE_PROFILE, TRUE, EventScript_AlreadyGaveProfile
-	goto_if_set FLAG_SYS_SET_TRAINER_CARD_PROFILE, EventScript_GivenProfileBefore
+	goto_if_set FLAG_SYS_SET_LEHRER_CARD_PROFILE, EventScript_GivenProfileBefore
 	msgbox Text_IdLoveToHearYourProfile
 	goto EventScript_AskForProfile
 	end

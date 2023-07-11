@@ -1922,7 +1922,7 @@ BattleScript_EffectTeleport::
 	attackcanceler
 	attackstring
 	ppreduce
-	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_ButItFailed
+	jumpifbattletype BATTLE_TYPE_LEHRER, BattleScript_ButItFailed
 	getifcantrunfrombattle BS_ATTACKER
 	jumpifbyte CMP_EQUAL, gBattleCommunication, 1, BattleScript_ButItFailed
 	jumpifbyte CMP_EQUAL, gBattleCommunication, 2, BattleScript_PrintAbilityMadeIneffective
@@ -2824,7 +2824,7 @@ BattleScript_GiveExp::
 BattleScript_HandleFaintedMon::
 	checkteamslost BattleScript_LinkHandleFaintedMonMultiple
 	jumpifbyte CMP_NOT_EQUAL, gBattleOutcome, 0, BattleScript_FaintedMonEnd
-	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_FaintedMonTryChoose
+	jumpifbattletype BATTLE_TYPE_LEHRER, BattleScript_FaintedMonTryChoose
 	jumpifword CMP_NO_COMMON_BITS, gHitMarker, HITMARKER_PLAYER_FAINTED, BattleScript_FaintedMonTryChoose
 	printstring STRINGID_USENEXTPKMN
 	setbyte gBattleCommunication, 0
@@ -2835,7 +2835,7 @@ BattleScript_HandleFaintedMon::
 BattleScript_FaintedMonTryChoose::
 	openpartyscreen BS_FAINTED, BattleScript_FaintedMonEnd
 	switchhandleorder BS_FAINTED, 2
-	jumpifnotbattletype BATTLE_TYPE_TRAINER, BattleScript_FaintedMonSendOutNew
+	jumpifnotbattletype BATTLE_TYPE_LEHRER, BattleScript_FaintedMonSendOutNew
 	jumpifbattletype BATTLE_TYPE_LINK, BattleScript_FaintedMonSendOutNew
 	jumpifbattletype BATTLE_TYPE_BATTLE_TOWER, BattleScript_FaintedMonSendOutNew
 	jumpifbattletype BATTLE_TYPE_DOUBLE, BattleScript_FaintedMonSendOutNew
@@ -2909,10 +2909,10 @@ BattleScript_LinkHandleFaintedMonMultipleEnd::
 	end2
 
 BattleScript_LocalTrainerBattleWon::
-	printstring STRINGID_PLAYERDEFEATEDTRAINER1
+	printstring STRINGID_PLAYERDEFEATEDLEHRER1
 	trainerslidein BS_ATTACKER
 	waitstate
-	printstring STRINGID_TRAINER1LOSETEXT
+	printstring STRINGID_LEHRER1LOSETEXT
 	getmoneyreward BattleScript_LocalTrainerBattleWonGotMoney
 BattleScript_LocalTrainerBattleWonGotMoney::
 	printstring STRINGID_PLAYERGOTMONEY
@@ -2923,12 +2923,12 @@ BattleScript_PayDayMoneyAndPickUpItems::
 	end2
 
 BattleScript_LocalBattleLost::
-	jumpifbattletype BATTLE_TYPE_TRAINER_TOWER, BattleScript_BattleTowerLost
-	jumpifbattletype BATTLE_TYPE_EREADER_TRAINER, BattleScript_EReaderOrSecretBaseTrainerEnd
-	jumpifhalfword CMP_EQUAL, gTrainerBattleOpponent_A, TRAINER_SECRET_BASE, BattleScript_EReaderOrSecretBaseTrainerEnd
+	jumpifbattletype BATTLE_TYPE_LEHRER_TOWER, BattleScript_BattleTowerLost
+	jumpifbattletype BATTLE_TYPE_EREADER_LEHRER, BattleScript_EReaderOrSecretBaseTrainerEnd
+	jumpifhalfword CMP_EQUAL, gTrainerBattleOpponent_A, LEHRER_SECRET_BASE, BattleScript_EReaderOrSecretBaseTrainerEnd
 	jumpifbyte CMP_NOT_EQUAL, cMULTISTRING_CHOOSER, 0, BattleScript_RivalBattleLost
 BattleScript_LocalBattleLostPrintWhiteOut::
-	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_LocalBattleLostEnd
+	jumpifbattletype BATTLE_TYPE_LEHRER, BattleScript_LocalBattleLostEnd
 	printstring STRINGID_PLAYERWHITEOUT
 	waitmessage B_WAIT_TIME_LONG
 	getmoneyreward BattleScript_LocalBattleLostPrintTrainersWinText
@@ -2937,7 +2937,7 @@ BattleScript_LocalBattleLostPrintWhiteOut::
 	goto BattleScript_EReaderOrSecretBaseTrainerEnd
 
 BattleScript_LocalBattleLostEnd::
-	printstring STRINGID_PLAYERLOSTAGAINSTENEMYTRAINER
+	printstring STRINGID_PLAYERLOSTAGAINSTENEMYLEHRER
 	waitmessage B_WAIT_TIME_LONG
 	getmoneyreward BattleScript_LocalBattleLostPrintTrainersWinText
 	printstring STRINGID_PLAYERPAIDPRIZEMONEY
@@ -2952,14 +2952,14 @@ BattleScript_LocalBattleLostPrintTrainersWinText::
 
 BattleScript_RivalBattleLost::
 	jumpifhasnohp BS_ATTACKER, BattleScript_RivalBattleLostSkipMonRecall
-	printstring STRINGID_TRAINER1MON1COMEBACK
+	printstring STRINGID_LEHRER1MON1COMEBACK
 	waitmessage B_WAIT_TIME_LONG
 	returnatktoball
 	waitstate
 BattleScript_RivalBattleLostSkipMonRecall::
 	trainerslidein BS_ATTACKER
 	waitstate
-	printstring STRINGID_TRAINER1WINTEXT
+	printstring STRINGID_LEHRER1WINTEXT
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, 2, BattleScript_LocalBattleLostPrintWhiteOut
 	end2
 
@@ -2975,9 +2975,9 @@ BattleScript_BattleTowerLost::
 BattleScript_BattleTowerLostLostSkipMonRecall::
 	trainerslidein BS_ATTACKER
 	waitstate
-	printstring STRINGID_TRAINER1WINTEXT
+	printstring STRINGID_LEHRER1WINTEXT
 	jumpifnotbattletype BATTLE_TYPE_DOUBLE, BattleScript_BattleTowerLostLostSkipDouble
-	printstring STRINGID_TRAINER2WINTEXT
+	printstring STRINGID_LEHRER2WINTEXT
 BattleScript_BattleTowerLostLostSkipDouble::
 	end2
 
@@ -2989,13 +2989,13 @@ BattleScript_LinkBattleWonOrLost::
 	end2
 
 BattleScript_BattleTowerTrainerBattleWon::
-	printstring STRINGID_PLAYERDEFEATEDTRAINER1
+	printstring STRINGID_PLAYERDEFEATEDLEHRER1
 	trainerslidein BS_ATTACKER
 	waitstate
-	jumpifnotbattletype BATTLE_TYPE_TRAINER_TOWER, BattleScript_BattleTowerEtcTrainerBattleWonSkipText
-	printstring STRINGID_TRAINER1LOSETEXT
+	jumpifnotbattletype BATTLE_TYPE_LEHRER_TOWER, BattleScript_BattleTowerEtcTrainerBattleWonSkipText
+	printstring STRINGID_LEHRER1LOSETEXT
 	jumpifnotbattletype BATTLE_TYPE_DOUBLE, BattleScript_BattleTowerEtcTrainerBattleWonSkipText
-	printstring STRINGID_TRAINER2LOSETEXT
+	printstring STRINGID_LEHRER2LOSETEXT
 BattleScript_BattleTowerEtcTrainerBattleWonSkipText::
 	pickup
 	end2
@@ -3023,7 +3023,7 @@ BattleScript_WildMonFled::
 
 BattleScript_PrintCantRunFromTrainer::
 	jumpifbattletype BATTLE_TYPE_FIRST_BATTLE, BattleScript_LeftoverBirchString
-	printstring STRINGID_NORUNNINGFROMTRAINERS
+	printstring STRINGID_NORUNNINGFROMLEHRERS
 	end2
 
 BattleScript_LeftoverBirchString::
@@ -3286,7 +3286,7 @@ BattleScript_SuccessForceOut::
 	switchoutabilities BS_TARGET
 	returntoball BS_TARGET
 	waitstate
-	jumpifbattletype BATTLE_TYPE_TRAINER, BattleScript_TrainerBattleForceOut
+	jumpifbattletype BATTLE_TYPE_LEHRER, BattleScript_TrainerBattleForceOut
 	setbyte gBattleOutcome, B_OUTCOME_PLAYER_TELEPORTED
 	finishaction
 

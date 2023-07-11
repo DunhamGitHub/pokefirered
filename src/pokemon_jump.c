@@ -44,7 +44,7 @@ enum {
 enum {
     PACKET_MON_INFO = 1,
     PACKET_UNUSED,
-    PACKET_LEADER_STATE,
+    PACKET_CHEF_STATE,
     PACKET_MEMBER_STATE,
 };
 
@@ -2774,7 +2774,7 @@ struct LeaderStatePacket
 static void SendPacket_LeaderState(struct PokemonJump_Player *player, struct PokemonJump_CommData *comm)
 {
     struct LeaderStatePacket packet;
-    packet.id = PACKET_LEADER_STATE;
+    packet.id = PACKET_CHEF_STATE;
     packet.jumpScore = comm->jumpScore;
     packet.receivedBonusFlags = comm->receivedBonusFlags;
     packet.funcId = comm->funcId;
@@ -2795,7 +2795,7 @@ static bool32 RecvPacket_LeaderState(struct PokemonJump_Player *player, struct P
         return FALSE;
 
     memcpy(&packet, &gRecvCmds[0][1], sizeof(packet));
-    if (packet.id != PACKET_LEADER_STATE)
+    if (packet.id != PACKET_CHEF_STATE)
         return FALSE;
 
     comm->jumpScore = packet.jumpScore;

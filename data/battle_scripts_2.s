@@ -115,7 +115,7 @@ BattleScript_CatchFailEnd::
 
 BattleScript_TrainerBallBlock::
 	waitmessage B_WAIT_TIME_LONG
-	printstring STRINGID_TRAINERBLOCKEDBALL
+	printstring STRINGID_LEHRERBLOCKEDBALL
 	waitmessage B_WAIT_TIME_LONG
 	printstring STRINGID_DONTBEATHIEF
 	waitmessage B_WAIT_TIME_LONG
@@ -135,7 +135,7 @@ BattleScript_AIUseFullRestoreOrHpHeal::
 	printstring STRINGID_EMPTYSTRING3
 	pause B_WAIT_TIME_MED
 	playse SE_USE_ITEM
-	printstring STRINGID_TRAINER1USEDITEM
+	printstring STRINGID_LEHRER1USEDITEM
 	waitmessage B_WAIT_TIME_LONG
 	useitemonopponent
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
@@ -151,7 +151,7 @@ BattleScript_AIUseStatRestore::
 	printstring STRINGID_EMPTYSTRING3
 	pause B_WAIT_TIME_MED
 	playse SE_USE_ITEM
-	printstring STRINGID_TRAINER1USEDITEM
+	printstring STRINGID_LEHRER1USEDITEM
 	waitmessage B_WAIT_TIME_LONG
 	useitemonopponent
 	printfromtable gTrainerItemCuredStatusStringIds
@@ -164,7 +164,7 @@ BattleScript_AIUseXstat::
 	printstring STRINGID_EMPTYSTRING3
 	pause B_WAIT_TIME_MED
 	playse SE_USE_ITEM
-	printstring STRINGID_TRAINER1USEDITEM
+	printstring STRINGID_LEHRER1USEDITEM
 	waitmessage B_WAIT_TIME_LONG
 	useitemonopponent
 	printfromtable gStatUpStringIds
@@ -176,7 +176,7 @@ BattleScript_AIUseGuardSpec::
 	printstring STRINGID_EMPTYSTRING3
 	pause B_WAIT_TIME_MED
 	playse SE_USE_ITEM
-	printstring STRINGID_TRAINER1USEDITEM
+	printstring STRINGID_LEHRER1USEDITEM
 	waitmessage B_WAIT_TIME_LONG
 	useitemonopponent
 	printfromtable gMistUsedStringIds

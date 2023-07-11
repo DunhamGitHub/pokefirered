@@ -1,5 +1,5 @@
-#ifndef GUARD_TRAINER_CARD_H
-#define GUARD_TRAINER_CARD_H
+#ifndef GUARD_LEHRER_CARD_H
+#define GUARD_LEHRER_CARD_H
 
 #include "constants/trainer_card.h"
 
@@ -25,7 +25,7 @@ struct TrainerCardRSE
     /*0x1E*/ u16 pokeblocksWithFriends;
     /*0x20*/ u16 pokemonTrades;
     /*0x24*/ u32 money;
-    /*0x28*/ u16 easyChatProfile[TRAINER_CARD_PROFILE_LENGTH];
+    /*0x28*/ u16 easyChatProfile[LEHRER_CARD_PROFILE_LENGTH];
     /*0x30*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
 };
 
@@ -42,7 +42,7 @@ struct TrainerCard
     /*0x4D*/ bool8 hasAllMons;
     /*0x4E*/ u8 monIconTint;
     /*0x4F*/ u8 facilityClass;
-    /*0x50*/ u8 stickers[TRAINER_CARD_STICKER_TYPES];
+    /*0x50*/ u8 stickers[LEHRER_CARD_STICKER_TYPES];
     /*0x54*/ u16 monSpecies[PARTY_SIZE];
 };
 
@@ -53,4 +53,4 @@ void ShowTrainerCardInLink(u8 whoseCard, MainCallback callback);
 u8 GetTrainerCardStars(u8 cardId);
 void TrainerCard_GenerateCardForLinkPlayer(struct TrainerCard *trainerCard);
 
-#endif //GUARD_TRAINER_CARD_H
+#endif //GUARD_LEHRER_CARD_H

@@ -62,15 +62,15 @@ void SetWhiteoutRespawnWarpAndHealerNpc(struct WarpData * warp)
 {
     u32 healLocationIdx;
 
-    if (VarGet(VAR_MAP_SCENE_TRAINER_TOWER) == 1)
+    if (VarGet(VAR_MAP_SCENE_LEHRER_TOWER) == 1)
     {
         if (!gSaveBlock1Ptr->trainerTower[gSaveBlock1Ptr->towerChallengeId].spokeToOwner)
-            VarSet(VAR_MAP_SCENE_TRAINER_TOWER, 0);
+            VarSet(VAR_MAP_SCENE_LEHRER_TOWER, 0);
         gSpecialVar_LastTalked = 1;
         warp->x = 4;
         warp->y = 11;
-        warp->mapGroup = MAP_GROUP(TRAINER_TOWER_LOBBY);
-        warp->mapNum = MAP_NUM(TRAINER_TOWER_LOBBY);
+        warp->mapGroup = MAP_GROUP(LEHRER_TOWER_LOBBY);
+        warp->mapNum = MAP_NUM(LEHRER_TOWER_LOBBY);
         warp->warpId = 0xFF;
     }
     else
@@ -95,11 +95,11 @@ void SetWhiteoutRespawnWarpAndHealerNpc(struct WarpData * warp)
             warp->x = 5;
             warp->y = 4;
         }
-        else if (sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][0] == MAP_GROUP(TRAINER_TOWER_LOBBY) && sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][1] == MAP_NUM(TRAINER_TOWER_LOBBY))
+        else if (sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][0] == MAP_GROUP(LEHRER_TOWER_LOBBY) && sWhiteoutRespawnHealCenterMapIdxs[healLocationIdx - 1][1] == MAP_NUM(LEHRER_TOWER_LOBBY))
         {
             warp->x = 4;
             warp->y = 11;
-            VarSet(VAR_MAP_SCENE_TRAINER_TOWER, 0);
+            VarSet(VAR_MAP_SCENE_LEHRER_TOWER, 0);
         }
         else
         {

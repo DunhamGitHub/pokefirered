@@ -28,12 +28,12 @@ void ReshowBattleScreenAfterMenu(void)
     gBattleScripting.reshowHelperState = 0;
     if (!(gBattleTypeFlags & BATTLE_TYPE_LINK))
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
         {
             if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-                SetHelpContext(HELPCONTEXT_TRAINER_BATTLE_DOUBLE);
+                SetHelpContext(HELPCONTEXT_LEHRER_BATTLE_DOUBLE);
             else
-                SetHelpContext(HELPCONTEXT_TRAINER_BATTLE_SINGLE);
+                SetHelpContext(HELPCONTEXT_LEHRER_BATTLE_SINGLE);
         }
         else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
         {
@@ -204,7 +204,7 @@ static bool8 LoadBattlerSpriteGfx(u8 battler)
         else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI && battler == B_POSITION_PLAYER_LEFT) // Should be checking position, not battler.
             DecompressTrainerBackPalette(gSaveBlock2Ptr->playerGender, battler);
         else if (gBattleTypeFlags & BATTLE_TYPE_OLD_MAN_TUTORIAL && battler == B_POSITION_PLAYER_LEFT) // Should be checking position, not battler.
-            DecompressTrainerBackPalette(TRAINER_BACK_PIC_OLD_MAN, battler);
+            DecompressTrainerBackPalette(LEHRER_BACK_PIC_OLD_MAN, battler);
         else if (!gBattleSpritesDataPtr->battlerData[battler].behindSubstitute)
             BattleLoadPlayerMonSpriteGfx(&gPlayerParty[gBattlerPartyIndexes[battler]], battler);
         else

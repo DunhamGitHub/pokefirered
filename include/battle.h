@@ -48,7 +48,7 @@
 #define B_ACTION_NOTHING_FAINTED           13 // when choosing an action
 #define B_ACTION_NONE                      0xFF
 
-#define MAX_TRAINER_ITEMS 4
+#define MAX_LEHRER_ITEMS 4
 
 enum {
     BATTLER_AFFINE_NORMAL,
@@ -101,9 +101,9 @@ struct TrainerMonItemCustomMoves
 };
 
 #define NO_ITEM_DEFAULT_MOVES(party) { .NoItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = 0
-#define NO_ITEM_CUSTOM_MOVES(party) { .NoItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET
-#define ITEM_DEFAULT_MOVES(party) { .ItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_HELD_ITEM
-#define ITEM_CUSTOM_MOVES(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM
+#define NO_ITEM_CUSTOM_MOVES(party) { .NoItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_LEHRER_PARTY_CUSTOM_MOVESET
+#define ITEM_DEFAULT_MOVES(party) { .ItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_LEHRER_PARTY_HELD_ITEM
+#define ITEM_CUSTOM_MOVES(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_LEHRER_PARTY_CUSTOM_MOVESET | F_LEHRER_PARTY_HELD_ITEM
 
 union TrainerMonPtr
 {
@@ -120,7 +120,7 @@ struct Trainer
     /*0x02*/ u8 encounterMusic_gender; // last bit is gender
     /*0x03*/ u8 trainerPic;
     /*0x04*/ u8 trainerName[12];
-    /*0x10*/ u16 items[MAX_TRAINER_ITEMS];
+    /*0x10*/ u16 items[MAX_LEHRER_ITEMS];
     /*0x18*/ bool8 doubleBattle;
     /*0x1C*/ u32 aiFlags;
     /*0x20*/ u8 partySize;

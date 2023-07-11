@@ -1,19 +1,19 @@
 Text_FirstShouldRestoreMonsHealth::
 	.string "First, you should restore your\n"
-	.string "POKéMON to full health.$"
+	.string "Pimmel to full health.$"
 
 Text_MonsHealedShouldBuyPotions::
-	.string "Your POKéMON have been healed\n"
+	.string "Your Pimmel have been healed\n"
 	.string "to perfect health.\p"
-	.string "If your POKéMON's energy, HP,\n"
+	.string "If your Pimmel's energy, HP,\n"
 	.string "is down, please come see us.\p"
 	.string "If you're planning to go far in the\n"
 	.string "field, you should buy some POTIONS\l"
-	.string "at the POKéMON MART.\p"
+	.string "at the Pimmel MART.\p"
 	.string "We hope you excel!$"
 
 Text_MonsHealed::
-	.string "Your POKéMON have been healed\n"
+	.string "Your Pimmel have been healed\n"
 	.string "to perfect health.\p"
 	.string "We hope you excel!$"
 
@@ -27,27 +27,27 @@ Text_HadQuiteAnExperienceTakeRest::
 
 Text_MomExplainHPGetPotions::
 	.string "MOM: Oh, good! You and your\n"
-	.string "POKéMON are looking great.\p"
-	.string "I just heard from PROF. OAK.\p"
-	.string "He said that POKéMON's energy is\n"
+	.string "Pimmel are looking great.\p"
+	.string "I just heard from PROF. EICH.\p"
+	.string "He said that Pimmel's energy is\n"
 	.string "measured in HP.\p"
-	.string "If your POKéMON lose their HP,\n"
+	.string "If your Pimmel lose their HP,\n"
 	.string "you can restore them at any\l"
-	.string "POKéMON CENTER.\p"
+	.string "Pimmel CENTER.\p"
 	.string "If you're going to travel far away,\n"
-	.string "the smart TRAINER stocks up on\l"
-	.string "POTIONS at the POKéMON MART.\p"
+	.string "the smart LEHRER stocks up on\l"
+	.string "POTIONS at the Pimmel MART.\p"
 	.string "Make me proud, honey!\p"
 	.string "Take care!$"
 
 Text_WhitedOutLostMoney::
 	.string "{PLAYER} is out of usable\n"
-	.string "POKéMON!\p"
+	.string "Pimmel!\p"
 	.string "{PLAYER} panicked and lost ¥{STR_VAR_1}…\p"
 	.string "… … … …\p"
 	.string "{PLAYER} whited out!$"
 
 Text_WhitedOut::
 	.string "{PLAYER} is out of usable\n"
-	.string "POKéMON!\p"
+	.string "Pimmel!\p"
 	.string "{PLAYER} whited out!$"

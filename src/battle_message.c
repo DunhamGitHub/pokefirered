@@ -43,13 +43,13 @@ static void ChooseTypeOfMoveUsedString(u8 *textPtr);
 static void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst);
 
 static const u8 sText_Empty1[] = _("");
-static const u8 sText_Trainer1LoseText[] = _("{B_TRAINER1_LOSE_TEXT}");
-static const u8 sText_Trainer2LoseText[] = _("{B_TRAINER2_LOSE_TEXT}");
-static const u8 sText_Trainer1RecallPkmn1[] = _("{B_TRAINER1_NAME}: {B_OPPONENT_MON1_NAME}, come back!");
-static const u8 sText_Trainer1WinText[] = _("{B_TRAINER1_WIN_TEXT}");
-static const u8 sText_Trainer1RecallPkmn2[] = _("{B_TRAINER1_NAME}: {B_OPPONENT_MON2_NAME}, come back!");
-static const u8 sText_Trainer1RecallBoth[] = _("{B_TRAINER1_NAME}: {B_OPPONENT_MON1_NAME} and\n{B_OPPONENT_MON2_NAME}, come back!");
-static const u8 sText_Trainer2WinText[] = _("{B_TRAINER2_WIN_TEXT}");
+static const u8 sText_Trainer1LoseText[] = _("{B_LEHRER1_LOSE_TEXT}");
+static const u8 sText_Trainer2LoseText[] = _("{B_LEHRER2_LOSE_TEXT}");
+static const u8 sText_Trainer1RecallPkmn1[] = _("{B_LEHRER1_NAME}: {B_OPPONENT_MON1_NAME}, come back!");
+static const u8 sText_Trainer1WinText[] = _("{B_LEHRER1_WIN_TEXT}");
+static const u8 sText_Trainer1RecallPkmn2[] = _("{B_LEHRER1_NAME}: {B_OPPONENT_MON2_NAME}, come back!");
+static const u8 sText_Trainer1RecallBoth[] = _("{B_LEHRER1_NAME}: {B_OPPONENT_MON1_NAME} and\n{B_OPPONENT_MON2_NAME}, come back!");
+static const u8 sText_Trainer2WinText[] = _("{B_LEHRER2_WIN_TEXT}");
 static const u8 sText_PkmnGainedEXP[] = _("{B_BUFF1} gained{B_BUFF2}\n{B_BUFF3} EXP. Points!\p");
 static const u8 sText_EmptyString4[] = _("");
 static const u8 sText_ABoosted[] = _(" a boosted");
@@ -61,7 +61,7 @@ static const u8 sText_TryToLearnMove3[] = _("Delete a move to make\nroom for {B_
 static const u8 sText_PkmnForgotMove[] = _("{B_BUFF1} forgot\n{B_BUFF2}.\p");
 static const u8 sText_StopLearningMove[] = _("{PAUSE 32}Stop learning\n{B_BUFF2}?");
 static const u8 sText_DidNotLearnMove[] = _("{B_BUFF1} did not learn\n{B_BUFF2}.\p");
-static const u8 sText_UseNextPkmn[] = _("Use next POKéMON?");
+static const u8 sText_UseNextPkmn[] = _("Use next Pimmel?");
 static const u8 sText_AttackMissed[] = _("{B_ATK_NAME_WITH_PREFIX}'s\nattack missed!");
 static const u8 sText_PkmnProtectedItself[] = _("{B_DEF_NAME_WITH_PREFIX}\nprotected itself!");
 static const u8 sText_AvoidedDamage[] = _("{B_DEF_NAME_WITH_PREFIX} avoided\ndamage with {B_DEF_ABILITY}!");
@@ -71,9 +71,9 @@ static const u8 sText_ItDoesntAffect[] = _("It doesn't affect\n{B_DEF_NAME_WITH_
 static const u8 sText_AttackerFainted[] = _("{B_ATK_NAME_WITH_PREFIX}\nfainted!\p");
 static const u8 sText_TargetFainted[] = _("{B_DEF_NAME_WITH_PREFIX}\nfainted!\p");
 static const u8 sText_PlayerGotMoney[] = _("{B_PLAYER_NAME} got ¥{B_BUFF1}\nfor winning!\p");
-static const u8 sText_PlayerWhiteout[] = _("{B_PLAYER_NAME} is out of\nusable POKéMON!\p");
+static const u8 sText_PlayerWhiteout[] = _("{B_PLAYER_NAME} is out of\nusable Pimmel!\p");
 static const u8 sText_PlayerPanicked[] = _("{B_PLAYER_NAME} panicked and lost ¥{B_BUFF1}…\p… … … …\p{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_PlayerWhiteoutAgainstTrainer[] = _("{B_PLAYER_NAME} is out of\nusable POKéMON!\pPlayer lost against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PlayerWhiteoutAgainstTrainer[] = _("{B_PLAYER_NAME} is out of\nusable Pimmel!\pPlayer lost against\n{B_LEHRER1_CLASS} {B_LEHRER1_NAME}!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PlayerPaidAsPrizeMoney[] = _("{B_PLAYER_NAME} paid ¥{B_BUFF1} as the prize\nmoney…\p… … … …\p{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PlayerWhiteout2[] = _("{B_PLAYER_NAME} whited out!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PreventsEscape[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX} prevents\nescape with {B_SCR_ACTIVE_ABILITY}!\p");
@@ -329,7 +329,7 @@ static const u8 sText_PlayerBattledToDrawLinkTrainer[] = _("Player battled to a 
 static const u8 sText_PlayerBattledToDrawVsTwo[] = _("Player battled to a draw against\n{B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME}!");
 static const u8 sText_WildFled[] = _("{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME} fled!");
 static const u8 sText_TwoWildFled[] = _("{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME} and\n{B_LINK_OPPONENT2_NAME} fled!");
-static const u8 sText_NoRunningFromTrainers[] = _("No! There's no running\nfrom a TRAINER battle!\p");
+static const u8 sText_NoRunningFromTrainers[] = _("No! There's no running\nfrom a LEHRER battle!\p");
 static const u8 sText_CantEscape[] = _("Can't escape!\p");
 static const u8 sText_DontLeaveBirch[] = _(""); // Dummied
 static const u8 sText_ButNothingHappened[] = _("But nothing happened!");
@@ -358,7 +358,7 @@ static const u8 sText_CoinsScattered[] = _("Coins scattered everywhere!");
 static const u8 sText_TooWeakForSubstitute[] = _("It was too weak to make\na SUBSTITUTE!");
 static const u8 sText_SharedPain[] = _("The battlers shared\ntheir pain!");
 static const u8 sText_BellChimed[] = _("A bell chimed!");
-static const u8 sText_FaintInThree[] = _("All affected POKéMON will\nfaint in three turns!");
+static const u8 sText_FaintInThree[] = _("All affected Pimmel will\nfaint in three turns!");
 static const u8 sText_NoPPLeft[] = _("There's no PP left for\nthis move!\p");
 static const u8 sText_ButNoPPLeft[] = _("But there was no PP left\nfor the move!");
 static const u8 sText_PkmnIgnoresAsleep[] = _("{B_ATK_NAME_WITH_PREFIX} ignored\norders while asleep!");
@@ -368,15 +368,15 @@ static const u8 sText_PkmnLoafing[] = _("{B_ATK_NAME_WITH_PREFIX} is\nloafing ar
 static const u8 sText_PkmnWontObey[] = _("{B_ATK_NAME_WITH_PREFIX} won't\nobey!");
 static const u8 sText_PkmnTurnedAway[] = _("{B_ATK_NAME_WITH_PREFIX} turned away!");
 static const u8 sText_PkmnPretendNotNotice[] = _("{B_ATK_NAME_WITH_PREFIX} pretended\nnot to notice!");
-static const u8 sText_EnemyAboutToSwitchPkmn[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} is\nabout to use {B_BUFF2}.\pWill {B_PLAYER_NAME} change\nPOKéMON?");
+static const u8 sText_EnemyAboutToSwitchPkmn[] = _("{B_LEHRER1_CLASS} {B_LEHRER1_NAME} is\nabout to use {B_BUFF2}.\pWill {B_PLAYER_NAME} change\nPimmel?");
 static const u8 sText_PkmnLearnedMove2[] = _("{B_ATK_NAME_WITH_PREFIX} learned\n{B_BUFF1}!");
-static const u8 sText_PlayerDefeatedLinkTrainerTrainer1[] = _("Player defeated\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!\p");
+static const u8 sText_PlayerDefeatedLinkTrainerTrainer1[] = _("Player defeated\n{B_LEHRER1_CLASS} {B_LEHRER1_NAME}!\p");
 static const u8 sText_ThrewARock[] = _("{B_PLAYER_NAME} threw a ROCK\nat the {B_OPPONENT_MON1_NAME}!");
 static const u8 sText_ThrewSomeBait[] = _("{B_PLAYER_NAME} threw some BAIT\nat the {B_OPPONENT_MON1_NAME}!");
 static const u8 sText_PkmnWatchingCarefully[] = _("{B_OPPONENT_MON1_NAME} is watching\ncarefully!");
 static const u8 sText_PkmnIsAngry[] = _("{B_OPPONENT_MON1_NAME} is angry!");
 static const u8 sText_PkmnIsEating[] = _("{B_OPPONENT_MON1_NAME} is eating!");
-static const u8 sText_OutOfSafariBalls[] = _("{PLAY_SE SE_DING_DONG}ANNOUNCER: You're out of\nSAFARI BALLS! Game over!\p");
+static const u8 sText_OutOfSafariBalls[] = _("{PLAY_SE SE_DING_DONG}ANNOUNCER: You're out of\nSAFARI-Eier! Game over!\p");
 static const u8 sText_WildPkmnAppeared[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!\p");
 static const u8 sText_WildPkmnAppeared2[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!\p");
 static const u8 sText_WildPkmnAppearedPause[] = _("Wild {B_OPPONENT_MON1_NAME} appeared!{PAUSE 127}");
@@ -385,17 +385,17 @@ static const u8 sText_GhostAppearedCantId[] = _("The GHOST appeared!\pDarn!\nThe
 static const u8 sText_TheGhostAppeared[] = _("The GHOST appeared!\p");
 static const u8 sText_SilphScopeUnveil[] = _("SILPH SCOPE unveiled the GHOST's\nidentity!");
 static const u8 sText_TheGhostWas[] = _("The GHOST was MAROWAK!\p\n");
-static const u8 sText_Trainer1WantsToBattle[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nwould like to battle!\p");
+static const u8 sText_Trainer1WantsToBattle[] = _("{B_LEHRER1_CLASS} {B_LEHRER1_NAME}\nwould like to battle!\p");
 static const u8 sText_LinkTrainerWantsToBattle[] = _("{B_LINK_OPPONENT1_NAME}\nwants to battle!");
 static const u8 sText_TwoLinkTrainersWantToBattle[] = _("{B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME}\nwant to battle!");
-static const u8 sText_Trainer1SentOutPkmn[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} sent\nout {B_OPPONENT_MON1_NAME}!{PAUSE 60}");
-static const u8 sText_Trainer1SentOutTwoPkmn[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} sent\nout {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!{PAUSE 60}");
-static const u8 sText_Trainer1SentOutPkmn2[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME} sent\nout {B_BUFF1}!");
+static const u8 sText_Trainer1SentOutPkmn[] = _("{B_LEHRER1_CLASS} {B_LEHRER1_NAME} sent\nout {B_OPPONENT_MON1_NAME}!{PAUSE 60}");
+static const u8 sText_Trainer1SentOutTwoPkmn[] = _("{B_LEHRER1_CLASS} {B_LEHRER1_NAME} sent\nout {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!{PAUSE 60}");
+static const u8 sText_Trainer1SentOutPkmn2[] = _("{B_LEHRER1_CLASS} {B_LEHRER1_NAME} sent\nout {B_BUFF1}!");
 static const u8 sText_LinkTrainerSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out\n{B_OPPONENT_MON1_NAME}!");
 static const u8 sText_LinkTrainerSentOutTwoPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out\n{B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME}!");
 static const u8 sText_TwoLinkTrainersSentOutPkmn[] = _("{B_LINK_OPPONENT1_NAME} sent out {B_LINK_OPPONENT_MON1_NAME}!\n{B_LINK_OPPONENT2_NAME} sent out {B_LINK_OPPONENT_MON2_NAME}!");
 static const u8 sText_LinkTrainerSentOutPkmn2[] = _("{B_LINK_OPPONENT1_NAME} sent out\n{B_BUFF1}!");
-static const u8 sText_LinkTrainerMultiSentOutPkmn[] = _("{B_LINK_SCR_TRAINER_NAME} sent out\n{B_BUFF1}!");
+static const u8 sText_LinkTrainerMultiSentOutPkmn[] = _("{B_LINK_SCR_LEHRER_NAME} sent out\n{B_BUFF1}!");
 static const u8 sText_GoPkmn[] = _("Go! {B_PLAYER_MON1_NAME}!");
 static const u8 sText_GoTwoPkmn[] = _("Go! {B_PLAYER_MON1_NAME} and\n{B_PLAYER_MON2_NAME}!");
 static const u8 sText_GoPkmn2[] = _("Go! {B_BUFF1}!");
@@ -407,9 +407,9 @@ static const u8 sText_PkmnThatsEnough[] = _("{B_BUFF1}, that's enough!\nCome bac
 static const u8 sText_PkmnComeBack[] = _("{B_BUFF1}, come back!");
 static const u8 sText_PkmnOkComeBack[] = _("{B_BUFF1}, OK!\nCome back!");
 const u8 sText_PkmnGoodComeBack[] = _("{B_BUFF1}, good!\nCome back!");
-static const u8 sText_Trainer1WithdrewPkmn[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nwithdrew {B_BUFF1}!");
+static const u8 sText_Trainer1WithdrewPkmn[] = _("{B_LEHRER1_CLASS} {B_LEHRER1_NAME}\nwithdrew {B_BUFF1}!");
 static const u8 sText_LinkTrainer1WithdrewPkmn[] = _("{B_LINK_OPPONENT1_NAME} withdrew\n{B_BUFF1}!");
-static const u8 sText_LinkTrainer2WithdrewPkmn[] = _("{B_LINK_SCR_TRAINER_NAME} withdrew\n{B_BUFF1}!");
+static const u8 sText_LinkTrainer2WithdrewPkmn[] = _("{B_LINK_SCR_LEHRER_NAME} withdrew\n{B_BUFF1}!");
 static const u8 sText_WildPkmnPrefix[] = _("Wild ");
 static const u8 sText_FoePkmnPrefix[] = _("Foe ");
 static const u8 sText_FoePkmnPrefix2[] = _("Foe");
@@ -426,11 +426,11 @@ static const u8 sText_ExclamationMark4[] = _("!");
 static const u8 sText_ExclamationMark5[] = _("!");
 
 static const u8 sText_HP2[] = _("HP");
-static const u8 sText_Attack2[] = _("ATTACK");
-static const u8 sText_Defense2[] = _("DEFENSE");
-static const u8 sText_Speed[] = _("SPEED");
-static const u8 sText_SpAtk2[] = _("SP. ATK");
-static const u8 sText_SpDef2[] = _("SP. DEF");
+static const u8 sText_Attack2[] = _("Attack");
+static const u8 sText_Defense2[] = _("Defense");
+static const u8 sText_Speed[] = _("Speed");
+static const u8 sText_SpAtk2[] = _("Sp. Atk");
+static const u8 sText_SpDef2[] = _("Sp. Def");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
 
@@ -461,13 +461,13 @@ const u8 *const gPokeblockWasTooXStringTable[] = {
 
 static const u8 sText_PlayerUsedItem[] = _("{B_PLAYER_NAME} used\n{B_LAST_ITEM}!");
 static const u8 sText_OldManUsedItem[] = _("The old man used\n{B_LAST_ITEM}!");
-static const u8 sText_PokedudeUsedItem[] = _("The POKé DUDE used\n{B_LAST_ITEM}!");
-static const u8 sText_Trainer1UsedItem[] = _("{B_TRAINER1_CLASS} {B_TRAINER1_NAME}\nused {B_LAST_ITEM}!");
-static const u8 sText_TrainerBlockedBall[] = _("The TRAINER blocked the BALL!");
+static const u8 sText_PokedudeUsedItem[] = _("The PimmelDUDE used\n{B_LAST_ITEM}!");
+static const u8 sText_Trainer1UsedItem[] = _("{B_LEHRER1_CLASS} {B_LEHRER1_NAME}\nused {B_LAST_ITEM}!");
+static const u8 sText_TrainerBlockedBall[] = _("The LEHRER blocked the BALL!");
 static const u8 sText_DontBeAThief[] = _("Don't be a thief!");
-static const u8 sText_ItDodgedBall[] = _("It dodged the thrown BALL!\nThis POKéMON can't be caught!");
-static const u8 sText_YouMissedPkmn[] = _("You missed the POKéMON!");
-static const u8 sText_PkmnBrokeFree[] = _("Oh, no!\nThe POKéMON broke free!");
+static const u8 sText_ItDodgedBall[] = _("It dodged the thrown BALL!\nThis Pimmel can't be caught!");
+static const u8 sText_YouMissedPkmn[] = _("You missed the Pimmel!");
+static const u8 sText_PkmnBrokeFree[] = _("Oh, no!\nThe Pimmel broke free!");
 static const u8 sText_ItAppearedCaught[] = _("Aww!\nIt appeared to be caught!");
 static const u8 sText_AarghAlmostHadIt[] = _("Aargh!\nAlmost had it!");
 static const u8 sText_ShootSoClose[] = _("Shoot!\nIt was so close, too!");
@@ -478,7 +478,7 @@ static const u8 sText_GiveNicknameCaptured[] = _("Give a nickname to the\ncaptur
 static const u8 sText_PkmnSentToPC[] = _("{B_OPPONENT_MON1_NAME} was sent to\n{B_PC_CREATOR_NAME} PC.");
 static const u8 sText_Someones[] = _("someone's");
 static const u8 sText_Bills[] = _("BILL's");
-static const u8 sText_PkmnDataAddedToDex[] = _("{B_OPPONENT_MON1_NAME}'s data was\nadded to the POKéDEX.\p");
+static const u8 sText_PkmnDataAddedToDex[] = _("{B_OPPONENT_MON1_NAME}'s data was\nadded to the Lexikon.\p");
 static const u8 sText_ItIsRaining[] = _("It is raining."); // used only in RSE when a battle starts in a rainy area
 static const u8 sText_SandstormIsRaging[] = _("A sandstorm is raging.");
 static const u8 sText_BoxIsFull[] = _("The BOX is full!\nYou can't catch any more!\p");
@@ -502,20 +502,20 @@ static const u8 sText_PkmnHungOnWithX[] = _("{B_DEF_NAME_WITH_PREFIX} hung on\nu
 const u8 gText_EmptyString3[] = _("");
 static const u8 sText_PlayedFluteCatchyTune[] = _("{B_PLAYER_NAME} played the {B_LAST_ITEM}.\pNow, that's a catchy tune!");
 static const u8 sText_PlayedThe[] = _("{B_PLAYER_NAME} played the\n{B_LAST_ITEM}.");
-static const u8 sText_PkmnHearingFluteAwoke[] = _("The POKéMON hearing the FLUTE\nawoke!");
+static const u8 sText_PkmnHearingFluteAwoke[] = _("The Pimmel hearing the FLUTE\nawoke!");
 static const u8 sText_YouThrowABallNowRight[] = _("You throw a BALL now, right?\nI… I'll do my best!");
-const u8 gText_ForPetesSake[] = _("OAK: Oh, for Pete's sake…\nSo pushy, as always.\p{B_PLAYER_NAME}.\pYou've never had a POKéMON battle\nbefore, have you?\pA POKéMON battle is when TRAINERS\npit their POKéMON against each\lother.\p");
-const u8 gText_TheTrainerThat[] = _("The TRAINER that makes the other\nTRAINER's POKéMON faint by lowering\ltheir HP to “0,” wins.\p");
+const u8 gText_ForPetesSake[] = _("EICH: Oh, for Pete's sake…\nSo pushy, as always.\p{B_PLAYER_NAME}.\pYou've never had a Pimmel battle\nbefore, have you?\pA Pimmel battle is when LEHRERS\npit their Pimmel against each\lother.\p");
+const u8 gText_TheTrainerThat[] = _("The LEHRER that makes the other\nLEHRER's Pimmel faint by lowering\ltheir HP to “0,” wins.\p");
 const u8 gText_TryBattling[] = _("But rather than talking about it,\nyou'll learn more from experience.\pTry battling and see for yourself.\p");
-const u8 gText_InflictingDamageIsKey[] = _("OAK: Inflicting damage on the foe\nis the key to any battle.\p");
-const u8 gText_LoweringStats[] = _("OAK: Lowering the foe's stats\nwill put you at an advantage.\p");
-const u8 gText_KeepAnEyeOnHP[] = _("OAK: Keep your eyes on your\nPOKéMON's HP.\pIt will faint if the HP drops to\n“0.”\p");
-const u8 gText_OakNoRunningFromATrainer[] = _("OAK: No! There's no running away\nfrom a TRAINER POKéMON battle!\p");
-const u8 gText_WinEarnsPrizeMoney[] = _("OAK: Hm! Excellent!\pIf you win, you earn prize money,\nand your POKéMON will grow!\pBattle other TRAINERS and make\nyour POKéMON strong!\p");
-const u8 gText_HowDissapointing[] = _("OAK: Hm…\nHow disappointing…\pIf you win, you earn prize money,\nand your POKéMON grow.\pBut if you lose, {B_PLAYER_NAME}, you end\nup paying prize money…\pHowever, since you had no warning\nthis time, I'll pay for you.\pBut things won't be this way once\nyou step outside these doors.\pThat's why you must strengthen your\nPOKéMON by battling wild POKéMON.\p");
+const u8 gText_InflictingDamageIsKey[] = _("EICH: Inflicting damage on the foe\nis the key to any battle.\p");
+const u8 gText_LoweringStats[] = _("EICH: Lowering the foe's stats\nwill put you at an advantage.\p");
+const u8 gText_KeepAnEyeOnHP[] = _("EICH: Keep your eyes on your\nPimmel's HP.\pIt will faint if the HP drops to\n“0.”\p");
+const u8 gText_OakNoRunningFromATrainer[] = _("EICH: No! There's no running away\nfrom a LEHRER Pimmel battle!\p");
+const u8 gText_WinEarnsPrizeMoney[] = _("EICH: Hm! Excellent!\pIf you win, you earn prize money,\nand your Pimmel will grow!\pBattle other LEHRERS and make\nyour Pimmel strong!\p");
+const u8 gText_HowDissapointing[] = _("EICH: Hm…\nHow disappointing…\pIf you win, you earn prize money,\nand your Pimmel grow.\pBut if you lose, {B_PLAYER_NAME}, you end\nup paying prize money…\pHowever, since you had no warning\nthis time, I'll pay for you.\pBut things won't be this way once\nyou step outside these doors.\pThat's why you must strengthen your\nPimmel by battling wild Pimmel.\p");
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_START] = {
-    [STRINGID_TRAINER1LOSETEXT - BATTLESTRINGS_TABLE_START]              = sText_Trainer1LoseText,
+    [STRINGID_LEHRER1LOSETEXT - BATTLESTRINGS_TABLE_START]              = sText_Trainer1LoseText,
     [STRINGID_PKMNGAINEDEXP - BATTLESTRINGS_TABLE_START]                 = sText_PkmnGainedEXP,
     [STRINGID_PKMNGREWTOLV - BATTLESTRINGS_TABLE_START]                  = sText_PkmnGrewToLv,
     [STRINGID_PKMNLEARNEDMOVE - BATTLESTRINGS_TABLE_START]               = sText_PkmnLearnedMove,
@@ -728,7 +728,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_SUPEREFFECTIVE - BATTLESTRINGS_TABLE_START]                = sText_SuperEffective,
     [STRINGID_GOTAWAYSAFELY - BATTLESTRINGS_TABLE_START]                 = sText_GotAwaySafely,
     [STRINGID_WILDPKMNFLED - BATTLESTRINGS_TABLE_START]                  = sText_WildPkmnFled,
-    [STRINGID_NORUNNINGFROMTRAINERS - BATTLESTRINGS_TABLE_START]         = sText_NoRunningFromTrainers,
+    [STRINGID_NORUNNINGFROMLEHRERS - BATTLESTRINGS_TABLE_START]         = sText_NoRunningFromTrainers,
     [STRINGID_CANTESCAPE - BATTLESTRINGS_TABLE_START]                    = sText_CantEscape,
     [STRINGID_DONTLEAVEBIRCH - BATTLESTRINGS_TABLE_START]                = sText_DontLeaveBirch,
     [STRINGID_BUTNOTHINGHAPPENED - BATTLESTRINGS_TABLE_START]            = sText_ButNothingHappened,
@@ -762,7 +762,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_BUTNOPPLEFT - BATTLESTRINGS_TABLE_START]                   = sText_ButNoPPLeft,
     [STRINGID_PLAYERUSEDITEM - BATTLESTRINGS_TABLE_START]                = sText_PlayerUsedItem,
     [STRINGID_OLDMANUSEDITEM - BATTLESTRINGS_TABLE_START]                = sText_OldManUsedItem,
-    [STRINGID_TRAINERBLOCKEDBALL - BATTLESTRINGS_TABLE_START]            = sText_TrainerBlockedBall,
+    [STRINGID_LEHRERBLOCKEDBALL - BATTLESTRINGS_TABLE_START]            = sText_TrainerBlockedBall,
     [STRINGID_DONTBEATHIEF - BATTLESTRINGS_TABLE_START]                  = sText_DontBeAThief,
     [STRINGID_ITDODGEDBALL - BATTLESTRINGS_TABLE_START]                  = sText_ItDodgedBall,
     [STRINGID_YOUMISSEDPKMN - BATTLESTRINGS_TABLE_START]                 = sText_YouMissedPkmn,
@@ -824,7 +824,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_PKMNSPRANGUP - BATTLESTRINGS_TABLE_START]                  = sText_PkmnSprangUp,
     [STRINGID_HMMOVESCANTBEFORGOTTEN - BATTLESTRINGS_TABLE_START]        = sText_HMMovesCantBeForgotten,
     [STRINGID_XFOUNDONEY - BATTLESTRINGS_TABLE_START]                    = sText_XFoundOneY,
-    [STRINGID_PLAYERDEFEATEDTRAINER1 - BATTLESTRINGS_TABLE_START]        = sText_PlayerDefeatedLinkTrainerTrainer1,
+    [STRINGID_PLAYERDEFEATEDLEHRER1 - BATTLESTRINGS_TABLE_START]        = sText_PlayerDefeatedLinkTrainerTrainer1,
     [STRINGID_SOOTHINGAROMA - BATTLESTRINGS_TABLE_START]                 = sText_SoothingAroma,
     [STRINGID_ITEMSCANTBEUSEDNOW - BATTLESTRINGS_TABLE_START]            = sText_ItemsCantBeUsedNow,
     [STRINGID_FORXCOMMAYZ - BATTLESTRINGS_TABLE_START]                   = sText_ForXCommaYZ,
@@ -846,7 +846,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_PKMNWASDRAGGEDOUT - BATTLESTRINGS_TABLE_START]             = sText_PkmnWasDraggedOut,
     [STRINGID_PREVENTEDFROMWORKING - BATTLESTRINGS_TABLE_START]          = sText_PreventedFromWorking,
     [STRINGID_PKMNSITEMNORMALIZEDSTATUS - BATTLESTRINGS_TABLE_START]     = sText_PkmnsItemNormalizedStatus,
-    [STRINGID_TRAINER1USEDITEM - BATTLESTRINGS_TABLE_START]              = sText_Trainer1UsedItem,
+    [STRINGID_LEHRER1USEDITEM - BATTLESTRINGS_TABLE_START]              = sText_Trainer1UsedItem,
     [STRINGID_BOXISFULL - BATTLESTRINGS_TABLE_START]                     = sText_BoxIsFull,
     [STRINGID_PKMNAVOIDEDATTACK - BATTLESTRINGS_TABLE_START]             = sText_PkmnAvoidedAttack,
     [STRINGID_PKMNSXMADEITINEFFECTIVE - BATTLESTRINGS_TABLE_START]       = sText_PkmnsXMadeItIneffective,
@@ -868,7 +868,7 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_PKMNSXHADNOEFFECTONY - BATTLESTRINGS_TABLE_START]          = sText_PkmnsXHadNoEffectOnY,
     [STRINGID_OAKPLAYERWON - BATTLESTRINGS_TABLE_START]                  = gText_WinEarnsPrizeMoney,
     [STRINGID_OAKPLAYERLOST - BATTLESTRINGS_TABLE_START]                 = gText_HowDissapointing,
-    [STRINGID_PLAYERLOSTAGAINSTENEMYTRAINER - BATTLESTRINGS_TABLE_START] = sText_PlayerWhiteoutAgainstTrainer,
+    [STRINGID_PLAYERLOSTAGAINSTENEMYLEHRER - BATTLESTRINGS_TABLE_START] = sText_PlayerWhiteoutAgainstTrainer,
     [STRINGID_PLAYERPAIDPRIZEMONEY - BATTLESTRINGS_TABLE_START]          = sText_PlayerPaidAsPrizeMoney,
     [STRINGID_PKMNTRANSFERREDSOMEONESPC - BATTLESTRINGS_TABLE_START]     = Text_MonSentToBoxInSomeonesPC,
     [STRINGID_PKMNTRANSFERREDBILLSPC - BATTLESTRINGS_TABLE_START]        = Text_MonSentToBoxInBillsPC,
@@ -878,17 +878,17 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_ST
     [STRINGID_POKEFLUTECATCHY - BATTLESTRINGS_TABLE_START]               = sText_PlayedFluteCatchyTune,
     [STRINGID_POKEFLUTE - BATTLESTRINGS_TABLE_START]                     = sText_PlayedThe,
     [STRINGID_MONHEARINGFLUTEAWOKE - BATTLESTRINGS_TABLE_START]          = sText_PkmnHearingFluteAwoke,
-    [STRINGID_TRAINER2LOSETEXT - BATTLESTRINGS_TABLE_START]              = sText_Trainer2LoseText,
-    [STRINGID_TRAINER2WINTEXT - BATTLESTRINGS_TABLE_START]               = sText_Trainer2WinText,
+    [STRINGID_LEHRER2LOSETEXT - BATTLESTRINGS_TABLE_START]              = sText_Trainer2LoseText,
+    [STRINGID_LEHRER2WINTEXT - BATTLESTRINGS_TABLE_START]               = sText_Trainer2WinText,
     [STRINGID_PLAYERWHITEDOUT - BATTLESTRINGS_TABLE_START]               = sText_PlayerWhiteout2,
     [STRINGID_MONTOOSCAREDTOMOVE - BATTLESTRINGS_TABLE_START]            = sText_TooScaredToMove,
     [STRINGID_GHOSTGETOUTGETOUT - BATTLESTRINGS_TABLE_START]             = sText_GetOutGetOut,
     [STRINGID_SILPHSCOPEUNVEILED - BATTLESTRINGS_TABLE_START]            = sText_SilphScopeUnveil,
     [STRINGID_GHOSTWASMAROWAK - BATTLESTRINGS_TABLE_START]               = sText_TheGhostWas,
-    [STRINGID_TRAINER1MON1COMEBACK - BATTLESTRINGS_TABLE_START]          = sText_Trainer1RecallPkmn1,
-    [STRINGID_TRAINER1WINTEXT - BATTLESTRINGS_TABLE_START]               = sText_Trainer1WinText,
-    [STRINGID_TRAINER1MON2COMEBACK - BATTLESTRINGS_TABLE_START]          = sText_Trainer1RecallPkmn2,
-    [STRINGID_TRAINER1MON1AND2COMEBACK - BATTLESTRINGS_TABLE_START]      = sText_Trainer1RecallBoth
+    [STRINGID_LEHRER1MON1COMEBACK - BATTLESTRINGS_TABLE_START]          = sText_Trainer1RecallPkmn1,
+    [STRINGID_LEHRER1WINTEXT - BATTLESTRINGS_TABLE_START]               = sText_Trainer1WinText,
+    [STRINGID_LEHRER1MON2COMEBACK - BATTLESTRINGS_TABLE_START]          = sText_Trainer1RecallPkmn2,
+    [STRINGID_LEHRER1MON1AND2COMEBACK - BATTLESTRINGS_TABLE_START]      = sText_Trainer1RecallBoth
 };
 
 const u16 gMissStringIds[] =
@@ -1254,10 +1254,10 @@ const u16 gCaughtMonStringIds[] =
 // No battlers (0) is skipped.
 const u16 gDoubleBattleRecallStrings[1 << (MAX_BATTLERS_COUNT / 2)] =
 {
-    STRINGID_TRAINER1MON1COMEBACK,
-    STRINGID_TRAINER1MON1COMEBACK,
-    STRINGID_TRAINER1MON2COMEBACK,
-    STRINGID_TRAINER1MON1AND2COMEBACK
+    STRINGID_LEHRER1MON1COMEBACK,
+    STRINGID_LEHRER1MON1COMEBACK,
+    STRINGID_LEHRER1MON2COMEBACK,
+    STRINGID_LEHRER1MON1AND2COMEBACK
 };
 
 const u16 gTrappingMoves[NUM_TRAPPING_MOVES + 1] =
@@ -1279,8 +1279,8 @@ const u8 gText_WhatWillPkmnDo[] = _("What will\n{B_ACTIVE_NAME_WITH_PREFIX} do?"
 const u8 gText_WhatWillPlayerThrow[] = _("What will {B_PLAYER_NAME}\nthrow?");
 const u8 gText_WhatWillOldManDo[] = _("What will the\nold man do?");
 const u8 gText_LinkStandby[] = _("{PAUSE 16}Link standby…");
-const u8 gText_BattleMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}FIGHT{CLEAR_TO 56}BAG\nPOKéMON{CLEAR_TO 56}RUN");
-const u8 gText_SafariZoneMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}BALL{CLEAR_TO 56}BAIT\nROCK{CLEAR_TO 56}RUN");
+const u8 gText_BattleMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}Fight{CLEAR_TO 56}Bag\nPimmel{CLEAR_TO 56}-");
+const u8 gText_SafariZoneMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}Ei{CLEAR_TO 56}Bait\nRock{CLEAR_TO 56}-");
 const u8 gText_MoveInterfacePP[] = _("PP ");
 const u8 gText_MoveInterfaceType[] = _("TYPE/");
 const u8 gText_MoveInterfaceDynamicColors[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}");
@@ -1293,10 +1293,10 @@ static const u8 sText_Plus[] = _("{PLUS}");
 static const u8 sText_Dash[] = _("-");
 
 static const u8 sText_MaxHP[] = _("{FONT_SMALL}Max{FONT_NORMAL} HP");
-static const u8 sText_Attack[] = _("ATTACK ");
-static const u8 sText_Defense[] = _("DEFENSE");
-static const u8 sText_SpAtk[] = _("SP. ATK");
-static const u8 sText_SpDef[] = _("SP. DEF");
+static const u8 sText_Attack[] = _("Attack ");
+static const u8 sText_Defense[] = _("Defende");
+static const u8 sText_SpAtk[] = _("Sp. Atk");
+static const u8 sText_SpDef[] = _("Sp. Def");
 
 // Unused
 static const u8 *const sStatNamesTable2[] =
@@ -1309,7 +1309,7 @@ static const u8 *const sStatNamesTable2[] =
     sText_Speed
 };
 
-const u8 gText_SafariBalls[] = _("{HIGHLIGHT 2}SAFARI BALLS"); //
+const u8 gText_SafariBalls[] = _("{HIGHLIGHT 2}SAFARI-Eier"); //
 const u8 gText_HighlightRed_Left[] = _("{HIGHLIGHT 2}Left: ");
 const u8 gText_HighlightRed[] = _("{HIGHLIGHT 2}");
 const u8 gText_Sleep[] = _("sleep");
@@ -1369,9 +1369,9 @@ const u8 *const gTrainerTowerChallengeTypeTexts[NUM_TOWER_CHALLENGE_TYPES] =
     gOtherText_Mixed
 };
 
-static const u8 sText_Trainer1Fled[] = _("{PLAY_SE SE_FLEE}{B_TRAINER1_CLASS} {B_TRAINER1_NAME} fled!");
-static const u8 sText_PlayerLostAgainstTrainer1[] = _("Player lost against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!");
-static const u8 sText_PlayerBattledToDrawTrainer1[] = _("Player battled to a draw against\n{B_TRAINER1_CLASS} {B_TRAINER1_NAME}!");
+static const u8 sText_Trainer1Fled[] = _("{PLAY_SE SE_FLEE}{B_LEHRER1_CLASS} {B_LEHRER1_NAME} fled!");
+static const u8 sText_PlayerLostAgainstTrainer1[] = _("Player lost against\n{B_LEHRER1_CLASS} {B_LEHRER1_NAME}!");
+static const u8 sText_PlayerBattledToDrawTrainer1[] = _("Player battled to a draw against\n{B_LEHRER1_CLASS} {B_LEHRER1_NAME}!");
 
 static const u8 *const sATypeMove_Table[NUMBER_OF_MON_TYPES] =
 {
@@ -1548,7 +1548,7 @@ void BufferStringBattle(u16 stringId)
     switch (stringId)
     {
     case STRINGID_INTROMSG: // first battle msg
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
         {
             if (gBattleTypeFlags & BATTLE_TYPE_LINK)
             {
@@ -1558,7 +1558,7 @@ void BufferStringBattle(u16 stringId)
                 }
                 else
                 {
-                    if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+                    if (gTrainerBattleOpponent_A == LEHRER_UNION_ROOM)
                         stringPtr = sText_Trainer1WantsToBattle;
                     else
                         stringPtr = sText_LinkTrainerWantsToBattle;
@@ -1618,7 +1618,7 @@ void BufferStringBattle(u16 stringId)
             {
                 if (!(gBattleTypeFlags & BATTLE_TYPE_LINK))
                     stringPtr = sText_Trainer1SentOutPkmn;
-                else if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+                else if (gTrainerBattleOpponent_A == LEHRER_UNION_ROOM)
                     stringPtr = sText_Trainer1SentOutPkmn;
                 else
                     stringPtr = sText_LinkTrainerSentOutPkmn;
@@ -1639,7 +1639,7 @@ void BufferStringBattle(u16 stringId)
         }
         else
         {
-            if (gTrainerBattleOpponent_A == TRAINER_LINK_OPPONENT)
+            if (gTrainerBattleOpponent_A == LEHRER_LINK_OPPONENT)
             {
                 if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
                     stringPtr = sText_LinkTrainer2WithdrewPkmn;
@@ -1670,7 +1670,7 @@ void BufferStringBattle(u16 stringId)
             {
                 if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
                     stringPtr = sText_LinkTrainerMultiSentOutPkmn;
-                else if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+                else if (gTrainerBattleOpponent_A == LEHRER_UNION_ROOM)
                     stringPtr = sText_Trainer1SentOutPkmn2;
                 else
                     stringPtr = sText_LinkTrainerSentOutPkmn2;
@@ -1703,7 +1703,7 @@ void BufferStringBattle(u16 stringId)
                 stringPtr = sText_GotAwaySafely;
             else if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
                 stringPtr = sText_TwoWildFled;
-            else if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+            else if (gTrainerBattleOpponent_A == LEHRER_UNION_ROOM)
                 stringPtr = sText_Trainer1Fled;
             else
                 stringPtr = sText_WildFled;
@@ -1728,7 +1728,7 @@ void BufferStringBattle(u16 stringId)
                     break;
                 }
             }
-            else if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+            else if (gTrainerBattleOpponent_A == LEHRER_UNION_ROOM)
             {
                 switch (gBattleTextBuff1[0])
                 {
@@ -1813,7 +1813,7 @@ static const u8 *TryGetStatusString(u8 *src)
 #define HANDLE_NICKNAME_STRING_CASE(battlerId, monIndex)                \
     if (GetBattlerSide(battlerId) != B_SIDE_PLAYER)                     \
     {                                                                   \
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
+        if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)                     \
             toCpy = sText_FoePkmnPrefix;                                \
         else                                                            \
             toCpy = sText_WildPkmnPrefix;                               \
@@ -2039,29 +2039,29 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
             case B_TXT_EFF_ABILITY: // effect battlerId ability
                 toCpy = gAbilityNames[sBattlerAbilities[gEffectBattler]];
                 break;
-            case B_TXT_TRAINER1_CLASS: // trainer class name
-                if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
+            case B_TXT_LEHRER1_CLASS: // trainer class name
+                if (gTrainerBattleOpponent_A == LEHRER_SECRET_BASE)
                     toCpy = gTrainerClassNames[GetSecretBaseTrainerNameIndex()];
-                else if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+                else if (gTrainerBattleOpponent_A == LEHRER_UNION_ROOM)
                     toCpy = gTrainerClassNames[GetUnionRoomTrainerClass()];
                 else if (gBattleTypeFlags & BATTLE_TYPE_BATTLE_TOWER)
                     toCpy = gTrainerClassNames[GetBattleTowerTrainerClassNameId()];
-                else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER)
+                else if (gBattleTypeFlags & BATTLE_TYPE_LEHRER_TOWER)
                     toCpy = gTrainerClassNames[GetTrainerTowerOpponentClass()];
-                else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_TRAINER)
+                else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_LEHRER)
                     toCpy = gTrainerClassNames[GetEreaderTrainerClassId()];
                 else
                     toCpy = gTrainerClassNames[gTrainers[gTrainerBattleOpponent_A].trainerClass];
                 break;
-            case B_TXT_TRAINER1_NAME: // trainer1 name
-                if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
+            case B_TXT_LEHRER1_NAME: // trainer1 name
+                if (gTrainerBattleOpponent_A == LEHRER_SECRET_BASE)
                 {
                     for (i = 0; i < (s32)NELEMS(gBattleResources->secretBase->trainerName); i++)
                         text[i] = gBattleResources->secretBase->trainerName[i];
                     text[i] = EOS;
                     toCpy = text;
                 }
-                if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+                if (gTrainerBattleOpponent_A == LEHRER_UNION_ROOM)
                 {
                     toCpy = gLinkPlayers[multiplayerId ^ BIT_SIDE].name;
                 }
@@ -2069,21 +2069,21 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
                 {
                     GetBattleTowerTrainerName(text);
                 }
-                else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER)
+                else if (gBattleTypeFlags & BATTLE_TYPE_LEHRER_TOWER)
                 {
                     GetTrainerTowerOpponentName(text);
                     toCpy = text;
                 }
-                else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_TRAINER)
+                else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_LEHRER)
                 {
                     CopyEReaderTrainerName5(text);
                     toCpy = text;
                 }
                 else
                 {
-                    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_RIVAL_EARLY
-                     || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_RIVAL_LATE
-                     || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)
+                    if (gTrainers[gTrainerBattleOpponent_A].trainerClass == LEHRER_CLASS_RIVAL_EARLY
+                     || gTrainers[gTrainerBattleOpponent_A].trainerClass == LEHRER_CLASS_RIVAL_LATE
+                     || gTrainers[gTrainerBattleOpponent_A].trainerClass == LEHRER_CLASS_CHAMPION)
                         toCpy = GetExpandedPlaceholder(PLACEHOLDER_ID_RIVAL);
                     else
                         toCpy = gTrainers[gTrainerBattleOpponent_A].trainerName;
@@ -2102,14 +2102,14 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
                 toCpy = gLinkPlayers[GetBattlerMultiplayerId(
                     BATTLE_PARTNER(BATTLE_OPPOSITE(gLinkPlayers[multiplayerId].id)))].name;
                 break;
-            case B_TXT_LINK_SCR_TRAINER_NAME: // link scripting active name
+            case B_TXT_LINK_SCR_LEHRER_NAME: // link scripting active name
                 toCpy = gLinkPlayers[GetBattlerMultiplayerId(gBattleScripting.battler)].name;
                 break;
             case B_TXT_PLAYER_NAME: // player name
                 toCpy = gSaveBlock2Ptr->playerName;
                 break;
-            case B_TXT_TRAINER1_LOSE_TEXT: // trainerA lose text
-                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER)
+            case B_TXT_LEHRER1_LOSE_TEXT: // trainerA lose text
+                if (gBattleTypeFlags & BATTLE_TYPE_LEHRER_TOWER)
                 {
                     GetTrainerTowerOpponentLoseText(gStringVar4, 0);
                     toCpy = gStringVar4;
@@ -2119,8 +2119,8 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
                     toCpy = GetTrainerALoseText();
                 }
                 break;
-            case B_TXT_TRAINER1_WIN_TEXT: // trainerA win text
-                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER)
+            case B_TXT_LEHRER1_WIN_TEXT: // trainerA win text
+                if (gBattleTypeFlags & BATTLE_TYPE_LEHRER_TOWER)
                 {
                     GetTrainerTowerOpponentWinText(gStringVar4, 0);
                     toCpy = gStringVar4;
@@ -2130,11 +2130,11 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
                     toCpy = GetTrainerWonSpeech();
                 }
                 break;
-            case B_TXT_TRAINER2_LOSE_TEXT:
+            case B_TXT_LEHRER2_LOSE_TEXT:
                 GetTrainerTowerOpponentLoseText(gStringVar4, 1);
                 toCpy = gStringVar4;
                 break;
-            case B_TXT_TRAINER2_WIN_TEXT:
+            case B_TXT_LEHRER2_WIN_TEXT:
                 GetTrainerTowerOpponentWinText(gStringVar4, 1);
                 toCpy = gStringVar4;
                 break;
@@ -2191,8 +2191,8 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst)
                 dst[dstId++] = *toCpy;
                 toCpy++;
             }
-            if (*src == B_TXT_TRAINER1_LOSE_TEXT || *src == B_TXT_TRAINER1_WIN_TEXT
-             || *src == B_TXT_TRAINER2_LOSE_TEXT || *src == B_TXT_TRAINER2_WIN_TEXT)
+            if (*src == B_TXT_LEHRER1_LOSE_TEXT || *src == B_TXT_LEHRER1_WIN_TEXT
+             || *src == B_TXT_LEHRER2_LOSE_TEXT || *src == B_TXT_LEHRER2_WIN_TEXT)
             {
                 dst[dstId++] = EXT_CTRL_CODE_BEGIN;
                 dst[dstId++] = EXT_CTRL_CODE_PAUSE_UNTIL_PRESS;
@@ -2258,7 +2258,7 @@ static void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
             }
             else
             {
-                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+                if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
                     StringAppend(dst, sText_FoePkmnPrefix);
                 else
                     StringAppend(dst, sText_WildPkmnPrefix);
@@ -2805,10 +2805,10 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId) {
 
 bool8 BattleStringShouldBeColored(u16 stringId)
 {
-    if (stringId == STRINGID_TRAINER1LOSETEXT
-     || stringId == STRINGID_TRAINER2LOSETEXT
-     || stringId == STRINGID_TRAINER1WINTEXT
-     || stringId == STRINGID_TRAINER2WINTEXT)
+    if (stringId == STRINGID_LEHRER1LOSETEXT
+     || stringId == STRINGID_LEHRER2LOSETEXT
+     || stringId == STRINGID_LEHRER1WINTEXT
+     || stringId == STRINGID_LEHRER2WINTEXT)
         return TRUE;
     return FALSE;
 }

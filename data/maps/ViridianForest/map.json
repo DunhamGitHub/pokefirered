@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianForest_EventScript_Youngster",
       "flag": "0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianForest_EventScript_Boy",
       "flag": "0"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "ViridianForest_EventScript_Rick",
       "flag": "0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "ViridianForest_EventScript_Doug",
       "flag": "0"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "ViridianForest_EventScript_Sammy",
       "flag": "0"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianForest_EventScript_ItemPokeBall",
       "flag": "FLAG_HIDE_VIRIDIAN_FOREST_POKE_BALL"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianForest_EventScript_ItemAntidote",
       "flag": "FLAG_HIDE_VIRIDIAN_FOREST_ANTIDOTE"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianForest_EventScript_ItemPotion",
       "flag": "FLAG_HIDE_VIRIDIAN_FOREST_POTION"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "ViridianForest_EventScript_Anthony",
       "flag": "0"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "ViridianForest_EventScript_Charlie",
       "flag": "0"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianForest_EventScript_ItemPotion2",
       "flag": "FLAG_HIDE_VIRIDIAN_FOREST_POTION_2"

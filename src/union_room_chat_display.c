@@ -16,12 +16,12 @@
 #define STDMESSAGE_REGISTER_HERE 2
 #define STDMESSAGE_INPUT_TEXT 3
 #define STDMESSAGE_EXITING_CHAT 4
-#define STDMESSAGE_LEADER_LEFT 5
+#define STDMESSAGE_CHEF_LEFT 5
 #define STDMESSAGE_ASK_SAVE 6
 #define STDMESSAGE_ASK_OVERWRITE 7
 #define STDMESSAGE_SAVING_NO_OFF 8
 #define STDMESSAGE_SAVED_THE_GAME 9
-#define STDMESSAGE_WARN_LEADER_LEAVE 10
+#define STDMESSAGE_WARN_CHEF_LEAVE 10
 
 struct UnionRoomChat2Subtask
 {
@@ -211,12 +211,12 @@ static const struct SubtaskInfo sSubtaskInfo[] = {
     {CHATDISPLAYROUTINE_CURSORBLINK, DisplaySubtask_AnimateSelectorCursorBlink},
     {CHATDISPLAYROUTINE_PRINTINPUTTEXT, DisplaySubtask_PrintInputText},
     {CHATDISPLAYROUTINE_PRINTEXITINGCHAT, DisplaySubtask_PrintExitingChat},
-    {CHATDISPLAYROUTINE_PRINTLEADERLEFT, DisplaySubtask_PrintLeaderLeft},
+    {CHATDISPLAYROUTINE_PRINTCHEFLEFT, DisplaySubtask_PrintLeaderLeft},
     {CHATDISPLAYROUTINE_ASKSAVE, DisplaySubtask_AskSave},
     {CHATDISPLAYROUTINE_ASKOVERWRITESAVE, DisplaySubtask_AskOverwriteSave},
     {CHATDISPLAYROUTINE_PRINTSAVING, DisplaySubtask_PrintSavingDontTurnOffPower},
     {CHATDISPLAYROUTINE_PRINTSAVEDTHEGAME, DisplaySubtask_PrintSavedTheGame},
-    {CHATDISPLAYROUTINE_SHOWCONFIRMLEADERLEAVEDIALOG, DisplaySubtask_ShowConfirmLeaderLeaveDialog}
+    {CHATDISPLAYROUTINE_SHOWCONFIRMCHEFLEAVEDIALOG, DisplaySubtask_ShowConfirmLeaderLeaveDialog}
 };
 
 static const struct MessageWindowInfo sMessageWindowInfo[] = {
@@ -271,7 +271,7 @@ static const struct MessageWindowInfo sMessageWindowInfo[] = {
         .expandPlaceholders = FALSE,
         .widerBox = FALSE
     },
-    [STDMESSAGE_LEADER_LEFT] = {
+    [STDMESSAGE_CHEF_LEFT] = {
         .text = gText_LeaderHasLeftEndingChat,
         .boxType = 2,
         .x = 0,
@@ -321,7 +321,7 @@ static const struct MessageWindowInfo sMessageWindowInfo[] = {
         .expandPlaceholders = TRUE,
         .widerBox = TRUE
     },
-    [STDMESSAGE_WARN_LEADER_LEAVE] = {
+    [STDMESSAGE_WARN_CHEF_LEAVE] = {
         .text = gText_IfLeaderLeavesChatWillEnd,
         .boxType = 2,
         .x = 0,
@@ -836,7 +836,7 @@ static bool32 DisplaySubtask_PrintLeaderLeft(u8 *state)
         DynamicPlaceholderTextUtil_Reset();
         str = UnionRoomChat_GetNameOfPlayerWhoDisbandedChat();
         DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, str);
-        PlaceStdMessageWindow(STDMESSAGE_LEADER_LEFT, 0);
+        PlaceStdMessageWindow(STDMESSAGE_CHEF_LEFT, 0);
         CopyWindowToVram(sWork->messageWindowId, COPYWIN_FULL);
         (*state)++;
         break;
@@ -920,7 +920,7 @@ static bool32 DisplaySubtask_ShowConfirmLeaderLeaveDialog(u8 *state)
     switch (*state)
     {
     case 0:
-        PlaceStdMessageWindow(STDMESSAGE_WARN_LEADER_LEAVE, 0);
+        PlaceStdMessageWindow(STDMESSAGE_WARN_CHEF_LEAVE, 0);
         PlaceYesNoMenuAt(23, 10, 1);
         CopyWindowToVram(sWork->messageWindowId, COPYWIN_FULL);
         (*state)++;

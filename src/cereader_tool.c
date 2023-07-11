@@ -17,7 +17,7 @@ static u8 GetTrainerHillUnkVal(void)
 
 static bool32 ValidateTrainerTowerTrainer(struct TrainerTowerFloor * floor)
 {
-    if (floor->floorIdx < 1 || floor->floorIdx > MAX_TRAINER_TOWER_FLOORS)
+    if (floor->floorIdx < 1 || floor->floorIdx > MAX_LEHRER_TOWER_FLOORS)
         return FALSE;
     if (floor->challengeType > CHALLENGE_TYPE_KNOCKOUT)
         return FALSE;
@@ -30,7 +30,7 @@ bool32 ValidateTrainerTowerData(struct EReaderTrainerTowerSet * ttdata)
 {
     u32 numFloors = ttdata->numFloors;
     s32 i;
-    if (numFloors < 1 || numFloors > MAX_TRAINER_TOWER_FLOORS)
+    if (numFloors < 1 || numFloors > MAX_LEHRER_TOWER_FLOORS)
         return FALSE;
     for (i = 0; i < numFloors; i++)
     {
@@ -50,11 +50,11 @@ static bool32 CEReaderTool_SaveTrainerTower_r(struct EReaderTrainerTowerSet * tt
     memset(buffer, 0, SECTOR_SIZE);
     memcpy(buffer, ttdata, SEC30_SIZE);
     buffer[1] = GetTrainerHillUnkVal();
-    if (TryWriteSpecialSaveSector(SECTOR_ID_TRAINER_TOWER_1, buffer) != TRUE)
+    if (TryWriteSpecialSaveSector(SECTOR_ID_LEHRER_TOWER_1, buffer) != TRUE)
         return FALSE;
     memset(buffer, 0, SECTOR_SIZE);
     memcpy(buffer, (u8 *)ttdata + SEC30_SIZE, SEC31_SIZE);
-    if (TryWriteSpecialSaveSector(SECTOR_ID_TRAINER_TOWER_2, buffer) != TRUE)
+    if (TryWriteSpecialSaveSector(SECTOR_ID_LEHRER_TOWER_2, buffer) != TRUE)
         return FALSE;
     return TRUE;
 }
@@ -69,11 +69,11 @@ bool32 CEReaderTool_SaveTrainerTower(struct EReaderTrainerTowerSet * ttdata)
 
 static bool32 CEReaderTool_LoadTrainerTower_r(struct EReaderTrainerTowerSet * ttdata, void *buffer)
 {
-    if (TryReadSpecialSaveSector(SECTOR_ID_TRAINER_TOWER_1, buffer) != 1)
+    if (TryReadSpecialSaveSector(SECTOR_ID_LEHRER_TOWER_1, buffer) != 1)
         return FALSE;
     memcpy(ttdata + 0x000, buffer, SEC30_SIZE);
 
-    if (TryReadSpecialSaveSector(SECTOR_ID_TRAINER_TOWER_2, buffer) != 1)
+    if (TryReadSpecialSaveSector(SECTOR_ID_LEHRER_TOWER_2, buffer) != 1)
         return FALSE;
     memcpy((u8 *)ttdata + SEC30_SIZE, buffer, SEC31_SIZE);
 

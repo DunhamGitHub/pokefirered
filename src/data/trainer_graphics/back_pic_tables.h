@@ -1,10 +1,10 @@
 const struct MonCoords gTrainerBackPicCoords[] = {
-    [TRAINER_BACK_PIC_RED] = {.size = 8, .y_offset = 5},
-    [TRAINER_BACK_PIC_LEAF] = {.size = 8, .y_offset = 5},
-    [TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_POKEDUDE] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_OLD_MAN] = {.size = 8, .y_offset = 4}
+    [LEHRER_BACK_PIC_RED] = {.size = 8, .y_offset = 5},
+    [LEHRER_BACK_PIC_LEAF] = {.size = 8, .y_offset = 5},
+    [LEHRER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = {.size = 8, .y_offset = 4},
+    [LEHRER_BACK_PIC_RUBY_SAPPHIRE_MAY] = {.size = 8, .y_offset = 4},
+    [LEHRER_BACK_PIC_POKEDUDE] = {.size = 8, .y_offset = 4},
+    [LEHRER_BACK_PIC_OLD_MAN] = {.size = 8, .y_offset = 4}
 };
 
 const struct CompressedSpriteSheet gTrainerBackPicTable[] = {

@@ -9,18 +9,18 @@ SilphCo_9F_Text_ThankYouSoMuch::
     .string "Thank you so much.$"
 
 SilphCo_9F_Text_Grunt1Intro::
-    .string "Your POKéMON seem to adore you,\n"
+    .string "Your Pimmel seem to adore you,\n"
     .string "kid!$"
 
 SilphCo_9F_Text_Grunt1Defeat::
     .string "Ghaaah!$"
 
 SilphCo_9F_Text_Grunt1PostBattle::
-    .string "If I had started as a TRAINER at\n"
+    .string "If I had started as a LEHRER at\n"
     .string "your age…$"
 
 SilphCo_9F_Text_EdIntro::
-    .string "Your POKéMON have weak points!\n"
+    .string "Your Pimmel have weak points!\n"
     .string "I can nail them!$"
 
 SilphCo_9F_Text_EdDefeat::

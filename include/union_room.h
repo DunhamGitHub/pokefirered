@@ -6,12 +6,12 @@
 #include "constants/union_room.h"
 
 // In the Union Room the player is only ever connected to ≤ 4 other players.
-// However, there can be up to MAX_UNION_ROOM_LEADERS (8) object events to
+// However, there can be up to MAX_UNION_ROOM_CHEFS (8) object events to
 // represent leaders of recently discovered link groups, and each of those groups
 // may have up to MAX_RFU_PLAYERS (5) players in it including the leader.
 // These players are represented on-screen by NPC sprites drawn around the leader.
 // Thus there can be 40 sprites of other players on-screen, in 8 groups of 5.
-#define NUM_UNION_ROOM_SPRITES (MAX_UNION_ROOM_LEADERS * MAX_RFU_PLAYERS)
+#define NUM_UNION_ROOM_SPRITES (MAX_UNION_ROOM_CHEFS * MAX_RFU_PLAYERS)
 
 // The maximum number of recently connected players that can be tracked.
 // Note that this is significantly less than NUM_UNION_ROOM_SPRITES, i.e. not
@@ -127,7 +127,7 @@ struct WirelessLink_URoom
     u8 activityRequestStrbufs[4][11];
     u16 partnerYesNoResponse;
     u16 recvActivityRequest[3];  // activity[, species, level]
-    struct UnionRoomObject objects[MAX_UNION_ROOM_LEADERS];
+    struct UnionRoomObject objects[MAX_UNION_ROOM_CHEFS];
     u8 trainerCardStrBuffer[12][15];
     u8 trainerCardColorStrBuffer[48];
     u8 trainerCardMsgStrBuffer[200];

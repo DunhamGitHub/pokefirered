@@ -43,7 +43,7 @@ static const u8 sTextColors[] = {1, 2, 3};
 static void SetUpPartiesAndStartBattle(void)
 {
     s32 i;
-    StartUnionRoomBattle(BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER);
+    StartUnionRoomBattle(BATTLE_TYPE_LINK | BATTLE_TYPE_LEHRER);
     for (i = 0; i < 2; i++)
     {
         gEnemyParty[i] = gPlayerParty[gSelectedOrderFromParty[i] - 1];
@@ -58,7 +58,7 @@ static void SetUpPartiesAndStartBattle(void)
     }
     IncrementGameStat(GAME_STAT_NUM_UNION_ROOM_BATTLES);
     CalculatePlayerPartyCount();
-    gTrainerBattleOpponent_A = TRAINER_UNION_ROOM;
+    gTrainerBattleOpponent_A = LEHRER_UNION_ROOM;
     SetMainCallback2(CB2_InitBattle);
 }
 

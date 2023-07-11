@@ -692,41 +692,41 @@
 		.byte \type
 		.2byte \trainer
 		.2byte \local_id
-		.if \type == TRAINER_BATTLE_SINGLE
+		.if \type == LEHRER_BATTLE_SINGLE
 			.4byte \pointer1 @ text
 			.4byte \pointer2 @ text
-		.elseif \type == TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC
-			.4byte \pointer1 @ text
-			.4byte \pointer2 @ text
-			.4byte \pointer3 @ event script
-		.elseif \type == TRAINER_BATTLE_CONTINUE_SCRIPT
+		.elseif \type == LEHRER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC
 			.4byte \pointer1 @ text
 			.4byte \pointer2 @ text
 			.4byte \pointer3 @ event script
-		.elseif \type == TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT
+		.elseif \type == LEHRER_BATTLE_CONTINUE_SCRIPT
 			.4byte \pointer1 @ text
-		.elseif \type == TRAINER_BATTLE_DOUBLE
+			.4byte \pointer2 @ text
+			.4byte \pointer3 @ event script
+		.elseif \type == LEHRER_BATTLE_SINGLE_NO_INTRO_TEXT
+			.4byte \pointer1 @ text
+		.elseif \type == LEHRER_BATTLE_DOUBLE
 			.4byte \pointer1 @ text
 			.4byte \pointer2 @ text
 			.4byte \pointer3 @ text
-		.elseif \type == TRAINER_BATTLE_REMATCH
+		.elseif \type == LEHRER_BATTLE_REMATCH
 			.4byte \pointer1 @ text
 			.4byte \pointer2 @ text
-		.elseif \type == TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE
+		.elseif \type == LEHRER_BATTLE_CONTINUE_SCRIPT_DOUBLE
 			.4byte \pointer1 @ text
 			.4byte \pointer2 @ text
 			.4byte \pointer3 @ text
 			.4byte \pointer4 @ event script
-		.elseif \type == TRAINER_BATTLE_REMATCH_DOUBLE
+		.elseif \type == LEHRER_BATTLE_REMATCH_DOUBLE
 			.4byte \pointer1 @ text
 			.4byte \pointer2 @ text
 			.4byte \pointer3 @ text
-		.elseif \type == TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC
+		.elseif \type == LEHRER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC
 			.4byte \pointer1 @ text
 			.4byte \pointer2 @ text
 			.4byte \pointer3 @ text
 			.4byte \pointer4 @ event script
-		.elseif \type == TRAINER_BATTLE_EARLY_RIVAL
+		.elseif \type == LEHRER_BATTLE_EARLY_RIVAL
 			.4byte \pointer1 @ text
 			.4byte \pointer2 @ text
 		.endif
@@ -738,11 +738,11 @@
 	@ When used with an event script, you can also pass in an optional flag to disable music
 	.macro trainerbattle_single trainer:req, intro_text:req, lose_text:req, event_script=FALSE, music=TRUE
 	.if \event_script == FALSE
-	trainerbattle TRAINER_BATTLE_SINGLE, \trainer, 0, \intro_text, \lose_text
+	trainerbattle LEHRER_BATTLE_SINGLE, \trainer, 0, \intro_text, \lose_text
 	.elseif \music == TRUE
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT, \trainer, 0, \intro_text, \lose_text, \event_script
+	trainerbattle LEHRER_BATTLE_CONTINUE_SCRIPT, \trainer, 0, \intro_text, \lose_text, \event_script
 	.else
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, \trainer, 0, \intro_text, \lose_text, \event_script
+	trainerbattle LEHRER_BATTLE_CONTINUE_SCRIPT_NO_MUSIC, \trainer, 0, \intro_text, \lose_text, \event_script
 	.endif
 	.endm
 
@@ -750,32 +750,32 @@
 	@ and an optional event script. When used with an event script you can pass in an optional flag to disable music
 	.macro trainerbattle_double trainer:req, intro_text:req, lose_text:req, not_enough_pkmn_text:req, event_script=FALSE, music=TRUE
 	.if \event_script == FALSE
-	trainerbattle TRAINER_BATTLE_DOUBLE, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text
+	trainerbattle LEHRER_BATTLE_DOUBLE, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text
 	.elseif \music == TRUE
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text, \event_script
+	trainerbattle LEHRER_BATTLE_CONTINUE_SCRIPT_DOUBLE, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text, \event_script
 	.else
-	trainerbattle TRAINER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text, \event_script
+	trainerbattle LEHRER_BATTLE_CONTINUE_SCRIPT_DOUBLE_NO_MUSIC, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text, \event_script
 	.endif
 	.endm
 
 	@ Starts a rematch battle, takes a trainer, intro text and loss text
 	.macro trainerbattle_rematch trainer:req, intro_text:req, lose_text:req
-	trainerbattle TRAINER_BATTLE_REMATCH, \trainer, 0, \intro_text, \lose_text
+	trainerbattle LEHRER_BATTLE_REMATCH, \trainer, 0, \intro_text, \lose_text
 	.endm
 
 	@ Starts a rematch double battle. Takes a trainer, intro text, loss text, and text for when you have too few pokemon
 	.macro trainerbattle_rematch_double trainer:req, intro_text:req, lose_text:req, not_enough_pkmn_text:req
-	trainerbattle TRAINER_BATTLE_REMATCH_DOUBLE, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text
+	trainerbattle LEHRER_BATTLE_REMATCH_DOUBLE, \trainer, 0, \intro_text, \lose_text, \not_enough_pkmn_text
 	.endm
 
 	@ Starts a trainer battle, skipping intro text. Takes a trainer and loss text
 	.macro trainerbattle_no_intro trainer:req, lose_text:req
-	trainerbattle TRAINER_BATTLE_SINGLE_NO_INTRO_TEXT, \trainer, 0, \lose_text
+	trainerbattle LEHRER_BATTLE_SINGLE_NO_INTRO_TEXT, \trainer, 0, \lose_text
 	.endm
 
 	@ Starts a trainer battle with victory text if the player loses. If flags is nonzero, the player will be healed after battle (and its assumed to be the tutorial battle)
 	.macro trainerbattle_earlyrival trainer:req, flags:req, defeat_text:req, victory_text:req
-	trainerbattle TRAINER_BATTLE_EARLY_RIVAL, \trainer, \flags, \defeat_text, \victory_text
+	trainerbattle LEHRER_BATTLE_EARLY_RIVAL, \trainer, \flags, \defeat_text, \victory_text
 	.endm
 
 	@ Starts a trainer battle using the battle information stored in RAM (usually by the scripts in trainer_battle.inc, which
@@ -794,19 +794,19 @@
 	.byte 0x5f
 	.endm
 
-	@ Checks if the trainer has been defeated by the player (by comparing the flag 'trainer + TRAINER_FLAGS_START' to TRUE).
+	@ Checks if the trainer has been defeated by the player (by comparing the flag 'trainer + LEHRER_FLAGS_START' to TRUE).
 	.macro checktrainerflag trainer:req
 	.byte 0x60
 	.2byte \trainer
 	.endm
 
-	@ Sets the trainer flag (trainer + TRAINER_FLAGS_START) to TRUE (defeated).
+	@ Sets the trainer flag (trainer + LEHRER_FLAGS_START) to TRUE (defeated).
 	.macro settrainerflag trainer:req
 	.byte 0x61
 	.2byte \trainer
 	.endm
 
-	@ Sets the trainer flag (trainer + TRAINER_FLAGS_START) to FALSE (not defeated).
+	@ Sets the trainer flag (trainer + LEHRER_FLAGS_START) to FALSE (not defeated).
 	.macro cleartrainerflag trainer:req
 	.byte 0x62
 	.2byte \trainer

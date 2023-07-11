@@ -99,9 +99,9 @@ static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_LOADMONSPRITE]            = OpponentHandleLoadMonSprite,
     [CONTROLLER_SWITCHINANIM]             = OpponentHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = OpponentHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = OpponentHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = OpponentHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = OpponentHandleTrainerSlideBack,
+    [CONTROLLER_DRAWLEHRERPIC]           = OpponentHandleDrawTrainerPic,
+    [CONTROLLER_LEHRERSLIDE]             = OpponentHandleTrainerSlide,
+    [CONTROLLER_LEHRERSLIDEBACK]         = OpponentHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = OpponentHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = OpponentHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = OpponentHandleSuccessBallThrowAnim,
@@ -139,7 +139,7 @@ static void (*const sOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_PLAYFANFARE]              = OpponentHandlePlayFanfare,
     [CONTROLLER_FAINTINGCRY]              = OpponentHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = OpponentHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = OpponentHandleIntroTrainerBallThrow,
+    [CONTROLLER_INTROLEHRERBALLTHROW]    = OpponentHandleIntroTrainerBallThrow,
     [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = OpponentHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = OpponentHandleHidePartyStatusSummary,
     [CONTROLLER_ENDBOUNCE]                = OpponentHandleEndBounceEffect,
@@ -1122,13 +1122,13 @@ static void OpponentHandleDrawTrainerPic(void)
 {
     u32 trainerPicId;
 
-    if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
+    if (gTrainerBattleOpponent_A == LEHRER_SECRET_BASE)
         trainerPicId = GetSecretBaseTrainerPicIndex();
     else if (gBattleTypeFlags & BATTLE_TYPE_BATTLE_TOWER)
         trainerPicId = GetBattleTowerTrainerFrontSpriteId();
-    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER)
+    else if (gBattleTypeFlags & BATTLE_TYPE_LEHRER_TOWER)
         trainerPicId = GetTrainerTowerTrainerFrontSpriteId();
-    else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_TRAINER)
+    else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_LEHRER)
         trainerPicId = GetEreaderTrainerFrontSpriteId();
     else
         trainerPicId = gTrainers[gTrainerBattleOpponent_A].trainerPic;
@@ -1152,13 +1152,13 @@ static void OpponentHandleTrainerSlide(void)
 {
     u32 trainerPicId;
 
-    if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
+    if (gTrainerBattleOpponent_A == LEHRER_SECRET_BASE)
         trainerPicId = GetSecretBaseTrainerPicIndex();
     else if (gBattleTypeFlags & BATTLE_TYPE_BATTLE_TOWER)
         trainerPicId = GetBattleTowerTrainerFrontSpriteId();
-    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER)
+    else if (gBattleTypeFlags & BATTLE_TYPE_LEHRER_TOWER)
         trainerPicId = GetTrainerTowerTrainerFrontSpriteId();
-    else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_TRAINER)
+    else if (gBattleTypeFlags & BATTLE_TYPE_EREADER_LEHRER)
         trainerPicId = GetEreaderTrainerFrontSpriteId();
     else
         trainerPicId = gTrainers[gTrainerBattleOpponent_A].trainerPic;
@@ -1352,7 +1352,7 @@ static void OpponentHandleChooseMove(void)
     u8 chosenMoveId;
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleBufferA[gActiveBattler][4]);
 
-    if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_FIRST_BATTLE | BATTLE_TYPE_SAFARI | BATTLE_TYPE_ROAMER))
+    if (gBattleTypeFlags & (BATTLE_TYPE_LEHRER | BATTLE_TYPE_FIRST_BATTLE | BATTLE_TYPE_SAFARI | BATTLE_TYPE_ROAMER))
     {
 
         BattleAI_SetupAIData();

@@ -14,7 +14,7 @@
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 	.id = 1,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_WHITE_HERB,
 	.trainers = {
@@ -169,7 +169,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_7 = {
 	.id = 2,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_DRAGON_SCALE,
 	.trainers = {
@@ -324,7 +324,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_7 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_Unused = {
 	.id = 3,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_IRON,
 	.trainers = {
@@ -479,7 +479,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_Unused = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_5 = {
 	.id = 4,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_CHOICE_BAND,
 	.trainers = {
@@ -776,7 +776,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_5 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_6 = {
 	.id = 5,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_CALCIUM,
 	.trainers = {
@@ -1073,7 +1073,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_6 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_2 = {
 	.id = 6,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_HP_UP,
 	.trainers = {
@@ -1370,7 +1370,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_2 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_1 = {
 	.id = 7,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
 	.prize = TTPRIZE_METAL_COAT,
 	.trainers = {
@@ -1809,7 +1809,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_1 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_2 = {
 	.id = 8,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
 	.prize = TTPRIZE_UP_GRADE,
 	.trainers = {
@@ -2248,7 +2248,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_2 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_5 = {
 	.id = 9,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_HP_UP,
 	.trainers = {
@@ -2403,7 +2403,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_5 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_8 = {
 	.id = 10,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_METAL_COAT,
 	.trainers = {
@@ -2558,7 +2558,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_8 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_2 = {
 	.id = 11,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_UP_GRADE,
 	.trainers = {
@@ -2713,7 +2713,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_2 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_3 = {
 	.id = 12,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_IRON,
 	.trainers = {
@@ -3010,7 +3010,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_3 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_1 = {
 	.id = 13,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_DRAGON_SCALE,
 	.trainers = {
@@ -3307,7 +3307,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_1 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_4 = {
 	.id = 14,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_MENTAL_HERB,
 	.trainers = {
@@ -3604,7 +3604,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_4 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_8 = {
 	.id = 15,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
 	.prize = TTPRIZE_BRIGHT_POWDER,
 	.trainers = {
@@ -3896,7 +3896,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_8 = {
 		},
 		{
 			.name = _("ALBERT"),
-			.facilityClass = FACILITY_CLASS_COOLTRAINER_M,
+			.facilityClass = FACILITY_CLASS_COOLLEHRER_M,
 			.textColor = 7,
 			.speechBefore = {EC_WORD_LET_S, EC_WORD_HAVE, EC_WORD_AN, EC_WORD_EXCITING, EC_WORD_TIME, EC_WORD_HERE},
 			.speechWin = {EC_WORD_YOU_RE, EC_WORD_TOO_WEAK, EC_WORD_TO, EC_WORD_MAKE, EC_WORD_THINGS, EC_WORD_EXCITING},
@@ -4043,7 +4043,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_8 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_3 = {
 	.id = 16,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
 	.prize = TTPRIZE_CALCIUM,
 	.trainers = {
@@ -4335,7 +4335,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_3 = {
 		},
 		{
 			.name = _("KATHLEEN"),
-			.facilityClass = FACILITY_CLASS_COOLTRAINER_F,
+			.facilityClass = FACILITY_CLASS_COOLLEHRER_F,
 			.textColor = 7,
 			.speechBefore = {EC_WORD_TOO, EC_WORD_BAD, EC_WORD_IT_S, EC_WORD_OVER, EC_WORD_FOR, EC_WORD_YOU},
 			.speechWin = {EC_WORD_SORRY, EC_WORD_ELLIPSIS, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF},
@@ -4482,7 +4482,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_3 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_6 = {
 	.id = 17,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_CARBOS,
 	.trainers = {
@@ -4637,13 +4637,13 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_6 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_1 = {
 	.id = 18,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_KINGS_ROCK,
 	.trainers = {
 	    {
 			.name = _("ALLYSON"),
-			.facilityClass = FACILITY_CLASS_COOLTRAINER_F,
+			.facilityClass = FACILITY_CLASS_COOLLEHRER_F,
 			.textColor = 7,
 			.speechBefore = {EC_WORD_I_AM, EC_WORD_NOT, EC_WORD_ABOUT, EC_WORD_TO, EC_WORD_LOSE, EC_WORD_TODAY},
 			.speechWin = {EC_WORD_YES, EC_WORD_EXCL_EXCL, EC_WORD_I, EC_WORD_ADORE, EC_WORD_MYSELF, EC_WORD_TODAY},
@@ -4792,7 +4792,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_1 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_1 = {
 	.id = 19,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_UP_GRADE,
 	.trainers = {
@@ -4947,7 +4947,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_1 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_5 = {
 	.id = 20,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_METAL_COAT,
 	.trainers = {
@@ -5244,7 +5244,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_5 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_8 = {
 	.id = 21,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_MENTAL_HERB,
 	.trainers = {
@@ -5541,7 +5541,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_8 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_Unused1 = {
 	.id = 22,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_ZINC,
 	.trainers = {
@@ -5838,7 +5838,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_Unused1 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_7 = {
 	.id = 23,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
 	.prize = TTPRIZE_PROTEIN,
 	.trainers = {
@@ -5849,7 +5849,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_7 = {
 			.speechBefore = {EC_WORD_I_AM, EC_WORD_A_LITTLE, EC_WORD_POKEMON, EC_WORD_GIRL, EC_WORD_HERE_I_COME, EC_WORD_EXCL},
 			.speechWin = {EC_WORD_WAAAH, EC_WORD_EXCL, EC_WORD_DID, EC_WORD_I, EC_WORD_WIN, EC_WORD_QUES},
 			.speechLose = {EC_WORD_OH_DEAR, EC_WORD_ELLIPSIS, EC_WORD_I, EC_WORD_COULDN_T, EC_WORD_WIN, EC_WORD_ELLIPSIS},
-			.speechAfter = {EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_NICE, EC_WORD_TRAINER, EC_WORD_THANK_YOU, EC_WORD_EXCL},
+			.speechAfter = {EC_WORD_YOU_RE, EC_WORD_A, EC_WORD_NICE, EC_WORD_LEHRER, EC_WORD_THANK_YOU, EC_WORD_EXCL},
 			.mons = {
 				{
 					.species = SPECIES_GOLDEEN,
@@ -6277,7 +6277,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_7 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_4 = {
 	.id = 24,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
 	.prize = TTPRIZE_DRAGON_SCALE,
 	.trainers = {
@@ -6573,7 +6573,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_4 = {
 			.textColor = 1,
 			.speechBefore = {EC_WORD_HMM, EC_WORD_QUES, EC_WORD_ARE, EC_WORD_YOU, EC_WORD_SKILLED, EC_WORD_QUES},
 			.speechWin = {EC_WORD_I, EC_WORD_SEE, EC_WORD_I, EC_WORD_WASN_T, EC_WORD_RIGHT, EC_WORD_ELLIPSIS},
-			.speechLose = {EC_WORD_YOU, EC_WORD_TRULY, EC_WORD_ARE, EC_WORD_A, EC_WORD_MASTER, EC_WORD_TRAINER},
+			.speechLose = {EC_WORD_YOU, EC_WORD_TRULY, EC_WORD_ARE, EC_WORD_A, EC_WORD_MASTER, EC_WORD_LEHRER},
 			.speechAfter = {EC_WORD_I_AM, EC_WORD_SORRY, EC_WORD_THAT, EC_WORD_I_WAS, EC_WORD_YOUR, EC_WORD_OPPONENT},
 			.mons = {
 				{
@@ -6716,7 +6716,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_4 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Single_3 = {
 	.id = 25,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_METAL_COAT,
 	.trainers = {
@@ -6871,7 +6871,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_3 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_3 = {
 	.id = 26,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_DRAGON_SCALE,
 	.trainers = {
@@ -7026,7 +7026,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_3 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_2 = {
 	.id = 27,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
 	.prize = TTPRIZE_PROTEIN,
 	.trainers = {
@@ -7181,7 +7181,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_2 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_Unused2 = {
 	.id = 28,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_SCOPE_LENS,
 	.trainers = {
@@ -7478,7 +7478,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_Unused2 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_7 = {
 	.id = 29,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_CARBOS,
 	.trainers = {
@@ -7775,7 +7775,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_7 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Double_Unused3 = {
 	.id = 30,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
 	.prize = TTPRIZE_ZINC,
 	.trainers = {
@@ -8072,7 +8072,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_Unused3 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_6 = {
 	.id = 31,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
 	.prize = TTPRIZE_WHITE_HERB,
 	.trainers = {
@@ -8511,7 +8511,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_6 = {
 
 static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_5 = {
 	.id = 32,
-	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
+	.floorIdx = MAX_LEHRER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
 	.prize = TTPRIZE_UP_GRADE,
 	.trainers = {
@@ -8519,9 +8519,9 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_5 = {
 			.name = _("MAURA"),
 			.facilityClass = FACILITY_CLASS_BEAUTY,
 			.textColor = 2,
-			.speechBefore = {EC_WORD_I_AM, EC_WORD_THE, EC_WORD_GROUP, EC_WORD_LEADER, EC_WORD_EXCL, 0xFFFF},
-			.speechWin = {EC_WORD_WHAT, EC_WORD_AM, EC_WORD_I, EC_WORD_LEADER, EC_WORD_OF, EC_WORD_QUES},
-			.speechLose = {EC_WORD_I_AM, EC_WORD_NO, EC_WORD_LEADER, EC_WORD_IT_S, EC_WORD_A_LITTLE, EC_WORD_LIE},
+			.speechBefore = {EC_WORD_I_AM, EC_WORD_THE, EC_WORD_GROUP, EC_WORD_CHEF, EC_WORD_EXCL, 0xFFFF},
+			.speechWin = {EC_WORD_WHAT, EC_WORD_AM, EC_WORD_I, EC_WORD_CHEF, EC_WORD_OF, EC_WORD_QUES},
+			.speechLose = {EC_WORD_I_AM, EC_WORD_NO, EC_WORD_CHEF, EC_WORD_IT_S, EC_WORD_A_LITTLE, EC_WORD_LIE},
 			.speechAfter = {EC_WORD_HEY, EC_WORD_EXCL, EC_WORD_THE, EC_WORD_GROUND, EC_WORD_IS, EC_WORD_SLIMY},
 			.mons = {
 				{
@@ -8662,7 +8662,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_5 = {
 			.name = _("MIKAELA"),
 			.facilityClass = FACILITY_CLASS_LASS,
 			.textColor = 1,
-			.speechBefore = {EC_WORD_I_AM, EC_WORD_REALLY, EC_WORD_THE, EC_WORD_NO_1, EC_WORD_TRAINER, EC_WORD_HERE},
+			.speechBefore = {EC_WORD_I_AM, EC_WORD_REALLY, EC_WORD_THE, EC_WORD_NO_1, EC_WORD_LEHRER, EC_WORD_HERE},
 			.speechWin = {EC_WORD_NEVER, EC_WORD_SAID, EC_WORD_WHAT, EC_WORD_I_AM, EC_WORD_NO_1, EC_WORD_AT},
 			.speechLose = {EC_WORD_NEXT, EC_WORD_TIME, EC_WORD_I, EC_WORD_WILL, EC_WORD_BE, EC_WORD_OVERWHELMING},
 			.speechAfter = {EC_WORD_YOU, EC_MOVE2(SPIT_UP), EC_WORD_ME, EC_WORD_AS_IF, EC_WORD_I_AM, EC_WORD_NOTHING},
@@ -8805,7 +8805,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_5 = {
 			.name = _("FLINT"),
 			.facilityClass = FACILITY_CLASS_ENGINEER,
 			.textColor = 4,
-			.speechBefore = {EC_WORD_I_AM, EC_WORD_THE, EC_MOVE2(MILK_DRINK), EC_WORD_WORLD, EC_WORD_LEADER, EC_WORD_EXCL},
+			.speechBefore = {EC_WORD_I_AM, EC_WORD_THE, EC_MOVE2(MILK_DRINK), EC_WORD_WORLD, EC_WORD_CHEF, EC_WORD_EXCL},
 			.speechWin = {EC_WORD_I_VE, EC_WORD_WON, EC_WORD_THIS, EC_MOVE2(MILK_DRINK), EC_WORD_MATCH, EC_WORD_EXCL},
 			.speechLose = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_DRINK, EC_WORD_ANY, EC_WORD_MORE, EC_WORD_DRINKS},
 			.speechAfter = {EC_WORD_WHOAH, EC_WORD_EXCL, EC_WORD_I_AM, EC_WORD_DROOLING, EC_WORD_ALL, EC_WORD_OVER},
@@ -8949,11 +8949,11 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_5 = {
 };
 
 const struct EReaderTrainerTowerSetSubstruct gTrainerTowerLocalHeader = {
-    .numFloors = MAX_TRAINER_TOWER_FLOORS,
+    .numFloors = MAX_LEHRER_TOWER_FLOORS,
     .id = 1
 };
 
-const struct TrainerTowerFloor *const gTrainerTowerFloors[NUM_TOWER_CHALLENGE_TYPES][MAX_TRAINER_TOWER_FLOORS] = {
+const struct TrainerTowerFloor *const gTrainerTowerFloors[NUM_TOWER_CHALLENGE_TYPES][MAX_LEHRER_TOWER_FLOORS] = {
     [CHALLENGE_TYPE_SINGLE] = {
         &sTrainerTowerFloor_Single_1,
         &sTrainerTowerFloor_Single_2,

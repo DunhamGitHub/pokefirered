@@ -113,13 +113,13 @@
 #define VAR_0x403F                         0x403F
 #define VAR_MAGIKARP_SIZE_RECORD           0x4040
 #define VAR_0x4041                         0x4041
-#define VAR_TRAINER_CARD_MON_ICON_TINT_IDX 0x4042
-#define VAR_TRAINER_CARD_MON_ICON_1        0x4043
-#define VAR_TRAINER_CARD_MON_ICON_2        0x4044
-#define VAR_TRAINER_CARD_MON_ICON_3        0x4045
-#define VAR_TRAINER_CARD_MON_ICON_4        0x4046
-#define VAR_TRAINER_CARD_MON_ICON_5        0x4047
-#define VAR_TRAINER_CARD_MON_ICON_6        0x4048
+#define VAR_LEHRER_CARD_MON_ICON_TINT_IDX 0x4042
+#define VAR_LEHRER_CARD_MON_ICON_1        0x4043
+#define VAR_LEHRER_CARD_MON_ICON_2        0x4044
+#define VAR_LEHRER_CARD_MON_ICON_3        0x4045
+#define VAR_LEHRER_CARD_MON_ICON_4        0x4046
+#define VAR_LEHRER_CARD_MON_ICON_5        0x4047
+#define VAR_LEHRER_CARD_MON_ICON_6        0x4048
 #define VAR_HOF_BRAG_STATE                 0x4049
 #define VAR_EGG_BRAG_STATE                 0x404A
 #define VAR_LINK_WIN_BRAG_STATE            0x404B
@@ -164,7 +164,7 @@
 #define VAR_MAP_SCENE_PALLET_TOWN_SIGN_LADY                                    0x4070
 #define VAR_MAP_SCENE_CINNABAR_ISLAND                                          0x4071
 #define VAR_0x4072                                                             0x4072
-#define VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB                    0x4073
+#define VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB                    0x4073
 #define VAR_MAP_SCENE_SEVEN_ISLAND_HOUSE_ROOM1                                 0x4074
 #define VAR_MAP_SCENE_ONE_ISLAND_HARBOR                                        0x4075
 #define VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F                             0x4076
@@ -179,7 +179,7 @@
 #define VAR_MAP_SCENE_MT_EMBER_EXTERIOR                                        0x407F
 #define VAR_MAP_SCENE_ICEFALL_CAVE_BACK                                        0x4080
 #define VAR_MAP_SCENE_SAFFRON_CITY_DOJO                                        0x4081
-#define VAR_MAP_SCENE_TRAINER_TOWER                                            0x4082
+#define VAR_MAP_SCENE_LEHRER_TOWER                                            0x4082
 #define VAR_MAP_SCENE_FIVE_ISLAND_LOST_CAVE_ROOM10                             0x4083
 #define VAR_MAP_SCENE_FIVE_ISLAND_RESORT_GORGEOUS                              0x4084
 #define VAR_MAP_SCENE_INDIGO_PLATEAU_EXTERIOR                                  0x4085
@@ -222,7 +222,7 @@
 #define VAR_0x40A8                 0x40A8
 #define VAR_0x40A9                 0x40A9
 
-#define VAR_QLBAK_TRAINER_REMATCHES 0x40AA // array of 4
+#define VAR_QLBAK_LEHRER_REMATCHES 0x40AA // array of 4
 #define VAR_QLBAK_MAP_LAYOUT        0x40AE
 
 #define VAR_0x40AF                 0x40AF

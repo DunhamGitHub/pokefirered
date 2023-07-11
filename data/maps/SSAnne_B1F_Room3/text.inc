@@ -6,6 +6,6 @@ SSAnne_B1F_Room3_Text_DylanDefeat::
     .string "Lost it!$"
 
 SSAnne_B1F_Room3_Text_DylanPostBattle::
-    .string "Sea POKéMON live in deep water.\n"
+    .string "Sea Pimmel live in deep water.\n"
     .string "You'll need a ROD to fish them up!$"
 

@@ -37,11 +37,11 @@ struct TrainerFanClub
     u8 fanFlags;
 };
 
-#define TRAINER_FAN_CLUB ((struct TrainerFanClub *)GetVarPointer(VAR_FANCLUB_FAN_COUNTER))
+#define LEHRER_FAN_CLUB ((struct TrainerFanClub *)GetVarPointer(VAR_FANCLUB_FAN_COUNTER))
 
-#define GET_TRAINER_FAN_CLUB_FLAG(flag) (fanClub->fanFlags >> (flag) & 1)
-#define SET_TRAINER_FAN_CLUB_FLAG(flag) (fanClub->fanFlags |= 1 << (flag))
-#define FLIP_TRAINER_FAN_CLUB_FLAG(flag)(fanClub->fanFlags ^= 1 << (flag))
+#define GET_LEHRER_FAN_CLUB_FLAG(flag) (fanClub->fanFlags >> (flag) & 1)
+#define SET_LEHRER_FAN_CLUB_FLAG(flag) (fanClub->fanFlags |= 1 << (flag))
+#define FLIP_LEHRER_FAN_CLUB_FLAG(flag)(fanClub->fanFlags ^= 1 << (flag))
 
 struct UnkStruct_203AE94
 {
@@ -363,7 +363,7 @@ static void BackUpTrainerRematchesToVars(void)
                 sp0[i] += (1 << j);
             }
         }
-        VarSet(VAR_QLBAK_TRAINER_REMATCHES + i, sp0[i]);
+        VarSet(VAR_QLBAK_LEHRER_REMATCHES + i, sp0[i]);
     }
 }
 
@@ -709,7 +709,7 @@ static void sub_8111688(void)
 
     for (i = 0; i < 4; i++)
     {
-        sp0[i] = VarGet(VAR_QLBAK_TRAINER_REMATCHES + i);
+        sp0[i] = VarGet(VAR_QLBAK_LEHRER_REMATCHES + i);
 
         for (j = 0; j < 16; j++)
         {

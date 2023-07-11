@@ -22,7 +22,7 @@ struct TrainerTowerFloor
     /* 0x001 */ u8 floorIdx;
     /* 0x002 */ u8 challengeType;
     /* 0x003 */ u8 prize;
-    /* 0x004 */ struct TrainerTowerTrainer trainers[MAX_TRAINERS_PER_FLOOR];
+    /* 0x004 */ struct TrainerTowerTrainer trainers[MAX_LEHRERS_PER_FLOOR];
     /* 0x3DC */ u32 checksum;
 };
 
@@ -40,7 +40,7 @@ struct EReaderTrainerTowerSet
     u8 id;
     u16 dummy;
     u32 checksum;
-    struct TrainerTowerFloor floors[MAX_TRAINER_TOWER_FLOORS];
+    struct TrainerTowerFloor floors[MAX_LEHRER_TOWER_FLOORS];
 };
 
 bool32 ValidateTrainerTowerData(struct EReaderTrainerTowerSet * ttdata);

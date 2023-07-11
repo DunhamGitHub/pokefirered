@@ -116,9 +116,9 @@ static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_LOADMONSPRITE]            = PlayerHandleLoadMonSprite,
     [CONTROLLER_SWITCHINANIM]             = PlayerHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = PlayerHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = PlayerHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = PlayerHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = PlayerHandleTrainerSlideBack,
+    [CONTROLLER_DRAWLEHRERPIC]           = PlayerHandleDrawTrainerPic,
+    [CONTROLLER_LEHRERSLIDE]             = PlayerHandleTrainerSlide,
+    [CONTROLLER_LEHRERSLIDEBACK]         = PlayerHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = PlayerHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = PlayerHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = PlayerHandleSuccessBallThrowAnim,
@@ -156,7 +156,7 @@ static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_PLAYFANFARE]              = PlayerHandlePlayFanfare,
     [CONTROLLER_FAINTINGCRY]              = PlayerHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = PlayerHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = PlayerHandleIntroTrainerBallThrow,
+    [CONTROLLER_INTROLEHRERBALLTHROW]    = PlayerHandleIntroTrainerBallThrow,
     [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = PlayerHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = PlayerHandleHidePartyStatusSummary,
     [CONTROLLER_ENDBOUNCE]                = PlayerHandleEndBounceEffect,
@@ -2177,7 +2177,7 @@ static void PlayerHandleDrawTrainerPic(void)
         if ((gLinkPlayers[GetMultiplayerId()].version & 0xFF) == VERSION_RUBY
          || (gLinkPlayers[GetMultiplayerId()].version & 0xFF) == VERSION_SAPPHIRE
          || (gLinkPlayers[GetMultiplayerId()].version & 0xFF) == VERSION_EMERALD)
-            trainerPicId = gLinkPlayers[GetMultiplayerId()].gender + TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN;
+            trainerPicId = gLinkPlayers[GetMultiplayerId()].gender + LEHRER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN;
         else
             trainerPicId = gLinkPlayers[GetMultiplayerId()].gender;
     }

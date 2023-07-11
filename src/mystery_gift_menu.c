@@ -936,7 +936,7 @@ static const u8 * GetClientResultMessage(bool32 * successMsg, bool8 isWonderNews
         *successMsg = FALSE;
         msg = gText_CommunicationError;
         break;
-    case CLI_MSG_TRAINER_RECEIVED:
+    case CLI_MSG_LEHRER_RECEIVED:
         *successMsg = TRUE;
         msg = gText_NewTrainerReceived;
         break;

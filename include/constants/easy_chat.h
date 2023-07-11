@@ -13,7 +13,7 @@
 #define EASY_CHAT_TYPE_QUESTIONNAIRE           14
 
 #define EC_GROUP_POKEMON_2      0x0
-#define EC_GROUP_TRAINER        0x1
+#define EC_GROUP_LEHRER        0x1
 #define EC_GROUP_STATUS         0x2
 #define EC_GROUP_BATTLE         0x3
 #define EC_GROUP_GREETINGS      0x4
@@ -36,33 +36,33 @@
 #define EC_GROUP_POKEMON        0x15
 #define EC_NUM_GROUPS           0x16
 
-// TRAINER
-#define EC_WORD_I_CHOOSE_YOU  (EC_GROUP_TRAINER << 9) | 0x0
-#define EC_WORD_GOTCHA        (EC_GROUP_TRAINER << 9) | 0x1
-#define EC_WORD_TRADE         (EC_GROUP_TRAINER << 9) | 0x2
-#define EC_WORD_SAPPHIRE      (EC_GROUP_TRAINER << 9) | 0x3
-#define EC_WORD_EVOLVE        (EC_GROUP_TRAINER << 9) | 0x4
-#define EC_WORD_ENCYCLOPEDIA  (EC_GROUP_TRAINER << 9) | 0x5
-#define EC_WORD_NATURE        (EC_GROUP_TRAINER << 9) | 0x6
-#define EC_WORD_CENTER        (EC_GROUP_TRAINER << 9) | 0x7
-#define EC_WORD_EGG           (EC_GROUP_TRAINER << 9) | 0x8
-#define EC_WORD_LINK          (EC_GROUP_TRAINER << 9) | 0x9
-#define EC_WORD_SP_ABILITY    (EC_GROUP_TRAINER << 9) | 0xa
-#define EC_WORD_TRAINER       (EC_GROUP_TRAINER << 9) | 0xb
-#define EC_WORD_VERSION       (EC_GROUP_TRAINER << 9) | 0xc
-#define EC_WORD_POKENAV       (EC_GROUP_TRAINER << 9) | 0xd
-#define EC_WORD_POKEMON       (EC_GROUP_TRAINER << 9) | 0xe
-#define EC_WORD_GET           (EC_GROUP_TRAINER << 9) | 0xf
-#define EC_WORD_POKEDEX       (EC_GROUP_TRAINER << 9) | 0x10
-#define EC_WORD_RUBY          (EC_GROUP_TRAINER << 9) | 0x11
-#define EC_WORD_LEVEL         (EC_GROUP_TRAINER << 9) | 0x12
-#define EC_WORD_RED           (EC_GROUP_TRAINER << 9) | 0x13
-#define EC_WORD_GREEN         (EC_GROUP_TRAINER << 9) | 0x14
-#define EC_WORD_BAG           (EC_GROUP_TRAINER << 9) | 0x15
-#define EC_WORD_FLAME         (EC_GROUP_TRAINER << 9) | 0x16
-#define EC_WORD_GOLD          (EC_GROUP_TRAINER << 9) | 0x17
-#define EC_WORD_LEAF          (EC_GROUP_TRAINER << 9) | 0x18
-#define EC_WORD_SILVER        (EC_GROUP_TRAINER << 9) | 0x19
+// LEHRER
+#define EC_WORD_I_CHOOSE_YOU  (EC_GROUP_LEHRER << 9) | 0x0
+#define EC_WORD_GOTCHA        (EC_GROUP_LEHRER << 9) | 0x1
+#define EC_WORD_TRADE         (EC_GROUP_LEHRER << 9) | 0x2
+#define EC_WORD_SAPPHIRE      (EC_GROUP_LEHRER << 9) | 0x3
+#define EC_WORD_EVOLVE        (EC_GROUP_LEHRER << 9) | 0x4
+#define EC_WORD_ENCYCLOPEDIA  (EC_GROUP_LEHRER << 9) | 0x5
+#define EC_WORD_NATURE        (EC_GROUP_LEHRER << 9) | 0x6
+#define EC_WORD_CENTER        (EC_GROUP_LEHRER << 9) | 0x7
+#define EC_WORD_EGG           (EC_GROUP_LEHRER << 9) | 0x8
+#define EC_WORD_LINK          (EC_GROUP_LEHRER << 9) | 0x9
+#define EC_WORD_SP_ABILITY    (EC_GROUP_LEHRER << 9) | 0xa
+#define EC_WORD_LEHRER       (EC_GROUP_LEHRER << 9) | 0xb
+#define EC_WORD_VERSION       (EC_GROUP_LEHRER << 9) | 0xc
+#define EC_WORD_POKENAV       (EC_GROUP_LEHRER << 9) | 0xd
+#define EC_WORD_POKEMON       (EC_GROUP_LEHRER << 9) | 0xe
+#define EC_WORD_GET           (EC_GROUP_LEHRER << 9) | 0xf
+#define EC_WORD_POKEDEX       (EC_GROUP_LEHRER << 9) | 0x10
+#define EC_WORD_RUBY          (EC_GROUP_LEHRER << 9) | 0x11
+#define EC_WORD_LEVEL         (EC_GROUP_LEHRER << 9) | 0x12
+#define EC_WORD_RED           (EC_GROUP_LEHRER << 9) | 0x13
+#define EC_WORD_GREEN         (EC_GROUP_LEHRER << 9) | 0x14
+#define EC_WORD_BAG           (EC_GROUP_LEHRER << 9) | 0x15
+#define EC_WORD_FLAME         (EC_GROUP_LEHRER << 9) | 0x16
+#define EC_WORD_GOLD          (EC_GROUP_LEHRER << 9) | 0x17
+#define EC_WORD_LEAF          (EC_GROUP_LEHRER << 9) | 0x18
+#define EC_WORD_SILVER        (EC_GROUP_LEHRER << 9) | 0x19
 
 // STATUS
 #define EC_WORD_DARK          (EC_GROUP_STATUS << 9) | 0x0
@@ -236,7 +236,7 @@
 #define EC_WORD_WEAK         (EC_GROUP_BATTLE << 9) | 0x39
 #define EC_WORD_TOO_WEAK     (EC_GROUP_BATTLE << 9) | 0x3a
 #define EC_WORD_PUSHOVER     (EC_GROUP_BATTLE << 9) | 0x3b
-#define EC_WORD_LEADER       (EC_GROUP_BATTLE << 9) | 0x3c
+#define EC_WORD_CHEF       (EC_GROUP_BATTLE << 9) | 0x3c
 #define EC_WORD_RULE         (EC_GROUP_BATTLE << 9) | 0x3d
 #define EC_WORD_MOVE         (EC_GROUP_BATTLE << 9) | 0x3e
 
@@ -1027,7 +1027,7 @@
 #define EC_WORD_EVOLUTION     (EC_GROUP_EVENTS << 9) | 0xa
 #define EC_WORD_HYPER         (EC_GROUP_EVENTS << 9) | 0xb
 #define EC_WORD_BATTLE_TOWER  (EC_GROUP_EVENTS << 9) | 0xc
-#define EC_WORD_LEADERS       (EC_GROUP_EVENTS << 9) | 0xd
+#define EC_WORD_CHEFS       (EC_GROUP_EVENTS << 9) | 0xd
 #define EC_WORD_BATTLE_ROOM   (EC_GROUP_EVENTS << 9) | 0xe
 #define EC_WORD_HIDDEN        (EC_GROUP_EVENTS << 9) | 0xf
 #define EC_WORD_SECRET_BASE   (EC_GROUP_EVENTS << 9) | 0x10

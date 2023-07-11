@@ -35,21 +35,21 @@ void TrySetQuestLogBattleEvent(void)
         u16 playerEndingHP;
         u16 playerMaxHP;
 
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
         {
             switch (gTrainers[gTrainerBattleOpponent_A].trainerClass)
             {
-            case TRAINER_CLASS_LEADER:
-                eventId = QL_EVENT_DEFEATED_GYM_LEADER;
+            case LEHRER_CLASS_CHEF:
+                eventId = QL_EVENT_DEFEATED_GYM_CHEF;
                 break;
-            case TRAINER_CLASS_CHAMPION:
+            case LEHRER_CLASS_CHAMPION:
                 eventId = QL_EVENT_DEFEATED_CHAMPION;
                 break;
-            case TRAINER_CLASS_ELITE_FOUR:
+            case LEHRER_CLASS_ELITE_FOUR:
                 eventId = QL_EVENT_DEFEATED_E4_MEMBER;
                 break;
             default:
-                eventId = QL_EVENT_DEFEATED_TRAINER;
+                eventId = QL_EVENT_DEFEATED_LEHRER;
                 break;
             }
             questLogTrainerBattleRecord->v0 = gTrainerBattleOpponent_A;

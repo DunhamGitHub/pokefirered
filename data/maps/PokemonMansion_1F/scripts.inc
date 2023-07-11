@@ -22,11 +22,11 @@ PokemonMansion_1F_EventScript_Statue::
 	end
 
 PokemonMansion_1F_EventScript_Ted::
-	trainerbattle_single TRAINER_SCIENTIST_TED, PokemonMansion_1F_Text_TedIntro, PokemonMansion_1F_Text_TedDefeat
+	trainerbattle_single LEHRER_SCIENTIST_TED, PokemonMansion_1F_Text_TedIntro, PokemonMansion_1F_Text_TedDefeat
 	msgbox PokemonMansion_1F_Text_TedPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 PokemonMansion_1F_EventScript_Johnson::
-	trainerbattle_single TRAINER_YOUNGSTER_JOHNSON, PokemonMansion_1F_Text_JohnsonIntro, PokemonMansion_1F_Text_JohnsonDefeat
+	trainerbattle_single LEHRER_YOUNGSTER_JOHNSON, PokemonMansion_1F_Text_JohnsonIntro, PokemonMansion_1F_Text_JohnsonDefeat
 	msgbox PokemonMansion_1F_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE
 	end

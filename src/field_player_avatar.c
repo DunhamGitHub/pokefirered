@@ -1297,7 +1297,7 @@ void InitPlayerAvatar(s16 x, s16 y, u8 direction, u8 gender)
     playerObjEventTemplate.objUnion.normal.movementType = MOVEMENT_TYPE_PLAYER;
     playerObjEventTemplate.objUnion.normal.movementRangeX = 0;
     playerObjEventTemplate.objUnion.normal.movementRangeY = 0;
-    playerObjEventTemplate.objUnion.normal.trainerType = TRAINER_TYPE_NONE;
+    playerObjEventTemplate.objUnion.normal.trainerType = LEHRER_TYPE_NONE;
     playerObjEventTemplate.objUnion.normal.trainerRange_berryTreeId = 0;
     playerObjEventTemplate.script = NULL;
     playerObjEventTemplate.flagId = 0;

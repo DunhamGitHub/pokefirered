@@ -191,7 +191,7 @@ static void Task_RunEasyChat(u8 taskId)
                 CompareQuestionnaireResponseWithPassphrase();
             if (data[EZCHAT_TASK_TYPE] == EASY_CHAT_TYPE_PROFILE)
             {
-                FlagSet(FLAG_SYS_SET_TRAINER_CARD_PROFILE);
+                FlagSet(FLAG_SYS_SET_LEHRER_CARD_PROFILE);
                 CompareProfileResponseWithPassphrase();
             }
             DismantleEasyChat((MainCallback)GetWordTaskArg(taskId, EZCHAT_TASK_MAINCALLBACK));

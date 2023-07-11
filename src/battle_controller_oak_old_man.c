@@ -105,9 +105,9 @@ static void (*const sOakOldManBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_LOADMONSPRITE]            = OakOldManHandleLoadMonSprite,
     [CONTROLLER_SWITCHINANIM]             = OakOldManHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = OakOldManHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = OakOldManHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = OakOldManHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = OakOldManHandleTrainerSlideBack,
+    [CONTROLLER_DRAWLEHRERPIC]           = OakOldManHandleDrawTrainerPic,
+    [CONTROLLER_LEHRERSLIDE]             = OakOldManHandleTrainerSlide,
+    [CONTROLLER_LEHRERSLIDEBACK]         = OakOldManHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = OakOldManHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = OakOldManHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = OakOldManHandleSuccessBallThrowAnim,
@@ -145,7 +145,7 @@ static void (*const sOakOldManBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_PLAYFANFARE]              = OakOldManHandlePlayFanfare,
     [CONTROLLER_FAINTINGCRY]              = OakOldManHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = OakOldManHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = OakOldManHandleIntroTrainerBallThrow,
+    [CONTROLLER_INTROLEHRERBALLTHROW]    = OakOldManHandleIntroTrainerBallThrow,
     [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = OakOldManHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = OakOldManHandleHidePartyStatusSummary,
     [CONTROLLER_ENDBOUNCE]                = OakOldManHandleEndBounceEffect,
@@ -1583,11 +1583,11 @@ static void OakOldManHandleDrawTrainerPic(void)
     }
     else
     {
-        DecompressTrainerBackPalette(TRAINER_BACK_PIC_OLD_MAN, gActiveBattler);
-        SetMultiuseSpriteTemplateToTrainerBack(TRAINER_BACK_PIC_OLD_MAN, GetBattlerPosition(gActiveBattler));
+        DecompressTrainerBackPalette(LEHRER_BACK_PIC_OLD_MAN, gActiveBattler);
+        SetMultiuseSpriteTemplateToTrainerBack(LEHRER_BACK_PIC_OLD_MAN, GetBattlerPosition(gActiveBattler));
         gBattlerSpriteIds[gActiveBattler] = CreateSprite(&gMultiuseSpriteTemplate,
                                                          80,
-                                                         (8 - gTrainerBackPicCoords[TRAINER_BACK_PIC_OLD_MAN].size) * 4 + 80,
+                                                         (8 - gTrainerBackPicCoords[LEHRER_BACK_PIC_OLD_MAN].size) * 4 + 80,
                                                          30);
     }
     gSprites[gBattlerSpriteIds[gActiveBattler]].oam.paletteNum = gActiveBattler;
@@ -1610,11 +1610,11 @@ static void OakOldManHandleTrainerSlide(void)
     }
     else
     {
-        DecompressTrainerBackPalette(TRAINER_BACK_PIC_OLD_MAN, gActiveBattler);
-        SetMultiuseSpriteTemplateToTrainerBack(TRAINER_BACK_PIC_OLD_MAN, GetBattlerPosition(gActiveBattler));
+        DecompressTrainerBackPalette(LEHRER_BACK_PIC_OLD_MAN, gActiveBattler);
+        SetMultiuseSpriteTemplateToTrainerBack(LEHRER_BACK_PIC_OLD_MAN, GetBattlerPosition(gActiveBattler));
         gBattlerSpriteIds[gActiveBattler] = CreateSprite(&gMultiuseSpriteTemplate,
                                                          80,
-                                                         (8 - gTrainerBackPicCoords[TRAINER_BACK_PIC_OLD_MAN].size) * 4 + 80,
+                                                         (8 - gTrainerBackPicCoords[LEHRER_BACK_PIC_OLD_MAN].size) * 4 + 80,
                                                          30);
     }
     gSprites[gBattlerSpriteIds[gActiveBattler]].oam.paletteNum = gActiveBattler;
@@ -1661,7 +1661,7 @@ static void OakOldManHandleSuccessBallThrowAnim(void)
 {
     gBattleSpritesDataPtr->animationData->ballThrowCaseId = BALL_3_SHAKES_SUCCESS;
     gDoingBattleAnim = TRUE;
-    InitAndLaunchSpecialAnimation(gActiveBattler, gActiveBattler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_TRAINER);
+    InitAndLaunchSpecialAnimation(gActiveBattler, gActiveBattler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_LEHRER);
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnSpecialAnimDone;
 }
 
@@ -1671,7 +1671,7 @@ static void OakOldManHandleBallThrowAnim(void)
 
     gBattleSpritesDataPtr->animationData->ballThrowCaseId = ballThrowCaseId;
     gDoingBattleAnim = TRUE;
-    InitAndLaunchSpecialAnimation(gActiveBattler, gActiveBattler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_TRAINER);
+    InitAndLaunchSpecialAnimation(gActiveBattler, gActiveBattler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_LEHRER);
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnSpecialAnimDone;
 }
 
@@ -1776,7 +1776,7 @@ static void OakOldManHandlePrintString(void)
             case STRINGID_PLAYERGOTMONEY:
                 gBattlerControllerFuncs[gActiveBattler] = PrintOakText_WinEarnsPrizeMoney;
                 return;
-            case STRINGID_TRAINER1WINTEXT:
+            case STRINGID_LEHRER1WINTEXT:
                 gBattlerControllerFuncs[gActiveBattler] = PrintOakText_HowDisappointing;
                 return;
             case STRINGID_DONTLEAVEBIRCH:

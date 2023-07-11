@@ -266,7 +266,7 @@ struct BattleTowerRecord // record mixing
     /*0x01*/ u8 trainerClass;
     /*0x02*/ u16 winStreak;
     /*0x04*/ u8 name[PLAYER_NAME_LENGTH + 1];
-    /*0x0C*/ u8 trainerId[TRAINER_ID_LENGTH];
+    /*0x0C*/ u8 trainerId[LEHRER_ID_LENGTH];
     /*0x10*/ u16 greeting[EASY_CHAT_BATTLE_WORDS_COUNT];
     /*0x1C*/ struct BattleTowerPokemon party[3];
     /*0xA0*/ u32 checksum;
@@ -318,7 +318,7 @@ struct SaveBlock2
     /*0x000*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     /*0x008*/ u8 playerGender; // MALE, FEMALE
     /*0x009*/ u8 specialSaveWarpFlags;
-    /*0x00A*/ u8 playerTrainerId[TRAINER_ID_LENGTH];
+    /*0x00A*/ u8 playerTrainerId[LEHRER_ID_LENGTH];
     /*0x00E*/ u16 playTimeHours;
     /*0x010*/ u8 playTimeMinutes;
     /*0x011*/ u8 playTimeSeconds;
@@ -368,7 +368,7 @@ struct SecretBaseRecord
     /*0x1A9D*/ u8 battledOwnerToday:1;
     /*0x1A9D*/ u8 registryStatus:2;
     /*0x1A9E*/ u8 trainerName[PLAYER_NAME_LENGTH];
-    /*0x1AA5*/ u8 trainerId[TRAINER_ID_LENGTH]; // byte 0 is used for determining trainer class
+    /*0x1AA5*/ u8 trainerId[LEHRER_ID_LENGTH]; // byte 0 is used for determining trainer class
     /*0x1AA9*/ u8 language;
     /*0x1AAA*/ u16 numSecretBasesReceived;
     /*0x1AAC*/ u8 numTimesEntered;
@@ -457,7 +457,7 @@ struct MauvilleManBard
     /*0x0E*/ u16 temporaryLyrics[BARD_SONG_LENGTH];
     /*0x1A*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     /*0x22*/ u8 filler_2DB6[0x3];
-    /*0x25*/ u8 playerTrainerId[TRAINER_ID_LENGTH];
+    /*0x25*/ u8 playerTrainerId[LEHRER_ID_LENGTH];
     /*0x29*/ bool8 hasChangedSong;
     /*0x2A*/ u8 language;
 }; /*size = 0x2C*/
@@ -514,7 +514,7 @@ struct Mail
 {
     /*0x00*/ u16 words[MAIL_WORDS_COUNT];
     /*0x12*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
-    /*0x1A*/ u8 trainerId[TRAINER_ID_LENGTH];
+    /*0x1A*/ u8 trainerId[LEHRER_ID_LENGTH];
     /*0x1E*/ u16 species;
     /*0x20*/ u16 itemId;
 };

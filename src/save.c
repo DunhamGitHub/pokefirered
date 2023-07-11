@@ -820,7 +820,7 @@ u32 TryReadSpecialSaveSector(u8 sectorId, u8 *dst)
     s32 size;
     u8 *savData;
 
-    if (sectorId != SECTOR_ID_TRAINER_TOWER_1 && sectorId != SECTOR_ID_TRAINER_TOWER_2)
+    if (sectorId != SECTOR_ID_LEHRER_TOWER_1 && sectorId != SECTOR_ID_LEHRER_TOWER_2)
         return SAVE_STATUS_ERROR;
 
     ReadFlash(sectorId, 0, (u8 *)&gSaveDataBuffer, SECTOR_SIZE);
@@ -844,7 +844,7 @@ u32 TryWriteSpecialSaveSector(u8 sector, u8 *src)
     u8 *savData;
     void *savDataBuffer;
 
-    if (sector != SECTOR_ID_TRAINER_TOWER_1 && sector != SECTOR_ID_TRAINER_TOWER_2)
+    if (sector != SECTOR_ID_LEHRER_TOWER_1 && sector != SECTOR_ID_LEHRER_TOWER_2)
         return SAVE_STATUS_ERROR;
 
     savDataBuffer = &gSaveDataBuffer;

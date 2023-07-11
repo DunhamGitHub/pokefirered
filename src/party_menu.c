@@ -1069,7 +1069,7 @@ static void DrawCancelConfirmButtons(void)
 
 bool8 IsMultiBattle(void)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_MULTI && gBattleTypeFlags & BATTLE_TYPE_DOUBLE && gBattleTypeFlags & BATTLE_TYPE_TRAINER && gBattleTypeFlags & BATTLE_TYPE_LINK)
+    if (gBattleTypeFlags & BATTLE_TYPE_MULTI && gBattleTypeFlags & BATTLE_TYPE_DOUBLE && gBattleTypeFlags & BATTLE_TYPE_LEHRER && gBattleTypeFlags & BATTLE_TYPE_LINK)
         return TRUE;
     else
         return FALSE;
@@ -1871,15 +1871,15 @@ static u8 CanMonLearnTMTutor(struct Pokemon *mon, u16 item, u8 tutor)
     if (GetMonData(mon, MON_DATA_IS_EGG))
         return CANNOT_LEARN_MOVE_IS_EGG;
 
-    if (item >= ITEM_TM01_FOCUS_PUNCH)
+    if (item >= ITEM_TM01_FOCUS_PUNCH) //sp  maybe hm?
     {
         if (!CanMonLearnTMHM(mon, item - ITEM_TM01_FOCUS_PUNCH))
-            return CANNOT_LEARN_MOVE;
+            return CAN_LEARN_MOVE; //sp CANNOT_LEARN_MOVE;
         else
             move = ItemIdToBattleMoveId(item);
     }
     else if (CanLearnTutorMove(GetMonData(mon, MON_DATA_SPECIES), tutor) == FALSE)
-        return CANNOT_LEARN_MOVE;
+        return CAN_LEARN_MOVE; //sp CANNOT_LEARN_MOVE;
     else
         move = GetTutorMove(tutor);
 
@@ -3923,12 +3923,15 @@ static void CursorCB_FieldMove(u8 taskId)
     else
     {
         // All field moves before WATERFALL are HMs.
+        /* sp hm can use
         if (fieldMove <= FIELD_MOVE_WATERFALL && FlagGet(FLAG_BADGE01_GET + fieldMove) != TRUE)
         {
             DisplayPartyMenuMessage(gText_CantUseUntilNewBadge, TRUE);
             gTasks[taskId].func = Task_ReturnToChooseMonAfterText;
         }
-        else if (sFieldMoveCursorCallbacks[fieldMove].fieldMoveFunc() == TRUE)
+        else 
+        */
+        if (sFieldMoveCursorCallbacks[fieldMove].fieldMoveFunc() == TRUE)
         {
             switch (fieldMove)
             {

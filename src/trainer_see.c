@@ -94,8 +94,8 @@ bool8 CheckForTrainersWantingBattle(void)
     for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
     {
         if (gObjectEvents[i].active
-         && (gObjectEvents[i].trainerType == TRAINER_TYPE_NORMAL
-          || gObjectEvents[i].trainerType == TRAINER_TYPE_BURIED)
+         && (gObjectEvents[i].trainerType == LEHRER_TYPE_NORMAL
+          || gObjectEvents[i].trainerType == LEHRER_TYPE_BURIED)
          && CheckTrainer(i))
             return TRUE;
     }
@@ -111,7 +111,7 @@ static bool8 CheckTrainer(u8 trainerObjId)
     approachDistance = GetTrainerApproachDistance(&gObjectEvents[trainerObjId]);
     if (approachDistance != 0)
     {
-        if (script[1] == TRAINER_BATTLE_DOUBLE && GetMonsStateToDoubles())
+        if (script[1] == LEHRER_BATTLE_DOUBLE && GetMonsStateToDoubles())
             return FALSE;
         ConfigureAndSetUpOneTrainerBattle(trainerObjId, script);
         TrainerApproachPlayer(&gObjectEvents[trainerObjId], approachDistance - 1);
@@ -127,12 +127,12 @@ static u8 GetTrainerApproachDistance(struct ObjectEvent *trainerObj)
     u8 approachDistance;
 
     PlayerGetDestCoords(&x, &y);
-    if (trainerObj->trainerType == TRAINER_TYPE_NORMAL)  // can only see in one direction
+    if (trainerObj->trainerType == LEHRER_TYPE_NORMAL)  // can only see in one direction
     {
         approachDistance = sDirectionalApproachDistanceFuncs[trainerObj->facingDirection - 1](trainerObj, trainerObj->trainerRange_berryTreeId, x, y);
         return CheckPathBetweenTrainerAndPlayer(trainerObj, approachDistance, trainerObj->facingDirection);
     }
-    else // TRAINER_TYPE_SEE_ALL_DIRECTIONS, TRAINER_TYPE_BURIED
+    else // LEHRER_TYPE_SEE_ALL_DIRECTIONS, LEHRER_TYPE_BURIED
     {
         for (i = 0; i < 4; i++)
         {
@@ -377,7 +377,7 @@ static bool8 TrainerSeeFunc_BeginRemoveDisguise(u8 taskId, struct Task *task, st
     if (!ObjectEventIsMovementOverridden(trainerObj)
      || ObjectEventClearHeldMovementIfFinished(trainerObj))
     {
-        ObjectEventSetHeldMovement(trainerObj, MOVEMENT_ACTION_REVEAL_TRAINER);
+        ObjectEventSetHeldMovement(trainerObj, MOVEMENT_ACTION_REVEAL_LEHRER);
         task->tFuncId++;
     }
     return FALSE;

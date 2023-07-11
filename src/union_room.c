@@ -79,7 +79,7 @@ enum {
     UR_STATE_TRY_COMMUNICATING,
     UR_STATE_PRINT_AND_EXIT,
     UR_STATE_SEND_ACTIVITY_REQUEST,
-    UR_STATE_TRAINER_APPEARS_BUSY,
+    UR_STATE_LEHRER_APPEARS_BUSY,
     UR_STATE_WAIT_FOR_RESPONSE_TO_REQUEST,
     UR_STATE_CANCEL_ACTIVITY_LINK_ERROR,
     UR_STATE_SEND_TRADE_REQUST,
@@ -149,15 +149,15 @@ enum {
 // States for Task_TryJoinLinkGroup
 enum {
     LG_STATE_INIT,
-    LG_STATE_CHOOSE_LEADER_MSG,
+    LG_STATE_CHOOSE_CHEF_MSG,
     LG_STATE_INIT_WINDOWS,
-    LG_STATE_CHOOSE_LEADER_HANDLE_INPUT,
+    LG_STATE_CHOOSE_CHEF_HANDLE_INPUT,
     LG_STATE_ASK_JOIN_GROUP = 5,
     LG_STATE_MAIN,
     LG_STATE_ASK_LEAVE_GROUP,
     LG_STATE_ASK_LEAVE_GROUP_HANDLE_INPUT,
     LG_STATE_WAIT_LEAVE_GROUP,
-    LG_STATE_CANCEL_CHOOSE_LEADER,
+    LG_STATE_CANCEL_CHOOSE_CHEF,
     LG_STATE_CANCELED,
     LG_STATE_RFU_ERROR,
     LG_STATE_RFU_ERROR_SHUTDOWN,
@@ -926,9 +926,9 @@ static void Task_TryJoinLinkGroup(u8 taskId)
         InitializeRfuLinkManager_JoinGroup();
         data->incomingPlayerList = AllocZeroed(RFU_CHILD_MAX * sizeof(struct RfuIncomingPlayer));
         data->playerList = AllocZeroed(MAX_RFU_PLAYER_LIST_SIZE * sizeof(struct RfuPlayer));
-        data->state = LG_STATE_CHOOSE_LEADER_MSG;
+        data->state = LG_STATE_CHOOSE_CHEF_MSG;
         break;
-    case LG_STATE_CHOOSE_LEADER_MSG:
+    case LG_STATE_CHOOSE_CHEF_MSG:
         if (PrintOnTextbox(&data->textState, gTexts_UR_ChooseTrainer[gSpecialVar_0x8004]))
             data->state = LG_STATE_INIT_WINDOWS;
         break;
@@ -957,9 +957,9 @@ static void Task_TryJoinLinkGroup(u8 taskId)
 
         CopyBgTilemapBufferToVram(0);
         data->leaderId = 0;
-        data->state = LG_STATE_CHOOSE_LEADER_HANDLE_INPUT;
+        data->state = LG_STATE_CHOOSE_CHEF_HANDLE_INPUT;
         break;
-    case LG_STATE_CHOOSE_LEADER_HANDLE_INPUT:
+    case LG_STATE_CHOOSE_CHEF_HANDLE_INPUT:
         id = GetNewLeaderCandidate();
         switch (id)
         {
@@ -999,7 +999,7 @@ static void Task_TryJoinLinkGroup(u8 taskId)
             }
             else if (JOY_NEW(B_BUTTON))
             {
-                data->state = LG_STATE_CANCEL_CHOOSE_LEADER;
+                data->state = LG_STATE_CANCEL_CHOOSE_CHEF;
             }
             break;
         default:
@@ -1104,7 +1104,7 @@ static void Task_TryJoinLinkGroup(u8 taskId)
         if (RfuGetStatus())
             data->state = LG_STATE_MAIN;
         break;
-    case LG_STATE_CANCEL_CHOOSE_LEADER: // next: LG_STATE_CANCELED
+    case LG_STATE_CANCEL_CHOOSE_CHEF: // next: LG_STATE_CANCELED
     case LG_STATE_RFU_ERROR:            // next: LG_STATE_RFU_ERROR_SHUTDOWN
     case LG_STATE_DISCONNECTED:         // next: LG_STATE_RETRY_CONNECTION
     case LG_STATE_TRADE_NOT_READY:      // next: LG_STATE_TRADE_NOT_READY_RETRY
@@ -2287,16 +2287,16 @@ static void ScheduleFieldMessageAndExit(const u8 *src)
 
 static void CopyPlayerListToBuffer(struct WirelessLink_URoom * uroom)
 {
-    memcpy(&gDecompressionBuffer[sizeof(gDecompressionBuffer) - (MAX_UNION_ROOM_LEADERS * sizeof(struct RfuPlayer))],
+    memcpy(&gDecompressionBuffer[sizeof(gDecompressionBuffer) - (MAX_UNION_ROOM_CHEFS * sizeof(struct RfuPlayer))],
             uroom->playerList,
-            MAX_UNION_ROOM_LEADERS * sizeof(struct RfuPlayer));
+            MAX_UNION_ROOM_CHEFS * sizeof(struct RfuPlayer));
 }
 
 static void CopyPlayerListFromBuffer(struct WirelessLink_URoom * uroom)
 {
     memcpy(uroom->playerList,
-           &gDecompressionBuffer[sizeof(gDecompressionBuffer) - (MAX_UNION_ROOM_LEADERS * sizeof(struct RfuPlayer))],
-           MAX_UNION_ROOM_LEADERS * sizeof(struct RfuPlayer));
+           &gDecompressionBuffer[sizeof(gDecompressionBuffer) - (MAX_UNION_ROOM_CHEFS * sizeof(struct RfuPlayer))],
+           MAX_UNION_ROOM_CHEFS * sizeof(struct RfuPlayer));
 }
 
 static void Task_RunUnionRoom(u8 taskId)
@@ -2312,9 +2312,9 @@ static void Task_RunUnionRoom(u8 taskId)
     case UR_STATE_INIT:
         uroom->incomingChildList = AllocZeroed(RFU_CHILD_MAX * sizeof(struct RfuIncomingPlayer));
         uroom->incomingParentList = AllocZeroed(RFU_CHILD_MAX * sizeof(struct RfuIncomingPlayer));
-        uroom->playerList = AllocZeroed(MAX_UNION_ROOM_LEADERS * sizeof(struct RfuPlayer));
+        uroom->playerList = AllocZeroed(MAX_UNION_ROOM_CHEFS * sizeof(struct RfuPlayer));
         uroom->spawnPlayer = AllocZeroed(sizeof(struct RfuPlayer));
-        ClearRfuPlayerList(uroom->playerList->players, MAX_UNION_ROOM_LEADERS);
+        ClearRfuPlayerList(uroom->playerList->players, MAX_UNION_ROOM_CHEFS);
         sPlayerCurrActivity = IN_UNION_ROOM;
         uroom->searchTaskId = CreateTask_SearchForChildOrParent(uroom->incomingParentList, uroom->incomingChildList, LINK_GROUP_UNION_ROOM_RESUME);
         InitUnionRoomPlayerObjects(uroom->objects);
@@ -2323,7 +2323,7 @@ static void Task_RunUnionRoom(u8 taskId)
         break;
     case UR_STATE_INIT_OBJECTS:
         CreateUnionRoomPlayerSprites(uroom->spriteIds, taskData[0]);
-        if (++taskData[0] == MAX_UNION_ROOM_LEADERS)
+        if (++taskData[0] == MAX_UNION_ROOM_CHEFS)
             uroom->state = UR_STATE_INIT_LINK;
         break;
     case UR_STATE_INIT_LINK:
@@ -2534,7 +2534,7 @@ static void Task_RunUnionRoom(u8 taskId)
         {
             if (!gReceivedRemoteLinkPlayers)
             {
-                uroom->state = UR_STATE_TRAINER_APPEARS_BUSY;
+                uroom->state = UR_STATE_LEHRER_APPEARS_BUSY;
             }
             else
             {
@@ -2565,7 +2565,7 @@ static void Task_RunUnionRoom(u8 taskId)
             }
         }
         break;
-    case UR_STATE_TRAINER_APPEARS_BUSY:
+    case UR_STATE_LEHRER_APPEARS_BUSY:
         StringCopy(gStringVar4, gText_UR_TrainerBattleBusy);
         uroom->state = UR_STATE_CANCEL_REQUEST_PRINT_MSG;
         break;
@@ -2594,7 +2594,7 @@ static void Task_RunUnionRoom(u8 taskId)
         if (!gReceivedRemoteLinkPlayers)
         {
             StringCopy(gStringVar4, gText_UR_TrainerBattleBusy);
-            uroom->state = UR_STATE_TRAINER_APPEARS_BUSY;
+            uroom->state = UR_STATE_LEHRER_APPEARS_BUSY;
         }
         else
         {
@@ -3149,8 +3149,8 @@ static void Task_InitUnionRoom(u8 taskId)
         ClearIncomingPlayerList(data->incomingChildList->players, RFU_CHILD_MAX);
         data->incomingParentList = AllocZeroed(RFU_CHILD_MAX * sizeof(struct RfuIncomingPlayer));
         ClearIncomingPlayerList(data->incomingParentList->players, RFU_CHILD_MAX);
-        data->playerList = AllocZeroed(MAX_UNION_ROOM_LEADERS * sizeof(struct RfuPlayer));
-        ClearRfuPlayerList(data->playerList->players, MAX_UNION_ROOM_LEADERS);
+        data->playerList = AllocZeroed(MAX_UNION_ROOM_CHEFS * sizeof(struct RfuPlayer));
+        ClearRfuPlayerList(data->playerList->players, MAX_UNION_ROOM_CHEFS);
         data->spawnPlayer = AllocZeroed(sizeof(struct RfuPlayer));
         ClearRfuPlayerList(&data->spawnPlayer->players[0], 1);
         data->searchTaskId = CreateTask_SearchForChildOrParent(data->incomingParentList, data->incomingChildList, LINK_GROUP_UNION_ROOM_INIT);
@@ -3229,7 +3229,7 @@ static u8 HandlePlayerListUpdate(void)
     }
 
     // Handle changes to existing player statuses
-    for (j = 0; j < MAX_UNION_ROOM_LEADERS; j++)
+    for (j = 0; j < MAX_UNION_ROOM_CHEFS; j++)
     {
         if (data->playerList->players[j].groupScheduledAnim != UNION_ROOM_SPAWN_NONE)
         {
@@ -3287,7 +3287,7 @@ static u8 HandlePlayerListUpdate(void)
     // Update the players list
     for (i = 0; i < RFU_CHILD_MAX; i++)
     {
-        if (TryAddIncomingPlayerToList(&data->playerList->players[0], &data->incomingChildList->players[i], MAX_UNION_ROOM_LEADERS) != 0xFF)
+        if (TryAddIncomingPlayerToList(&data->playerList->players[0], &data->incomingChildList->players[i], MAX_UNION_ROOM_CHEFS) != 0xFF)
             retVal = PLIST_NEW_PLAYER;
     }
 
@@ -3957,7 +3957,7 @@ static void TradeBoardListMenuItemPrintFunc(u8 windowId, u32 itemId, u8 y)
     else
     {
         j = 0;
-        for (i = 0; i < MAX_UNION_ROOM_LEADERS; i++)
+        for (i = 0; i < MAX_UNION_ROOM_CHEFS; i++)
         {
             if (leader->playerList->players[i].groupScheduledAnim == UNION_ROOM_SPAWN_IN && leader->playerList->players[i].rfu.data.tradeSpecies != SPECIES_NONE)
                 j++;
@@ -3977,7 +3977,7 @@ static s32 GetIndexOfNthTradeBoardOffer(struct RfuPlayer * players, s32 n)
     s32 i;
     s32 j = 0;
 
-    for (i = 0; i < MAX_UNION_ROOM_LEADERS; i++)
+    for (i = 0; i < MAX_UNION_ROOM_CHEFS; i++)
     {
         if (players[i].groupScheduledAnim == UNION_ROOM_SPAWN_IN && players[i].rfu.data.tradeSpecies != SPECIES_NONE)
             j++;
@@ -4314,7 +4314,7 @@ static void ViewURoomPartnerTrainerCard(u8 *unused, struct WirelessLink_URoom * 
     ConvertIntToDecimalStringN(uroom->trainerCardStrBuffer[2], trainerCard->rse.pokemonTrades, STR_CONV_MODE_LEFT_ALIGN, 5);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(3, uroom->trainerCardStrBuffer[2]);
 
-    for (i = 0; i < TRAINER_CARD_PROFILE_LENGTH; i++)
+    for (i = 0; i < LEHRER_CARD_PROFILE_LENGTH; i++)
     {
         CopyEasyChatWord(uroom->trainerCardStrBuffer[i + 3], trainerCard->rse.easyChatProfile[i]);
         DynamicPlaceholderTextUtil_SetPlaceholderPtr(i + 4, uroom->trainerCardStrBuffer[i + 3]);

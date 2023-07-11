@@ -8,7 +8,7 @@
 
 void AllocateBattleResources(void)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER)
+    if (gBattleTypeFlags & BATTLE_TYPE_LEHRER_TOWER)
         InitTrainerTowerBattleStruct();
     if (gBattleTypeFlags & BATTLE_TYPE_POKEDUDE)
     {
@@ -42,7 +42,7 @@ void AllocateBattleResources(void)
 
 void FreeBattleResources(void)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER_TOWER)
+    if (gBattleTypeFlags & BATTLE_TYPE_LEHRER_TOWER)
         FreeTrainerTowerBattleStruct();
     if (gBattleTypeFlags & BATTLE_TYPE_POKEDUDE)
     {

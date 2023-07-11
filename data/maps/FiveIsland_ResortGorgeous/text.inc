@@ -51,7 +51,7 @@ FiveIsland_ResortGorgeous_Text_JackiPostBattle::
 
 FiveIsland_ResortGorgeous_Text_GillianIntro::
     .string "I'm thinking of having a pool\n"
-    .string "made specially for POKéMON.$"
+    .string "made specially for Pimmel.$"
 
 FiveIsland_ResortGorgeous_Text_GillianDefeat::
     .string "Oh, my goodness gracious!$"

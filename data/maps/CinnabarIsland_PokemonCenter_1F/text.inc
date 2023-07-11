@@ -5,7 +5,7 @@ CinnabarIsland_PokemonCenter_1F_Text_CinnabarGymLocked::
     .string "somewhere.\p"
     .string "Could it be in that burned-out\n"
     .string "mansion?\p"
-    .string "The GYM LEADER's friend used to\n"
+    .string "The GYM CHEF's friend used to\n"
     .string "live there, they say.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom::
@@ -20,7 +20,7 @@ CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom::
     .string "to check the UNION ROOM.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves::
-    .string "POKéMON can still learn techniques\n"
+    .string "Pimmel can still learn techniques\n"
     .string "after canceling evolution.\p"
     .string "Evolution can wait until new moves\n"
     .string "have been learned.$"

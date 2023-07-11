@@ -281,8 +281,8 @@ const union AnimCmd *const gAnims_MonPic[] =
 #define SPECIES_PAL(species, pal) [SPECIES_##species] = {pal, SPECIES_##species}
 #define SPECIES_SHINY_PAL(species, pal) [SPECIES_##species] = {pal, SPECIES_##species + SPECIES_SHINY_TAG}
 
-#define TRAINER_SPRITE(trainerPic, sprite, size) [TRAINER_PIC_##trainerPic] = {sprite, size, TRAINER_PIC_##trainerPic}
-#define TRAINER_PAL(trainerPic, pal) [TRAINER_PIC_##trainerPic] = {pal, TRAINER_PIC_##trainerPic}
+#define LEHRER_SPRITE(trainerPic, sprite, size) [LEHRER_PIC_##trainerPic] = {sprite, size, LEHRER_PIC_##trainerPic}
+#define LEHRER_PAL(trainerPic, pal) [LEHRER_PIC_##trainerPic] = {pal, LEHRER_PIC_##trainerPic}
 
 #include "data/pokemon_graphics/front_pic_coordinates.h"
 #include "data/pokemon_graphics/front_pic_table.h"

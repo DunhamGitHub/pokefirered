@@ -54,7 +54,7 @@ CinnabarIsland_Gym_OnLoadOpenDoor6::
 
 CinnabarIsland_Gym_EventScript_Blaine::
 	famechecker FAMECHECKER_BLAINE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_BLAINE, CinnabarIsland_Gym_Text_BlaineIntro, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, NO_MUSIC
+	trainerbattle_single LEHRER_CHEF_BLAINE, CinnabarIsland_Gym_Text_BlaineIntro, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, NO_MUSIC
 	goto_if_unset FLAG_GOT_TM38_FROM_BLAINE, CinnabarIsland_Gym_EventScript_GiveTM38
 	msgbox CinnabarIsland_Gym_Text_BlainePostBattle
 	release
@@ -87,12 +87,12 @@ CinnabarIsland_Gym_EventScript_NoRoomForTM38::
 	end
 
 CinnabarIsland_Gym_EventScript_Erik::
-	trainerbattle_single TRAINER_SUPER_NERD_ERIK, CinnabarIsland_Gym_Text_ErikIntro, CinnabarIsland_Gym_Text_ErikDefeat
+	trainerbattle_single LEHRER_SUPER_NERD_ERIK, CinnabarIsland_Gym_Text_ErikIntro, CinnabarIsland_Gym_Text_ErikDefeat
 	msgbox CinnabarIsland_Gym_Text_ErikPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 CinnabarIsland_Gym_EventScript_Avery::
-	trainerbattle_single TRAINER_SUPER_NERD_AVERY, CinnabarIsland_Gym_Text_AveryIntro, CinnabarIsland_Gym_Text_AveryDefeat, CinnabarIsland_Gym_EventScript_DefeatedAvery
+	trainerbattle_single LEHRER_SUPER_NERD_AVERY, CinnabarIsland_Gym_Text_AveryIntro, CinnabarIsland_Gym_Text_AveryDefeat, CinnabarIsland_Gym_EventScript_DefeatedAvery
 	msgbox CinnabarIsland_Gym_Text_AveryPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -106,7 +106,7 @@ CinnabarIsland_Gym_EventScript_Quiz2CompleteTrainer::
 	return
 
 CinnabarIsland_Gym_EventScript_Derek::
-	trainerbattle_single TRAINER_SUPER_NERD_DEREK, CinnabarIsland_Gym_Text_DerekIntro, CinnabarIsland_Gym_Text_DerekDefeat, CinnabarIsland_Gym_EventScript_DefeatedDerek
+	trainerbattle_single LEHRER_SUPER_NERD_DEREK, CinnabarIsland_Gym_Text_DerekIntro, CinnabarIsland_Gym_Text_DerekDefeat, CinnabarIsland_Gym_EventScript_DefeatedDerek
 	famechecker FAMECHECKER_BLAINE, 2
 	msgbox CinnabarIsland_Gym_Text_DerekPostBattle, MSGBOX_AUTOCLOSE
 	end
@@ -121,7 +121,7 @@ CinnabarIsland_Gym_EventScript_Quiz4CompleteTrainer::
 	return
 
 CinnabarIsland_Gym_EventScript_Zac::
-	trainerbattle_single TRAINER_SUPER_NERD_ZAC, CinnabarIsland_Gym_Text_ZacIntro, CinnabarIsland_Gym_Text_ZacDefeat, CinnabarIsland_Gym_EventScript_DefeatedZac
+	trainerbattle_single LEHRER_SUPER_NERD_ZAC, CinnabarIsland_Gym_Text_ZacIntro, CinnabarIsland_Gym_Text_ZacDefeat, CinnabarIsland_Gym_EventScript_DefeatedZac
 	msgbox CinnabarIsland_Gym_Text_ZacPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -135,7 +135,7 @@ CinnabarIsland_Gym_EventScript_Quiz6CompleteTrainer::
 	return
 
 CinnabarIsland_Gym_EventScript_Quinn::
-	trainerbattle_single TRAINER_BURGLAR_QUINN, CinnabarIsland_Gym_Text_QuinnIntro, CinnabarIsland_Gym_Text_QuinnDefeat, CinnabarIsland_Gym_EventScript_DefeatedQuinn
+	trainerbattle_single LEHRER_BURGLAR_QUINN, CinnabarIsland_Gym_Text_QuinnIntro, CinnabarIsland_Gym_Text_QuinnDefeat, CinnabarIsland_Gym_EventScript_DefeatedQuinn
 	msgbox CinnabarIsland_Gym_Text_QuinnPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -149,7 +149,7 @@ CinnabarIsland_Gym_EventScript_Quiz1CompleteTrainer::
 	return
 
 CinnabarIsland_Gym_EventScript_Ramon::
-	trainerbattle_single TRAINER_BURGLAR_RAMON, CinnabarIsland_Gym_Text_RamonIntro, CinnabarIsland_Gym_Text_RamonDefeat, CinnabarIsland_Gym_EventScript_DefeatedRamon
+	trainerbattle_single LEHRER_BURGLAR_RAMON, CinnabarIsland_Gym_Text_RamonIntro, CinnabarIsland_Gym_Text_RamonDefeat, CinnabarIsland_Gym_EventScript_DefeatedRamon
 	msgbox CinnabarIsland_Gym_Text_RamonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -163,7 +163,7 @@ CinnabarIsland_Gym_EventScript_Quiz3CompleteTrainer::
 	return
 
 CinnabarIsland_Gym_EventScript_Dusty::
-	trainerbattle_single TRAINER_BURGLAR_DUSTY, CinnabarIsland_Gym_Text_DustyIntro, CinnabarIsland_Gym_Text_DustyDefeat, CinnabarIsland_Gym_EventScript_DefeatedDusty
+	trainerbattle_single LEHRER_BURGLAR_DUSTY, CinnabarIsland_Gym_Text_DustyIntro, CinnabarIsland_Gym_Text_DustyDefeat, CinnabarIsland_Gym_EventScript_DefeatedDusty
 	msgbox CinnabarIsland_Gym_Text_DustyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -255,7 +255,7 @@ CinnabarIsland_Gym_EventScript_DoorAlreadyOpen::
 
 CinnabarIsland_Gym_EventScript_Quiz1Incorrect::
 	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
-	goto_if_not_defeated TRAINER_BURGLAR_QUINN, CinnabarIsland_Gym_EventScript_BattleQuinn
+	goto_if_not_defeated LEHRER_BURGLAR_QUINN, CinnabarIsland_Gym_EventScript_BattleQuinn
 	releaseall
 	end
 
@@ -264,7 +264,7 @@ CinnabarIsland_Gym_EventScript_BattleQuinn::
 	call_if_eq VAR_TEMP_1, 1, CinnabarIsland_Gym_EventScript_QuinnApproachRight
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CinnabarIsland_Gym_Text_QuinnIntro
-	trainerbattle_no_intro TRAINER_BURGLAR_QUINN, CinnabarIsland_Gym_Text_QuinnDefeat
+	trainerbattle_no_intro LEHRER_BURGLAR_QUINN, CinnabarIsland_Gym_Text_QuinnDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_1, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz1Complete
 	releaseall
@@ -327,7 +327,7 @@ CinnabarIsland_Gym_EventScript_Quiz2Complete::
 
 CinnabarIsland_Gym_EventScript_Quiz2Incorrect::
 	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
-	goto_if_not_defeated TRAINER_SUPER_NERD_AVERY, CinnabarIsland_Gym_EventScript_BattleAvery
+	goto_if_not_defeated LEHRER_SUPER_NERD_AVERY, CinnabarIsland_Gym_EventScript_BattleAvery
 	releaseall
 	end
 
@@ -336,7 +336,7 @@ CinnabarIsland_Gym_EventScript_BattleAvery::
 	call_if_eq VAR_TEMP_1, 1, CinnabarIsland_Gym_EventScript_AveryApproachRight
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CinnabarIsland_Gym_Text_AveryIntro
-	trainerbattle_no_intro TRAINER_SUPER_NERD_AVERY, CinnabarIsland_Gym_Text_AveryDefeat
+	trainerbattle_no_intro LEHRER_SUPER_NERD_AVERY, CinnabarIsland_Gym_Text_AveryDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_2, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz2Complete
 	releaseall
@@ -408,7 +408,7 @@ CinnabarIsland_Gym_EventScript_Quiz3Complete::
 
 CinnabarIsland_Gym_EventScript_Quiz3Incorrect::
 	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
-	goto_if_not_defeated TRAINER_BURGLAR_RAMON, CinnabarIsland_Gym_EventScript_BattleRamon
+	goto_if_not_defeated LEHRER_BURGLAR_RAMON, CinnabarIsland_Gym_EventScript_BattleRamon
 	releaseall
 	end
 
@@ -417,7 +417,7 @@ CinnabarIsland_Gym_EventScript_BattleRamon::
 	call_if_eq VAR_TEMP_1, 1, CinnabarIsland_Gym_EventScript_RamonApproachRight
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CinnabarIsland_Gym_Text_RamonIntro
-	trainerbattle_no_intro TRAINER_BURGLAR_RAMON, CinnabarIsland_Gym_Text_RamonDefeat
+	trainerbattle_no_intro LEHRER_BURGLAR_RAMON, CinnabarIsland_Gym_Text_RamonDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_3, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz3Complete
 	releaseall
@@ -480,7 +480,7 @@ CinnabarIsland_Gym_EventScript_Quiz4Complete::
 
 CinnabarIsland_Gym_EventScript_Quiz4Incorrect::
 	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
-	goto_if_not_defeated TRAINER_SUPER_NERD_DEREK, CinnabarIsland_Gym_EventScript_BattleDerek
+	goto_if_not_defeated LEHRER_SUPER_NERD_DEREK, CinnabarIsland_Gym_EventScript_BattleDerek
 	releaseall
 	end
 
@@ -489,7 +489,7 @@ CinnabarIsland_Gym_EventScript_BattleDerek::
 	call_if_eq VAR_TEMP_1, 1, CinnabarIsland_Gym_EventScript_DerekApproachRight
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CinnabarIsland_Gym_Text_DerekIntro
-	trainerbattle_no_intro TRAINER_SUPER_NERD_DEREK, CinnabarIsland_Gym_Text_DerekDefeat
+	trainerbattle_no_intro LEHRER_SUPER_NERD_DEREK, CinnabarIsland_Gym_Text_DerekDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_4, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz4Complete
 	releaseall
@@ -552,7 +552,7 @@ CinnabarIsland_Gym_EventScript_Quiz5Complete::
 
 CinnabarIsland_Gym_EventScript_Quiz5Incorrect::
 	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
-	goto_if_not_defeated TRAINER_BURGLAR_DUSTY, CinnabarIsland_Gym_EventScript_BattleDusty
+	goto_if_not_defeated LEHRER_BURGLAR_DUSTY, CinnabarIsland_Gym_EventScript_BattleDusty
 	releaseall
 	end
 
@@ -561,7 +561,7 @@ CinnabarIsland_Gym_EventScript_BattleDusty::
 	call_if_eq VAR_TEMP_1, 1, CinnabarIsland_Gym_EventScript_DustyApproachRight
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CinnabarIsland_Gym_Text_DustyIntro
-	trainerbattle_no_intro TRAINER_BURGLAR_DUSTY, CinnabarIsland_Gym_Text_DustyDefeat
+	trainerbattle_no_intro LEHRER_BURGLAR_DUSTY, CinnabarIsland_Gym_Text_DustyDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_5, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz5Complete
 	releaseall
@@ -624,7 +624,7 @@ CinnabarIsland_Gym_EventScript_Quiz6Complete::
 
 CinnabarIsland_Gym_EventScript_Quiz6Incorrect::
 	call CinnabarIsland_Gym_EventScript_IncorrectAnswer
-	goto_if_not_defeated TRAINER_SUPER_NERD_ZAC, CinnabarIsland_Gym_EventScript_BattleZac
+	goto_if_not_defeated LEHRER_SUPER_NERD_ZAC, CinnabarIsland_Gym_EventScript_BattleZac
 	releaseall
 	end
 
@@ -633,7 +633,7 @@ CinnabarIsland_Gym_EventScript_BattleZac::
 	call_if_eq VAR_TEMP_1, 1, CinnabarIsland_Gym_EventScript_ZacApproachRight
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CinnabarIsland_Gym_Text_ZacIntro
-	trainerbattle_no_intro TRAINER_SUPER_NERD_ZAC, CinnabarIsland_Gym_Text_ZacDefeat
+	trainerbattle_no_intro LEHRER_SUPER_NERD_ZAC, CinnabarIsland_Gym_Text_ZacDefeat
 	goto_if_set FLAG_CINNABAR_GYM_QUIZ_6, CinnabarIsland_Gym_EventScript_DoorAlreadyOpen
 	call CinnabarIsland_Gym_EventScript_Quiz6Complete
 	releaseall

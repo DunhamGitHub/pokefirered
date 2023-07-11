@@ -129,9 +129,9 @@ static void (*const sPokedudeBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_LOADMONSPRITE]            = PokedudeHandleLoadMonSprite,
     [CONTROLLER_SWITCHINANIM]             = PokedudeHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = PokedudeHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = PokedudeHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = PokedudeHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = PokedudeHandleTrainerSlideBack,
+    [CONTROLLER_DRAWLEHRERPIC]           = PokedudeHandleDrawTrainerPic,
+    [CONTROLLER_LEHRERSLIDE]             = PokedudeHandleTrainerSlide,
+    [CONTROLLER_LEHRERSLIDEBACK]         = PokedudeHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = PokedudeHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = PokedudeHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = PokedudeHandleSuccessBallThrowAnim,
@@ -169,7 +169,7 @@ static void (*const sPokedudeBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_PLAYFANFARE]              = PokedudeHandlePlayFanfare,
     [CONTROLLER_FAINTINGCRY]              = PokedudeHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = PokedudeHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = PokedudeHandleIntroTrainerBallThrow,
+    [CONTROLLER_INTROLEHRERBALLTHROW]    = PokedudeHandleIntroTrainerBallThrow,
     [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = PokedudeHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = PokedudeHandleHidePartyStatusSummary,
     [CONTROLLER_ENDBOUNCE]                = PokedudeHandleEndBounceEffect,
@@ -1350,11 +1350,11 @@ static void PokedudeHandleDrawTrainerPic(void)
 {
     if (GetBattlerSide(gActiveBattler) == B_SIDE_PLAYER)
     {
-        DecompressTrainerBackPalette(TRAINER_BACK_PIC_POKEDUDE, gActiveBattler);
-        SetMultiuseSpriteTemplateToTrainerBack(TRAINER_BACK_PIC_POKEDUDE, GetBattlerPosition(gActiveBattler));
+        DecompressTrainerBackPalette(LEHRER_BACK_PIC_POKEDUDE, gActiveBattler);
+        SetMultiuseSpriteTemplateToTrainerBack(LEHRER_BACK_PIC_POKEDUDE, GetBattlerPosition(gActiveBattler));
         gBattlerSpriteIds[gActiveBattler] = CreateSprite(&gMultiuseSpriteTemplate,
                                                          80,
-                                                         (8 - gTrainerBackPicCoords[TRAINER_BACK_PIC_POKEDUDE].size) * 4 + 80,
+                                                         (8 - gTrainerBackPicCoords[LEHRER_BACK_PIC_POKEDUDE].size) * 4 + 80,
                                                          30);
         gSprites[gBattlerSpriteIds[gActiveBattler]].x2 = DISPLAY_WIDTH;
         gSprites[gBattlerSpriteIds[gActiveBattler]].data[0] = -2;
@@ -1363,7 +1363,7 @@ static void PokedudeHandleDrawTrainerPic(void)
     }
     else
     {
-        u32 tranerPicid = TRAINER_PIC_PROFESSOR_OAK;
+        u32 tranerPicid = LEHRER_PIC_PROFESSOR_OAK;
         DecompressTrainerFrontPic(tranerPicid, gActiveBattler);
         SetMultiuseSpriteTemplateToTrainerBack(tranerPicid, GetBattlerPosition(gActiveBattler));
         gBattlerSpriteIds[gActiveBattler] = CreateSprite(&gMultiuseSpriteTemplate,
@@ -1383,11 +1383,11 @@ static void PokedudeHandleDrawTrainerPic(void)
 
 static void PokedudeHandleTrainerSlide(void)
 {
-    DecompressTrainerBackPalette(TRAINER_BACK_PIC_POKEDUDE, gActiveBattler);
-    SetMultiuseSpriteTemplateToTrainerBack(TRAINER_BACK_PIC_POKEDUDE, GetBattlerPosition(gActiveBattler));
+    DecompressTrainerBackPalette(LEHRER_BACK_PIC_POKEDUDE, gActiveBattler);
+    SetMultiuseSpriteTemplateToTrainerBack(LEHRER_BACK_PIC_POKEDUDE, GetBattlerPosition(gActiveBattler));
     gBattlerSpriteIds[gActiveBattler] = CreateSprite(&gMultiuseSpriteTemplate,
                                                      80,
-                                                     (8 - gTrainerBackPicCoords[TRAINER_BACK_PIC_POKEDUDE].size) * 4 + 80,
+                                                     (8 - gTrainerBackPicCoords[LEHRER_BACK_PIC_POKEDUDE].size) * 4 + 80,
                                                      30);
     gSprites[gBattlerSpriteIds[gActiveBattler]].oam.paletteNum = gActiveBattler;
     gSprites[gBattlerSpriteIds[gActiveBattler]].x2 = -96;
@@ -1858,7 +1858,7 @@ static void PokedudeHandleIntroTrainerBallThrow(void)
     StoreSpriteCallbackInData6(&gSprites[gBattlerSpriteIds[gActiveBattler]], SpriteCB_FreePlayerSpriteLoadMonSprite);
     StartSpriteAnim(&gSprites[gBattlerSpriteIds[gActiveBattler]], 1);
     paletteNum = AllocSpritePalette(0xD6F8);
-    LoadCompressedPalette(gTrainerBackPicPaletteTable[TRAINER_BACK_PIC_POKEDUDE].data, OBJ_PLTT_ID(paletteNum), PLTT_SIZE_4BPP);
+    LoadCompressedPalette(gTrainerBackPicPaletteTable[LEHRER_BACK_PIC_POKEDUDE].data, OBJ_PLTT_ID(paletteNum), PLTT_SIZE_4BPP);
     gSprites[gBattlerSpriteIds[gActiveBattler]].oam.paletteNum = paletteNum;
     taskId = CreateTask(Task_StartSendOutAnim, 5);
     gTasks[taskId].data[0] = gActiveBattler;

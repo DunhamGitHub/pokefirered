@@ -95,9 +95,9 @@ static void (*const sLinkOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_LOADMONSPRITE]            = LinkOpponentHandleLoadMonSprite,
     [CONTROLLER_SWITCHINANIM]             = LinkOpponentHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = LinkOpponentHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = LinkOpponentHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = LinkOpponentHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = LinkOpponentHandleTrainerSlideBack,
+    [CONTROLLER_DRAWLEHRERPIC]           = LinkOpponentHandleDrawTrainerPic,
+    [CONTROLLER_LEHRERSLIDE]             = LinkOpponentHandleTrainerSlide,
+    [CONTROLLER_LEHRERSLIDEBACK]         = LinkOpponentHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = LinkOpponentHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = LinkOpponentHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = LinkOpponentHandleSuccessBallThrowAnim,
@@ -135,7 +135,7 @@ static void (*const sLinkOpponentBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_PLAYFANFARE]              = LinkOpponentHandlePlayFanfare,
     [CONTROLLER_FAINTINGCRY]              = LinkOpponentHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = LinkOpponentHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = LinkOpponentHandleIntroTrainerBallThrow,
+    [CONTROLLER_INTROLEHRERBALLTHROW]    = LinkOpponentHandleIntroTrainerBallThrow,
     [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = LinkOpponentHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = LinkOpponentHandleHidePartyStatusSummary,
     [CONTROLLER_ENDBOUNCE]                = LinkOpponentHandleEndBounceEffect,
@@ -1140,9 +1140,9 @@ static void LinkOpponentHandleDrawTrainerPic(void)
          || (gLinkPlayers[GetBattlerMultiplayerId(gActiveBattler)].version & 0xFF) == VERSION_EMERALD)
         {
             if (gLinkPlayers[GetBattlerMultiplayerId(gActiveBattler)].gender != MALE)
-                trainerPicId = gFacilityClassToPicIndex[FACILITY_CLASS_PKMN_TRAINER_MAY];
+                trainerPicId = gFacilityClassToPicIndex[FACILITY_CLASS_PKMN_LEHRER_MAY];
             else
-                trainerPicId = gFacilityClassToPicIndex[FACILITY_CLASS_PKMN_TRAINER_BRENDAN];
+                trainerPicId = gFacilityClassToPicIndex[FACILITY_CLASS_PKMN_LEHRER_BRENDAN];
         }
         else if (gLinkPlayers[GetBattlerMultiplayerId(gActiveBattler)].gender != MALE)
         {
@@ -1156,7 +1156,7 @@ static void LinkOpponentHandleDrawTrainerPic(void)
     else
     {
         xPos = 176;
-        if (gTrainerBattleOpponent_A == TRAINER_UNION_ROOM)
+        if (gTrainerBattleOpponent_A == LEHRER_UNION_ROOM)
         {
             trainerPicId = GetUnionRoomTrainerPic();
         }
@@ -1165,9 +1165,9 @@ static void LinkOpponentHandleDrawTrainerPic(void)
               || (gLinkPlayers[GetMultiplayerId() ^ BIT_SIDE].version & 0xFF) == VERSION_EMERALD)
         {
             if (gLinkPlayers[GetMultiplayerId() ^ BIT_SIDE].gender != MALE)
-                trainerPicId = gFacilityClassToPicIndex[FACILITY_CLASS_PKMN_TRAINER_MAY];
+                trainerPicId = gFacilityClassToPicIndex[FACILITY_CLASS_PKMN_LEHRER_MAY];
             else
-                trainerPicId = gFacilityClassToPicIndex[FACILITY_CLASS_PKMN_TRAINER_BRENDAN];
+                trainerPicId = gFacilityClassToPicIndex[FACILITY_CLASS_PKMN_LEHRER_BRENDAN];
         }
         else if (gLinkPlayers[GetMultiplayerId() ^ BIT_SIDE].gender != MALE)
         {

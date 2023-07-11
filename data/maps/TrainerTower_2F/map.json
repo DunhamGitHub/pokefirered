@@ -1,9 +1,9 @@
 {
-  "id": "MAP_TRAINER_TOWER_2F",
+  "id": "MAP_LEHRER_TOWER_2F",
   "name": "TrainerTower_2F",
-  "layout": "LAYOUT_TRAINER_TOWER_2F",
-  "music": "MUS_TRAINER_TOWER",
-  "region_map_section": "MAPSEC_TRAINER_TOWER_2",
+  "layout": "LAYOUT_LEHRER_TOWER_2F",
+  "music": "MUS_LEHRER_TOWER",
+  "region_map_section": "MAPSEC_LEHRER_TOWER_2",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -17,14 +17,14 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_TRAINER_TOWER_DUDE",
+      "graphics_id": "OBJ_EVENT_GFX_LEHRER_TOWER_DUDE",
       "x": 9,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_EventScript_Owner",
       "flag": "FLAG_TEMP_6"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_EventScript_DoublesTrainer1",
       "flag": "FLAG_TEMP_2"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_EventScript_SinglesTrainer",
       "flag": "FLAG_TEMP_3"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_EventScript_KnockoutTrainer",
       "flag": "FLAG_TEMP_4"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_EventScript_DoublesTrainer2",
       "flag": "FLAG_TEMP_5"
@@ -91,21 +91,21 @@
       "x": 15,
       "y": 6,
       "elevation": 3,
-      "dest_map": "MAP_TRAINER_TOWER_3F",
+      "dest_map": "MAP_LEHRER_TOWER_3F",
       "dest_warp_id": "1"
     },
     {
       "x": 4,
       "y": 6,
       "elevation": 3,
-      "dest_map": "MAP_TRAINER_TOWER_1F",
+      "dest_map": "MAP_LEHRER_TOWER_1F",
       "dest_warp_id": "0"
     },
     {
       "x": 13,
       "y": 5,
       "elevation": 0,
-      "dest_map": "MAP_TRAINER_TOWER_ELEVATOR",
+      "dest_map": "MAP_LEHRER_TOWER_ELEVATOR",
       "dest_warp_id": "0"
     }
   ],

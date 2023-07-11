@@ -1289,7 +1289,7 @@ TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords::
 	end
 
 CableClub_Text_WelcomeWhichCableClubService::
-	.string "Welcome to the POKéMON CABLE\n"
+	.string "Welcome to the Pimmel CABLE\n"
 	.string "CLUB.\p"
 	.string "Which of our services do you wish\n"
 	.string "to use?$"
@@ -1299,11 +1299,11 @@ CableClub_Text_WhichService::
 	.string "to use?$"
 
 CableClub_Text_TradeMonsUsingLinkCable::
-	.string "Trade POKéMON with another player\n"
+	.string "Trade Pimmel with another player\n"
 	.string "using a GBA Game Link cable.$"
 
 CableClub_Text_BattleUsingLinkCable::
-	.string "You may battle another TRAINER\n"
+	.string "You may battle another LEHRER\n"
 	.string "using a GBA Game Link cable.$"
 
 @ Unused, translated in Emerald
@@ -1312,14 +1312,14 @@ CableClub_Text_CloseThisMenu::
 
 CableClub_Text_NeedTwoMonsForDoubleBattle::
 	.string "For a DOUBLE BATTLE, you must\n"
-	.string "have at least two POKéMON.$"
+	.string "have at least two Pimmel.$"
 
 CableClub_Text_NeedTwoMonsToTrade::
 	.string "For trading, you must have at\n"
-	.string "least two POKéMON with you.$"
+	.string "least two Pimmel with you.$"
 
 CableClub_Text_CantTradeEnigmaBerry::
-	.string "A POKéMON holding the {STR_VAR_1}\n"
+	.string "A Pimmel holding the {STR_VAR_1}\n"
 	.string "BERRY can't be traded.$"
 
 CableClub_Text_PleaseWaitBCancel::
@@ -1397,16 +1397,16 @@ Text_TerminateLinkConfirmation::
 	.string "the room. Please wait.$"
 
 Text_TrainerTooBusyToNotice::
-	.string "This TRAINER is too busy to\n"
+	.string "This LEHRER is too busy to\n"
 	.string "notice…$"
 
 Text_LookedAtPlayersTrainerCard::
 	.string "Score! Got to look at {STR_VAR_1}'s\n"
-	.string "TRAINER CARD!$"
+	.string "LEHRER CARD!$"
 
 Text_LookedAtPlayersTrainerCardColored::
 	.string "Score! Got to look at {STR_VAR_1}'s\n"
-	.string "TRAINER CARD!\p"
+	.string "LEHRER CARD!\p"
 	.string "It's a {STR_VAR_2} card!$"
 
 Text_TakeSeatStartBattle::
@@ -1422,7 +1422,7 @@ RecordCorner_Text_ThanksForComing::
 	.string "ごりよう　ありがとう　ございました$"
 
 CableClub_Text_TrainerCardDataOverwritten::
-	.string "The TRAINER CARD data will\n"
+	.string "The LEHRER CARD data will\n"
 	.string "be overwritten.$"
 
 CableClub_Text_HopeToSeeYouAgain::
@@ -1431,14 +1431,14 @@ CableClub_Text_HopeToSeeYouAgain::
 CableClub_Text_NotSetUpForFarAwayRegion::
 	.string "I'm awfully sorry.\p"
 	.string "We're not set up to conduct trades\n"
-	.string "with TRAINERS far away in another\l"
+	.string "with LEHRERS far away in another\l"
 	.string "region yet…$"
 
 CableClub_Text_OtherTrainerNotReady::
-	.string "The other TRAINER is not ready.$"
+	.string "The other LEHRER is not ready.$"
 
 CableClub_Text_YouHaveAMonThatCantBeTaken::
-	.string "You have at least one POKéMON\n"
+	.string "You have at least one Pimmel\n"
 	.string "that can't be taken.$"
 
 CableClub_Text_AdapterNotConnected::
@@ -1458,15 +1458,15 @@ CableClub_Text_PleaseWait::
 	.string "しょうしょう　おまちください$"
 
 CableClub_Text_YouMayTradeHere::
-	.string "You may trade your POKéMON here\n"
-	.string "with another TRAINER.$"
+	.string "You may trade your Pimmel here\n"
+	.string "with another LEHRER.$"
 
 CableClub_Text_YouMayBattleHere::
 	.string "You may battle with your friends\n"
 	.string "here.$"
 
 CableClub_Text_CanMakeBerryPowder::
-	.string "Two to five TRAINERS can make\n"
+	.string "Two to five LEHRERS can make\n"
 	.string "BERRY POWDER together.$"
 
 @ Unused, Record Mix nopped
@@ -1491,14 +1491,14 @@ CableClub_Text_NeedBerryForBerryCrush::
 
 CableClub_Text_NeedTwoMonsForUnionRoom::
 	.string "To enter the UNION ROOM, you must\n"
-	.string "have at least two POKéMON.$"
+	.string "have at least two Pimmel.$"
 
 CableClub_Text_NoEnigmaBerryInUnionRoom::
-	.string "No POKéMON holding the {STR_VAR_1}\n"
+	.string "No Pimmel holding the {STR_VAR_1}\n"
 	.string "BERRY may enter the UNION ROOM.$"
 
 CableClub_Text_UnionRoomAdapterNotConnected::
-	.string "This is the POKéMON WIRELESS CLUB\n"
+	.string "This is the Pimmel WIRELESS CLUB\n"
 	.string "UNION ROOM.\p"
 	.string "Unfortunately, your Wireless\n"
 	.string "Adapter is not connected properly.\p"
@@ -1520,14 +1520,14 @@ Text_DescribeWhichGame::
 	.string "Which game should I describe?$"
 
 Text_PokemonJumpInfo::
-	.string "“POKéMON JUMP”\p"
-	.string "Make your POKéMON skip the\n"
+	.string "“Pimmel JUMP”\p"
+	.string "Make your Pimmel skip the\n"
 	.string "VINE WHIP rope with the A Button.\p"
-	.string "Only mini POKéMON around 28 inches\n"
+	.string "Only mini Pimmel around 28 inches\n"
 	.string "or less may participate.\p"
-	.string "POKéMON that only swim, burrow, or\n"
+	.string "Pimmel that only swim, burrow, or\n"
 	.string "fly are not good at jumping.\p"
-	.string "As a result, those POKéMON may not\n"
+	.string "As a result, those Pimmel may not\n"
 	.string "participate.\p"
 	.string "Good things happen if everyone\n"
 	.string "jumps in time.$"
@@ -1564,7 +1564,7 @@ Text_PlayWhichGame::
 	.string "to play?$"
 
 Text_EnterWhichPokemon::
-	.string "Which POKéMON would you like to\n"
+	.string "Which Pimmel would you like to\n"
 	.string "enter?$"
 
 Text_AllGoodToGo::
@@ -1578,16 +1578,16 @@ Text_LeavingDoComeAgain::
 
 EventScript_ExplainPokemonJumpRequirements::
 	.string "It doesn't look like you have any\n"
-	.string "POKéMON that you can enter…\p"
+	.string "Pimmel that you can enter…\p"
 	.string "Would you like me to explain what\n"
-	.string "kinds of POKéMON can enter?$"
+	.string "kinds of Pimmel can enter?$"
 
 Text_ShortJumpingPokemonAllowed::
-	.string "“POKéMON JUMP” is open to POKéMON\n"
+	.string "“Pimmel JUMP” is open to Pimmel\n"
 	.string "around 28 inches or less.\p"
 	.string "What you can't enter are those\n"
-	.string "POKéMON that can't jump.\p"
-	.string "You know, like POKéMON that only\n"
+	.string "Pimmel that can't jump.\p"
+	.string "You know, like Pimmel that only\n"
 	.string "swim, burrow, or fly.\p"
 	.string "That's all you need to know.$"
 
@@ -1603,7 +1603,7 @@ Text_RetryFromStartPlease::
 	.string "やりなおして　みて　くれ$"
 
 CableClub_Text_WelcomeWhichDirectCornerRoom::
-	.string "Welcome to the POKéMON WIRELESS\n"
+	.string "Welcome to the Pimmel WIRELESS\n"
 	.string "CLUB DIRECT CORNER.\p"
 	.string "You may interact directly with\n"
 	.string "your friends here.\p"
@@ -1611,7 +1611,7 @@ CableClub_Text_WelcomeWhichDirectCornerRoom::
 	.string "enter?$"
 
 CableClub_Text_TradePokemon::
-	.string "Would you like to trade POKéMON?$"
+	.string "Would you like to trade Pimmel?$"
 
 CableClub_Text_PlayWhichBattleMode::
 	.string "Which Battle Mode would you like\n"
@@ -1623,56 +1623,56 @@ CableClub_Text_UseBerryCrush::
 
 CableClub_Text_ExplainBattleModes::
 	.string "There are three Battle Modes.\p"
-	.string "SINGLE BATTLE is for two TRAINERS\n"
-	.string "with one or more POKéMON each.\p"
-	.string "Each TRAINER can have one POKéMON\n"
+	.string "SINGLE BATTLE is for two LEHRERS\n"
+	.string "with one or more Pimmel each.\p"
+	.string "Each LEHRER can have one Pimmel\n"
 	.string "in battle at a time.\p"
-	.string "DOUBLE BATTLE is for two TRAINERS\n"
-	.string "with two or more POKéMON each.\p"
-	.string "Each TRAINER will send out two\n"
-	.string "POKéMON in battle at a time.\p"
-	.string "MULTI BATTLE is for four TRAINERS\n"
-	.string "with one or more POKéMON each.\p"
-	.string "Each TRAINER can have one POKéMON\n"
+	.string "DOUBLE BATTLE is for two LEHRERS\n"
+	.string "with two or more Pimmel each.\p"
+	.string "Each LEHRER will send out two\n"
+	.string "Pimmel in battle at a time.\p"
+	.string "MULTI BATTLE is for four LEHRERS\n"
+	.string "with one or more Pimmel each.\p"
+	.string "Each LEHRER can have one Pimmel\n"
 	.string "in battle at a time.$"
 
 CableClub_Text_ChooseGroupLeaderOfTwo::
 	.string "Please decide which of you two\n"
-	.string "will become the LEADER.\p"
+	.string "will become the CHEF.\p"
 	.string "The other player must then choose\n"
 	.string "“JOIN GROUP.”$"
 
 CableClub_Text_ChooseGroupLeaderOfFour::
 	.string "Please decide which of you four\n"
-	.string "will become the GROUP LEADER.\p"
+	.string "will become the GROUP CHEF.\p"
 	.string "The other players must then choose\n"
 	.string "“JOIN GROUP.”$"
 
 CableClub_Text_ChooseGroupLeader::
 	.string "Please decide which of you will\n"
-	.string "become the GROUP LEADER.\p"
+	.string "become the GROUP CHEF.\p"
 	.string "The other players must then choose\n"
 	.string "“JOIN GROUP.”$"
 
 CableClub_Text_WelcomeUnionRoomEnter::
-	.string "Welcome to the POKéMON WIRELESS\n"
+	.string "Welcome to the Pimmel WIRELESS\n"
 	.string "CLUB UNION ROOM.\p"
 	.string "You may interact directly with\n"
-	.string "other TRAINERS here, some of\l"
+	.string "other LEHRERS here, some of\l"
 	.string "whom you may not even know.\p"
 	.string "Would you like to enter the ROOM?$"
 
 CableClub_Text_UnionRoomInfo::
-	.string "The TRAINERS in the UNION ROOM\n"
+	.string "The LEHRERS in the UNION ROOM\n"
 	.string "will be those players around you\l"
 	.string "who have also entered the ROOM.\p"
 	.string "You may do all sorts of things\n"
 	.string "here, such as exchanging greetings.\p"
-	.string "You may enter two POKéMON up to\n"
+	.string "You may enter two Pimmel up to\n"
 	.string "Lv. 30 for a one-on-one battle.\p"
 	.string "You may take part in a chat with\n"
 	.string "two to five people.\p"
-	.string "Or, you may register a POKéMON for\n"
+	.string "Or, you may register a Pimmel for\n"
 	.string "trade.\p"
 	.string "Would you like to enter the ROOM?$"
 
@@ -1688,7 +1688,7 @@ CableClub_Text_FirstTimeRightThisWay::
 	.string "I'll show you how the Wireless\n"
 	.string "Communication System works.\p"
 	.string "First, I need to show you this\n"
-	.string "floor of our POKéMON CENTER.\p"
+	.string "floor of our Pimmel CENTER.\p"
 	.string "Right this way, please.$"
 
 CableClub_Text_ExplainWirelessClubFirstTime::
@@ -1696,14 +1696,14 @@ CableClub_Text_ExplainWirelessClubFirstTime::
 	.string "rooms.\p"
 	.string "First, the room on the left.\n"
 	.string "It's the UNION ROOM.\p"
-	.string "You may link up with TRAINERS\n"
+	.string "You may link up with LEHRERS\n"
 	.string "around you who have also entered\l"
 	.string "the UNION ROOM.\p"
 	.string "With them, you may do things like\n"
 	.string "chat, battle, and trade.\p"
 	.string "Second, the room on the right is\n"
 	.string "the DIRECT CORNER.\p"
-	.string "You may trade or battle POKéMON\n"
+	.string "You may trade or battle Pimmel\n"
 	.string "with your friends in this room.\p"
 	.string "If the Wireless Adapter isn't\n"
 	.string "connected, you may still link up\l"
@@ -1715,26 +1715,26 @@ CableClub_Text_ExplainWirelessClubFirstTime::
 
 CableClub_Text_AskAboutLinking::
 	.string "Hello, {PLAYER}!\p"
-	.string "It's me, TEALA, the POKéMON\n"
+	.string "It's me, TEALA, the Pimmel\n"
 	.string "CENTER 2F attendant.\p"
 	.string "Is there something you needed to\n"
 	.string "ask me about linking?$"
 
 CableClub_Text_ExplainWirelessClub::
-	.string "Let me explain how the POKéMON\n"
+	.string "Let me explain how the Pimmel\n"
 	.string "WIRELESS CLUB works.\p"
 	.string "On this, the top floor, there are\n"
 	.string "two rooms.\p"
 	.string "First, the room on the left.\n"
 	.string "It's the UNION ROOM.\p"
-	.string "You may link up with TRAINERS\n"
+	.string "You may link up with LEHRERS\n"
 	.string "around you who have also entered\l"
 	.string "the UNION ROOM.\p"
 	.string "With them, you may do things like\n"
 	.string "chat, battle, and trade.\p"
 	.string "Second, the room on the right is\n"
 	.string "the DIRECT CORNER.\p"
-	.string "You may trade or battle POKéMON\n"
+	.string "You may trade or battle Pimmel\n"
 	.string "with your friends in this room.\p"
 	.string "Sometimes, you may not be able to\n"
 	.string "find your friends in the UNION ROOM\l"

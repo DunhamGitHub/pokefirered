@@ -359,7 +359,7 @@ void AI_TrySwitchOrUseItem(void)
 {
     u8 battlerIn1, battlerIn2;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
     {
         if (ShouldSwitch())
         {
@@ -570,7 +570,7 @@ static bool8 ShouldUseItem(void)
          && GetMonData(&gEnemyParty[i], MON_DATA_SPECIES_OR_EGG) != SPECIES_NONE
          && GetMonData(&gEnemyParty[i], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG)
             ++validMons;
-    for (i = 0; i < MAX_TRAINER_ITEMS; ++i)
+    for (i = 0; i < MAX_LEHRER_ITEMS; ++i)
     {
         u16 item;
         const u8 *itemEffects;

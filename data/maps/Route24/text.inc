@@ -1,11 +1,11 @@
 Route24_Text_JustEarnedFabulousPrize::
     .string "Congratulations! You beat our\n"
-    .string "five contest TRAINERS!\p"
+    .string "five contest LEHRERS!\p"
     .string "You just earned a fabulous prize!$"
 
 Route24_Text_ReceivedNuggetFromMysteryTrainer::
     .string "{PLAYER} received a NUGGET\n"
-    .string "from the mystery TRAINER!$"
+    .string "from the mystery LEHRER!$"
 
 Route24_Text_YouDontHaveAnyRoom::
     .string "You don't have any room!$"
@@ -14,7 +14,7 @@ Route24_Text_JoinTeamRocket::
     .string "By the way, how would you like to\n"
     .string "join TEAM ROCKET?\p"
     .string "We're a group of professional\n"
-    .string "criminals specializing in POKéMON!\p"
+    .string "criminals specializing in Pimmel!\p"
     .string "Want to join?\p"
     .string "Are you sure?\p"
     .string "Come on, join us!\p"
@@ -88,7 +88,7 @@ Route24_Text_AliPostBattle::
 Route24_Text_CaleIntro::
     .string "People call this the NUGGET\n"
     .string "BRIDGE!\p"
-    .string "Beat us five TRAINERS and win\n"
+    .string "Beat us five LEHRERS and win\n"
     .string "a fabulous prize!\p"
     .string "Think you got what it takes?$"
 

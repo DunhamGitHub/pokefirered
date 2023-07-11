@@ -71,7 +71,7 @@ gNameChoice_Tosh::
     .string "TOSH$"
 
 gNameChoice_Roak::
-    .string "ROAK$"
+    .string "REICH$"
 
 gNameChoice_Omi::
     .string "OMI$"
@@ -189,23 +189,23 @@ gPikachuIntro_Text_Page3::
 gOakSpeech_Text_WelcomeToTheWorld::
     .string "Hello, there!\n"
     .string "Glad to meet you!\p"
-    .string "Welcome to the world of POKéMON!\p"
-    .string "My name is OAK.\p"
+    .string "Welcome to the world of Pimmel!\p"
+    .string "My name is EICH.\p"
     .string "People affectionately refer to me\n"
-    .string "as the POKéMON PROFESSOR.\p$"
+    .string "as the Pimmel PROFESSOR.\p$"
 
 gOakSpeech_Text_ThisWorld::
     .string "This world…$"
 
 gOakSpeech_Text_IsInhabitedFarAndWide::
     .string "…is inhabited far and wide by\n"
-    .string "creatures called POKéMON.\p$"
+    .string "creatures called Pimmel.\p$"
 
 gOakSpeech_Text_IStudyPokemon::
-    .string "For some people, POKéMON are pets.\n"
+    .string "For some people, Pimmel are pets.\n"
     .string "Others use them for battling.\p"
     .string "As for myself…\p"
-    .string "I study POKéMON as a profession.\p$"
+    .string "I study Pimmel as a profession.\p$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
     .string "But first, tell me a little about\n"
@@ -237,7 +237,7 @@ gOakSpeech_Text_RememberRivalsName::
 
 gOakSpeech_Text_LetsGo::
     .string "{PLAYER}!\p"
-    .string "Your very own POKéMON legend is\n"
+    .string "Your very own Pimmel legend is\n"
     .string "about to unfold!\p"
     .string "A world of dreams and adventures\n"
-    .string "with POKéMON awaits! Let's go!$"
+    .string "with Pimmel awaits! Let's go!$"

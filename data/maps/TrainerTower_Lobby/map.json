@@ -1,9 +1,9 @@
 {
-  "id": "MAP_TRAINER_TOWER_LOBBY",
+  "id": "MAP_LEHRER_TOWER_LOBBY",
   "name": "TrainerTower_Lobby",
-  "layout": "LAYOUT_TRAINER_TOWER_LOBBY",
-  "music": "MUS_TRAINER_TOWER",
-  "region_map_section": "MAPSEC_TRAINER_TOWER_2",
+  "layout": "LAYOUT_LEHRER_TOWER_LOBBY",
+  "music": "MUS_LEHRER_TOWER",
+  "region_map_section": "MAPSEC_LEHRER_TOWER_2",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_Lobby_EventScript_Nurse",
       "flag": "0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_Lobby_EventScript_MartClerk",
       "flag": "0"
@@ -52,21 +52,21 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_Lobby_EventScript_Receptionist",
       "flag": "0"
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
+      "graphics_id": "OBJ_EVENT_GFX_COOLLEHRER_F",
       "x": 12,
       "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_Lobby_EventScript_CooltrainerF",
       "flag": "0"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TrainerTower_Lobby_EventScript_BaldingMan",
       "flag": "0"
@@ -91,21 +91,21 @@
       "x": 9,
       "y": 2,
       "elevation": 3,
-      "dest_map": "MAP_TRAINER_TOWER_1F",
+      "dest_map": "MAP_LEHRER_TOWER_1F",
       "dest_warp_id": "1"
     },
     {
       "x": 9,
       "y": 15,
       "elevation": 3,
-      "dest_map": "MAP_SEVEN_ISLAND_TRAINER_TOWER",
+      "dest_map": "MAP_SEVEN_ISLAND_LEHRER_TOWER",
       "dest_warp_id": "0"
     },
     {
       "x": 17,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_TRAINER_TOWER_ELEVATOR",
+      "dest_map": "MAP_LEHRER_TOWER_ELEVATOR",
       "dest_warp_id": "0"
     }
   ],
@@ -115,7 +115,7 @@
       "x": 9,
       "y": 7,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_TRAINER_TOWER",
+      "var": "VAR_MAP_SCENE_LEHRER_TOWER",
       "var_value": "0",
       "script": "TrainerTower_Lobby_EventScript_EntryTrigger"
     }

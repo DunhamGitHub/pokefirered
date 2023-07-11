@@ -533,7 +533,7 @@ static const struct BattleBackground sBattleTerrainTable[] = {
         .entryTilemap = sBattleTerrainAnimTilemap_Building,
         .palette = sBattleTerrainPalette_Gym
     },
-    [BATTLE_TERRAIN_LEADER] =
+    [BATTLE_TERRAIN_CHEF] =
     {
         .tileset = sBattleTerrainTiles_Building,
         .tilemap = sBattleTerrainTilemap_Building,
@@ -1002,7 +1002,7 @@ void DrawBattleEntryBackground(void)
     {
         LoadBattleTerrainEntryGfx(BATTLE_TERRAIN_GRASS);
     }
-    else if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER_TOWER | BATTLE_TYPE_LINK | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_TRAINER))
+    else if (gBattleTypeFlags & (BATTLE_TYPE_LEHRER_TOWER | BATTLE_TYPE_LINK | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_LEHRER))
     {
         LoadBattleTerrainEntryGfx(BATTLE_TERRAIN_BUILDING);
     }
@@ -1019,15 +1019,15 @@ void DrawBattleEntryBackground(void)
     }
     else
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
         {
             u8 trainerClass = gTrainers[gTrainerBattleOpponent_A].trainerClass;
-            if (trainerClass == TRAINER_CLASS_LEADER)
+            if (trainerClass == LEHRER_CLASS_CHEF)
             {
                 LoadBattleTerrainEntryGfx(BATTLE_TERRAIN_BUILDING);
                 return;
             }
-            else if (trainerClass == TRAINER_CLASS_CHAMPION)
+            else if (trainerClass == LEHRER_CLASS_CHAMPION)
             {
                 LoadBattleTerrainEntryGfx(BATTLE_TERRAIN_BUILDING);
                 return;
@@ -1048,7 +1048,7 @@ void DrawBattleEntryBackground(void)
 static u8 GetBattleTerrainOverride(void)
 {
     u8 battleScene;
-    if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER_TOWER | BATTLE_TYPE_LINK | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_TRAINER))
+    if (gBattleTypeFlags & (BATTLE_TYPE_LEHRER_TOWER | BATTLE_TYPE_LINK | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_LEHRER))
     {
         return BATTLE_TERRAIN_LINK;
     }
@@ -1057,11 +1057,11 @@ static u8 GetBattleTerrainOverride(void)
         gBattleTerrain = BATTLE_TERRAIN_GRASS;
         return BATTLE_TERRAIN_GRASS;
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    else if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
     {
-        if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_LEADER)
-            return BATTLE_TERRAIN_LEADER;
-        else if (gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION)
+        if (gTrainers[gTrainerBattleOpponent_A].trainerClass == LEHRER_CLASS_CHEF)
+            return BATTLE_TERRAIN_CHEF;
+        else if (gTrainers[gTrainerBattleOpponent_A].trainerClass == LEHRER_CLASS_CHAMPION)
             return BATTLE_TERRAIN_CHAMPION;
     }
     battleScene = GetCurrentMapBattleScene();

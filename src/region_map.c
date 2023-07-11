@@ -567,14 +567,14 @@ static const u8 sSeviiMapsecs[3][30] = {
         MAPSEC_GREEN_PATH,
         MAPSEC_WATER_PATH,
         MAPSEC_RUIN_VALLEY,
-        MAPSEC_TRAINER_TOWER,
+        MAPSEC_LEHRER_TOWER,
         MAPSEC_CANYON_ENTRANCE,
         MAPSEC_SEVAULT_CANYON,
         MAPSEC_TANOBY_RUINS,
         MAPSEC_SEVII_ISLE_22,
         MAPSEC_SEVII_ISLE_23,
         MAPSEC_SEVII_ISLE_24,
-        MAPSEC_TRAINER_TOWER_2,
+        MAPSEC_LEHRER_TOWER_2,
         MAPSEC_DOTTED_HOLE,
         MAPSEC_PATTERN_BUSH,
         MAPSEC_ALTERING_CAVE,
@@ -905,7 +905,7 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_GREEN_PATH          - MAPSECS_KANTO] = {MAP(SIX_ISLAND_GREEN_PATH),                 0},
     [MAPSEC_WATER_PATH          - MAPSECS_KANTO] = {MAP(SIX_ISLAND_WATER_PATH),                 0},
     [MAPSEC_RUIN_VALLEY         - MAPSECS_KANTO] = {MAP(SIX_ISLAND_RUIN_VALLEY),                0},
-    [MAPSEC_TRAINER_TOWER       - MAPSECS_KANTO] = {MAP(SEVEN_ISLAND_TRAINER_TOWER),            0},
+    [MAPSEC_LEHRER_TOWER       - MAPSECS_KANTO] = {MAP(SEVEN_ISLAND_LEHRER_TOWER),            0},
     [MAPSEC_CANYON_ENTRANCE     - MAPSECS_KANTO] = {MAP(SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE),  0},
     [MAPSEC_SEVAULT_CANYON      - MAPSECS_KANTO] = {MAP(SEVEN_ISLAND_SEVAULT_CANYON),           0},
     [MAPSEC_TANOBY_RUINS        - MAPSECS_KANTO] = {MAP(SEVEN_ISLAND_TANOBY_RUINS),             0},
@@ -917,7 +917,7 @@ static const u8 sMapFlyDestinations[][3] = {
     [MAPSEC_BERRY_FOREST        - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           0},
     [MAPSEC_ICEFALL_CAVE        - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           0},
     [MAPSEC_ROCKET_WAREHOUSE    - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           0},
-    [MAPSEC_TRAINER_TOWER_2     - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           0},
+    [MAPSEC_LEHRER_TOWER_2     - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           0},
     [MAPSEC_DOTTED_HOLE         - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           0},
     [MAPSEC_LOST_CAVE           - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           0},
     [MAPSEC_PATTERN_BUSH        - MAPSECS_KANTO] = {MAP(PALLET_TOWN),                           0},
@@ -3052,8 +3052,8 @@ static u8 GetDungeonMapsecType(u8 mapsec)
         return FlagGet(FLAG_WORLD_MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
     case MAPSEC_ROCKET_WAREHOUSE:
         return FlagGet(FLAG_WORLD_MAP_FIVE_ISLAND_ROCKET_WAREHOUSE) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
-    case MAPSEC_TRAINER_TOWER_2:
-        return FlagGet(FLAG_WORLD_MAP_TRAINER_TOWER_LOBBY) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
+    case MAPSEC_LEHRER_TOWER_2:
+        return FlagGet(FLAG_WORLD_MAP_LEHRER_TOWER_LOBBY) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
     case MAPSEC_DOTTED_HOLE:
         return FlagGet(FLAG_WORLD_MAP_SIX_ISLAND_DOTTED_HOLE_1F) ? MAPSECTYPE_VISITED : MAPSECTYPE_NOT_VISITED;
     case MAPSEC_LOST_CAVE:
@@ -3233,7 +3233,7 @@ static void GetPlayerPositionOnRegionMap_HandleOverrides(void)
         sMapCursor->x = 10;
         sMapCursor->y = 8;
         break;
-    case MAPSEC_TRAINER_TOWER_2:
+    case MAPSEC_LEHRER_TOWER_2:
         sMapCursor->x = 5;
         sMapCursor->y = 6;
         break;

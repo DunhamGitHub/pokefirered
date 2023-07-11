@@ -5,7 +5,7 @@
 // Note that this is different than the number of people actively
 // connected as children via the Wireless Adapter, which cannot
 // exceed RFU_CHILD_MAX (4), for a total of 5 including the player.
-#define MAX_UNION_ROOM_LEADERS 8
+#define MAX_UNION_ROOM_CHEFS 8
 
 #define UNION_ROOM_SPAWN_NONE 0
 #define UNION_ROOM_SPAWN_IN   1

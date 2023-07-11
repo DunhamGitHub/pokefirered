@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "VictoryRoad_2F_EventScript_Dawson",
       "flag": "0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "VictoryRoad_2F_EventScript_Daisuke",
       "flag": "0"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "VictoryRoad_2F_EventScript_Nelson",
       "flag": "0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_LEFT_UP",
       "movement_range_x": 4,
       "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "VictoryRoad_2F_EventScript_Vincent",
       "flag": "0"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "VictoryRoad_2F_EventScript_Gregory",
       "flag": "0"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VictoryRoad_2F_EventScript_ItemGuardSpec",
       "flag": "FLAG_HIDE_VICTORY_ROAD_2F_GUARD_SPEC"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VictoryRoad_2F_EventScript_ItemTM07",
       "flag": "FLAG_HIDE_VICTORY_ROAD_2F_TM07"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VictoryRoad_2F_EventScript_ItemFullHeal",
       "flag": "FLAG_HIDE_VICTORY_ROAD_2F_FULL_HEAL"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VictoryRoad_2F_EventScript_ItemTM37",
       "flag": "FLAG_HIDE_VICTORY_ROAD_2F_TM37"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_StrengthBoulder",
       "flag": "0"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_StrengthBoulder",
       "flag": "0"
@@ -178,21 +178,21 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_StrengthBoulder",
       "flag": "FLAG_HIDE_VICTORY_ROAD_2F_BOULDER"
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
+      "graphics_id": "OBJ_EVENT_GFX_COOLLEHRER_M",
       "x": 40,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VictoryRoad_2F_EventScript_DoubleEdgeTutor",
       "flag": "0"

@@ -79,7 +79,7 @@ enum {
     CMD_DROP_BERRIES,
     CMD_DROP_LID,
     CMD_COUNTDOWN,
-    CMD_PLAY_GAME_LEADER,
+    CMD_PLAY_GAME_CHEF,
     CMD_PLAY_GAME_MEMBER,
     CMD_FINISH_GAME,
     CMD_TIMES_UP,
@@ -471,7 +471,7 @@ static u32 (*const sBerryCrushCommands[])(struct BerryCrushGame * berryCrushGame
     [CMD_DROP_BERRIES]     = Cmd_DropBerriesIntoCrusher,
     [CMD_DROP_LID]         = Cmd_DropLid,
     [CMD_COUNTDOWN]        = Cmd_Countdown,
-    [CMD_PLAY_GAME_LEADER] = Cmd_PlayGame_Leader,
+    [CMD_PLAY_GAME_CHEF] = Cmd_PlayGame_Leader,
     [CMD_PLAY_GAME_MEMBER] = Cmd_PlayGame_Member,
     [CMD_FINISH_GAME]      = Cmd_FinishGame,
     [CMD_TIMES_UP]         = Cmd_HandleTimeUp,
@@ -1543,7 +1543,7 @@ static u32 Cmd_Countdown(struct BerryCrushGame * game, u8 *args)
         game->gfx.vibrating = FALSE;
         game->cmdTimer = 0;
         if (game->localId == 0)
-            RunOrScheduleCommand(CMD_PLAY_GAME_LEADER, SCHEDULE_CMD, NULL);
+            RunOrScheduleCommand(CMD_PLAY_GAME_CHEF, SCHEDULE_CMD, NULL);
         else
             RunOrScheduleCommand(CMD_PLAY_GAME_MEMBER, SCHEDULE_CMD, NULL);
         game->gameState = STATE_PLAYING;

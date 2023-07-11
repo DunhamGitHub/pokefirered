@@ -13,7 +13,7 @@ SaffronCity_PokemonTrainerFanClub_MapScripts::
 	.byte 0
 
 SaffronCity_PokemonTrainerFanClub_OnFrame::
-	map_script_2 VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB, 1, SaffronCity_PokemonTrainerFanClub_EventScript_MeetFirstFans
+	map_script_2 VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB, 1, SaffronCity_PokemonTrainerFanClub_EventScript_MeetFirstFans
 	.2byte 0
 
 SaffronCity_PokemonTrainerFanClub_EventScript_MeetFirstFans::
@@ -33,7 +33,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_MeetFirstFans::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_YourePlayerWereYourFansNow
-	setvar VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB, 2
+	setvar VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB, 2
 	releaseall
 	end
 
@@ -84,8 +84,8 @@ LilycoveCity_PokemonTrainerFanClub_Movement_LittleGirlHideFromPlayer::
 	step_end
 
 SaffronCity_PokemonTrainerFanClub_OnTransition::
-	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB, 1, SaffronCity_PokemonTrainerFanClub_EventScript_SetMemberPosForFirstMeeting
-	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB, 2, SaffronCity_PokemonTrainerFanClub_EventScript_UpdateFanMemberPositions
+	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB, 1, SaffronCity_PokemonTrainerFanClub_EventScript_SetMemberPosForFirstMeeting
+	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB, 2, SaffronCity_PokemonTrainerFanClub_EventScript_UpdateFanMemberPositions
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_UpdateFanMemberPositions::
@@ -169,11 +169,11 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirl::
 	faceplayer
 	setvar VAR_0x8004, FANCLUB_MEMBER1
 	special Script_BufferFanClubTrainerName
-	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB, 0, SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlPlayerNotChampion
+	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB, 0, SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlPlayerNotChampion
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlPlayersFan
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlOnlyNonFan
+	goto_if_eq VAR_RESULT, (NUM_LEHRER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BattleGirlOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WasYourFanNotAnymore
 	release
 	end
@@ -205,11 +205,11 @@ SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirl::
 	faceplayer
 	setvar VAR_0x8004, FANCLUB_MEMBER4
 	special Script_BufferFanClubTrainerName
-	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB, 0, SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlPlayerNotChampion
+	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB, 0, SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlPlayerNotChampion
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlPlayersFan
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlOnlyNonFan
+	goto_if_eq VAR_RESULT, (NUM_LEHRER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_LittleGirlOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WantToBeLikeSabrina
 	release
 	end
@@ -241,11 +241,11 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Youngster::
 	faceplayer
 	setvar VAR_0x8004, FANCLUB_MEMBER2
 	special Script_BufferFanClubTrainerName
-	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB, 0, SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterPlayerNotChampion
+	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB, 0, SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterPlayerNotChampion
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterPlayersFan
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterOnlyNonFan
+	goto_if_eq VAR_RESULT, (NUM_LEHRER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_YoungsterOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_BrocksMyHero
 	release
 	end
@@ -277,11 +277,11 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Gentleman::
 	faceplayer
 	setvar VAR_0x8004, FANCLUB_MEMBER3
 	special Script_BufferFanClubTrainerName
-	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB, 0, SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayerNotChampion
+	goto_if_eq VAR_MAP_SCENE_SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB, 0, SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayerNotChampion
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanPlayersFan
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyNonFan
+	goto_if_eq VAR_RESULT, (NUM_LEHRER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_GentlemanOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_HmmAndYouAre
 	release
 	end
@@ -316,7 +316,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Woman::
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_WomanPlayersFan
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyNonFan
+	goto_if_eq VAR_RESULT, (NUM_LEHRER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_WomanOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_TrainerHasBeenOnFire
 	release
 	end
@@ -346,7 +346,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Rocker::
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_RockerPlayersFan
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyNonFan
+	goto_if_eq VAR_RESULT, (NUM_LEHRER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_RockerOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_LoveWayTrainerTalks
 	release
 	end
@@ -376,7 +376,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_Beauty::
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_BeautyPlayersFan
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyNonFan
+	goto_if_eq VAR_RESULT, (NUM_LEHRER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BeautyOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_WhyCantOthersSeeMastersDignity
 	release
 	end
@@ -406,7 +406,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BlackBelt::
 	specialvar VAR_RESULT, Script_IsFanClubMemberFanOfPlayer
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltPlayersFan
 	specialvar VAR_RESULT, Script_GetNumFansOfPlayerInTrainerFanClub
-	goto_if_eq VAR_RESULT, (NUM_TRAINER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan
+	goto_if_eq VAR_RESULT, (NUM_LEHRER_FAN_CLUB_MEMBERS - 1), SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_OnlyMasterHasMyRespect
 	release
 	end

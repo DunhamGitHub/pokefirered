@@ -86,9 +86,9 @@ static void (*const sSafariBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_LOADMONSPRITE]            = SafariHandleLoadMonSprite,
     [CONTROLLER_SWITCHINANIM]             = SafariHandleSwitchInAnim,
     [CONTROLLER_RETURNMONTOBALL]          = SafariHandleReturnMonToBall,
-    [CONTROLLER_DRAWTRAINERPIC]           = SafariHandleDrawTrainerPic,
-    [CONTROLLER_TRAINERSLIDE]             = SafariHandleTrainerSlide,
-    [CONTROLLER_TRAINERSLIDEBACK]         = SafariHandleTrainerSlideBack,
+    [CONTROLLER_DRAWLEHRERPIC]           = SafariHandleDrawTrainerPic,
+    [CONTROLLER_LEHRERSLIDE]             = SafariHandleTrainerSlide,
+    [CONTROLLER_LEHRERSLIDEBACK]         = SafariHandleTrainerSlideBack,
     [CONTROLLER_FAINTANIMATION]           = SafariHandleFaintAnimation,
     [CONTROLLER_PALETTEFADE]              = SafariHandlePaletteFade,
     [CONTROLLER_SUCCESSBALLTHROWANIM]     = SafariHandleSuccessBallThrowAnim,
@@ -126,7 +126,7 @@ static void (*const sSafariBufferCommands[CONTROLLER_CMDS_COUNT])(void) =
     [CONTROLLER_PLAYFANFARE]              = SafariHandlePlayFanfareOrBGM,
     [CONTROLLER_FAINTINGCRY]              = SafariHandleFaintingCry,
     [CONTROLLER_INTROSLIDE]               = SafariHandleIntroSlide,
-    [CONTROLLER_INTROTRAINERBALLTHROW]    = SafariHandleIntroTrainerBallThrow,
+    [CONTROLLER_INTROLEHRERBALLTHROW]    = SafariHandleIntroTrainerBallThrow,
     [CONTROLLER_DRAWPARTYSTATUSSUMMARY]   = SafariHandleDrawPartyStatusSummary,
     [CONTROLLER_HIDEPARTYSTATUSSUMMARY]   = SafariHandleHidePartyStatusSummary,
     [CONTROLLER_ENDBOUNCE]                = SafariHandleEndBounceEffect,
@@ -376,7 +376,7 @@ static void SafariHandleSuccessBallThrowAnim(void)
 {
     gBattleSpritesDataPtr->animationData->ballThrowCaseId = BALL_3_SHAKES_SUCCESS;
     gDoingBattleAnim = TRUE;
-    InitAndLaunchSpecialAnimation(gActiveBattler, gActiveBattler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_TRAINER);
+    InitAndLaunchSpecialAnimation(gActiveBattler, gActiveBattler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_LEHRER);
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnSpecialAnimDone;
 }
 
@@ -386,7 +386,7 @@ static void SafariHandleBallThrowAnim(void)
 
     gBattleSpritesDataPtr->animationData->ballThrowCaseId = ballThrowCaseId;
     gDoingBattleAnim = TRUE;
-    InitAndLaunchSpecialAnimation(gActiveBattler, gActiveBattler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_TRAINER);
+    InitAndLaunchSpecialAnimation(gActiveBattler, gActiveBattler, GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), B_ANIM_BALL_THROW_WITH_LEHRER);
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnSpecialAnimDone;
 }
 

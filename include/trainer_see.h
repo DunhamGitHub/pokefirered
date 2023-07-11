@@ -1,5 +1,5 @@
-#ifndef GUARD_TRAINER_SEE_H
-#define GUARD_TRAINER_SEE_H
+#ifndef GUARD_LEHRER_SEE_H
+#define GUARD_LEHRER_SEE_H
 
 #include "global.h"
 
@@ -11,4 +11,4 @@ u8 FldEff_XIcon(void);
 u8 FldEff_SmileyFaceIcon(void);
 u8 FldEff_QuestionMarkIcon(void);
 
-#endif //GUARD_TRAINER_SEE_H
+#endif //GUARD_LEHRER_SEE_H

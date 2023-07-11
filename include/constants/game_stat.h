@@ -10,7 +10,7 @@
 #define GAME_STAT_GOT_INTERVIEWED            6
 #define GAME_STAT_TOTAL_BATTLES              7
 #define GAME_STAT_WILD_BATTLES               8
-#define GAME_STAT_TRAINER_BATTLES            9
+#define GAME_STAT_LEHRER_BATTLES            9
 #define GAME_STAT_ENTERED_HOF               10
 #define GAME_STAT_POKEMON_CAPTURES          11
 #define GAME_STAT_FISHING_CAPTURES          12

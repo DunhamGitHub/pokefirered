@@ -110,8 +110,8 @@ enum
     HELP_CANT_CATCH_MONS,
     HELP_RAN_OUT_OF_POTIONS,
     HELP_CAN_I_BUY_POKEBALLS,
-    HELP_WHATS_A_TRAINER,
-    HELP_HOW_DO_I_WIN_AGAINST_TRAINER,
+    HELP_WHATS_A_LEHRER,
+    HELP_HOW_DO_I_WIN_AGAINST_LEHRER,
     HELP_WHERE_DO_MONS_APPEAR,
     HELP_WHAT_ARE_MOVES,
     HELP_WHAT_ARE_HIDDEN_MOVES,
@@ -158,8 +158,8 @@ static const u8 *const sHelpSystemSpecializedQuestionTextPtrs[] = {
     [HELP_CANT_CATCH_MONS]                   = Help_Text_CantCatchMons,
     [HELP_RAN_OUT_OF_POTIONS]                = Help_Text_RanOutOfPotions,
     [HELP_CAN_I_BUY_POKEBALLS]               = Help_Text_CanIBuyPokeBalls,
-    [HELP_WHATS_A_TRAINER]                   = Help_Text_WhatsATrainer,
-    [HELP_HOW_DO_I_WIN_AGAINST_TRAINER]      = Help_Text_HowDoIWinAgainstTrainer,
+    [HELP_WHATS_A_LEHRER]                   = Help_Text_WhatsATrainer,
+    [HELP_HOW_DO_I_WIN_AGAINST_LEHRER]      = Help_Text_HowDoIWinAgainstTrainer,
     [HELP_WHERE_DO_MONS_APPEAR]              = Help_Text_WhereDoMonsAppear,
     [HELP_WHAT_ARE_MOVES]                    = Help_Text_WhatAreMoves,
     [HELP_WHAT_ARE_HIDDEN_MOVES]             = Help_Text_WhatAreHiddenMoves,
@@ -206,8 +206,8 @@ static const u8 *const sHelpSystemSpecializedAnswerTextPtrs[] = {
     [HELP_CANT_CATCH_MONS]                   = Help_Text_AnswerCantCatchMons,
     [HELP_RAN_OUT_OF_POTIONS]                = Help_Text_AnswerRanOutOfPotions,
     [HELP_CAN_I_BUY_POKEBALLS]               = Help_Text_AnswerCanIBuyPokeBalls,
-    [HELP_WHATS_A_TRAINER]                   = Help_Text_AnswerWhatsATrainer,
-    [HELP_HOW_DO_I_WIN_AGAINST_TRAINER]      = Help_Text_AnswerHowDoIWinAgainstTrainer,
+    [HELP_WHATS_A_LEHRER]                   = Help_Text_AnswerWhatsATrainer,
+    [HELP_HOW_DO_I_WIN_AGAINST_LEHRER]      = Help_Text_AnswerHowDoIWinAgainstTrainer,
     [HELP_WHERE_DO_MONS_APPEAR]              = Help_Text_AnswerWhereDoMonsAppear,
     [HELP_WHAT_ARE_MOVES]                    = Help_Text_AnswerWhatAreMoves,
     [HELP_WHAT_ARE_HIDDEN_MOVES]             = Help_Text_AnswerWhatAreHiddenMoves,
@@ -1056,8 +1056,8 @@ static const u8 sWhatToDo_Indoors[] = {
     HELP_MY_MONS_ARE_HURT, 
     HELP_WHAT_IS_STATUS_PROBLEM, 
     HELP_WHAT_HAPPENS_IF_ALL_MY_MONS_FAINT, 
-    HELP_WHATS_A_TRAINER, 
-    HELP_HOW_DO_I_WIN_AGAINST_TRAINER, 
+    HELP_WHATS_A_LEHRER, 
+    HELP_HOW_DO_I_WIN_AGAINST_LEHRER, 
     HELP_WHAT_ARE_MOVES, 
     HELP_WANT_TO_ADD_MORE_MOVES, 
     HELP_WHAT_ARE_HIDDEN_MOVES, 
@@ -1130,8 +1130,8 @@ static const u8 sWhatToDo_Overworld[] = {
     HELP_MY_MONS_ARE_HURT, 
     HELP_WHAT_IS_STATUS_PROBLEM, 
     HELP_WHAT_HAPPENS_IF_ALL_MY_MONS_FAINT, 
-    HELP_WHATS_A_TRAINER, 
-    HELP_HOW_DO_I_WIN_AGAINST_TRAINER, 
+    HELP_WHATS_A_LEHRER, 
+    HELP_HOW_DO_I_WIN_AGAINST_LEHRER, 
     HELP_WHAT_ARE_MOVES, 
     HELP_WANT_TO_ADD_MORE_MOVES, 
     HELP_WHAT_ARE_HIDDEN_MOVES, 
@@ -1189,8 +1189,8 @@ static const u8 sWhatToDo_Dungeon[] = {
     HELP_MY_MONS_ARE_HURT, 
     HELP_WHAT_IS_STATUS_PROBLEM, 
     HELP_WHAT_HAPPENS_IF_ALL_MY_MONS_FAINT, 
-    HELP_WHATS_A_TRAINER, 
-    HELP_HOW_DO_I_WIN_AGAINST_TRAINER, 
+    HELP_WHATS_A_LEHRER, 
+    HELP_HOW_DO_I_WIN_AGAINST_LEHRER, 
     HELP_WHAT_ARE_MOVES, 
     HELP_WANT_TO_ADD_MORE_MOVES, 
     HELP_WHAT_ARE_HIDDEN_MOVES, 
@@ -1234,8 +1234,8 @@ static const u8 sWhatToDo_Surfing[] = {
     HELP_MY_MONS_ARE_HURT, 
     HELP_WHAT_IS_STATUS_PROBLEM, 
     HELP_WHAT_HAPPENS_IF_ALL_MY_MONS_FAINT, 
-    HELP_WHATS_A_TRAINER, 
-    HELP_HOW_DO_I_WIN_AGAINST_TRAINER, 
+    HELP_WHATS_A_LEHRER, 
+    HELP_HOW_DO_I_WIN_AGAINST_LEHRER, 
     HELP_WHAT_ARE_MOVES, 
     HELP_WANT_TO_ADD_MORE_MOVES, 
     HELP_WHAT_ARE_HIDDEN_MOVES, 
@@ -1618,8 +1618,8 @@ static const u8 *const sHelpSystemSubmenuItemLists[HELPCONTEXT_COUNT * (TOPIC_CO
     NULL,                          NULL,                       sTerms_PokemonSkills,       NULL,                    NULL, // HELPCONTEXT_POKEMON_SKILLS
     NULL,                          NULL,                       sTerms_PokemonMoves,        NULL,                    NULL, // HELPCONTEXT_POKEMON_MOVES
     NULL,                          sHowTo_Bag,                 sTerms_Bag,                 NULL,                    NULL, // HELPCONTEXT_BAG
-    NULL,                          sHowTo_TrainerCardFront,    sTerms_TrainerCardFront,    NULL,                    NULL, // HELPCONTEXT_TRAINER_CARD_FRONT
-    NULL,                          sHowTo_TrainerCardBack,     NULL,                       NULL,                    NULL, // HELPCONTEXT_TRAINER_CARD_BACK
+    NULL,                          sHowTo_TrainerCardFront,    sTerms_TrainerCardFront,    NULL,                    NULL, // HELPCONTEXT_LEHRER_CARD_FRONT
+    NULL,                          sHowTo_TrainerCardBack,     NULL,                       NULL,                    NULL, // HELPCONTEXT_LEHRER_CARD_BACK
     NULL,                          sHowTo_Save,                sTerms_Save,                NULL,                    NULL, // HELPCONTEXT_SAVE
     NULL,                          sHowTo_Options,             sTerms_Options,             NULL,                    NULL, // HELPCONTEXT_OPTIONS
     sWhatToDo_PlayersHouse,        NULL,                       NULL,                       sAboutGame_PlayersHouse, NULL, // HELPCONTEXT_PLAYERS_HOUSE
@@ -1632,8 +1632,8 @@ static const u8 *const sHelpSystemSubmenuItemLists[HELPCONTEXT_COUNT * (TOPIC_CO
     sWhatToDo_Dungeon,             sHowTo_Dungeon,             sTerms_Dungeon,             NULL,                    NULL, // HELPCONTEXT_DUNGEON
     sWhatToDo_Surfing,             sHowTo_Surfing,             sTerms_Surfing,             NULL,                    NULL, // HELPCONTEXT_SURFING
     sWhatToDo_WildBattle,          sHowTo_WildBattle,          sTerms_WildBattle,          NULL,                    sTypeMatchups_WildBattle, // HELPCONTEXT_WILD_BATTLE
-    sWhatToDo_TrainerBattleSingle, sHowTo_TrainerBattleSingle, sTerms_TrainerBattleSingle, NULL,                    sTypeMatchups_TrainerBattleSingle, // HELPCONTEXT_TRAINER_BATTLE_SINGLE
-    sWhatToDo_TrainerBattleDouble, sHowTo_TrainerBattleDouble, sTerms_TrainerBattleDouble, NULL,                    sTypeMatchups_TrainerBattleDouble, // HELPCONTEXT_TRAINER_BATTLE_DOUBLE
+    sWhatToDo_TrainerBattleSingle, sHowTo_TrainerBattleSingle, sTerms_TrainerBattleSingle, NULL,                    sTypeMatchups_TrainerBattleSingle, // HELPCONTEXT_LEHRER_BATTLE_SINGLE
+    sWhatToDo_TrainerBattleDouble, sHowTo_TrainerBattleDouble, sTerms_TrainerBattleDouble, NULL,                    sTypeMatchups_TrainerBattleDouble, // HELPCONTEXT_LEHRER_BATTLE_DOUBLE
     sWhatToDo_SafariBattle,        sHowTo_SafariBattle,        sTerms_SafariBattle,        NULL,                    sTypeMatchups_SafariBattle, // HELPCONTEXT_SAFARI_BATTLE
     NULL,                          sHowTo_PC,                  NULL,                       NULL,                    NULL, // HELPCONTEXT_PC
     NULL,                          sHowTo_BillsPC,             NULL,                       NULL,                    NULL, // HELPCONTEXT_BILLS_PC
@@ -1678,8 +1678,8 @@ static const bool8 sHelpSystemContextTopicFlags[HELPCONTEXT_COUNT + 1][TOPIC_COU
     [HELPCONTEXT_POKEMON_SKILLS]        = CONTEXT_TOPIC_FLAGS(FALSE, FALSE,  TRUE, FALSE, FALSE,  TRUE),
     [HELPCONTEXT_POKEMON_MOVES]         = CONTEXT_TOPIC_FLAGS(FALSE, FALSE,  TRUE, FALSE, FALSE,  TRUE),
     [HELPCONTEXT_BAG]                   = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE,  TRUE, FALSE, FALSE,  TRUE),
-    [HELPCONTEXT_TRAINER_CARD_FRONT]    = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE,  TRUE, FALSE, FALSE,  TRUE),
-    [HELPCONTEXT_TRAINER_CARD_BACK]     = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE, FALSE, FALSE, FALSE,  TRUE),
+    [HELPCONTEXT_LEHRER_CARD_FRONT]    = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE,  TRUE, FALSE, FALSE,  TRUE),
+    [HELPCONTEXT_LEHRER_CARD_BACK]     = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE, FALSE, FALSE, FALSE,  TRUE),
     [HELPCONTEXT_SAVE]                  = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE,  TRUE, FALSE, FALSE,  TRUE),
     [HELPCONTEXT_OPTIONS]               = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE,  TRUE, FALSE, FALSE,  TRUE),
     [HELPCONTEXT_PLAYERS_HOUSE]         = CONTEXT_TOPIC_FLAGS( TRUE, FALSE, FALSE,  TRUE, FALSE,  TRUE),
@@ -1692,8 +1692,8 @@ static const bool8 sHelpSystemContextTopicFlags[HELPCONTEXT_COUNT + 1][TOPIC_COU
     [HELPCONTEXT_DUNGEON]               = CONTEXT_TOPIC_FLAGS( TRUE,  TRUE,  TRUE, FALSE, FALSE,  TRUE),
     [HELPCONTEXT_SURFING]               = CONTEXT_TOPIC_FLAGS( TRUE,  TRUE,  TRUE, FALSE, FALSE,  TRUE),
     [HELPCONTEXT_WILD_BATTLE]           = CONTEXT_TOPIC_FLAGS( TRUE,  TRUE,  TRUE, FALSE,  TRUE,  TRUE),
-    [HELPCONTEXT_TRAINER_BATTLE_SINGLE] = CONTEXT_TOPIC_FLAGS( TRUE,  TRUE,  TRUE, FALSE,  TRUE,  TRUE),
-    [HELPCONTEXT_TRAINER_BATTLE_DOUBLE] = CONTEXT_TOPIC_FLAGS( TRUE,  TRUE,  TRUE, FALSE,  TRUE,  TRUE),
+    [HELPCONTEXT_LEHRER_BATTLE_SINGLE] = CONTEXT_TOPIC_FLAGS( TRUE,  TRUE,  TRUE, FALSE,  TRUE,  TRUE),
+    [HELPCONTEXT_LEHRER_BATTLE_DOUBLE] = CONTEXT_TOPIC_FLAGS( TRUE,  TRUE,  TRUE, FALSE,  TRUE,  TRUE),
     [HELPCONTEXT_SAFARI_BATTLE]         = CONTEXT_TOPIC_FLAGS( TRUE,  TRUE,  TRUE, FALSE,  TRUE,  TRUE),
     [HELPCONTEXT_PC]                    = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE, FALSE, FALSE, FALSE,  TRUE),
     [HELPCONTEXT_BILLS_PC]              = CONTEXT_TOPIC_FLAGS(FALSE,  TRUE, FALSE, FALSE, FALSE,  TRUE),
@@ -1771,8 +1771,8 @@ void SetHelpContext(u8 contextId)
     switch (sHelpSystemContextId)
     {
     case HELPCONTEXT_WILD_BATTLE:
-    case HELPCONTEXT_TRAINER_BATTLE_SINGLE:
-    case HELPCONTEXT_TRAINER_BATTLE_DOUBLE:
+    case HELPCONTEXT_LEHRER_BATTLE_SINGLE:
+    case HELPCONTEXT_LEHRER_BATTLE_DOUBLE:
     case HELPCONTEXT_SAFARI_BATTLE:
         if (contextId == HELPCONTEXT_BAG 
          || contextId == HELPCONTEXT_PARTY_MENU 
@@ -2059,7 +2059,7 @@ static bool8 IsHelpSystemSubmenuEnabled(u8 id)
         case HELP_I_CANT_GO_ON:
             return FlagGet(FLAG_WORLD_MAP_VERMILION_CITY);
         case HELP_HOW_ARE_ROADS_FORESTS_DIFFERENT:
-        case HELP_WHATS_A_TRAINER:
+        case HELP_WHATS_A_LEHRER:
             return FlagGet(FLAG_WORLD_MAP_VIRIDIAN_FOREST);
         case HELP_WHAT_HAPPENED_TO_ITEM_I_GOT:
         case HELP_WHEN_CAN_I_USE_ITEM:
@@ -2078,7 +2078,7 @@ static bool8 IsHelpSystemSubmenuEnabled(u8 id)
             return FlagGet(FLAG_SYS_POKEDEX_GET);
         case HELP_HOW_ARE_CAVES_DIFFERENT:
         case HELP_WHAT_DO_I_DO_IN_CAVE:
-        case HELP_HOW_DO_I_WIN_AGAINST_TRAINER:
+        case HELP_HOW_DO_I_WIN_AGAINST_LEHRER:
         case HELP_FOE_MONS_TOO_STRONG:
         case HELP_WHAT_ARE_MOVES:
         case HELP_WANT_TO_ADD_MORE_MOVES:

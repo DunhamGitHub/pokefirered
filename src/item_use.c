@@ -559,12 +559,13 @@ void FieldUseFunc_Repel(u8 taskId)
         DisplayItemMessageInBag(taskId, FONT_NORMAL, gText_RepelEffectsLingered, Task_ReturnToBagFromContextMenu);
 }
 
+//sp repel
 static void Task_UseRepel(u8 taskId)
 {
     if (!IsSEPlaying())
     {
         ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, NULL, gSpecialVar_ItemId, 0xFFFF);
-        VarSet(VAR_REPEL_STEP_COUNT, ItemId_GetHoldEffectParam(gSpecialVar_ItemId));
+        VarSet(VAR_REPEL_STEP_COUNT,   ( ItemId_GetHoldEffectParam(gSpecialVar_ItemId) * 10 )   ); //sp repel * 10
         RemoveUsedItem();
         DisplayItemMessageInBag(taskId, FONT_NORMAL, gStringVar4, Task_ReturnToBagFromContextMenu);
     }
@@ -820,7 +821,7 @@ void BattleUseFunc_Ether(u8 taskId)
 
 void BattleUseFunc_PokeDoll(u8 taskId)
 {
-    if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+    if (!(gBattleTypeFlags & BATTLE_TYPE_LEHRER))
     {
         RemoveUsedItem();
         ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, 0, gSpecialVar_ItemId, 0xFFFF);

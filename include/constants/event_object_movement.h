@@ -188,7 +188,7 @@
 #define MOVEMENT_ACTION_EMOTE_X                         0x64
 #define MOVEMENT_ACTION_EMOTE_DOUBLE_EXCL_MARK          0x65
 #define MOVEMENT_ACTION_EMOTE_SMILE                     0x66
-#define MOVEMENT_ACTION_REVEAL_TRAINER                  0x67
+#define MOVEMENT_ACTION_REVEAL_LEHRER                  0x67
 #define MOVEMENT_ACTION_ROCK_SMASH_BREAK                0x68
 #define MOVEMENT_ACTION_CUT_TREE                        0x69
 #define MOVEMENT_ACTION_SET_FIXED_PRIORITY              0x6A

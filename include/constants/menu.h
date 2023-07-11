@@ -6,7 +6,7 @@
 
 #define MULTICHOICE_YES_NO                                      0
 #define MULTICHOICE_EEVEELUTIONS                                1
-#define MULTICHOICE_TRAINER_CARD_ICON_TINT                      2
+#define MULTICHOICE_LEHRER_CARD_ICON_TINT                      2
 #define MULTICHOICE_HOF_QUIT                                    3
 #define MULTICHOICE_EGGS_QUIT                                   4
 #define MULTICHOICE_VICTORIES_QUIT                              5
@@ -19,7 +19,7 @@
 #define MULTICHOICE_EXIT_3                                     12
 #define MULTICHOICE_BIKE_SHOP                                  13
 #define MULTICHOICE_GAME_CORNER_POKEMON_PRIZES                 14
-#define MULTICHOICE_TRAINER_SCHOOL_WHITEBOARD                  15
+#define MULTICHOICE_LEHRER_SCHOOL_WHITEBOARD                  15
 #define MULTICHOICE_YES_NO_INFO                                16
 #define MULTICHOICE_SINGLE_DOUBLE_MULTI_INFO_EXIT              17
 #define MULTICHOICE_YES_NO_INFO_2                              18
@@ -68,7 +68,7 @@
 #define MULTICHOICE_SEAGALLOP_VERMILION                        61
 #define MULTICHOICE_62                                         62
 #define MULTICHOICE_JOIN_OR_LEAD                               63
-#define MULTICHOICE_TRAINER_TOWER_MODE                         64
+#define MULTICHOICE_LEHRER_TOWER_MODE                         64
 
 #define MULTICHOICE_NONE                                      255
 
@@ -78,7 +78,7 @@
 #define LISTMENU_DEPT_STORE_FLOORS         3
 #define LISTMENU_WIRELESS_LECTURE_HEADERS  4
 #define LISTMENU_BERRY_POWDER              5
-#define LISTMENU_TRAINER_TOWER_FLOORS      6
+#define LISTMENU_LEHRER_TOWER_FLOORS      6
 
 // Std String Ids
 #define STDSTRING_COOL              0

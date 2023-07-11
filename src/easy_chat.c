@@ -40,7 +40,7 @@ static bool8 IsWordUnlocked(u16 word);
 
 static const u8 *const sEasyChatGroupNamePointers[] = {
     [EC_GROUP_POKEMON] = gEasyChatGroupName_Pokemon,
-    [EC_GROUP_TRAINER] = gEasyChatGroupName_Trainer,
+    [EC_GROUP_LEHRER] = gEasyChatGroupName_Trainer,
     [EC_GROUP_STATUS] = gEasyChatGroupName_Status,
     [EC_GROUP_BATTLE] = gEasyChatGroupName_Battle,
     [EC_GROUP_GREETINGS] = gEasyChatGroupName_Greetings,
@@ -505,7 +505,7 @@ static void PopulateECGroups(void)
     if (GetNationalPokedexCount(FLAG_GET_SEEN))
         sEasyChatSelectionData->groups[sEasyChatSelectionData->numGroups++] = EC_GROUP_POKEMON;
 
-    for (i = EC_GROUP_TRAINER; i <= EC_GROUP_ADJECTIVES; i++)
+    for (i = EC_GROUP_LEHRER; i <= EC_GROUP_ADJECTIVES; i++)
         sEasyChatSelectionData->groups[sEasyChatSelectionData->numGroups++] = i;
 
     if (FlagGet(FLAG_SYS_GAME_CLEAR))

@@ -47,7 +47,7 @@
 #define BATTLE_TYPE_DOUBLE             (1 << 0)
 #define BATTLE_TYPE_LINK               (1 << 1)
 #define BATTLE_TYPE_IS_MASTER          (1 << 2) // In not-link battles, it's always set.
-#define BATTLE_TYPE_TRAINER            (1 << 3)
+#define BATTLE_TYPE_LEHRER            (1 << 3)
 #define BATTLE_TYPE_FIRST_BATTLE       (1 << 4)
 #define BATTLE_TYPE_LINK_IN_BATTLE     (1 << 5) // Set on battle entry, cleared on exit. Checked rarely
 #define BATTLE_TYPE_MULTI              (1 << 6)
@@ -55,7 +55,7 @@
 #define BATTLE_TYPE_BATTLE_TOWER       (1 << 8)
 #define BATTLE_TYPE_OLD_MAN_TUTORIAL   (1 << 9) // Used in pokeemerald as BATTLE_TYPE_WALLY_TUTORIAL.
 #define BATTLE_TYPE_ROAMER             (1 << 10)
-#define BATTLE_TYPE_EREADER_TRAINER    (1 << 11)
+#define BATTLE_TYPE_EREADER_LEHRER    (1 << 11)
 #define BATTLE_TYPE_KYOGRE_GROUDON     (1 << 12)
 #define BATTLE_TYPE_LEGENDARY          (1 << 13)
 #define BATTLE_TYPE_GHOST_UNVEILED     (1 << 13) // Re-use of BATTLE_TYPE_LEGENDARY, when combined with BATTLE_TYPE_GHOST
@@ -64,7 +64,7 @@
 #define BATTLE_TYPE_POKEDUDE           (1 << 16) // Used in pokeemerald as BATTLE_TYPE_DOME.
 #define BATTLE_TYPE_WILD_SCRIPTED      (1 << 17) // Used in pokeemerald as BATTLE_TYPE_PALACE.
 #define BATTLE_TYPE_LEGENDARY_FRLG     (1 << 18) // Used in pokeemerald as BATTLE_TYPE_ARENA.
-#define BATTLE_TYPE_TRAINER_TOWER      (1 << 19) // Used in pokeemerald as BATTLE_TYPE_FACTORY.
+#define BATTLE_TYPE_LEHRER_TOWER      (1 << 19) // Used in pokeemerald as BATTLE_TYPE_FACTORY.
 
 #define IS_BATTLE_TYPE_GHOST_WITHOUT_SCOPE(flags) ((flags) & BATTLE_TYPE_GHOST && !((flags) & BATTLE_TYPE_GHOST_UNVEILED))
 #define IS_BATTLE_TYPE_GHOST_WITH_SCOPE(flags) ((flags) & BATTLE_TYPE_GHOST && (flags) & BATTLE_TYPE_GHOST_UNVEILED)
@@ -296,7 +296,7 @@
 #define BATTLE_TERRAIN_PLAIN        9
 #define BATTLE_TERRAIN_LINK        10
 #define BATTLE_TERRAIN_GYM         11
-#define BATTLE_TERRAIN_LEADER      12
+#define BATTLE_TERRAIN_CHEF      12
 #define BATTLE_TERRAIN_INDOOR_2    13
 #define BATTLE_TERRAIN_INDOOR_1    14
 #define BATTLE_TERRAIN_LORELEI     15

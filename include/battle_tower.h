@@ -4,8 +4,8 @@
 #include "global.h"
 #include "constants/battle_tower.h"
 
-#define BATTLE_TOWER_EREADER_TRAINER_ID 200
-#define BATTLE_TOWER_RECORD_MIXING_TRAINER_BASE_ID 100
+#define BATTLE_TOWER_EREADER_LEHRER_ID 200
+#define BATTLE_TOWER_RECORD_MIXING_LEHRER_BASE_ID 100
 
 struct BattleTowerTrainer
 {

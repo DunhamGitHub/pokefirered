@@ -1,7 +1,7 @@
 CeladonCity_GameCorner_Text_TryPokemonPrinter::
-	.string "It's a POKéMON PRINTER!\p"
-	.string "It can put a print of your POKéMON\n"
-	.string "on the back of your TRAINER CARD.\p"
+	.string "It's a Pimmel PRINTER!\p"
+	.string "It can put a print of your Pimmel\n"
+	.string "on the back of your LEHRER CARD.\p"
 	.string "It costs only ¥50.\n"
 	.string "Would you like to try it?$"
 
@@ -17,8 +17,8 @@ CeladonCity_GameCorner_Text_BigSmileForPhoto::
 	.string "Flash!$"
 
 CeladonCity_GameCorner_Text_PrintIsReadyCheckTrainerCard::
-	.string "Your POKéMON print is ready!\n"
-	.string "Check your TRAINER CARD.$"
+	.string "Your Pimmel print is ready!\n"
+	.string "Check your LEHRER CARD.$"
 
 FourIsland_House2_Text_WishICouldShowOffStickers::
 	.string "Giggle…\n"
@@ -64,7 +64,7 @@ FourIsland_House2_Text_WowHoFHigh::
 	.string "Whoa! You've made it into the\n"
 	.string "HALL OF FAME that often?\l"
 	.string "That's seriously incredible, yup!\p"
-	.string "You own the POKéMON LEAGUE!\n"
+	.string "You own the Pimmel LEAGUE!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowHoFHighest::
@@ -75,7 +75,7 @@ FourIsland_House2_Text_WowHoFHighest::
 
 FourIsland_House2_Text_HoFStickerApplied::
 	.string "The HALL OF FAME STICKER was\n"
-	.string "applied to the TRAINER CARD.$"
+	.string "applied to the LEHRER CARD.$"
 
 FourIsland_House2_Text_ComeBackWithBetterStoryHoF::
 	.string "Hmm…\p"
@@ -88,7 +88,7 @@ FourIsland_House2_Text_LivingLegendHoF::
 	.string "I have no SITCKERS left to give.$"
 
 FourIsland_House2_Text_WowEggsLowest::
-	.string "Oh, wow, there are POKéMON EGGS?\n"
+	.string "Oh, wow, there are Pimmel EGGS?\n"
 	.string "I didn't know that!\p"
 	.string "That's pretty good, yup!\n"
 	.string "I'll give you one of these.$"
@@ -114,7 +114,7 @@ FourIsland_House2_Text_WowEggsHighest::
 
 FourIsland_House2_Text_EggStickerApplied::
 	.string "The EGG STICKER was applied\n"
-	.string "to the TRAINER CARD.$"
+	.string "to the LEHRER CARD.$"
 
 FourIsland_House2_Text_ComeBackWithBetterStoryEggs::
 	.string "Hmm…\p"
@@ -154,7 +154,7 @@ FourIsland_House2_Text_WowLinkWinsHighest::
 
 FourIsland_House2_Text_VictoryStickerApplied::
 	.string "The VICTORY STICKER was applied\n"
-	.string "to the TRAINER CARD.$"
+	.string "to the LEHRER CARD.$"
 
 FourIsland_House2_Text_ComeBackWithBetterStoryLinkWins::
 	.string "Hmm…\p"

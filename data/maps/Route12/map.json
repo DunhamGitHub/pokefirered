@@ -40,7 +40,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route12_EventScript_Ned",
       "flag": "0"
@@ -54,7 +54,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route12_EventScript_Chip",
       "flag": "0"
@@ -68,7 +68,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "Route12_EventScript_Hank",
       "flag": "0"
@@ -82,7 +82,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route12_EventScript_Elliot",
       "flag": "0"
@@ -96,7 +96,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route12_EventScript_Snorlax",
       "flag": "FLAG_HIDE_ROUTE_12_SNORLAX"
@@ -110,7 +110,7 @@
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_LEFT_UP_DOWN_RIGHT",
       "movement_range_x": 4,
       "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route12_EventScript_Luca",
       "flag": "0"
@@ -124,7 +124,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route12_EventScript_Justin",
       "flag": "0"
@@ -138,7 +138,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
       "script": "Route12_EventScript_Andrew",
       "flag": "0"
@@ -152,7 +152,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_12"
@@ -166,7 +166,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route12_EventScript_ItemTM48",
       "flag": "FLAG_HIDE_ROUTE12_TM48"
@@ -180,7 +180,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route12_EventScript_ItemIron",
       "flag": "FLAG_HIDE_ROUTE12_IRON"
@@ -194,7 +194,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route12_EventScript_Gia",
       "flag": "0"
@@ -208,7 +208,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route12_EventScript_Jes",
       "flag": "0"
@@ -222,7 +222,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_13"

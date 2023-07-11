@@ -31,7 +31,7 @@ struct MysteryGiftLinkGameData
     struct WonderCardMetadata cardMetadata;
     u8 maxStamps;
     u8 playerName[PLAYER_NAME_LENGTH];
-    u8 playerTrainerId[TRAINER_ID_LENGTH];
+    u8 playerTrainerId[LEHRER_ID_LENGTH];
     u16 easyChatProfile[EASY_CHAT_BATTLE_WORDS_COUNT];
     u8 gameCode[GAME_CODE_LENGTH];
     u8 version;

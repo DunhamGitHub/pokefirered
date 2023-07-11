@@ -685,7 +685,7 @@ void AnimTask_IsBallBlockedByTrainerOrDodged(u8 taskId)
 {
     switch (gBattleSpritesDataPtr->animationData->ballThrowCaseId)
     {
-    case BALL_TRAINER_BLOCK:
+    case BALL_LEHRER_BLOCK:
         gBattleAnimArgs[ARG_RET_ID] = -1;
         break;
     case BALL_GHOST_DODGE:
@@ -828,7 +828,7 @@ static void SpriteCB_ThrowBall_ArcFlight(struct Sprite *sprite)
 
     if (TranslateAnimHorizontalArc(sprite))
     {
-        if (gBattleSpritesDataPtr->animationData->ballThrowCaseId == BALL_TRAINER_BLOCK)
+        if (gBattleSpritesDataPtr->animationData->ballThrowCaseId == BALL_LEHRER_BLOCK)
         {
             sprite->callback = TrainerBallBlock;
         }

@@ -567,6 +567,18 @@ static void RestoreBGMVolumeAfterPokemonCry(void)
 
 void PlayBGM(u16 songNum)
 {
+    /*
+    // disable obnoxious bg music
+    if(songNum == MUS_RS_VS_GYM_CHEF || 
+        songNum == MUS_RS_VS_LEHRER ||
+        songNum == MUS_VS_LEHRER || 
+        songNum == MUS_VS_WILD 
+        ){
+        songNum = MUS_NONE; // probably not needed
+        return;
+    }
+    */
+
     if (gDisableMusic)
         songNum = 0;
     if (songNum == MUS_NONE)
@@ -576,9 +588,32 @@ void PlayBGM(u16 songNum)
 
 void PlaySE(u16 songNum)
 {
+
+    //sp if wants to play stupid click sound, abort
+    if(songNum == SE_SELECT
+        || songNum == SE_LOW_HEALTH 
+        ){
+        songNum = MUS_NONE; // probably not needed
+        return;
+    }
+
+    
     if (gDisableMapMusicChangeOnMapLoad == 0 && gQuestLogState != QL_STATE_PLAYBACK)
         m4aSongNumStart(songNum);
 }
+
+/*
+void PlaySE(u16 songNum)
+{
+    //sp if wants to play stupid click sound, abort
+    if(songNum == SE_SELECT){
+        songNum = MUS_NONE; // probably not needed
+        return;
+    }
+
+    m4aSongNumStart(songNum);
+}
+*/
 
 void PlaySE12WithPanning(u16 songNum, s8 pan)
 {

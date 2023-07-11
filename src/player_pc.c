@@ -98,7 +98,28 @@ static const struct MenuAction sMenuActions_ItemPc[] = {
 };
 
 static const struct ItemSlot gNewGamePCItems[] = {
-    { ITEM_POTION, 1 },
+    { ITEM_POTION, 33 },
+    { ITEM_RARE_CANDY, 98 }, //100
+    { ITEM_RARE_CANDY, 98 }, //200
+    { ITEM_RARE_CANDY, 98 }, //300
+    { ITEM_RARE_CANDY, 98 }, //400
+    { ITEM_RARE_CANDY, 98 }, //500
+    { ITEM_RARE_CANDY, 98 }, //600
+    { ITEM_RARE_CANDY, 98 }, //700
+    { ITEM_RARE_CANDY, 98 }, //800
+    { ITEM_RARE_CANDY, 98 }, //900 sp enough?
+    { ITEM_MASTER_BALL, 98 },
+    { ITEM_POKE_BALL, 98 },
+    { ITEM_EVERSTONE, 98 },
+    { ITEM_MAX_REVIVE, 98 }, //100
+    { ITEM_MAX_REVIVE, 98 }, //200
+    { ITEM_MAX_REVIVE, 98 }, //300
+    { ITEM_FULL_RESTORE, 98 }, //100
+    { ITEM_FULL_RESTORE, 98 }, //200
+    { ITEM_FULL_RESTORE, 98 }, //300
+    { ITEM_MAX_REPEL, 98 }, //100
+    { ITEM_MAX_REPEL, 98 }, //200
+    { ITEM_MAX_REPEL, 98 }, //300
     { ITEM_NONE,   0 }
 };
 

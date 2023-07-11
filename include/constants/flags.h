@@ -1214,9 +1214,9 @@
 #define FLAG_HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_ORAN_BERRY                  (FLAG_HIDDEN_ITEMS_START + 182)
 #define FLAG_HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_PINAP_BERRY                 (FLAG_HIDDEN_ITEMS_START + 183)
 #define FLAG_HIDDEN_ITEM_SIX_ISLAND_LEPPA_BERRY                            (FLAG_HIDDEN_ITEMS_START + 184)
-#define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TRAINER_TOWER_BIG_PEARL              (FLAG_HIDDEN_ITEMS_START + 185)
-#define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TRAINER_TOWER_PEARL                  (FLAG_HIDDEN_ITEMS_START + 186)
-#define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_TRAINER_TOWER_NANAB_BERRY            (FLAG_HIDDEN_ITEMS_START + 187)
+#define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_LEHRER_TOWER_BIG_PEARL              (FLAG_HIDDEN_ITEMS_START + 185)
+#define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_LEHRER_TOWER_PEARL                  (FLAG_HIDDEN_ITEMS_START + 186)
+#define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_LEHRER_TOWER_NANAB_BERRY            (FLAG_HIDDEN_ITEMS_START + 187)
 #define FLAG_HIDDEN_ITEM_SEVEN_ISLAND_SEVAULT_CANYON_ENTRANCE_RAWST_BERRY  (FLAG_HIDDEN_ITEMS_START + 188)
 #define FLAG_HIDDEN_ITEM_VIRIDIAN_CITY_GYM_MACHO_BRACE                     (FLAG_HIDDEN_ITEMS_START + 189)
 #define FLAG_HIDDEN_ITEM_SSANNE_EXTERIOR_LAVA_COOKIE                       (FLAG_HIDDEN_ITEMS_START + 190)
@@ -1240,7 +1240,7 @@
 #define FLAG_DEFEATED_KOGA            0x4B4
 #define FLAG_DEFEATED_SABRINA         0x4B5
 #define FLAG_DEFEATED_BLAINE          0x4B6
-#define FLAG_DEFEATED_LEADER_GIOVANNI 0x4B7
+#define FLAG_DEFEATED_CHEF_GIOVANNI 0x4B7
 #define FLAG_DEFEATED_LORELEI         0x4B8
 #define FLAG_DEFEATED_BRUNO           0x4B9
 #define FLAG_DEFEATED_AGATHA          0x4BA
@@ -1316,12 +1316,12 @@
 #define FLAG_0x4FE               0x4FE
 #define FLAG_0x4FF               0x4FF
 
-#define TRAINER_FLAGS_START      (FLAG_0x4FF + 1)
-#define TRAINER_FLAGS_END        (TRAINER_FLAGS_START + MAX_TRAINERS_COUNT - 1) // 0x7FF
+#define LEHRER_FLAGS_START      (FLAG_0x4FF + 1)
+#define LEHRER_FLAGS_END        (LEHRER_FLAGS_START + MAX_LEHRERS_COUNT - 1) // 0x7FF
 
 // SYSTEM FLAGS
 
-#define SYS_FLAGS (TRAINER_FLAGS_END + 1) // 0x800
+#define SYS_FLAGS (LEHRER_FLAGS_END + 1) // 0x800
 
 // Temporary system flags
 #define FLAG_SYS_SAFARI_MODE                                        (SYS_FLAGS + 0x0)
@@ -1376,7 +1376,7 @@
 #define FLAG_0x82A                                                  (SYS_FLAGS + 0x2A)
 #define FLAG_0x82B                                                  (SYS_FLAGS + 0x2B)
 #define FLAG_SYS_GAME_CLEAR                                         (SYS_FLAGS + 0x2C)
-#define FLAG_SYS_SET_TRAINER_CARD_PROFILE                           (SYS_FLAGS + 0x2D)
+#define FLAG_SYS_SET_LEHRER_CARD_PROFILE                           (SYS_FLAGS + 0x2D)
 #define FLAG_0x82E                                                  (SYS_FLAGS + 0x2E)
 #define FLAG_SYS_B_DASH                                             (SYS_FLAGS + 0x2F)
 #define FLAG_SYS_ON_CYCLING_ROAD                                    (SYS_FLAGS + 0x30)
@@ -1451,7 +1451,7 @@
 #define FLAG_WORLD_MAP_THREE_ISLAND_BERRY_FOREST                    (SYS_FLAGS + 0xB7)
 #define FLAG_WORLD_MAP_FOUR_ISLAND_ICEFALL_CAVE_ENTRANCE            (SYS_FLAGS + 0xB8)
 #define FLAG_WORLD_MAP_FIVE_ISLAND_ROCKET_WAREHOUSE                 (SYS_FLAGS + 0xB9)
-#define FLAG_WORLD_MAP_TRAINER_TOWER_LOBBY                          (SYS_FLAGS + 0xBA)
+#define FLAG_WORLD_MAP_LEHRER_TOWER_LOBBY                          (SYS_FLAGS + 0xBA)
 #define FLAG_WORLD_MAP_SIX_ISLAND_DOTTED_HOLE_1F                    (SYS_FLAGS + 0xBB)
 #define FLAG_WORLD_MAP_FIVE_ISLAND_LOST_CAVE_ENTRANCE               (SYS_FLAGS + 0xBC)
 #define FLAG_WORLD_MAP_SIX_ISLAND_PATTERN_BUSH                      (SYS_FLAGS + 0xBD)

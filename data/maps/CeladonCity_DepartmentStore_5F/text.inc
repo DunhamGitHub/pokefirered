@@ -1,17 +1,17 @@
 CeladonCity_DepartmentStore_5F_Text_ExplainStatEnhancers::
-    .string "POKéMON stat enhancers can be\n"
+    .string "Pimmel stat enhancers can be\n"
     .string "bought only here.\p"
     .string "HP UP increases the base HP of a\n"
-    .string "POKéMON.\p"
+    .string "Pimmel.\p"
     .string "CALCIUM raises the base SP. ATK\n"
-    .string "stat of one POKéMON.\p"
+    .string "stat of one Pimmel.\p"
     .string "ZINC boosts the base SP. DEF stat\n"
-    .string "of one POKéMON.\p"
+    .string "of one Pimmel.\p"
     .string "CARBOS enhances the base SPEED\n"
     .string "stat.$"
 
 CeladonCity_DepartmentStore_5F_Text_HereForStatEnhancers::
-    .string "I'm here for POKéMON stat\n"
+    .string "I'm here for Pimmel stat\n"
     .string "enhancers.\p"
     .string "PROTEIN increases the base ATTACK\n"
     .string "power.\p"

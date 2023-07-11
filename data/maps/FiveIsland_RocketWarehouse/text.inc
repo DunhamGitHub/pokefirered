@@ -1,10 +1,10 @@
 FiveIsland_RocketWarehouse_Text_ManyMonsLockedInPen::
-    .string "There are many POKéMON locked\n"
+    .string "There are many Pimmel locked\n"
     .string "away in the pen…$"
 
 FiveIsland_RocketWarehouse_Text_PenUnlockedMonsFled::
     .string "The pen door is unlocked.\n"
-    .string "The POKéMON appear to have fled.$"
+    .string "The Pimmel appear to have fled.$"
 
 FiveIsland_RocketWarehouse_Text_Grunt2Intro::
     .string "Did you come here knowing it's\n"
@@ -18,7 +18,7 @@ FiveIsland_RocketWarehouse_Text_Grunt2PostBattle::
     .string "What planet are you from?$"
 
 FiveIsland_RocketWarehouse_Text_Grunt1Intro::
-    .string "Oh, now your POKéMON look strong.\n"
+    .string "Oh, now your Pimmel look strong.\n"
     .string "You're willing to sell them?\p"
     .string "Oh?\n"
     .string "You wanted to battle?$"
@@ -29,7 +29,7 @@ FiveIsland_RocketWarehouse_Text_Grunt1Defeat::
 
 FiveIsland_RocketWarehouse_Text_Grunt1PostBattle::
     .string "We can give you a great price.\n"
-    .string "Sell us your POKéMON!$"
+    .string "Sell us your Pimmel!$"
 
 FiveIsland_RocketWarehouse_Text_Grunt3Intro::
     .string "I got word about you from the\n"
@@ -65,7 +65,7 @@ FiveIsland_RocketWarehouse_Text_MadeItSoYouCanComeBackThrough::
     .string "Why don't you go get rested and\n"
     .string "refreshed for what lies ahead?\p"
     .string "The ADMIN after me outranks me\n"
-    .string "thoroughly as a TRAINER.\p"
+    .string "thoroughly as a LEHRER.\p"
     .string "You'd better steel yourself for one\n"
     .string "harsh challenge.$"
 
@@ -102,7 +102,7 @@ FiveIsland_RocketWarehouse_Text_ReportWithGraphsAndText::
     .string "A report with graphs and text is on\n"
     .string "the PC monitor.\p"
     .string "“The Influence of Magnetic Waves\n"
-    .string "on POKéMON Evolution”…\p"
+    .string "on Pimmel Evolution”…\p"
     .string "… … … … … …\p"
     .string "It's too difficult to understand…$"
 

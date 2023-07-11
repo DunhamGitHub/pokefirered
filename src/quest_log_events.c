@@ -152,11 +152,11 @@ static u16 *(*const sQuestLogStorageCBs[])(u16 *, const u16 *) = {
     [QL_EVENT_SWITCHED_MULTIPLE_MONS]        = BufferQuestLogData_SwitchedMultipleMons,
     [QL_EVENT_DEPOSITED_ITEM_PC]             = BufferQuestLogData_DepositedItemInPC,
     [QL_EVENT_WITHDREW_ITEM_PC]              = BufferQuestLogData_WithdrewItemFromPC,
-    [QL_EVENT_DEFEATED_GYM_LEADER]           = BufferQuestLogData_DefeatedGymLeader,
+    [QL_EVENT_DEFEATED_GYM_CHEF]           = BufferQuestLogData_DefeatedGymLeader,
     [QL_EVENT_DEFEATED_WILD_MON]             = BufferQuestLogData_DefeatedWildMon,
     [QL_EVENT_DEFEATED_E4_MEMBER]            = BufferQuestLogData_DefeatedEliteFourMember,
     [QL_EVENT_DEFEATED_CHAMPION]             = BufferQuestLogData_DefeatedChampion,
-    [QL_EVENT_DEFEATED_TRAINER]              = BufferQuestLogData_DefeatedTrainer,
+    [QL_EVENT_DEFEATED_LEHRER]              = BufferQuestLogData_DefeatedTrainer,
     [QL_EVENT_DEPARTED]                      = BufferQuestLogData_DepartedLocation,
     [QL_EVENT_USED_FIELD_MOVE]               = BufferQuestLogData_UsedFieldMove,
     [QL_EVENT_BOUGHT_ITEM]                   = BufferQuestLogData_BoughtItem,
@@ -256,22 +256,22 @@ void SetQuestLogEvent(u16 eventId, const u16 *eventData)
 static bool8 InQuestLogDisabledLocation(void)
 {
     // In Trainer Tower
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_TOWER_1F)
-        && (gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_1F)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_2F)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_3F)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_4F)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_5F)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_6F)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_7F)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_8F)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_ROOF)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_LOBBY)
-            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_ELEVATOR)))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LEHRER_TOWER_1F)
+        && (gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_1F)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_2F)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_3F)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_4F)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_5F)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_6F)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_7F)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_8F)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_ROOF)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_LOBBY)
+            || gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_ELEVATOR)))
         return TRUE;
 
     // In pokemon trainer fan club
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SAFFRON_CITY_POKEMON_TRAINER_FAN_CLUB))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SAFFRON_CITY_POKEMON_LEHRER_FAN_CLUB))
         return TRUE;
 
     // In E-Reader house
@@ -283,7 +283,7 @@ static bool8 InQuestLogDisabledLocation(void)
     // In elevator
     if ((gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROCKET_HIDEOUT_ELEVATOR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROCKET_HIDEOUT_ELEVATOR))
         || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(SILPH_CO_ELEVATOR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(SILPH_CO_ELEVATOR))
-        || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_TOWER_ELEVATOR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_ELEVATOR))
+        || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LEHRER_TOWER_ELEVATOR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_ELEVATOR))
         || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(CELADON_CITY_DEPARTMENT_STORE_ELEVATOR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(CELADON_CITY_DEPARTMENT_STORE_ELEVATOR)))
         return TRUE;
 
@@ -335,13 +335,13 @@ static bool8 ShouldRegisterEvent_HandlePartyActions(u16 eventId, const u16 *even
 
 static bool8 ShouldRegisterEvent_HandleBeatStoryTrainer(u16 eventId, const u16 *eventData)
 {
-    if (eventId == QL_EVENT_DEFEATED_TRAINER)
+    if (eventId == QL_EVENT_DEFEATED_LEHRER)
     {
         u8 trainerClass = gTrainers[*eventData].trainerClass;
-        if (trainerClass == TRAINER_CLASS_RIVAL_EARLY
-         || trainerClass == TRAINER_CLASS_RIVAL_LATE
-         || trainerClass == TRAINER_CLASS_CHAMPION
-         || trainerClass == TRAINER_CLASS_BOSS)
+        if (trainerClass == LEHRER_CLASS_RIVAL_EARLY
+         || trainerClass == LEHRER_CLASS_RIVAL_LATE
+         || trainerClass == LEHRER_CLASS_CHAMPION
+         || trainerClass == LEHRER_CLASS_BOSS)
             return FALSE;
         return TRUE;
     }
@@ -410,8 +410,8 @@ void QuestLog_StartRecordingInputsAfterDeferredEvent(void)
 
 static bool8 TrySetTrainerBattleQuestLogEvent(u16 eventId, const u16 *eventData)
 {
-    if (eventId != QL_EVENT_DEFEATED_TRAINER
-        && eventId != QL_EVENT_DEFEATED_GYM_LEADER
+    if (eventId != QL_EVENT_DEFEATED_LEHRER
+        && eventId != QL_EVENT_DEFEATED_GYM_CHEF
         && eventId != QL_EVENT_DEFEATED_E4_MEMBER
         && eventId != QL_EVENT_DEFEATED_CHAMPION)
         return FALSE;
@@ -495,11 +495,11 @@ static const u16 *(*const sQuestLogEventTextBufferCBs[])(const u16 *) = {
     [QL_EVENT_SWITCHED_MULTIPLE_MONS]        = BufferQuestLogText_SwitchedMultipleMons,
     [QL_EVENT_DEPOSITED_ITEM_PC]             = BufferQuestLogText_DepositedItemInPC,
     [QL_EVENT_WITHDREW_ITEM_PC]              = BufferQuestLogText_WithdrewItemFromPC,
-    [QL_EVENT_DEFEATED_GYM_LEADER]           = BufferQuestLogText_DefeatedGymLeader,
+    [QL_EVENT_DEFEATED_GYM_CHEF]           = BufferQuestLogText_DefeatedGymLeader,
     [QL_EVENT_DEFEATED_WILD_MON]             = BufferQuestLogText_DefeatedWildMon,
     [QL_EVENT_DEFEATED_E4_MEMBER]            = BufferQuestLogText_DefeatedEliteFourMember,
     [QL_EVENT_DEFEATED_CHAMPION]             = BufferQuestLogText_DefeatedChampion,
-    [QL_EVENT_DEFEATED_TRAINER]              = BufferQuestLogText_DefeatedTrainer,
+    [QL_EVENT_DEFEATED_LEHRER]              = BufferQuestLogText_DefeatedTrainer,
     [QL_EVENT_DEPARTED]                      = BufferQuestLogText_DepartedLocation,
     [QL_EVENT_USED_FIELD_MOVE]               = BufferQuestLogText_UsedFieldMove,
     [QL_EVENT_BOUGHT_ITEM]                   = BufferQuestLogText_BoughtItem,
@@ -541,11 +541,11 @@ static const u8 sQuestLogEventCmdSizes[] = {
     [QL_EVENT_SWITCHED_MULTIPLE_MONS] = 0x06,
     [QL_EVENT_DEPOSITED_ITEM_PC] = 0x06,
     [QL_EVENT_WITHDREW_ITEM_PC] = 0x06,
-    [QL_EVENT_DEFEATED_GYM_LEADER] = 0x0c,
+    [QL_EVENT_DEFEATED_GYM_CHEF] = 0x0c,
     [QL_EVENT_DEFEATED_WILD_MON] = 0x0c,
     [QL_EVENT_DEFEATED_E4_MEMBER] = 0x0c,
     [QL_EVENT_DEFEATED_CHAMPION] = 0x0a,
-    [QL_EVENT_DEFEATED_TRAINER] = 0x0c,
+    [QL_EVENT_DEFEATED_LEHRER] = 0x0c,
     [QL_EVENT_DEPARTED] = 0x06,
     [QL_EVENT_USED_FIELD_MOVE] = 0x08,
     [QL_EVENT_BOUGHT_ITEM] = 0x0e,
@@ -1495,13 +1495,13 @@ u16 *BufferQuestLogData_DefeatedTrainer_(u16 eventId, u16 *a1, const u16 *a2)
 static u16 *BufferQuestLogData_DefeatedGymLeader(u16 *a0, const u16 *eventData)
 {
     sEventShouldNotRecordSteps = 1;
-    return BufferQuestLogData_DefeatedTrainer_(QL_EVENT_DEFEATED_GYM_LEADER, a0, eventData);
+    return BufferQuestLogData_DefeatedTrainer_(QL_EVENT_DEFEATED_GYM_CHEF, a0, eventData);
 }
 
 static const u16 *BufferQuestLogText_DefeatedGymLeader(const u16 *eventData)
 {
     const u8 *r6;
-    eventData = sub_8113E88(QL_EVENT_DEFEATED_GYM_LEADER, eventData);
+    eventData = sub_8113E88(QL_EVENT_DEFEATED_GYM_CHEF, eventData);
     r6 = (const u8 *)eventData + 6;
     DynamicPlaceholderTextUtil_Reset();
     GetMapNameGeneric(gStringVar1, r6[0]);
@@ -1669,20 +1669,20 @@ static const u16 *BufferQuestLogText_DefeatedChampion(const u16 *a0)
 static u16 *BufferQuestLogData_DefeatedTrainer(u16 *a0, const u16 *eventData)
 {
     sEventShouldNotRecordSteps = 1;
-    return BufferQuestLogData_DefeatedTrainer_(QL_EVENT_DEFEATED_TRAINER, a0, eventData);
+    return BufferQuestLogData_DefeatedTrainer_(QL_EVENT_DEFEATED_LEHRER, a0, eventData);
 }
 
 static const u16 *BufferQuestLogText_DefeatedTrainer(const u16 *eventData)
 {
-    const u16 *r5 = sub_8113E88(QL_EVENT_DEFEATED_TRAINER, eventData);
+    const u16 *r5 = sub_8113E88(QL_EVENT_DEFEATED_LEHRER, eventData);
     const u8 *r6 = (const u8 *)r5 + 6;
     DynamicPlaceholderTextUtil_Reset();
     GetMapNameGeneric(gStringVar1, r6[0]);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, gStringVar1);
 
-    if (gTrainers[r5[2]].trainerClass == TRAINER_CLASS_RIVAL_EARLY
-     || gTrainers[r5[2]].trainerClass == TRAINER_CLASS_RIVAL_LATE
-     || gTrainers[r5[2]].trainerClass == TRAINER_CLASS_CHAMPION)
+    if (gTrainers[r5[2]].trainerClass == LEHRER_CLASS_RIVAL_EARLY
+     || gTrainers[r5[2]].trainerClass == LEHRER_CLASS_RIVAL_LATE
+     || gTrainers[r5[2]].trainerClass == LEHRER_CLASS_CHAMPION)
         DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, GetExpandedPlaceholder(PLACEHOLDER_ID_RIVAL));
     else
         DynamicPlaceholderTextUtil_SetPlaceholderPtr(1, gTrainers[r5[2]].trainerName);

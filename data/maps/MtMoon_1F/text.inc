@@ -40,10 +40,10 @@ MtMoon_1F_Text_JovanIntro::
     .string "Don't sneak up on me!$"
 
 MtMoon_1F_Text_JovanDefeat::
-    .string "My POKéMON won't do!$"
+    .string "My Pimmel won't do!$"
 
 MtMoon_1F_Text_JovanPostBattle::
-    .string "I have to find stronger POKéMON.\n"
+    .string "I have to find stronger Pimmel.\n"
     .string "Where might they be?$"
 
 MtMoon_1F_Text_IrisIntro::
@@ -88,5 +88,5 @@ MtMoon_1F_Text_ZubatIsABloodsucker::
 MtMoon_1F_Text_BrockHelpsExcavateFossils::
     .string "Hi, I'm excavating for fossils here\n"
     .string "under MT. MOON.\p"
-    .string "Sometimes, BROCK of PEWTER GYM\n"
+    .string "Sometimes, ROCKO of PEWTER GYM\n"
     .string "lends me a hand.$"

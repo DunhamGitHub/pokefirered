@@ -1,82 +1,82 @@
 const u8 gTeachyTvString_TeachBattle[] = _("Teach me how to battle.");
 const u8 gTeachyTvString_StatusProblems[] = _("What are status problems?");
 const u8 gTeachyTvString_TypeMatchups[] = _("What are type matchups?");
-const u8 gTeachyTvString_CatchPkmn[] = _("I want to catch POKéMON.");
+const u8 gTeachyTvString_CatchPkmn[] = _("I want to catch Pimmel.");
 const u8 gTeachyTvString_AboutTMs[] = _("Teach me about TMs.");
 const u8 gTeachyTvString_RegisterItem[] = _("How do I register an item?");
 const u8 gTeachyTvString_Cancel[] = _("CANCEL");
 const u8 gTeachyTvText_PokedudeSaysHello[] = _(
-    "Hey, all you TRAINERS out there!\n"
-    "HELLO, TRAINERS!\p"
+    "Hey, all you LEHRERS out there!\n"
+    "HELLO, LEHRERS!\p"
     "……… ……… ………\p"
     "Come on, let me hear you!\n"
-    "HELLO, TRAINERS!\l"
-    "It's me, the POKé DUDE!\p");
+    "HELLO, LEHRERS!\l"
+    "It's me, the PimmelDUDE!\p");
 const u8 gTeachyTvText_BattleScript1[] = _(
-    "Today, the POKé DUDE's here to\n"
+    "Today, the PimmelDUDE's here to\n"
     "tell you about how you can battle\l"
-    "POKéMON!\p"
+    "Pimmel!\p"
     "Say you're out for a stroll when,\n"
-    "suddenly, a wild POKéMON appears!\p"
+    "suddenly, a wild Pimmel appears!\p"
     "It's up to you to smartly use your\n"
-    "POKéMON and their moves to reduce\l"
+    "Pimmel and their moves to reduce\l"
     "the opponent's HP to nothing, and\l"
     "claim victory!\p"
     "I'll show you how to do that in\n"
     "person and for sure!\p"
     "All righty, here goes!\p"
     "Keep your eyes glued to the super\n"
-    "POKé DUDE SHOW!");
+    "PimmelDUDE SHOW!");
 const u8 gTeachyTvText_BattleScript2[] = _(
     "Well, did you get that?\p"
-    "Even if your own POKéMON's HP\n"
+    "Even if your own Pimmel's HP\n"
     "falls to zero, and it becomes\l"
     "unable to battle, not to worry!\p"
-    "Just take it to any POKéMON\n"
+    "Just take it to any Pimmel\n"
     "CENTER and heal it!\p"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, LEHRERS, a good deed\n"
     "a day brings happiness to stay!");
 const u8 gTeachyTvText_StatusScript1[] = _(
-    "Today, the POKé DUDE's here to\n"
+    "Today, the PimmelDUDE's here to\n"
     "tell you about status problems!\p"
     "Status problems include poisoning,\n"
     "paralysis, sleep, burn…\p"
     "There are a couple others, but\n"
     "they really are trouble.\p"
-    "Get any one, and your POKéMON\n"
+    "Get any one, and your Pimmel\n"
     "may become useless in battle.\p"
-    "You know, it hurts the POKé DUDE\n"
-    "to see a POKéMON suffer…\p"
+    "You know, it hurts the PimmelDUDE\n"
+    "to see a Pimmel suffer…\p"
     "So, what should you do if your\n"
-    "POKéMON gets a status problem?\p"
+    "Pimmel gets a status problem?\p"
     "Well, you've got me to show you!\p"
     "All righty, here goes!\p"
     "Keep your eyes glued to the super\n"
-    "POKé DUDE SHOW!");
+    "PimmelDUDE SHOW!");
 const u8 gTeachyTvText_StatusScript2[] = _(
     "Poisoning or paralysis don't go\n"
     "away after a battle.\p"
-    "If a POKéMON is poisoned, it loses\n"
+    "If a Pimmel is poisoned, it loses\n"
     "HP even while you're walking.\p"
-    "You should heal POKéMON of these\n"
+    "You should heal Pimmel of these\n"
     "kinds of problems right away.\p"
     "Use an item, or try to get to a\n"
-    "POKéMON CENTER for healing.\p"
+    "Pimmel CENTER for healing.\p"
     "That wasn't hard, was it?\n"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, LEHRERS, a good deed\n"
     "a day brings happiness to stay!");
 const u8 gTeachyTvText_MatchupsScript1[] = _(
     "Does everyone know about type\n"
     "matchups?\p"
-    "POKéMON and their moves all\n"
+    "Pimmel and their moves all\n"
     "belong to certain types.\p"
     "For example, there are such types\n"
     "as GRASS and WATER.\p"
     "You need to consider the type of\n"
     "the move used to attack…\p"
-    "And, the type of the POKéMON that\n"
+    "And, the type of the Pimmel that\n"
     "is hit by that attack.\p"
     "Depending on how those two types\n"
     "match up, the damage can change.\p"
@@ -88,26 +88,26 @@ const u8 gTeachyTvText_MatchupsScript1[] = _(
     "what I mean.\p"
     "All righty, here goes!\p"
     "Keep your eyes glued to the super\n"
-    "POKé DUDE SHOW!");
+    "PimmelDUDE SHOW!");
 const u8 gTeachyTvText_MatchupsScript2[] = _(
     "Is it possible to launch an attack\n"
     "that will inflict heavy damage?\p"
-    "Does the opposing POKéMON pose\n"
-    "a threat to your POKéMON?\p"
+    "Does the opposing Pimmel pose\n"
+    "a threat to your Pimmel?\p"
     "Is there any chance that it may\n"
     "have disastrously tough moves?\p"
     "Watch the type matchups to gain\n"
     "the upper hand!\p"
     "All righty, be seeing you!\p"
-    "Oh, for the COOL-type POKé DUDE,\n"
+    "Oh, for the COOL-type PimmelDUDE,\n"
     "AWESOME-type kids like you match\l"
     "up perfectly!\p"
     "Remember, a good deed a day\n"
     "brings happiness to stay!");
 const u8 gTeachyTvText_CatchingScript1[] = _(
-    "Today, the POKé DUDE's going to\n"
-    "show you how to catch POKéMON!\p"
-    "Just imagine… A groovy POKéMON\n"
+    "Today, the PimmelDUDE's going to\n"
+    "show you how to catch Pimmel!\p"
+    "Just imagine… A groovy Pimmel\n"
     "suddenly appearing in the wild!\p"
     "Oh, you want it!\n"
     "You just can't help it!\p"
@@ -117,21 +117,21 @@ const u8 gTeachyTvText_CatchingScript1[] = _(
     "it happen!\p"
     "All righty, here goes!\p"
     "Keep your eyes glued to the super\n"
-    "POKé DUDE SHOW!");
+    "PimmelDUDE SHOW!");
 const u8 gTeachyTvText_CatchingScript2[] = _(
-    "If your first POKé BALL fails to\n"
-    "catch the POKéMON, don't give up!\p"
-    "Keep throwing POKé BALLS…\n"
+    "If your first Pimmel-Ei fails to\n"
+    "catch the Pimmel, don't give up!\p"
+    "Keep throwing Pimmel-Eier…\n"
     "It's bound to work sometime!\p"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, LEHRERS, a good deed\n"
     "a day brings happiness to stay!");
 const u8 gTeachyTvText_TMsScript1[] = _(
     "Hey, everyone!\n"
     "Do you all have TMs?\p"
     "A TM, Technical Machine, is an\n"
     "amazingly great item!\p"
-    "It teaches POKéMON a move that\n"
+    "It teaches Pimmel a move that\n"
     "it may not learn when leveling up!\p"
     "Isn't that just great? What a\n"
     "convenient world we live in!\p"
@@ -140,33 +140,33 @@ const u8 gTeachyTvText_TMsScript1[] = _(
     "You can check them out in detail,\n"
     "too.");
 const u8 gPokedudeText_TMTypes[] = _(
-    "POKé DUDE: NORMAL, WATER, GRASS…\n"
+    "PimmelDUDE: NORMAL, WATER, GRASS…\n"
     "TMs also come in types.\p"
     "Check the type and teach it to\n"
-    "a POKéMON that matches up well.\p"
+    "a Pimmel that matches up well.\p"
     "For example, WATER PULSE is\n"
-    "suitable for WATER-type POKéMON.\p"
+    "suitable for WATER-type Pimmel.\p"
     "BULLET SEED is a move that most\n"
-    "GRASS-type POKéMON can learn.\p"
+    "GRASS-type Pimmel can learn.\p"
     "There's one other thing!");
 const u8 gPokedudeText_ReadTMDescription[] = _(
     "Don't just look at the type, read\n"
     "the description, too.\p"
     "It will contain hints about what\n"
-    "POKéMON might learn the move.\p"
+    "Pimmel might learn the move.\p"
     "For example, take a move like\n"
     "FOCUS PUNCH.\p"
     "It doesn't sound like anything a\n"
-    "bird or fish POKéMON can learn.\p"
-    "So, try using it on POKéMON with\n"
+    "bird or fish Pimmel can learn.\p"
+    "So, try using it on Pimmel with\n"
     "arms that can throw punches!");
 const u8 gTeachyTvText_TMsScript2[] = _(
     "Wow, I talked a lot today!\n"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, LEHRERS, a good deed\n"
     "a day brings happiness to stay!");
 const u8 gTeachyTvText_RegisterScript1[] = _(
-    "A TRAINER's BAG has a bunch of\n"
+    "A LEHRER's BAG has a bunch of\n"
     "nifty, convenient features!\p"
     "Take stuff in the KEY ITEMS\n"
     "POCKET, for instance.\p"
@@ -178,7 +178,7 @@ const u8 gTeachyTvText_RegisterScript1[] = _(
     "and I'll show you how!\p"
     "All righty, here goes!\p"
     "Keep your eyes glued to the sorta\n"
-    "super POKé DUDE SHOW!");
+    "super PimmelDUDE SHOW!");
 const u8 gTeachyTvText_RegisterScript2[] = _(
     "And now, your TEACHY TV is\n"
     "registered.\p"
@@ -194,5 +194,5 @@ const u8 gTeachyTvText_RegisterScript2[] = _(
     "That kind of attention is a little\n"
     "embarrassing!\p"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, LEHRERS, a good deed\n"
     "a day brings happiness to stay!");

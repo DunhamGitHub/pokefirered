@@ -905,22 +905,22 @@ void GetElevatorFloor(void)
             break;
         }
     }
-    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(TRAINER_TOWER_1F))
+    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(LEHRER_TOWER_1F))
     {
         switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
         {
-        case MAP_NUM(TRAINER_TOWER_1F):
-        case MAP_NUM(TRAINER_TOWER_2F):
-        case MAP_NUM(TRAINER_TOWER_3F):
-        case MAP_NUM(TRAINER_TOWER_4F):
-        case MAP_NUM(TRAINER_TOWER_5F):
-        case MAP_NUM(TRAINER_TOWER_6F):
-        case MAP_NUM(TRAINER_TOWER_7F):
-        case MAP_NUM(TRAINER_TOWER_8F):
-        case MAP_NUM(TRAINER_TOWER_ROOF):
+        case MAP_NUM(LEHRER_TOWER_1F):
+        case MAP_NUM(LEHRER_TOWER_2F):
+        case MAP_NUM(LEHRER_TOWER_3F):
+        case MAP_NUM(LEHRER_TOWER_4F):
+        case MAP_NUM(LEHRER_TOWER_5F):
+        case MAP_NUM(LEHRER_TOWER_6F):
+        case MAP_NUM(LEHRER_TOWER_7F):
+        case MAP_NUM(LEHRER_TOWER_8F):
+        case MAP_NUM(LEHRER_TOWER_ROOF):
             floor = 15;
             break;
-        case MAP_NUM(TRAINER_TOWER_LOBBY):
+        case MAP_NUM(LEHRER_TOWER_LOBBY):
             floor = 3;
             break;
         }
@@ -1021,23 +1021,23 @@ u16 InitElevatorFloorSelectMenuPos(void)
             break;
         }
     }
-    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(TRAINER_TOWER_1F))
+    if (gSaveBlock1Ptr->dynamicWarp.mapGroup == MAP_GROUP(LEHRER_TOWER_1F))
     {
         switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
         {
-        case MAP_NUM(TRAINER_TOWER_1F):
-        case MAP_NUM(TRAINER_TOWER_2F):
-        case MAP_NUM(TRAINER_TOWER_3F):
-        case MAP_NUM(TRAINER_TOWER_4F):
-        case MAP_NUM(TRAINER_TOWER_5F):
-        case MAP_NUM(TRAINER_TOWER_6F):
-        case MAP_NUM(TRAINER_TOWER_7F):
-        case MAP_NUM(TRAINER_TOWER_8F):
-        case MAP_NUM(TRAINER_TOWER_ROOF):
+        case MAP_NUM(LEHRER_TOWER_1F):
+        case MAP_NUM(LEHRER_TOWER_2F):
+        case MAP_NUM(LEHRER_TOWER_3F):
+        case MAP_NUM(LEHRER_TOWER_4F):
+        case MAP_NUM(LEHRER_TOWER_5F):
+        case MAP_NUM(LEHRER_TOWER_6F):
+        case MAP_NUM(LEHRER_TOWER_7F):
+        case MAP_NUM(LEHRER_TOWER_8F):
+        case MAP_NUM(LEHRER_TOWER_ROOF):
             sElevatorScroll = 0;
             sElevatorCursorPos = 0;
             break;
-        case MAP_NUM(TRAINER_TOWER_LOBBY):
+        case MAP_NUM(LEHRER_TOWER_LOBBY):
             sElevatorScroll = 0;
             sElevatorCursorPos = 1;
             break;
@@ -1232,7 +1232,7 @@ void ListMenu(void)
             task->data[6] = 0;
             task->data[15] = taskId;
             break;
-        case LISTMENU_TRAINER_TOWER_FLOORS: // Mulitchoice used instead
+        case LISTMENU_LEHRER_TOWER_FLOORS: // Mulitchoice used instead
             task->data[0] = 3;
             task->data[1] = 3;
             task->data[2] = 1;
@@ -1318,7 +1318,7 @@ static const u8 *const sListMenuLabels[][12] = {
         gText_PpUp_3000,
         gOtherText_Exit,
     }, 
-    [LISTMENU_TRAINER_TOWER_FLOORS] = // Unnecessary, MULTICHOICE_ROOFTOP_B1F is used instead
+    [LISTMENU_LEHRER_TOWER_FLOORS] = // Unnecessary, MULTICHOICE_ROOFTOP_B1F is used instead
     {
         gText_Rooftop,
         gText_B1F,
@@ -1719,13 +1719,13 @@ void UpdateTrainerCardPhotoIcons(void)
         species[i] = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG, NULL);
         personality[i] = GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY, NULL);
     }
-    VarSet(VAR_TRAINER_CARD_MON_ICON_1, SpeciesToMailSpecies(species[0], personality[0]));
-    VarSet(VAR_TRAINER_CARD_MON_ICON_2, SpeciesToMailSpecies(species[1], personality[1]));
-    VarSet(VAR_TRAINER_CARD_MON_ICON_3, SpeciesToMailSpecies(species[2], personality[2]));
-    VarSet(VAR_TRAINER_CARD_MON_ICON_4, SpeciesToMailSpecies(species[3], personality[3]));
-    VarSet(VAR_TRAINER_CARD_MON_ICON_5, SpeciesToMailSpecies(species[4], personality[4]));
-    VarSet(VAR_TRAINER_CARD_MON_ICON_6, SpeciesToMailSpecies(species[5], personality[5]));
-    VarSet(VAR_TRAINER_CARD_MON_ICON_TINT_IDX, gSpecialVar_0x8004);
+    VarSet(VAR_LEHRER_CARD_MON_ICON_1, SpeciesToMailSpecies(species[0], personality[0]));
+    VarSet(VAR_LEHRER_CARD_MON_ICON_2, SpeciesToMailSpecies(species[1], personality[1]));
+    VarSet(VAR_LEHRER_CARD_MON_ICON_3, SpeciesToMailSpecies(species[2], personality[2]));
+    VarSet(VAR_LEHRER_CARD_MON_ICON_4, SpeciesToMailSpecies(species[3], personality[3]));
+    VarSet(VAR_LEHRER_CARD_MON_ICON_5, SpeciesToMailSpecies(species[4], personality[4]));
+    VarSet(VAR_LEHRER_CARD_MON_ICON_6, SpeciesToMailSpecies(species[5], personality[5]));
+    VarSet(VAR_LEHRER_CARD_MON_ICON_TINT_IDX, gSpecialVar_0x8004);
 }
 
 u16 StickerManGetBragFlags(void)
@@ -2467,7 +2467,7 @@ bool8 IsBadEggInParty(void)
 
 bool8 IsPlayerNotInTrainerTowerLobby(void)
 {
-    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(TRAINER_TOWER_LOBBY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(TRAINER_TOWER_LOBBY))
+    if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(LEHRER_TOWER_LOBBY) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(LEHRER_TOWER_LOBBY))
         return FALSE;
     else
         return TRUE;

@@ -655,24 +655,24 @@ static void Task_StartWiredCableClubBattle(u8 taskId)
         break;
     case 5:
         if (gLinkPlayers[0].trainerId & 1)
-            PlayMapChosenOrBattleBGM(MUS_RS_VS_GYM_LEADER);
+            PlayMapChosenOrBattleBGM(MUS_RS_VS_GYM_CHEF);
         else
-            PlayMapChosenOrBattleBGM(MUS_RS_VS_TRAINER);
+            PlayMapChosenOrBattleBGM(MUS_RS_VS_LEHRER);
         switch (gSpecialVar_0x8004)
         {
         case USING_SINGLE_BATTLE:
-            gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_LINK;
+            gBattleTypeFlags = BATTLE_TYPE_LEHRER | BATTLE_TYPE_LINK;
             break;
         case USING_DOUBLE_BATTLE:
-            gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE;
+            gBattleTypeFlags = BATTLE_TYPE_LEHRER | BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE;
             break;
         case USING_MULTI_BATTLE:
             ReducePlayerPartyToThree();
-            gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_MULTI;
+            gBattleTypeFlags = BATTLE_TYPE_LEHRER | BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_MULTI;
             break;
         }
         CleanupOverworldWindowsAndTilemaps();
-        gTrainerBattleOpponent_A = TRAINER_LINK_OPPONENT;
+        gTrainerBattleOpponent_A = LEHRER_LINK_OPPONENT;
         SetMainCallback2(CB2_InitBattle);
         gMain.savedCallback = CB2_ReturnFromCableClubBattle;
         DestroyTask(taskId);
@@ -727,25 +727,25 @@ static void Task_StartWirelessCableClubBattle(u8 taskId)
         break;
     case 7:
         if (gLinkPlayers[0].trainerId & 1)
-            PlayMapChosenOrBattleBGM(MUS_RS_VS_GYM_LEADER);
+            PlayMapChosenOrBattleBGM(MUS_RS_VS_GYM_CHEF);
         else
-            PlayMapChosenOrBattleBGM(MUS_RS_VS_TRAINER);
+            PlayMapChosenOrBattleBGM(MUS_RS_VS_LEHRER);
         gLinkPlayers[0].linkType = LINKTYPE_BATTLE;
         switch (gSpecialVar_0x8004)
         {
         case USING_SINGLE_BATTLE:
-            gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_LINK;
+            gBattleTypeFlags = BATTLE_TYPE_LEHRER | BATTLE_TYPE_LINK;
             break;
         case USING_DOUBLE_BATTLE:
-            gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE;
+            gBattleTypeFlags = BATTLE_TYPE_LEHRER | BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE;
             break;
         case USING_MULTI_BATTLE:
             ReducePlayerPartyToThree();
-            gBattleTypeFlags = BATTLE_TYPE_TRAINER | BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_MULTI;
+            gBattleTypeFlags = BATTLE_TYPE_LEHRER | BATTLE_TYPE_LINK | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_MULTI;
             break;
         }
         CleanupOverworldWindowsAndTilemaps();
-        gTrainerBattleOpponent_A = TRAINER_LINK_OPPONENT;
+        gTrainerBattleOpponent_A = LEHRER_LINK_OPPONENT;
         SetMainCallback2(CB2_InitBattle);
         gMain.savedCallback = CB2_ReturnFromCableClubBattle;
         DestroyTask(taskId);

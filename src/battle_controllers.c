@@ -667,28 +667,28 @@ void BtlController_EmitReturnMonToBall(u8 bufferId, bool8 skipAnim)
 
 void BtlController_EmitDrawTrainerPic(u8 bufferId)
 {
-    sBattleBuffersTransferData[0] = CONTROLLER_DRAWTRAINERPIC;
-    sBattleBuffersTransferData[1] = CONTROLLER_DRAWTRAINERPIC;
-    sBattleBuffersTransferData[2] = CONTROLLER_DRAWTRAINERPIC;
-    sBattleBuffersTransferData[3] = CONTROLLER_DRAWTRAINERPIC;
+    sBattleBuffersTransferData[0] = CONTROLLER_DRAWLEHRERPIC;
+    sBattleBuffersTransferData[1] = CONTROLLER_DRAWLEHRERPIC;
+    sBattleBuffersTransferData[2] = CONTROLLER_DRAWLEHRERPIC;
+    sBattleBuffersTransferData[3] = CONTROLLER_DRAWLEHRERPIC;
     PrepareBufferDataTransfer(bufferId, sBattleBuffersTransferData, 4);
 }
 
 void BtlController_EmitTrainerSlide(u8 bufferId)
 {
-    sBattleBuffersTransferData[0] = CONTROLLER_TRAINERSLIDE;
-    sBattleBuffersTransferData[1] = CONTROLLER_TRAINERSLIDE;
-    sBattleBuffersTransferData[2] = CONTROLLER_TRAINERSLIDE;
-    sBattleBuffersTransferData[3] = CONTROLLER_TRAINERSLIDE;
+    sBattleBuffersTransferData[0] = CONTROLLER_LEHRERSLIDE;
+    sBattleBuffersTransferData[1] = CONTROLLER_LEHRERSLIDE;
+    sBattleBuffersTransferData[2] = CONTROLLER_LEHRERSLIDE;
+    sBattleBuffersTransferData[3] = CONTROLLER_LEHRERSLIDE;
     PrepareBufferDataTransfer(bufferId, sBattleBuffersTransferData, 4);
 }
 
 void BtlController_EmitTrainerSlideBack(u8 bufferId)
 {
-    sBattleBuffersTransferData[0] = CONTROLLER_TRAINERSLIDEBACK;
-    sBattleBuffersTransferData[1] = CONTROLLER_TRAINERSLIDEBACK;
-    sBattleBuffersTransferData[2] = CONTROLLER_TRAINERSLIDEBACK;
-    sBattleBuffersTransferData[3] = CONTROLLER_TRAINERSLIDEBACK;
+    sBattleBuffersTransferData[0] = CONTROLLER_LEHRERSLIDEBACK;
+    sBattleBuffersTransferData[1] = CONTROLLER_LEHRERSLIDEBACK;
+    sBattleBuffersTransferData[2] = CONTROLLER_LEHRERSLIDEBACK;
+    sBattleBuffersTransferData[3] = CONTROLLER_LEHRERSLIDEBACK;
     PrepareBufferDataTransfer(bufferId, sBattleBuffersTransferData, 4);
 }
 
@@ -1135,10 +1135,10 @@ void BtlController_EmitIntroSlide(u8 bufferId, u8 terrainId)
 
 void BtlController_EmitIntroTrainerBallThrow(u8 bufferId)
 {
-    sBattleBuffersTransferData[0] = CONTROLLER_INTROTRAINERBALLTHROW;
-    sBattleBuffersTransferData[1] = CONTROLLER_INTROTRAINERBALLTHROW;
-    sBattleBuffersTransferData[2] = CONTROLLER_INTROTRAINERBALLTHROW;
-    sBattleBuffersTransferData[3] = CONTROLLER_INTROTRAINERBALLTHROW;
+    sBattleBuffersTransferData[0] = CONTROLLER_INTROLEHRERBALLTHROW;
+    sBattleBuffersTransferData[1] = CONTROLLER_INTROLEHRERBALLTHROW;
+    sBattleBuffersTransferData[2] = CONTROLLER_INTROLEHRERBALLTHROW;
+    sBattleBuffersTransferData[3] = CONTROLLER_INTROLEHRERBALLTHROW;
     PrepareBufferDataTransfer(bufferId, sBattleBuffersTransferData, 4);
 }
 

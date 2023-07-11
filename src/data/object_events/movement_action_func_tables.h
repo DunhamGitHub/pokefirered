@@ -566,7 +566,7 @@ static bool8 (*const *const sMovementActionFuncs[])(struct ObjectEvent *, struct
     [MOVEMENT_ACTION_EMOTE_X]                            = sMovementActionFuncs_EmoteX,
     [MOVEMENT_ACTION_EMOTE_DOUBLE_EXCL_MARK]             = sMovementActionFuncs_EmoteDoubleExclMark,
     [MOVEMENT_ACTION_EMOTE_SMILE]                        = sMovementActionFuncs_EmoteSmile,
-    [MOVEMENT_ACTION_REVEAL_TRAINER]                     = sMovementActionFuncs_RevealTrainer,
+    [MOVEMENT_ACTION_REVEAL_LEHRER]                     = sMovementActionFuncs_RevealTrainer,
     [MOVEMENT_ACTION_ROCK_SMASH_BREAK]                   = sMovementActionFuncs_RockSmashBreak,
     [MOVEMENT_ACTION_CUT_TREE]                           = sMovementActionFuncs_CutTree,
     [MOVEMENT_ACTION_SET_FIXED_PRIORITY]                 = sMovementActionFuncs_SetFixedPriority,

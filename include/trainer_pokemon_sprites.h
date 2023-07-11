@@ -1,5 +1,5 @@
-#ifndef GUARD_TRAINER_POKEMON_SPRITES_H
-#define GUARD_TRAINER_POKEMON_SPRITES_H
+#ifndef GUARD_LEHRER_POKEMON_SPRITES_H
+#define GUARD_LEHRER_POKEMON_SPRITES_H
 
 #include "global.h"
 
@@ -14,4 +14,4 @@ u16 LoadMonPicInWindow(u16 species, u32 otId, u32 personality, bool8 isFrontPic,
 u16 CreateMonPicSprite(u16 species, u32 otId, u32 personality, bool8 isFrontPic, s16 x, s16 y, u8 paletteSlot, u16 paletteTag, bool8 ignoreDeoxys);
 u16 CreateMonPicSprite_HandleDeoxys(u16 species, u32 otId, u32 personality, bool8 isFrontPic, s16 x, s16 y, u8 paletteSlot, u16 paletteTag);
 
-#endif // GUARD_TRAINER_POKEMON_SPRITES_H
+#endif // GUARD_LEHRER_POKEMON_SPRITES_H

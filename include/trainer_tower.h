@@ -1,5 +1,5 @@
-#ifndef GUARD_TRAINER_TOWER_H
-#define GUARD_TRAINER_TOWER_H
+#ifndef GUARD_LEHRER_TOWER_H
+#define GUARD_LEHRER_TOWER_H
 
 void PrintTrainerTowerRecords(void);
 void InitTrainerTowerBattleStruct(void);
@@ -11,4 +11,4 @@ void GetTrainerTowerOpponentLoseText(u8 *dest, u8 opponentIdx);
 void GetTrainerTowerOpponentName(u8 *text);
 u8 GetTrainerTowerOpponentClass(void);
 
-#endif //GUARD_TRAINER_TOWER_H
+#endif //GUARD_LEHRER_TOWER_H

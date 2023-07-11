@@ -269,8 +269,8 @@
 #define MUS_OBTAIN_BERRY          262 // MUS_ME_KINOMI
 #define MUS_EVOLUTION_INTRO       263 // MUS_ME_SHINKA
 #define MUS_EVOLUTION             264 // MUS_SHINKA
-#define MUS_RS_VS_GYM_LEADER      265 // MUS_BATTLE32
-#define MUS_RS_VS_TRAINER         266 // MUS_BATTLE20
+#define MUS_RS_VS_GYM_CHEF      265 // MUS_BATTLE32
+#define MUS_RS_VS_LEHRER         266 // MUS_BATTLE20
 #define MUS_SCHOOL                267 // MUS_P_SCHOOL
 #define MUS_SLOTS_JACKPOT         268 // MUS_ME_B_BIG
 #define MUS_SLOTS_WIN             269 // MUS_ME_B_SMALL
@@ -301,8 +301,8 @@
 #define MUS_ROUTE3                293 // MUS_RG_LOAD02
 #define MUS_ROUTE11               294 // MUS_RG_LOAD03
 #define MUS_VICTORY_ROAD          295 // MUS_RG_CHAMP_R
-#define MUS_VS_GYM_LEADER         296 // MUS_RG_VS_GYM
-#define MUS_VS_TRAINER            297 // MUS_RG_VS_TORE
+#define MUS_VS_GYM_CHEF         296 // MUS_RG_VS_GYM
+#define MUS_VS_LEHRER            297 // MUS_RG_VS_TORE
 #define MUS_VS_WILD               298 // MUS_RG_VS_YASEI
 #define MUS_VS_CHAMPION           299 // MUS_RG_VS_LAST
 #define MUS_PALLET                300 // MUS_RG_MASARA
@@ -315,9 +315,9 @@
 #define MUS_SILPH                 307 // MUS_RG_SHIRUHU
 #define MUS_FUCHSIA               308 // MUS_RG_HANADA
 #define MUS_CELADON               309 // MUS_RG_TAMAMUSI
-#define MUS_VICTORY_TRAINER       310 // MUS_RG_WIN_TRE
+#define MUS_VICTORY_LEHRER       310 // MUS_RG_WIN_TRE
 #define MUS_VICTORY_WILD          311 // MUS_RG_WIN_YASEI
-#define MUS_VICTORY_GYM_LEADER    312 // MUS_RG_WIN_GYM
+#define MUS_VICTORY_GYM_CHEF    312 // MUS_RG_WIN_GYM
 #define MUS_VERMILLION            313 // MUS_RG_KUCHIBA
 #define MUS_PEWTER                314 // MUS_RG_NIBI
 #define MUS_ENCOUNTER_RIVAL       315 // MUS_RG_RIVAL1
@@ -347,9 +347,9 @@
 #define MUS_VS_DEOXYS             339 // MUS_RG_VS_DEO
 #define MUS_VS_MEWTWO             340 // MUS_RG_VS_MYU2
 #define MUS_VS_LEGEND             341 // MUS_RG_VS_DEN
-#define MUS_ENCOUNTER_GYM_LEADER  342 // MUS_RG_EXEYE
+#define MUS_ENCOUNTER_GYM_CHEF  342 // MUS_RG_EXEYE
 #define MUS_ENCOUNTER_DEOXYS      343 // MUS_RG_DEOEYE
-#define MUS_TRAINER_TOWER         344 // MUS_RG_T_TOWER
+#define MUS_LEHRER_TOWER         344 // MUS_RG_T_TOWER
 #define MUS_SLOW_PALLET           345 // MUS_RG_SLOWMASARA
 #define MUS_TEACHY_TV_MENU        346 // MUS_RG_TVNOIZE
 

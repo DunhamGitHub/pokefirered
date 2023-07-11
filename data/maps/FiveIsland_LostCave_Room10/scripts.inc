@@ -6,7 +6,7 @@ FiveIsland_LostCave_Room10_MapScripts::
 	.byte 0
 
 FiveIsland_LostCave_Room10_OnResume::
-	call_if_defeated TRAINER_LADY_SELPHY, FiveIsland_LostCave_Room10_EventScript_StopSelphySceneTrigger
+	call_if_defeated LEHRER_LADY_SELPHY, FiveIsland_LostCave_Room10_EventScript_StopSelphySceneTrigger
 	end
 
 FiveIsland_LostCave_Room10_EventScript_StopSelphySceneTrigger::
@@ -27,7 +27,7 @@ FiveIsland_LostCave_Room10_EventScript_FindSelphyScene::
 	waitmovement 0
 	msgbox FiveIsland_LostCave_Room10_Text_SelphyIntro
 	goto_if_questlog FiveIsland_LostCave_Room10_EventScript_SelphyQuestLog
-	trainerbattle_no_intro TRAINER_LADY_SELPHY, FiveIsland_LostCave_Room10_Text_SelphyDefeat
+	trainerbattle_no_intro LEHRER_LADY_SELPHY, FiveIsland_LostCave_Room10_Text_SelphyDefeat
 	msgbox FiveIsland_LostCave_Room10_Text_MayIAskYouToTakeMeHome
 	closemessage
 	call FiveIsland_LostCave_Room10_EventScript_SetSelphyFound
@@ -44,7 +44,7 @@ FiveIsland_LostCave_Room10_EventScript_SetSelphyFound::
 	return
 
 FiveIsland_LostCave_Room10_EventScript_SelphyQuestLog::
-	settrainerflag TRAINER_LADY_SELPHY
+	settrainerflag LEHRER_LADY_SELPHY
 	call FiveIsland_LostCave_Room10_EventScript_SetSelphyFound
 	releaseall
 	end

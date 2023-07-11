@@ -11,66 +11,66 @@ EventScript_SetGymTrainers::
 	end
 
 EventScript_SetPewterGymTrainers::
-	settrainerflag TRAINER_CAMPER_LIAM
+	settrainerflag LEHRER_CAMPER_LIAM
 	return
 
 EventScript_SetCeruleanGymTrainers::
-	settrainerflag TRAINER_PICNICKER_DIANA
-	settrainerflag TRAINER_SWIMMER_MALE_LUIS
+	settrainerflag LEHRER_PICNICKER_DIANA
+	settrainerflag LEHRER_SWIMMER_MALE_LUIS
 	return
 
 EventScript_SetVermilionGymTrainers::
-	settrainerflag TRAINER_SAILOR_DWAYNE
-	settrainerflag TRAINER_ENGINEER_BAILY
-	settrainerflag TRAINER_GENTLEMAN_TUCKER
+	settrainerflag LEHRER_SAILOR_DWAYNE
+	settrainerflag LEHRER_ENGINEER_BAILY
+	settrainerflag LEHRER_GENTLEMAN_TUCKER
 	return
 
 EventScript_SetCeladonGymTrainers::
-	settrainerflag TRAINER_LASS_KAY
-	settrainerflag TRAINER_LASS_LISA
-	settrainerflag TRAINER_PICNICKER_TINA
-	settrainerflag TRAINER_BEAUTY_BRIDGET
-	settrainerflag TRAINER_BEAUTY_TAMIA
-	settrainerflag TRAINER_BEAUTY_LORI
-	settrainerflag TRAINER_COOLTRAINER_MARY
+	settrainerflag LEHRER_LASS_KAY
+	settrainerflag LEHRER_LASS_LISA
+	settrainerflag LEHRER_PICNICKER_TINA
+	settrainerflag LEHRER_BEAUTY_BRIDGET
+	settrainerflag LEHRER_BEAUTY_TAMIA
+	settrainerflag LEHRER_BEAUTY_LORI
+	settrainerflag LEHRER_COOLLEHRER_MARY
 	return
 
 EventScript_SetFuchsiaGymTrainers::
-	settrainerflag TRAINER_TAMER_PHIL
-	settrainerflag TRAINER_TAMER_EDGAR
-	settrainerflag TRAINER_JUGGLER_KIRK
-	settrainerflag TRAINER_JUGGLER_SHAWN
-	settrainerflag TRAINER_JUGGLER_KAYDEN
-	settrainerflag TRAINER_JUGGLER_NATE
+	settrainerflag LEHRER_TAMER_PHIL
+	settrainerflag LEHRER_TAMER_EDGAR
+	settrainerflag LEHRER_JUGGLER_KIRK
+	settrainerflag LEHRER_JUGGLER_SHAWN
+	settrainerflag LEHRER_JUGGLER_KAYDEN
+	settrainerflag LEHRER_JUGGLER_NATE
 	return
 
 EventScript_SetSaffronGymTrainers::
-	settrainerflag TRAINER_PSYCHIC_JOHAN
-	settrainerflag TRAINER_PSYCHIC_TYRON
-	settrainerflag TRAINER_PSYCHIC_CAMERON
-	settrainerflag TRAINER_PSYCHIC_PRESTON
-	settrainerflag TRAINER_CHANNELER_AMANDA
-	settrainerflag TRAINER_CHANNELER_STACY
-	settrainerflag TRAINER_CHANNELER_TASHA
+	settrainerflag LEHRER_PSYCHIC_JOHAN
+	settrainerflag LEHRER_PSYCHIC_TYRON
+	settrainerflag LEHRER_PSYCHIC_CAMERON
+	settrainerflag LEHRER_PSYCHIC_PRESTON
+	settrainerflag LEHRER_CHANNELER_AMANDA
+	settrainerflag LEHRER_CHANNELER_STACY
+	settrainerflag LEHRER_CHANNELER_TASHA
 	return
 
 EventScript_SetCinnabarGymTrainers::
-	settrainerflag TRAINER_SUPER_NERD_ERIK
-	settrainerflag TRAINER_SUPER_NERD_AVERY
-	settrainerflag TRAINER_SUPER_NERD_DEREK
-	settrainerflag TRAINER_SUPER_NERD_ZAC
-	settrainerflag TRAINER_BURGLAR_QUINN
-	settrainerflag TRAINER_BURGLAR_RAMON
-	settrainerflag TRAINER_BURGLAR_DUSTY
+	settrainerflag LEHRER_SUPER_NERD_ERIK
+	settrainerflag LEHRER_SUPER_NERD_AVERY
+	settrainerflag LEHRER_SUPER_NERD_DEREK
+	settrainerflag LEHRER_SUPER_NERD_ZAC
+	settrainerflag LEHRER_BURGLAR_QUINN
+	settrainerflag LEHRER_BURGLAR_RAMON
+	settrainerflag LEHRER_BURGLAR_DUSTY
 	return
 
 EventScript_SetViridianGymTrainers::
-	settrainerflag TRAINER_TAMER_JASON
-	settrainerflag TRAINER_TAMER_COLE
-	settrainerflag TRAINER_BLACK_BELT_ATSUSHI
-	settrainerflag TRAINER_BLACK_BELT_KIYO
-	settrainerflag TRAINER_BLACK_BELT_TAKASHI
-	settrainerflag TRAINER_COOLTRAINER_SAMUEL
-	settrainerflag TRAINER_COOLTRAINER_YUJI
-	settrainerflag TRAINER_COOLTRAINER_WARREN
+	settrainerflag LEHRER_TAMER_JASON
+	settrainerflag LEHRER_TAMER_COLE
+	settrainerflag LEHRER_BLACK_BELT_ATSUSHI
+	settrainerflag LEHRER_BLACK_BELT_KIYO
+	settrainerflag LEHRER_BLACK_BELT_TAKASHI
+	settrainerflag LEHRER_COOLLEHRER_SAMUEL
+	settrainerflag LEHRER_COOLLEHRER_YUJI
+	settrainerflag LEHRER_COOLLEHRER_WARREN
 	return

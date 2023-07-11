@@ -1,15 +1,15 @@
 Route25_Text_JoeyIntro::
-    .string "Local TRAINERS come here to\n"
+    .string "Local LEHRERS come here to\n"
     .string "practice.$"
 
 Route25_Text_JoeyDefeat::
     .string "You're decent.$"
 
 Route25_Text_JoeyPostBattle::
-    .string "All POKéMON have weaknesses.\n"
+    .string "All Pimmel have weaknesses.\n"
     .string "Even the strongest ones.\p"
     .string "That's why it's best to raise\n"
-    .string "POKéMON of different types.$"
+    .string "Pimmel of different types.$"
 
 Route25_Text_DanIntro::
     .string "Dad took me to a great party on\n"
@@ -19,7 +19,7 @@ Route25_Text_DanDefeat::
     .string "I'm not mad!$"
 
 Route25_Text_DanPostBattle::
-    .string "On the S.S. ANNE, I saw TRAINERS\n"
+    .string "On the S.S. ANNE, I saw LEHRERS\n"
     .string "from around the world.$"
 
 Route25_Text_FlintIntro::
@@ -52,12 +52,12 @@ Route25_Text_ChadDefeat::
     .string "I knew I'd lose, too!$"
 
 Route25_Text_ChadPostBattle::
-    .string "If your POKéMON gets confused,\n"
+    .string "If your Pimmel gets confused,\n"
     .string "switch it out.\p"
     .string "That's a good tactic.$"
 
 Route25_Text_HaleyIntro::
-    .string "My friend has many cute POKéMON.\n"
+    .string "My friend has many cute Pimmel.\n"
     .string "I'm so jealous!$"
 
 Route25_Text_HaleyDefeat::
@@ -79,7 +79,7 @@ Route25_Text_FranklinPostBattle::
     .string "A ZUBAT bit me back in that cave.$"
 
 Route25_Text_NobIntro::
-    .string "I'm off to see a POKéMANIAC's\n"
+    .string "I'm off to see a PFLUUTE's\n"
     .string "collection at the cape.$"
 
 Route25_Text_NobDefeat::
@@ -87,10 +87,10 @@ Route25_Text_NobDefeat::
     .string "too!$"
 
 Route25_Text_NobPostBattle::
-    .string "The POKéMANIAC sure lives up to\n"
+    .string "The PFLUUTE sure lives up to\n"
     .string "his name.\p"
     .string "His collection includes many rare\n"
-    .string "species of POKéMON.$"
+    .string "species of Pimmel.$"
 
 Route25_Text_WayneIntro::
     .string "You're going to see BILL?\n"
@@ -109,7 +109,7 @@ Route25_Text_SeaCottageSign::
 
 Route25_Text_MistyHighHopesAboutThisPlace::
     .string "This cape is a famous date spot.\p"
-    .string "MISTY, the GYM LEADER, has high\n"
+    .string "MISTY, the GYM CHEF, has high\n"
     .string "hopes about this place.$"
 
 Route25_Text_AreYouHereAlone::

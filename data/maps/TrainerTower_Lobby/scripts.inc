@@ -1,7 +1,7 @@
 .set LOCALID_NURSE,         1
 .set LOCALID_MART_CLERK,    2
 .set LOCALID_RECEPTIONIST,  3
-.set LOCALID_COOLTRAINER_F, 4
+.set LOCALID_COOLLEHRER_F, 4
 .set LOCALID_BALDING_MAN,   5
 
 TrainerTower_Lobby_MapScripts::
@@ -28,7 +28,7 @@ TrainerTower_Lobby_OnReturnToField::
 	addobject LOCALID_NURSE
 	addobject LOCALID_MART_CLERK
 	addobject LOCALID_RECEPTIONIST
-	addobject LOCALID_COOLTRAINER_F
+	addobject LOCALID_COOLLEHRER_F
 	addobject LOCALID_BALDING_MAN
 	end
 
@@ -41,7 +41,7 @@ TrainerTower_Lobby_OpenCounterBarrier::
 	return
 
 TrainerTower_Lobby_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_TRAINER_TOWER_LOBBY
+	setworldmapflag FLAG_WORLD_MAP_LEHRER_TOWER_LOBBY
 	getplayerxy VAR_TEMP_D, VAR_RESULT
 	end
 
@@ -94,7 +94,7 @@ TrainerTower_Lobby_EventScript_ExitChallenge::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, TrainerTower_Lobby_Movement_WalkDown
 	waitmovement 0
-	setvar VAR_MAP_SCENE_TRAINER_TOWER, 0
+	setvar VAR_MAP_SCENE_LEHRER_TOWER, 0
 	release
 TrainerTower_Lobby_EventScript_EnterEnd::
 	end
@@ -175,7 +175,7 @@ TrainerTower_Lobby_EventScript_ChallengeInfo::
 	end
 
 TrainerTower_Lobby_EventScript_ChooseChallenge::
-	multichoice 13, 3, MULTICHOICE_TRAINER_TOWER_MODE, FALSE
+	multichoice 13, 3, MULTICHOICE_LEHRER_TOWER_MODE, FALSE
 	switch VAR_RESULT
 	case 0, TrainerTower_Lobby_EventScript_BeginChallenge
 	case 1, TrainerTower_Lobby_EventScript_BeginChallenge
@@ -187,7 +187,7 @@ TrainerTower_Lobby_EventScript_ChooseChallenge::
 
 TrainerTower_Lobby_EventScript_BeginChallenge::
 	copyvar VAR_0x8005, VAR_RESULT
-	setvar VAR_MAP_SCENE_TRAINER_TOWER, 1
+	setvar VAR_MAP_SCENE_LEHRER_TOWER, 1
 	special HealPlayerParty
 	msgbox TrainerTower_Lobby_Text_StartClockGetSetGo
 	ttower_startchallenge

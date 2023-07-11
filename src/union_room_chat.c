@@ -38,7 +38,7 @@
 #define CHATENTRYROUTINE_SAVEANDEXIT 9
 
 #define CHATEXIT_NONE 0
-#define CHATEXIT_LEADER_LAST 1
+#define CHATEXIT_CHEF_LAST 1
 #define CHATEXIT_DROPPED 2
 #define CHATEXIT_DISBANDED 3
 
@@ -410,7 +410,7 @@ static void Task_HandlePlayerInput(u8 taskId)
 {
     switch (sWork->exitType)
     {
-    case CHATEXIT_LEADER_LAST:
+    case CHATEXIT_CHEF_LAST:
         GoToRoutine(CHATENTRYROUTINE_EXITCHAT);
         sWork->exitType = CHATEXIT_NONE;
         break;
@@ -621,7 +621,7 @@ static void ChatEntryRoutine_AskQuitChatting(void)
     case 9:
         if (!RunDisplaySubtask(0))
         {
-            UnionRoomChat_StartDisplaySubtask(CHATDISPLAYROUTINE_SHOWCONFIRMLEADERLEAVEDIALOG, 0);
+            UnionRoomChat_StartDisplaySubtask(CHATDISPLAYROUTINE_SHOWCONFIRMCHEFLEAVEDIALOG, 0);
             sWork->routineState = 10;
         }
         break;
@@ -772,7 +772,7 @@ static void ChatEntryRoutine_Disbanded(void)
         if (!RunDisplaySubtask(0))
         {
             if (sWork->multiplayerId != 0)
-                UnionRoomChat_StartDisplaySubtask(CHATDISPLAYROUTINE_PRINTLEADERLEFT, 0);
+                UnionRoomChat_StartDisplaySubtask(CHATDISPLAYROUTINE_PRINTCHEFLEFT, 0);
 
             sWork->routineState++;
         }
@@ -1522,7 +1522,7 @@ static void Task_ReceiveChatMessage(u8 taskId)
             if (GetLinkPlayerCount() == 2)
             {
                 Rfu_StopPartnerSearch();
-                sWork->exitType = CHATEXIT_LEADER_LAST;
+                sWork->exitType = CHATEXIT_CHEF_LAST;
                 DestroyTask(taskId);
                 return;
             }

@@ -427,133 +427,133 @@ const u8 gTypeEffectiveness[336] =
 
 const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 {
-    [TYPE_NORMAL] = _("NORMAL"),
-    [TYPE_FIGHTING] = _("FIGHT"),
-    [TYPE_FLYING] = _("FLYING"),
-    [TYPE_POISON] = _("POISON"),
-    [TYPE_GROUND] = _("GROUND"),
-    [TYPE_ROCK] = _("ROCK"),
-    [TYPE_BUG] = _("BUG"),
-    [TYPE_GHOST] = _("GHOST"),
-    [TYPE_STEEL] = _("STEEL"),
+    [TYPE_NORMAL] = _("Normal"),
+    [TYPE_FIGHTING] = _("Fight"),
+    [TYPE_FLYING] = _("Flying"),
+    [TYPE_POISON] = _("Poison"),
+    [TYPE_GROUND] = _("Ground"),
+    [TYPE_ROCK] = _("Rock"),
+    [TYPE_BUG] = _("Bug"),
+    [TYPE_GHOST] = _("Ghost"),
+    [TYPE_STEEL] = _("Steel"),
     [TYPE_MYSTERY] = _("???"),
-    [TYPE_FIRE] = _("FIRE"),
-    [TYPE_WATER] = _("WATER"),
-    [TYPE_GRASS] = _("GRASS"),
-    [TYPE_ELECTRIC] = _("ELECTR"),
-    [TYPE_PSYCHIC] = _("PSYCHC"),
-    [TYPE_ICE] = _("ICE"),
-    [TYPE_DRAGON] = _("DRAGON"),
-    [TYPE_DARK] = _("DARK"),
+    [TYPE_FIRE] = _("Fire"),
+    [TYPE_WATER] = _("Water"),
+    [TYPE_GRASS] = _("Grass"),
+    [TYPE_ELECTRIC] = _("Electr"),
+    [TYPE_PSYCHIC] = _("Psychc"),
+    [TYPE_ICE] = _("Ice"),
+    [TYPE_DRAGON] = _("Dragon"),
+    [TYPE_DARK] = _("Dark"),
 };
 
 // This is a factor in how much money you get for beating a trainer.
 const struct TrainerMoney gTrainerMoneyTable[] =
 {
-    {TRAINER_CLASS_LEADER, 25},
-    {TRAINER_CLASS_ELITE_FOUR, 25},
-    {TRAINER_CLASS_PKMN_PROF, 25},
-    {TRAINER_CLASS_RIVAL_EARLY, 4},
-    {TRAINER_CLASS_RIVAL_LATE, 9},
-    {TRAINER_CLASS_CHAMPION, 25},
-    {TRAINER_CLASS_YOUNGSTER, 4},
-    {TRAINER_CLASS_BUG_CATCHER, 3},
-    {TRAINER_CLASS_HIKER, 9},
-    {TRAINER_CLASS_BIRD_KEEPER, 6},
-    {TRAINER_CLASS_PICNICKER, 5},
-    {TRAINER_CLASS_SUPER_NERD, 6},
-    {TRAINER_CLASS_FISHERMAN, 9},
-    {TRAINER_CLASS_TEAM_ROCKET, 8},
-    {TRAINER_CLASS_LASS, 4},
-    {TRAINER_CLASS_BEAUTY, 18},
-    {TRAINER_CLASS_BLACK_BELT, 6},
-    {TRAINER_CLASS_CUE_BALL, 6},
-    {TRAINER_CLASS_CHANNELER, 8},
-    {TRAINER_CLASS_ROCKER, 6},
-    {TRAINER_CLASS_GENTLEMAN, 18},
-    {TRAINER_CLASS_BURGLAR, 22},
-    {TRAINER_CLASS_SWIMMER_M, 1},
-    {TRAINER_CLASS_ENGINEER, 12},
-    {TRAINER_CLASS_JUGGLER, 10},
-    {TRAINER_CLASS_SAILOR, 8},
-    {TRAINER_CLASS_COOLTRAINER, 9},
-    {TRAINER_CLASS_POKEMANIAC, 12},
-    {TRAINER_CLASS_TAMER, 10},
-    {TRAINER_CLASS_CAMPER, 5},
-    {TRAINER_CLASS_PSYCHIC, 5},
-    {TRAINER_CLASS_BIKER, 5},
-    {TRAINER_CLASS_GAMER, 18},
-    {TRAINER_CLASS_SCIENTIST, 12},
-    {TRAINER_CLASS_CRUSH_GIRL, 6},
-    {TRAINER_CLASS_TUBER, 1},
-    {TRAINER_CLASS_PKMN_BREEDER, 7},
-    {TRAINER_CLASS_PKMN_RANGER, 9},
-    {TRAINER_CLASS_AROMA_LADY, 7},
-    {TRAINER_CLASS_RUIN_MANIAC, 12},
-    {TRAINER_CLASS_LADY, 50},
-    {TRAINER_CLASS_PAINTER, 4},
-    {TRAINER_CLASS_TWINS, 3},
-    {TRAINER_CLASS_YOUNG_COUPLE, 7},
-    {TRAINER_CLASS_SIS_AND_BRO, 1},
-    {TRAINER_CLASS_COOL_COUPLE, 6},
-    {TRAINER_CLASS_CRUSH_KIN, 6},
-    {TRAINER_CLASS_SWIMMER_F, 1},
-    {TRAINER_CLASS_PLAYER, 1},
-    {TRAINER_CLASS_RS_LEADER, 25},
-    {TRAINER_CLASS_RS_ELITE_FOUR, 25},
-    {TRAINER_CLASS_RS_LASS, 4},
-    {TRAINER_CLASS_RS_YOUNGSTER, 4},
-    {TRAINER_CLASS_PKMN_TRAINER, 15},
-    {TRAINER_CLASS_RS_HIKER, 10},
-    {TRAINER_CLASS_RS_BEAUTY, 20},
-    {TRAINER_CLASS_RS_FISHERMAN, 10},
-    {TRAINER_CLASS_RS_LADY, 50},
-    {TRAINER_CLASS_TRIATHLETE, 10},
-    {TRAINER_CLASS_TEAM_AQUA, 5},
-    {TRAINER_CLASS_RS_TWINS, 3},
-    {TRAINER_CLASS_RS_SWIMMER_F, 2},
-    {TRAINER_CLASS_RS_BUG_CATCHER, 4},
-    {TRAINER_CLASS_SCHOOL_KID, 5},
-    {TRAINER_CLASS_RICH_BOY, 50},
-    {TRAINER_CLASS_SR_AND_JR, 4},
-    {TRAINER_CLASS_RS_BLACK_BELT, 8},
-    {TRAINER_CLASS_RS_TUBER_F, 1},
-    {TRAINER_CLASS_HEX_MANIAC, 6},
-    {TRAINER_CLASS_RS_PKMN_BREEDER, 10},
-    {TRAINER_CLASS_TEAM_MAGMA, 5},
-    {TRAINER_CLASS_INTERVIEWER, 12},
-    {TRAINER_CLASS_RS_TUBER_M, 1},
-    {TRAINER_CLASS_RS_YOUNG_COUPLE, 8},
-    {TRAINER_CLASS_GUITARIST, 8},
-    {TRAINER_CLASS_RS_GENTLEMAN, 20},
-    {TRAINER_CLASS_RS_CHAMPION, 50},
-    {TRAINER_CLASS_MAGMA_LEADER, 20},
-    {TRAINER_CLASS_BATTLE_GIRL, 6},
-    {TRAINER_CLASS_RS_SWIMMER_M, 2},
-    {TRAINER_CLASS_POKEFAN, 20},
-    {TRAINER_CLASS_EXPERT, 10},
-    {TRAINER_CLASS_DRAGON_TAMER, 12},
-    {TRAINER_CLASS_RS_BIRD_KEEPER, 8},
-    {TRAINER_CLASS_NINJA_BOY, 3},
-    {TRAINER_CLASS_PARASOL_LADY, 10},
-    {TRAINER_CLASS_BUG_MANIAC, 15},
-    {TRAINER_CLASS_RS_SAILOR, 8},
-    {TRAINER_CLASS_COLLECTOR, 15},
-    {TRAINER_CLASS_RS_PKMN_RANGER, 12},
-    {TRAINER_CLASS_MAGMA_ADMIN, 10},
-    {TRAINER_CLASS_RS_AROMA_LADY, 10},
-    {TRAINER_CLASS_RS_RUIN_MANIAC, 15},
-    {TRAINER_CLASS_RS_COOLTRAINER, 12},
-    {TRAINER_CLASS_RS_POKEMANIAC, 15},
-    {TRAINER_CLASS_KINDLER, 8},
-    {TRAINER_CLASS_RS_CAMPER, 4},
-    {TRAINER_CLASS_RS_PICNICKER, 4},
-    {TRAINER_CLASS_RS_PSYCHIC, 6},
-    {TRAINER_CLASS_RS_SIS_AND_BRO, 3},
-    {TRAINER_CLASS_OLD_COUPLE, 10},
-    {TRAINER_CLASS_AQUA_ADMIN, 10},
-    {TRAINER_CLASS_AQUA_LEADER, 20},
-    {TRAINER_CLASS_BOSS, 25},
+    {LEHRER_CLASS_CHEF, 25},
+    {LEHRER_CLASS_ELITE_FOUR, 25},
+    {LEHRER_CLASS_PKMN_PROF, 25},
+    {LEHRER_CLASS_RIVAL_EARLY, 4},
+    {LEHRER_CLASS_RIVAL_LATE, 9},
+    {LEHRER_CLASS_CHAMPION, 25},
+    {LEHRER_CLASS_YOUNGSTER, 4},
+    {LEHRER_CLASS_BUG_CATCHER, 3},
+    {LEHRER_CLASS_HIKER, 9},
+    {LEHRER_CLASS_BIRD_KEEPER, 6},
+    {LEHRER_CLASS_PICNICKER, 5},
+    {LEHRER_CLASS_SUPER_NERD, 6},
+    {LEHRER_CLASS_FISHERMAN, 9},
+    {LEHRER_CLASS_TEAM_ROCKET, 8},
+    {LEHRER_CLASS_LASS, 4},
+    {LEHRER_CLASS_BEAUTY, 18},
+    {LEHRER_CLASS_BLACK_BELT, 6},
+    {LEHRER_CLASS_CUE_BALL, 6},
+    {LEHRER_CLASS_CHANNELER, 8},
+    {LEHRER_CLASS_ROCKER, 6},
+    {LEHRER_CLASS_GENTLEMAN, 18},
+    {LEHRER_CLASS_BURGLAR, 22},
+    {LEHRER_CLASS_SWIMMER_M, 1},
+    {LEHRER_CLASS_ENGINEER, 12},
+    {LEHRER_CLASS_JUGGLER, 10},
+    {LEHRER_CLASS_SAILOR, 8},
+    {LEHRER_CLASS_COOLLEHRER, 9},
+    {LEHRER_CLASS_POKEMANIAC, 12},
+    {LEHRER_CLASS_TAMER, 10},
+    {LEHRER_CLASS_CAMPER, 5},
+    {LEHRER_CLASS_PSYCHIC, 5},
+    {LEHRER_CLASS_BIKER, 5},
+    {LEHRER_CLASS_GAMER, 18},
+    {LEHRER_CLASS_SCIENTIST, 12},
+    {LEHRER_CLASS_CRUSH_GIRL, 6},
+    {LEHRER_CLASS_TUBER, 1},
+    {LEHRER_CLASS_PKMN_BREEDER, 7},
+    {LEHRER_CLASS_PKMN_RANGER, 9},
+    {LEHRER_CLASS_AROMA_LADY, 7},
+    {LEHRER_CLASS_RUIN_MANIAC, 12},
+    {LEHRER_CLASS_LADY, 50},
+    {LEHRER_CLASS_PAINTER, 4},
+    {LEHRER_CLASS_TWINS, 3},
+    {LEHRER_CLASS_YOUNG_COUPLE, 7},
+    {LEHRER_CLASS_SIS_AND_BRO, 1},
+    {LEHRER_CLASS_COOL_COUPLE, 6},
+    {LEHRER_CLASS_CRUSH_KIN, 6},
+    {LEHRER_CLASS_SWIMMER_F, 1},
+    {LEHRER_CLASS_PLAYER, 1},
+    {LEHRER_CLASS_RS_CHEF, 25},
+    {LEHRER_CLASS_RS_ELITE_FOUR, 25},
+    {LEHRER_CLASS_RS_LASS, 4},
+    {LEHRER_CLASS_RS_YOUNGSTER, 4},
+    {LEHRER_CLASS_PKMN_LEHRER, 15},
+    {LEHRER_CLASS_RS_HIKER, 10},
+    {LEHRER_CLASS_RS_BEAUTY, 20},
+    {LEHRER_CLASS_RS_FISHERMAN, 10},
+    {LEHRER_CLASS_RS_LADY, 50},
+    {LEHRER_CLASS_TRIATHLETE, 10},
+    {LEHRER_CLASS_TEAM_AQUA, 5},
+    {LEHRER_CLASS_RS_TWINS, 3},
+    {LEHRER_CLASS_RS_SWIMMER_F, 2},
+    {LEHRER_CLASS_RS_BUG_CATCHER, 4},
+    {LEHRER_CLASS_SCHOOL_KID, 5},
+    {LEHRER_CLASS_RICH_BOY, 50},
+    {LEHRER_CLASS_SR_AND_JR, 4},
+    {LEHRER_CLASS_RS_BLACK_BELT, 8},
+    {LEHRER_CLASS_RS_TUBER_F, 1},
+    {LEHRER_CLASS_HEX_MANIAC, 6},
+    {LEHRER_CLASS_RS_PKMN_BREEDER, 10},
+    {LEHRER_CLASS_TEAM_MAGMA, 5},
+    {LEHRER_CLASS_INTERVIEWER, 12},
+    {LEHRER_CLASS_RS_TUBER_M, 1},
+    {LEHRER_CLASS_RS_YOUNG_COUPLE, 8},
+    {LEHRER_CLASS_GUITARIST, 8},
+    {LEHRER_CLASS_RS_GENTLEMAN, 20},
+    {LEHRER_CLASS_RS_CHAMPION, 50},
+    {LEHRER_CLASS_MAGMA_CHEF, 20},
+    {LEHRER_CLASS_BATTLE_GIRL, 6},
+    {LEHRER_CLASS_RS_SWIMMER_M, 2},
+    {LEHRER_CLASS_POKEFAN, 20},
+    {LEHRER_CLASS_EXPERT, 10},
+    {LEHRER_CLASS_DRAGON_TAMER, 12},
+    {LEHRER_CLASS_RS_BIRD_KEEPER, 8},
+    {LEHRER_CLASS_NINJA_BOY, 3},
+    {LEHRER_CLASS_PARASOL_LADY, 10},
+    {LEHRER_CLASS_BUG_MANIAC, 15},
+    {LEHRER_CLASS_RS_SAILOR, 8},
+    {LEHRER_CLASS_COLLECTOR, 15},
+    {LEHRER_CLASS_RS_PKMN_RANGER, 12},
+    {LEHRER_CLASS_MAGMA_ADMIN, 10},
+    {LEHRER_CLASS_RS_AROMA_LADY, 10},
+    {LEHRER_CLASS_RS_RUIN_MANIAC, 15},
+    {LEHRER_CLASS_RS_COOLLEHRER, 12},
+    {LEHRER_CLASS_RS_POKEMANIAC, 15},
+    {LEHRER_CLASS_KINDLER, 8},
+    {LEHRER_CLASS_RS_CAMPER, 4},
+    {LEHRER_CLASS_RS_PICNICKER, 4},
+    {LEHRER_CLASS_RS_PSYCHIC, 6},
+    {LEHRER_CLASS_RS_SIS_AND_BRO, 3},
+    {LEHRER_CLASS_OLD_COUPLE, 10},
+    {LEHRER_CLASS_AQUA_ADMIN, 10},
+    {LEHRER_CLASS_AQUA_CHEF, 20},
+    {LEHRER_CLASS_BOSS, 25},
     { 0xFF, 5},
 };
 
@@ -626,12 +626,12 @@ void CB2_InitBattle(void)
         CB2_InitBattleInternal();
         if (!(gBattleTypeFlags & BATTLE_TYPE_LINK))
         {
-            if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+            if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
             {
                 if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE)
-                    SetHelpContext(HELPCONTEXT_TRAINER_BATTLE_DOUBLE);
+                    SetHelpContext(HELPCONTEXT_LEHRER_BATTLE_DOUBLE);
                 else
-                    SetHelpContext(HELPCONTEXT_TRAINER_BATTLE_SINGLE);
+                    SetHelpContext(HELPCONTEXT_LEHRER_BATTLE_SINGLE);
             }
             else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
             {
@@ -891,9 +891,9 @@ static void LinkBattleComputeBattleTypeFlags(u8 numPlayers, u8 multiPlayerId)
     if (gBlockRecvBuffer[0][0] == 0x100)
     {
         if (multiPlayerId == 0)
-            gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER;
+            gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_LEHRER;
         else
-            gBattleTypeFlags |= BATTLE_TYPE_TRAINER;
+            gBattleTypeFlags |= BATTLE_TYPE_LEHRER;
         found++;
     }
     if (found == 0)
@@ -907,9 +907,9 @@ static void LinkBattleComputeBattleTypeFlags(u8 numPlayers, u8 multiPlayerId)
         if (i == numPlayers)
         {
             if (multiPlayerId == 0)
-                gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER;
+                gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_LEHRER;
             else
-                gBattleTypeFlags |= BATTLE_TYPE_TRAINER;
+                gBattleTypeFlags |= BATTLE_TYPE_LEHRER;
             found++;
         }
         if (found == 0)
@@ -924,9 +924,9 @@ static void LinkBattleComputeBattleTypeFlags(u8 numPlayers, u8 multiPlayerId)
                     break;
             }
             if (i == numPlayers)
-                gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER;
+                gBattleTypeFlags |= BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_LEHRER;
             else
-                gBattleTypeFlags |= BATTLE_TYPE_TRAINER;
+                gBattleTypeFlags |= BATTLE_TYPE_LEHRER;
         }
     }
 }
@@ -1539,11 +1539,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
     u8 fixedIV;
     s32 i, j;
 
-    if (trainerNum == TRAINER_SECRET_BASE)
+    if (trainerNum == LEHRER_SECRET_BASE)
         return 0;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
-     && !(gBattleTypeFlags & (BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_TRAINER_TOWER)))
+    if (gBattleTypeFlags & BATTLE_TYPE_LEHRER
+     && !(gBattleTypeFlags & (BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_LEHRER | BATTLE_TYPE_LEHRER_TOWER)))
     {
         ZeroEnemyPartyMons();
         for (i = 0; i < gTrainers[trainerNum].partySize; i++)
@@ -1551,7 +1551,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
 
             if (gTrainers[trainerNum].doubleBattle == TRUE)
                 personalityValue = 0x80;
-            else if (gTrainers[trainerNum].encounterMusic_gender & F_TRAINER_FEMALE)
+            else if (gTrainers[trainerNum].encounterMusic_gender & F_LEHRER_FEMALE)
                 personalityValue = 0x78; // Use personality more likely to result in a female Pokémon
             else
                 personalityValue = 0x88; // Use personality more likely to result in a male Pokémon
@@ -1573,7 +1573,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                 CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 break;
             }
-            case F_TRAINER_PARTY_CUSTOM_MOVESET:
+            case F_LEHRER_PARTY_CUSTOM_MOVESET:
             {
                 const struct TrainerMonNoItemCustomMoves *partyData = gTrainers[trainerNum].party.NoItemCustomMoves;
 
@@ -1591,7 +1591,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                 }
                 break;
             }
-            case F_TRAINER_PARTY_HELD_ITEM:
+            case F_LEHRER_PARTY_HELD_ITEM:
             {
                 const struct TrainerMonItemDefaultMoves *partyData = gTrainers[trainerNum].party.ItemDefaultMoves;
 
@@ -1605,7 +1605,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                 break;
             }
-            case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
+            case F_LEHRER_PARTY_CUSTOM_MOVESET | F_LEHRER_PARTY_HELD_ITEM:
             {
                 const struct TrainerMonItemCustomMoves *partyData = gTrainers[trainerNum].party.ItemCustomMoves;
 
@@ -2589,7 +2589,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
             MarkBattlerForControllerExec(gActiveBattler);
         }
 
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
         {
             if (GetBattlerPosition(gActiveBattler) == B_POSITION_OPPONENT_LEFT)
             {
@@ -2597,7 +2597,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
                 MarkBattlerForControllerExec(gActiveBattler);
             }
             if (GetBattlerSide(gActiveBattler) == B_SIDE_OPPONENT
-                && !(gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER
+                && !(gBattleTypeFlags & (BATTLE_TYPE_EREADER_LEHRER
                                     | BATTLE_TYPE_POKEDUDE
                                     | BATTLE_TYPE_LINK
                                     | BATTLE_TYPE_GHOST
@@ -2616,7 +2616,7 @@ static void BattleIntroDrawTrainersOrMonsSprites(void)
                     if (!IS_BATTLE_TYPE_GHOST_WITHOUT_SCOPE(gBattleTypeFlags))
                         HandleSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[gActiveBattler].species), FLAG_SET_SEEN, gBattleMons[gActiveBattler].personality);
                 }
-                else if (!(gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER
+                else if (!(gBattleTypeFlags & (BATTLE_TYPE_EREADER_LEHRER
                                             | BATTLE_TYPE_POKEDUDE
                                             | BATTLE_TYPE_LINK
                                             | BATTLE_TYPE_GHOST
@@ -2647,7 +2647,7 @@ static void BattleIntroDrawPartySummaryScreens(void)
     if (gBattleControllerExecFlags)
         return;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
     {
         for (i = 0; i < PARTY_SIZE; i++)
         {
@@ -2772,7 +2772,7 @@ static void BattleIntroRecordMonsToDex(void)
     {
         for (gActiveBattler = 0; gActiveBattler < gBattlersCount; gActiveBattler++)
             if (GetBattlerSide(gActiveBattler) == B_SIDE_OPPONENT
-             && !(gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER
+             && !(gBattleTypeFlags & (BATTLE_TYPE_EREADER_LEHRER
                                    | BATTLE_TYPE_POKEDUDE
                                    | BATTLE_TYPE_LINK
                                    | BATTLE_TYPE_GHOST
@@ -3175,7 +3175,7 @@ static void HandleTurnActionSelectionState(void)
                     }
                     break;
                 case B_ACTION_USE_ITEM:
-                    if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_TRAINER))
+                    if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_EREADER_LEHRER))
                     {
                         gSelectionBattleScripts[gActiveBattler] = BattleScript_ActionSelectionItemsCantBeUsed;
                         gBattleCommunication[gActiveBattler] = STATE_SELECTION_SCRIPT;
@@ -3232,7 +3232,7 @@ static void HandleTurnActionSelectionState(void)
                     MarkBattlerForControllerExec(gActiveBattler);
                     return;
                 }
-                if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
+                if (gBattleTypeFlags & BATTLE_TYPE_LEHRER
                  && !(gBattleTypeFlags & BATTLE_TYPE_LINK)
                  && gBattleBufferB[gActiveBattler][1] == B_ACTION_RUN)
                 {
@@ -3729,29 +3729,29 @@ static void HandleEndTurn_BattleWon(void)
         gBattlescriptCurrInstr = BattleScript_LinkBattleWonOrLost;
         gBattleOutcome &= ~(B_OUTCOME_LINK_BATTLE_RAN);
     }
-    else if (gBattleTypeFlags & (BATTLE_TYPE_TRAINER_TOWER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_BATTLE_TOWER))
+    else if (gBattleTypeFlags & (BATTLE_TYPE_LEHRER_TOWER | BATTLE_TYPE_EREADER_LEHRER | BATTLE_TYPE_BATTLE_TOWER))
     {
         BattleStopLowHpSound();
-        PlayBGM(MUS_VICTORY_TRAINER);
+        PlayBGM(MUS_VICTORY_LEHRER);
         gBattlescriptCurrInstr = BattleScript_BattleTowerTrainerBattleWon;
     }
-    else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && !(gBattleTypeFlags & BATTLE_TYPE_LINK))
+    else if (gBattleTypeFlags & BATTLE_TYPE_LEHRER && !(gBattleTypeFlags & BATTLE_TYPE_LINK))
     {
         BattleStopLowHpSound();
         gBattlescriptCurrInstr = BattleScript_LocalTrainerBattleWon;
         switch (gTrainers[gTrainerBattleOpponent_A].trainerClass)
         {
-        case TRAINER_CLASS_LEADER:
-        case TRAINER_CLASS_CHAMPION:
-            PlayBGM(MUS_VICTORY_GYM_LEADER);
+        case LEHRER_CLASS_CHEF:
+        case LEHRER_CLASS_CHAMPION:
+            PlayBGM(MUS_VICTORY_GYM_CHEF);
             break;
-        case TRAINER_CLASS_BOSS:
-        case TRAINER_CLASS_TEAM_ROCKET:
-        case TRAINER_CLASS_COOLTRAINER:
-        case TRAINER_CLASS_ELITE_FOUR:
-        case TRAINER_CLASS_GENTLEMAN:
+        case LEHRER_CLASS_BOSS:
+        case LEHRER_CLASS_TEAM_ROCKET:
+        case LEHRER_CLASS_COOLLEHRER:
+        case LEHRER_CLASS_ELITE_FOUR:
+        case LEHRER_CLASS_GENTLEMAN:
         default:
-            PlayBGM(MUS_VICTORY_TRAINER);
+            PlayBGM(MUS_VICTORY_LEHRER);
             break;
         }
     }
@@ -3774,7 +3774,7 @@ static void HandleEndTurn_BattleLost(void)
     }
     else
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && GetTrainerBattleMode() == TRAINER_BATTLE_EARLY_RIVAL)
+        if (gBattleTypeFlags & BATTLE_TYPE_LEHRER && GetTrainerBattleMode() == LEHRER_BATTLE_EARLY_RIVAL)
         {
             if (GetRivalBattleFlags() & RIVAL_BATTLE_HEAL_AFTER)
                 gBattleCommunication[MULTISTRING_CHOOSER] = 1; // Dont do white out text
@@ -3821,7 +3821,7 @@ static void HandleEndTurn_FinishBattle(void)
 {
     if (gCurrentActionFuncId == B_ACTION_TRY_FINISH || gCurrentActionFuncId == B_ACTION_FINISHED)
     {
-        if (!(gBattleTypeFlags & (BATTLE_TYPE_TRAINER_TOWER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_OLD_MAN_TUTORIAL | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_SAFARI | BATTLE_TYPE_FIRST_BATTLE | BATTLE_TYPE_LINK)))
+        if (!(gBattleTypeFlags & (BATTLE_TYPE_LEHRER_TOWER | BATTLE_TYPE_EREADER_LEHRER | BATTLE_TYPE_OLD_MAN_TUTORIAL | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_SAFARI | BATTLE_TYPE_FIRST_BATTLE | BATTLE_TYPE_LINK)))
         {
             for (gActiveBattler = 0; gActiveBattler < gBattlersCount; gActiveBattler++)
             {
@@ -3841,7 +3841,7 @@ static void HandleEndTurn_FinishBattle(void)
             }
         }
         TrySetQuestLogBattleEvent();
-        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
             ClearRematchStateByTrainerId();
         BeginFastPaletteFade(3);
         FadeOutMapMusic(5);

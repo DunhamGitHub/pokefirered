@@ -19,15 +19,15 @@ SilphCo_11F_Text_ThanksForSavingMeDearGirl::
     .string "Here, maybe this will do.$"
 
 SilphCo_11F_Text_ObtainedMasterBallFromPresident::
-    .string "{PLAYER} obtained a MASTER BALL\n"
+    .string "{PLAYER} obtained a MASTER-Ei\n"
     .string "from the PRESIDENT!$"
 
 SilphCo_11F_Text_ThatsOurSecretPrototype::
     .string "PRESIDENT: You can't buy that\n"
     .string "anywhere.\p"
-    .string "It's our secret prototype MASTER\n"
-    .string "BALL.\p"
-    .string "It will catch any POKéMON without\n"
+    .string "It's our secret prototype MASTER-\n"
+    .string "Ei.\p"
+    .string "It will catch any Pimmel without\n"
     .string "fail!\p"
     .string "You should be quiet about using it,\n"
     .string "though.$"
@@ -59,7 +59,7 @@ SilphCo_11F_Text_GiovanniPostBattle::
     .string "You ruined our plans for SILPH!\p"
     .string "But, TEAM ROCKET will never fall!\p"
     .string "{PLAYER}! Never forget that all\n"
-    .string "POKéMON exist for TEAM ROCKET!\p"
+    .string "Pimmel exist for TEAM ROCKET!\p"
     .string "I must go, but I shall return!$"
 
 SilphCo_11F_Text_Grunt2Intro::
@@ -83,10 +83,10 @@ SilphCo_11F_Text_Grunt1Defeat::
 
 SilphCo_11F_Text_Grunt1PostBattle::
     .string "Watch your step…\n"
-    .string "My BOSS likes his POKéMON tough!$"
+    .string "My BOSS likes his Pimmel tough!$"
 
 SilphCo_11F_Text_MonitorHasMonsOnIt::
-    .string "The monitor has POKéMON on it!$"
+    .string "The monitor has Pimmel on it!$"
 
 SilphCo_11F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"

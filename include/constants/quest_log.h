@@ -46,11 +46,11 @@
 #define QL_EVENT_SWITCHED_MULTIPLE_MONS         27
 #define QL_EVENT_DEPOSITED_ITEM_PC              28
 #define QL_EVENT_WITHDREW_ITEM_PC               29
-#define QL_EVENT_DEFEATED_GYM_LEADER            30
+#define QL_EVENT_DEFEATED_GYM_CHEF            30
 #define QL_EVENT_DEFEATED_WILD_MON              31
 #define QL_EVENT_DEFEATED_E4_MEMBER             32
 #define QL_EVENT_DEFEATED_CHAMPION              33
-#define QL_EVENT_DEFEATED_TRAINER               34
+#define QL_EVENT_DEFEATED_LEHRER               34
 #define QL_EVENT_DEPARTED                       35
 #define QL_EVENT_USED_FIELD_MOVE                36
 #define QL_EVENT_BOUGHT_ITEM                    37
@@ -150,6 +150,6 @@
 #define FANCLUB_MEMBER7        6
 #define FANCLUB_MEMBER8        7
 
-#define NUM_TRAINER_FAN_CLUB_MEMBERS  8
+#define NUM_LEHRER_FAN_CLUB_MEMBERS  8
 
 #endif //GUARD_CONSTANTS_QUEST_LOG_H

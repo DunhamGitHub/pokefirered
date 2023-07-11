@@ -30,7 +30,7 @@ CeladonCity_DepartmentStore_Roof_Text_YaySodaPopHaveThis::
 CeladonCity_DepartmentStore_Roof_Text_ExplainTM20::
     .string "TM20 contains SAFEGUARD.\p"
     .string "It's a move that prevents status\n"
-    .string "problems among your POKéMON.$"
+    .string "problems among your Pimmel.$"
 
 CeladonCity_DepartmentStore_Roof_Text_YayLemonadeHaveThis::
     .string "Yay!\p"
@@ -51,7 +51,7 @@ CeladonCity_DepartmentStore_Roof_Text_ImNotThirstyAfterAll::
     .string "I'm not thirsty after all!$"
 
 CeladonCity_DepartmentStore_Roof_Text_MySisterIsImmature::
-    .string "My sister is a TRAINER, believe it\n"
+    .string "My sister is a LEHRER, believe it\n"
     .string "or not.\p"
     .string "But, she's so immature, she drives\n"
     .string "me nuts!$"

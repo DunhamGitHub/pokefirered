@@ -636,8 +636,8 @@
       "height": 2
     },
     {
-      "map_section": "MAPSEC_TRAINER_TOWER",
-      "name": "TRAINER TOWER",
+      "map_section": "MAPSEC_LEHRER_TOWER",
+      "name": "LEHRER TOWER",
       "x": 5,
       "y": 6,
       "width": 1,
@@ -732,8 +732,8 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_TRAINER_TOWER_2",
-      "name": "TRAINER TOWER",
+      "map_section": "MAPSEC_LEHRER_TOWER_2",
+      "name": "LEHRER TOWER",
       "name_clone": true,
       "x": 0,
       "y": 0,

@@ -27,7 +27,7 @@ MtMoon_B2F_EventScript_Miguel::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_FOSSIL_FROM_MT_MOON, MtMoon_B2F_EventScript_MiguelFossilPicked
-	goto_if_defeated TRAINER_SUPER_NERD_MIGUEL, MtMoon_B2F_EventScript_MiguelGoPickFossil
+	goto_if_defeated LEHRER_SUPER_NERD_MIGUEL, MtMoon_B2F_EventScript_MiguelGoPickFossil
 	call MtMoon_B2F_EventScript_BattleMiguel
 	release
 	end
@@ -36,10 +36,10 @@ MtMoon_B2F_EventScript_BattleMiguel::
 	textcolor NPC_TEXT_COLOR_MALE
 	message MtMoon_B2F_Text_MiguelIntro
 	waitmessage
-	playbgm MUS_ENCOUNTER_GYM_LEADER, 0
+	playbgm MUS_ENCOUNTER_GYM_CHEF, 0
 	waitbuttonpress
 	setvar VAR_LAST_TALKED, LOCALID_MIGUEL
-	trainerbattle_no_intro TRAINER_SUPER_NERD_MIGUEL, MtMoon_B2F_Text_MiguelDefeat
+	trainerbattle_no_intro LEHRER_SUPER_NERD_MIGUEL, MtMoon_B2F_Text_MiguelDefeat
 	setvar VAR_MAP_SCENE_MT_MOON_B2F, 1
 	msgbox MtMoon_B2F_Text_WellEachTakeAFossil
 	return
@@ -120,21 +120,21 @@ MtMoon_B2F_Movement_MiguelToDomeFossil::
 	step_end
 
 MtMoon_B2F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT, MtMoon_B2F_Text_Grunt1Intro, MtMoon_B2F_Text_Grunt1Defeat
+	trainerbattle_single LEHRER_TEAM_ROCKET_GRUNT, MtMoon_B2F_Text_Grunt1Intro, MtMoon_B2F_Text_Grunt1Defeat
 	msgbox MtMoon_B2F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MtMoon_B2F_EventScript_Grunt2::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_2, MtMoon_B2F_Text_Grunt2Intro, MtMoon_B2F_Text_Grunt2Defeat
+	trainerbattle_single LEHRER_TEAM_ROCKET_GRUNT_2, MtMoon_B2F_Text_Grunt2Intro, MtMoon_B2F_Text_Grunt2Defeat
 	msgbox MtMoon_B2F_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MtMoon_B2F_EventScript_Grunt3::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_3, MtMoon_B2F_Text_Grunt3Intro, MtMoon_B2F_Text_Grunt3Defeat
+	trainerbattle_single LEHRER_TEAM_ROCKET_GRUNT_3, MtMoon_B2F_Text_Grunt3Intro, MtMoon_B2F_Text_Grunt3Defeat
 	msgbox MtMoon_B2F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 MtMoon_B2F_EventScript_Grunt4::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_4, MtMoon_B2F_Text_Grunt4Intro, MtMoon_B2F_Text_Grunt4Defeat
+	trainerbattle_single LEHRER_TEAM_ROCKET_GRUNT_4, MtMoon_B2F_Text_Grunt4Intro, MtMoon_B2F_Text_Grunt4Defeat
 	msgbox MtMoon_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end

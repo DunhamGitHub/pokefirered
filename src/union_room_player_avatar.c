@@ -10,7 +10,7 @@
 #include "constants/union_room.h"
 #include "constants/event_objects.h"
 
-#define UR_SPRITE_START_ID (MAX_SPRITES - MAX_UNION_ROOM_LEADERS)
+#define UR_SPRITE_START_ID (MAX_SPRITES - MAX_UNION_ROOM_CHEFS)
 
 // Each parent player can lead a group of up to MAX_RFU_PLAYERS (including themselves).
 // Multiply the leader's id by MAX_RFU_PLAYERS and add the member's id (0 if the leader) to
@@ -31,7 +31,7 @@ static void SetUnionRoomObjectFacingDirection(s32 member, s32 leaderId, u8 direc
 // Graphics ids should correspond with the classes in gUnionRoomFacilityClasses
 static const u8 sUnionRoomObjGfxIds[GENDER_COUNT][NUM_UNION_ROOM_CLASSES + 2] = {
     [MALE]   = {
-        OBJ_EVENT_GFX_COOLTRAINER_M,
+        OBJ_EVENT_GFX_COOLLEHRER_M,
         OBJ_EVENT_GFX_BLACKBELT,
         OBJ_EVENT_GFX_CAMPER,
         OBJ_EVENT_GFX_YOUNGSTER,
@@ -41,7 +41,7 @@ static const u8 sUnionRoomObjGfxIds[GENDER_COUNT][NUM_UNION_ROOM_CLASSES + 2] = 
         OBJ_EVENT_GFX_ROCKER
     },
     [FEMALE] = {
-        OBJ_EVENT_GFX_COOLTRAINER_F,
+        OBJ_EVENT_GFX_COOLLEHRER_F,
         OBJ_EVENT_GFX_CHANNELER,
         OBJ_EVENT_GFX_PICNICKER,
         OBJ_EVENT_GFX_LASS,
@@ -52,7 +52,7 @@ static const u8 sUnionRoomObjGfxIds[GENDER_COUNT][NUM_UNION_ROOM_CLASSES + 2] = 
     }
 };
 
-static const s16 sUnionRoomPlayerCoords[MAX_UNION_ROOM_LEADERS][2] = {
+static const s16 sUnionRoomPlayerCoords[MAX_UNION_ROOM_CHEFS][2] = {
     { 4,  6},
     {13,  8},
     {10,  6},
@@ -217,7 +217,7 @@ u8 InitUnionRoomPlayerObjects(struct UnionRoomObject * players)
     sUnionObjRefreshTimer = 0;
     sUnionObjWork = players;
     AGB_ASSERT_EX(UnionObjWork != NULL, ABSPATH("rfu_union_tool.c"), 442)
-    for (i = 0; i < MAX_UNION_ROOM_LEADERS; i++)
+    for (i = 0; i < MAX_UNION_ROOM_CHEFS; i++)
     {
         players[i].state = 0;
         players[i].gfxId = 0;
@@ -367,7 +367,7 @@ static void Task_AnimateUnionRoomPlayers(u8 taskId)
 {
     s32 i;
     AGB_ASSERT_EX(UnionObjWork != NULL, ABSPATH("rfu_union_tool.c"), 643)
-    for (i = 0; i < MAX_UNION_ROOM_LEADERS; i++)
+    for (i = 0; i < MAX_UNION_ROOM_CHEFS; i++)
         AnimateUnionRoomPlayer(i, &sUnionObjWork[i]);
 }
 
@@ -394,7 +394,7 @@ static void DestroyTask_AnimateUnionRoomPlayers(void)
 void DestroyUnionRoomPlayerObjects(void)
 {
     s32 i;
-    for (i = 0; i < MAX_UNION_ROOM_LEADERS; i++)
+    for (i = 0; i < MAX_UNION_ROOM_CHEFS; i++)
     {
         if (!IsUnionRoomPlayerHidden(i))
         {
@@ -434,7 +434,7 @@ void DestroyUnionRoomPlayerSprites(u8 *spriteIds)
 void MakeGroupAssemblyAreasPassable(void)
 {
     s32 leaderId, memberId, x, y;
-    for (leaderId = 0; leaderId < MAX_UNION_ROOM_LEADERS; leaderId++)
+    for (leaderId = 0; leaderId < MAX_UNION_ROOM_CHEFS; leaderId++)
     {
         for (memberId = 0; memberId < MAX_RFU_PLAYERS; memberId++)
         {
@@ -545,7 +545,7 @@ static void UpdateUnionRoomPlayerSprites(struct WirelessLink_URoom * uroom)
     s32 i;
     struct RfuPlayer * leaders;
     sUnionObjRefreshTimer = 0;
-    for (i = 0, leaders = uroom->playerList->players; i < MAX_UNION_ROOM_LEADERS; i++)
+    for (i = 0, leaders = uroom->playerList->players; i < MAX_UNION_ROOM_CHEFS; i++)
     {
         if (leaders[i].groupScheduledAnim == UNION_ROOM_SPAWN_IN)
             SpawnGroupLeaderAndMembers(i, &leaders[i].rfu.data);
@@ -574,7 +574,7 @@ bool32 TryInteractWithUnionRoomMember(struct RfuPlayerList *list, s16 *memberIdP
         return FALSE;
 
     GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
-    for (leaderId = 0, leaders = list->players; leaderId < MAX_UNION_ROOM_LEADERS; leaderId++)
+    for (leaderId = 0, leaders = list->players; leaderId < MAX_UNION_ROOM_CHEFS; leaderId++)
     {
         for (memberId = 0; memberId < MAX_RFU_PLAYERS; memberId++)
         {

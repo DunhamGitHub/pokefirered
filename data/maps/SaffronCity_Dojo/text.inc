@@ -1,7 +1,7 @@
 SaffronCity_Dojo_Text_MasterKoichiIntro::
     .string "Grunt!\p"
     .string "I am the KARATE MASTER!\n"
-    .string "I am the LEADER here!\p"
+    .string "I am the CHEF here!\p"
     .string "You wish to challenge us?\n"
     .string "Expect no mercy!\p"
     .string "Fwaaa!$"
@@ -15,7 +15,7 @@ SaffronCity_Dojo_Text_ChoosePrizedFightingMon::
     .string "But, I beseech you, do not take\n"
     .string "our emblem as your trophy!\p"
     .string "In return, I will give you a prized\n"
-    .string "FIGHTING POKéMON!\p"
+    .string "FIGHTING Pimmel!\p"
     .string "Choose whichever one you like!$"
 
 SaffronCity_Dojo_Text_StayAndTrainWithUs::

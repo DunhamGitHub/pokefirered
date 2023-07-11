@@ -218,7 +218,7 @@ ThreeIsland_EventScript_BattleBikersScene::
 	goto_if_eq VAR_RESULT, NO, ThreeIsland_EventScript_LeaveBikersAlone
 	msgbox ThreeIsland_Text_Biker1Intro
 	setvar VAR_LAST_TALKED, LOCALID_BIKER1
-	trainerbattle_no_intro TRAINER_BIKER_GOON, ThreeIsland_Text_Biker1Defeat
+	trainerbattle_no_intro LEHRER_BIKER_GOON, ThreeIsland_Text_Biker1Defeat
 	applymovement LOCALID_BIKER1, ThreeIsland_Movement_BikerSpeak
 	waitmovement 0
 	msgbox ThreeIsland_Text_Biker1PostBattle
@@ -228,7 +228,7 @@ ThreeIsland_EventScript_BattleBikersScene::
 	playbgm MUS_ENCOUNTER_BOY, 0
 	msgbox ThreeIsland_Text_Biker2Intro
 	setvar VAR_LAST_TALKED, LOCALID_BIKER2
-	trainerbattle_no_intro TRAINER_BIKER_GOON_2, ThreeIsland_Text_Biker2Defeat
+	trainerbattle_no_intro LEHRER_BIKER_GOON_2, ThreeIsland_Text_Biker2Defeat
 	applymovement LOCALID_BIKER2, ThreeIsland_Movement_BikerSpeak
 	waitmovement 0
 	msgbox ThreeIsland_Text_Biker2PostBattle
@@ -238,7 +238,7 @@ ThreeIsland_EventScript_BattleBikersScene::
 	playbgm MUS_ENCOUNTER_BOY, 0
 	msgbox ThreeIsland_Text_Biker3Intro
 	setvar VAR_LAST_TALKED, LOCALID_BIKER3
-	trainerbattle_no_intro TRAINER_BIKER_GOON_3, ThreeIsland_Text_Biker3Defeat
+	trainerbattle_no_intro LEHRER_BIKER_GOON_3, ThreeIsland_Text_Biker3Defeat
 	applymovement LOCALID_BIKER3, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	applymovement LOCALID_BIKER4, Common_Movement_WalkInPlaceFasterDown
@@ -255,7 +255,7 @@ ThreeIsland_EventScript_BattleBikersScene::
 	playbgm MUS_ENCOUNTER_BOY, 0
 	msgbox ThreeIsland_Text_PaxtonIntro
 	setvar VAR_LAST_TALKED, LOCALID_PAXTON
-	trainerbattle_no_intro TRAINER_CUE_BALL_PAXTON, ThreeIsland_Text_PaxtonDefeat
+	trainerbattle_no_intro LEHRER_CUE_BALL_PAXTON, ThreeIsland_Text_PaxtonDefeat
 	msgbox ThreeIsland_Text_PaxtonPostBattle
 	closemessage
 	fadescreen FADE_TO_BLACK

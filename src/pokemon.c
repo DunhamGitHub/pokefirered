@@ -1521,7 +1521,7 @@ const struct SpriteTemplate gSpriteTemplates_Battlers[MAX_BATTLERS_COUNT] =
 
 static const struct SpriteTemplate sTrainerBackSpriteTemplates[] = 
 {
-    [TRAINER_BACK_PIC_RED] = {
+    [LEHRER_BACK_PIC_RED] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattlerPlayer,
@@ -1530,7 +1530,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_AllyMon,
     },
-    [TRAINER_BACK_PIC_LEAF] = {
+    [LEHRER_BACK_PIC_LEAF] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattlerPlayer,
@@ -1539,7 +1539,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_AllyMon,
     },
-    [TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = {
+    [LEHRER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattlerPlayer,
@@ -1548,7 +1548,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_AllyMon,
     },
-    [TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY] = {
+    [LEHRER_BACK_PIC_RUBY_SAPPHIRE_MAY] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattlerPlayer,
@@ -1557,7 +1557,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_AllyMon,
     },
-    [TRAINER_BACK_PIC_POKEDUDE] = {
+    [LEHRER_BACK_PIC_POKEDUDE] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattlerPlayer,
@@ -1566,7 +1566,7 @@ static const struct SpriteTemplate sTrainerBackSpriteTemplates[] =
         .affineAnims = gAffineAnims_BattleSpritePlayerSide,
         .callback = SpriteCB_AllyMon,
     },
-    [TRAINER_BACK_PIC_OLD_MAN] = {
+    [LEHRER_BACK_PIC_OLD_MAN] = {
         .tileTag = TAG_NONE,
         .paletteTag = 0,
         .oam = &gOamData_BattlerPlayer,
@@ -1666,7 +1666,7 @@ static const u16 sDeoxysBaseStats[] =
 const u16 gUnionRoomFacilityClasses[NUM_UNION_ROOM_CLASSES * GENDER_COUNT] = 
 {
     // Male
-    FACILITY_CLASS_COOLTRAINER_M,
+    FACILITY_CLASS_COOLLEHRER_M,
     FACILITY_CLASS_BLACK_BELT,
     FACILITY_CLASS_CAMPER,
     FACILITY_CLASS_YOUNGSTER,
@@ -1675,7 +1675,7 @@ const u16 gUnionRoomFacilityClasses[NUM_UNION_ROOM_CLASSES * GENDER_COUNT] =
     FACILITY_CLASS_TAMER,
     FACILITY_CLASS_JUGGLER,
     // Female
-    FACILITY_CLASS_COOLTRAINER_F,
+    FACILITY_CLASS_COOLLEHRER_F,
     FACILITY_CLASS_CHANNELER,
     FACILITY_CLASS_PICNICKER,
     FACILITY_CLASS_LASS,
@@ -2379,7 +2379,7 @@ static void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 mo
 
 // Own function in pokeemerald
 #define ShouldGetStatBadgeBoost(flag, battler)\
-    (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_EREADER_TRAINER)) && FlagGet(flag) && GetBattlerSide(battler) == B_SIDE_PLAYER)
+    (!(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_EREADER_LEHRER)) && FlagGet(flag) && GetBattlerSide(battler) == B_SIDE_PLAYER)
 
 
 s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 move, u16 sideStatus, u16 powerOverride, u8 typeOverride, u8 battlerIdAtk, u8 battlerIdDef)
@@ -3825,8 +3825,8 @@ static void CreateSecretBaseEnemyParty(struct SecretBaseRecord *secretBaseRecord
             }
         }
     }
-    gBattleTypeFlags = BATTLE_TYPE_TRAINER;
-    gTrainerBattleOpponent_A = TRAINER_SECRET_BASE;
+    gBattleTypeFlags = BATTLE_TYPE_LEHRER;
+    gTrainerBattleOpponent_A = LEHRER_SECRET_BASE;
 }
 
 u8 GetSecretBaseTrainerPicIndex(void)
@@ -5386,7 +5386,7 @@ s32 GetBattlerMultiplayerId(u16 id)
 
 u8 GetTrainerEncounterMusicId(u16 trainerId)
 {
-    return TRAINER_ENCOUNTER_MUSIC(trainerId);
+    return LEHRER_ENCOUNTER_MUSIC(trainerId);
 }
 
 static u16 ModifyStatByNature(u8 nature, u16 stat, u8 statIndex)
@@ -5466,11 +5466,11 @@ void AdjustFriendship(struct Pokemon *mon, u8 event)
         if (event == FRIENDSHIP_EVENT_LEAGUE_BATTLE)
         {
             // Only if it's a trainer battle with league progression significance
-            if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+            if (!(gBattleTypeFlags & BATTLE_TYPE_LEHRER))
                 return;
-            if (!(gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_LEADER
-                || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_ELITE_FOUR
-                || gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_CHAMPION))
+            if (!(gTrainers[gTrainerBattleOpponent_A].trainerClass == LEHRER_CLASS_CHEF
+                || gTrainers[gTrainerBattleOpponent_A].trainerClass == LEHRER_CLASS_ELITE_FOUR
+                || gTrainers[gTrainerBattleOpponent_A].trainerClass == LEHRER_CLASS_CHAMPION))
                 return;
         }
 
@@ -5707,6 +5707,7 @@ bool8 TryIncrementMonLevel(struct Pokemon *mon)
     }
 }
 
+// sp hm learn, tm learn
 u32 CanMonLearnTMHM(struct Pokemon *mon, u8 tm)
 {
     u16 species = GetMonData(mon, MON_DATA_SPECIES_OR_EGG, NULL);
@@ -5840,25 +5841,25 @@ static u16 GetBattleBGM(void)
     if (gBattleTypeFlags & BATTLE_TYPE_KYOGRE_GROUDON)
         return MUS_VS_WILD;
     if (gBattleTypeFlags & BATTLE_TYPE_REGI)
-        return MUS_RS_VS_TRAINER;
+        return MUS_RS_VS_LEHRER;
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
-        return MUS_RS_VS_TRAINER;
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        return MUS_RS_VS_LEHRER;
+    if (gBattleTypeFlags & BATTLE_TYPE_LEHRER)
     {
         switch (gTrainers[gTrainerBattleOpponent_A].trainerClass)
         {
-        case TRAINER_CLASS_CHAMPION:
+        case LEHRER_CLASS_CHAMPION:
             return MUS_VS_CHAMPION;
-        case TRAINER_CLASS_LEADER:
-        case TRAINER_CLASS_ELITE_FOUR:
-            return MUS_VS_GYM_LEADER;
-        case TRAINER_CLASS_BOSS:
-        case TRAINER_CLASS_TEAM_ROCKET:
-        case TRAINER_CLASS_COOLTRAINER:
-        case TRAINER_CLASS_GENTLEMAN:
-        case TRAINER_CLASS_RIVAL_LATE:
+        case LEHRER_CLASS_CHEF:
+        case LEHRER_CLASS_ELITE_FOUR:
+            return MUS_VS_GYM_CHEF;
+        case LEHRER_CLASS_BOSS:
+        case LEHRER_CLASS_TEAM_ROCKET:
+        case LEHRER_CLASS_COOLLEHRER:
+        case LEHRER_CLASS_GENTLEMAN:
+        case LEHRER_CLASS_RIVAL_LATE:
         default:
-            return MUS_VS_TRAINER;
+            return MUS_VS_LEHRER;
         }
     }
     return MUS_VS_WILD;
@@ -6019,7 +6020,7 @@ void SetMonPreventsSwitchingString(void)
 
 void SetWildMonHeldItem(void)
 {
-    if (!(gBattleTypeFlags & (BATTLE_TYPE_POKEDUDE | BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_TRAINER)))
+    if (!(gBattleTypeFlags & (BATTLE_TYPE_POKEDUDE | BATTLE_TYPE_LEGENDARY | BATTLE_TYPE_LEHRER)))
     {
         u16 rnd = Random() % 100;
         u16 species = GetMonData(&gEnemyParty[0], MON_DATA_SPECIES, NULL);

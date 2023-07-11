@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "RockTunnel_1F_EventScript_Dana",
       "flag": "0"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "RockTunnel_1F_EventScript_Ariana",
       "flag": "0"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "5",
       "script": "RockTunnel_1F_EventScript_Leah",
       "flag": "0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "RockTunnel_1F_EventScript_Lucas",
       "flag": "0"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "RockTunnel_1F_EventScript_Oliver",
       "flag": "0"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "RockTunnel_1F_EventScript_Lenny",
       "flag": "0"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "RockTunnel_1F_EventScript_Ashton",
       "flag": "0"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RockTunnel_1F_EventScript_ItemRepel",
       "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_REPEL"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RockTunnel_1F_EventScript_ItemPearl",
       "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_PEARL"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "RockTunnel_1F_EventScript_ItemEscapeRope",
       "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_ESCAPE_ROPE"

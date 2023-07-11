@@ -268,12 +268,12 @@ void BattleAI_HandleItemUseBeforeAISetup(void)
         data[i] = 0;
 
     // Items are allowed to use in ONLY trainer battles.
-    if ((gBattleTypeFlags & BATTLE_TYPE_TRAINER)
-        && (gTrainerBattleOpponent_A != TRAINER_SECRET_BASE)
-        && !(gBattleTypeFlags & (BATTLE_TYPE_TRAINER_TOWER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_SAFARI | BATTLE_TYPE_LINK))
+    if ((gBattleTypeFlags & BATTLE_TYPE_LEHRER)
+        && (gTrainerBattleOpponent_A != LEHRER_SECRET_BASE)
+        && !(gBattleTypeFlags & (BATTLE_TYPE_LEHRER_TOWER | BATTLE_TYPE_EREADER_LEHRER | BATTLE_TYPE_BATTLE_TOWER | BATTLE_TYPE_SAFARI | BATTLE_TYPE_LINK))
         )
     {
-        for (i = 0; i < MAX_TRAINER_ITEMS; i++)
+        for (i = 0; i < MAX_LEHRER_ITEMS; i++)
         {
             if (gTrainers[gTrainerBattleOpponent_A].items[i] != 0)
             {
@@ -339,7 +339,7 @@ void BattleAI_SetupAIData(void)
         AI_THINKING_STRUCT->aiFlags = AI_SCRIPT_ROAMING;
         return;
     }
-    else if (!(gBattleTypeFlags & (BATTLE_TYPE_TRAINER_TOWER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_BATTLE_TOWER)) && (gTrainerBattleOpponent_A != TRAINER_SECRET_BASE))
+    else if (!(gBattleTypeFlags & (BATTLE_TYPE_LEHRER_TOWER | BATTLE_TYPE_EREADER_LEHRER | BATTLE_TYPE_BATTLE_TOWER)) && (gTrainerBattleOpponent_A != LEHRER_SECRET_BASE))
     {
         if (gBattleTypeFlags & BATTLE_TYPE_WILD_SCRIPTED)
         {

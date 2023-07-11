@@ -13,7 +13,7 @@ CeladonCity_GameCorner_EventScript_PhotoPrinter::
 	waitse
 	message CeladonCity_GameCorner_Text_ChoosePrintType
 	waitmessage
-	multichoice 21, 0, MULTICHOICE_TRAINER_CARD_ICON_TINT, TRUE
+	multichoice 21, 0, MULTICHOICE_LEHRER_CARD_ICON_TINT, TRUE
 	switch VAR_RESULT
 	case 0, CeladonCity_GameCorner_EventScript_PrintTypeNormal
 	case 1, CeladonCity_GameCorner_EventScript_PrintTypeBlack

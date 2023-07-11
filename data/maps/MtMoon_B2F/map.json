@@ -24,7 +24,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMoon_B2F_EventScript_DomeFossil",
       "flag": "FLAG_HIDE_DOME_FOSSIL"
@@ -38,7 +38,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMoon_B2F_EventScript_HelixFossil",
       "flag": "FLAG_HIDE_HELIX_FOSSIL"
@@ -52,7 +52,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMoon_B2F_EventScript_Miguel",
       "flag": "0"
@@ -66,7 +66,7 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "MtMoon_B2F_EventScript_Grunt4",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
@@ -80,7 +80,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "MtMoon_B2F_EventScript_Grunt1",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
@@ -94,7 +94,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "MtMoon_B2F_EventScript_Grunt3",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
@@ -108,7 +108,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "LEHRER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
       "script": "MtMoon_B2F_EventScript_Grunt2",
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
@@ -122,7 +122,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMoon_B2F_EventScript_ItemStarPiece",
       "flag": "FLAG_HIDE_MT_MOON_B2F_STAR_PIECE"
@@ -136,7 +136,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMoon_B2F_EventScript_ItemTM46",
       "flag": "FLAG_HIDE_MT_MOON_B2F_TM46"
@@ -150,7 +150,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMoon_B2F_EventScript_ItemRevive",
       "flag": "FLAG_HIDE_MT_MOON_B2F_REVIVE"
@@ -164,7 +164,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "LEHRER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "MtMoon_B2F_EventScript_ItemAntidote",
       "flag": "FLAG_HIDE_MT_MOON_B2F_ANTIDOTE"
