@@ -37,11 +37,11 @@ LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
     .string "but I'd like you to have it.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji::
-    .string "{PLAYER} received a PimmelFLUTE\n"
+    .string "{PLAYER} received a Pimmel-Flööte\n"
     .string "from MR. FUJI.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute::
-    .string "Upon hearing the PimmelFLUTE,\n"
+    .string "Upon hearing the Pimmel-Flööte,\n"
     .string "sleeping Pimmel will spring awake.\p"
     .string "Try using it on Pimmel that are\n"
     .string "sleeping obstacles.$"
@@ -50,7 +50,7 @@ LavenderTown_VolunteerPokemonHouse_Text_MustMakeRoomForThis::
     .string "You must make room for this!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou::
-    .string "MR. FUJI: Has my PimmelFLUTE\n"
+    .string "MR. FUJI: Has my Pimmel-Flööte\n"
     .string "helped you?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::

@@ -1,5 +1,5 @@
 CeladonCity_PokemonCenter_1F_Text_PokeFluteAwakensSleepingMons::
-    .string "A PimmelFLUTE awakens sleeping\n"
+    .string "A Pimmel-Flööte awakens sleeping\n"
     .string "Pimmel. You know that.\p"
     .string "It does so with a sound that only\n"
     .string "they can hear.$"
