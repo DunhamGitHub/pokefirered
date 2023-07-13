@@ -594,7 +594,7 @@ void PlaySE(u16 songNum)
         || songNum == SE_LOW_HEALTH 
         ){
         songNum = MUS_NONE; // probably not needed
-        return;
+        return; // definately needed!
     }
 
     
@@ -603,15 +603,11 @@ void PlaySE(u16 songNum)
 }
 
 /*
+// og
 void PlaySE(u16 songNum)
 {
-    //sp if wants to play stupid click sound, abort
-    if(songNum == SE_SELECT){
-        songNum = MUS_NONE; // probably not needed
-        return;
-    }
-
-    m4aSongNumStart(songNum);
+    if (gDisableMapMusicChangeOnMapLoad == 0 && gQuestLogState != QL_STATE_PLAYBACK)
+        m4aSongNumStart(songNum);
 }
 */
 
