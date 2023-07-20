@@ -1378,12 +1378,14 @@ static void MoveSelectionDisplayMoveNames(void)
     }
 }
 
+// hide PP
 static void MoveSelectionDisplayPpString(void)
 {
     StringCopy(gDisplayedStringBattle, gText_MoveInterfacePP);
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_PP);
 }
 
+// hide PP
 static void MoveSelectionDisplayPpNumber(void)
 {
     u8 *txtPtr;
