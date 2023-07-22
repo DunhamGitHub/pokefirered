@@ -19,7 +19,7 @@
     {
       "english": "Master-Ei",
       "itemId": "ITEM_MASTER_BALL",
-      "price": 0,
+      "price": 1,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "The best BALL with the ultimate\\nperformance. It will catch any wild\\nPimmel without fail.",
@@ -1715,7 +1715,7 @@
     {
       "english": "Big Pearl",
       "itemId": "ITEM_BIG_PEARL",
-      "price": 7500,
+      "price": 1,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A quite-large pearl that sparkles\\nin a pretty silver color.\\nIt can be sold at a high price.",
@@ -4848,7 +4848,7 @@
     {
       "english": "Tm14",
       "itemId": "ITEM_TM14",
-      "price": 5500,
+      "price": 1,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A vicious snow-and-wind attack that\\nstrikes all foes in battle. It may\\ncause freezing.",
@@ -4865,7 +4865,7 @@
     {
       "english": "Tm15",
       "itemId": "ITEM_TM15",
-      "price": 7500,
+      "price": 1,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "A harsh attack that inflicts severe\\ndamage on the foe. However, the\\nuser must rest the next turn.",
@@ -5035,7 +5035,7 @@
     {
       "english": "Tm25",
       "itemId": "ITEM_TM25",
-      "price": 5500,
+      "price": 1,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "Strikes the foe with a huge\\nthunderbolt. It may cause\\nparalysis.",
@@ -5256,7 +5256,7 @@
     {
       "english": "Tm38",
       "itemId": "ITEM_TM38",
-      "price": 5500,
+      "price": 1,
       "holdEffect": "HOLD_EFFECT_NONE",
       "holdEffectParam": 0,
       "description_english": "The foe is incinerated with an\\nintense flame. It may leave the\\ntarget with a burn.",
