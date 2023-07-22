@@ -8406,8 +8406,8 @@
             "species": "SPECIES_DRAGONAIR"
           },
           {
-            "min_level": 5,
-            "max_level": 5,
+            "min_level": 80,
+            "max_level": 80,
             "species": "SPECIES_DRAGONITE"
           }
         ]
