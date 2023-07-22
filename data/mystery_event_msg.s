@@ -108,7 +108,7 @@ sText_MysteryGiftEgg:
 sText_FullParty:
 	.string "Oh, your party appears to be full.\p"
 	.string "Please come see me after storing\n"
-	.string "a Pimmel on a PC.$"
+	.string "a Pimmel on a MAC.$"
 
 MysteryEventScript_VisitingTrainer::
 	setvaddress MysteryEventScript_VisitingTrainer
@@ -260,7 +260,7 @@ sText_AuroraTicketGot:
 sText_AuroraTicketNoPlace:
 	.string "Oh, I'm sorry, {PLAYER}. Your BAG's\n"
 	.string "KEY ITEMS POCKET is full.\p"
-	.string "Please store something on your PC,\n"
+	.string "Please store something on your MAC,\n"
 	.string "then come back for this.$"
 
 MysteryEventScript_MysticTicket::
@@ -319,7 +319,7 @@ sText_MysticTicketGot:
 sText_MysticTicketNoPlace:
 	.string "Oh, I'm sorry, {PLAYER}. Your BAG's\n"
 	.string "KEY ITEMS POCKET is full.\p"
-	.string "Please store something on your PC,\n"
+	.string "Please store something on your MAC,\n"
 	.string "then come back for this.$"
 
 MysteryEventScript_AlteringCave::

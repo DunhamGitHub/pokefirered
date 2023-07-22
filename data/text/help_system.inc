@@ -461,7 +461,7 @@ Help_Text_AnswerWhatsPokemonCenter::
 	.string "A Pimmel CENTER is identified by its\n"
 	.string "red roof and a “P.C” sign. Every\l"
 	.string "Pimmel CENTER offers such services as\l"
-	.string "fully healing Pimmel and free PC use,\l"
+	.string "fully healing Pimmel and free MAC use,\l"
 	.string "making it essential for your travels.\l"
 	.string "On the upper floor are facilities for\l"
 	.string "linking with friends and others.$"
@@ -586,10 +586,10 @@ Help_Text_EnteringName::
 	.string "Entering a name$"
 
 Help_Text_UsingPC::
-	.string "Using a PC$"
+	.string "Using a MAC$"
 
 Help_Text_UsingBillsPC::
-	.string " Using “{STR_VAR_1}'S PC”$"
+	.string " Using “{STR_VAR_1}'S MAC”$"
 
 Help_Text_UsingWithdraw::
 	.string "  Using “WITHDRAW”$"
@@ -604,7 +604,7 @@ Help_Text_MovingItems::
 	.string "  Moving items$"
 
 Help_Text_UsingPlayersPC::
-	.string " Using “{PLAYER}'s PC”$"
+	.string " Using “{PLAYER}'s MAC”$"
 
 Help_Text_UsingWithdrawItem::
 	.string "  Using “WITHDRAW ITEM”$"
@@ -616,7 +616,7 @@ Help_Text_UsingMailbox::
 	.string "  Using “MAILBOX”$"
 
 Help_Text_UsingProfOaksPC::
-	.string " Using “PROF. EICH'S PC”$"
+	.string " Using “PROF. EICH'S MAC”$"
 
 Help_Text_OpeningMenu::
 	.string "Opening the MENU$"
@@ -640,7 +640,7 @@ Help_Text_ReadingPokedex::
 	.string " Reading the “Lexikon”$"
 
 Help_Text_UsingHomePC::
-	.string "Using the PC at home$"
+	.string "Using the MAC at home$"
 
 Help_Text_UsingItemStorage::
 	.string "Using the Item Storage System$"
@@ -836,10 +836,10 @@ Help_Text_HowToEnterName::
 
 Help_Text_HowToUsePC::
 	.string "{CIRCLE_1} Go to any Pimmel CENTER, go up\n"
-	.string "   to the PC, then press the A Button.$"
+	.string "   to the MAC, then press the A Button.$"
 
 Help_Text_HowToUseBillsPC::
-	.string "{CIRCLE_1} Select “{STR_VAR_1}'S PC” on the PC.\n"
+	.string "{CIRCLE_1} Select “{STR_VAR_1}'S MAC” on the MAC.\n"
 	.string "{CIRCLE_2} Select from one of the top three\n"
 	.string "   MENU items to access the Pimmel\n"
 	.string "   Storage System.\n"
@@ -884,12 +884,12 @@ Help_Text_HowToMoveItems::
 	.string "   to the BAG with the A Button.$"
 
 Help_Text_HowToUsePlayersPC::
-	.string "{CIRCLE_1} Select “{PLAYER}'s PC” on the PC.\n"
+	.string "{CIRCLE_1} Select “{PLAYER}'s MAC” on the MAC.\n"
 	.string "{CIRCLE_2} Select either “ITEM STORAGE” or\n"
 	.string "   “MAILBOX.”\n"
-	.string "You may store things in your own PC\n"
+	.string "You may store things in your own MAC\n"
 	.string "if your BAG is full. You may also\n"
-	.string "withdraw items stored in your PC.$"
+	.string "withdraw items stored in your MAC.$"
 
 Help_Text_HowToUseWithdrawItem::
 	.string "{CIRCLE_1} Select “WITHDRAW ITEM.”\n"
@@ -912,12 +912,12 @@ Help_Text_HowToUseMailbox::
 	.string "When MAIL is taken from a Pimmel,\n"
 	.string "it is moved to the MAILBOX. If it has\n"
 	.string "no MAIL, the MAILBOX can't be used.\n"
-	.string "{CIRCLE_1} Select “{PLAYER}'S PC” on the PC.\n"
+	.string "{CIRCLE_1} Select “{PLAYER}'S MAC” on the MAC.\n"
 	.string "{CIRCLE_2} Select “MAILBOX” to read MAIL or\n"
 	.string "   make a Pimmel hold MAIL.$"
 
 Help_Text_HowToUseProfOaksPC::
-	.string "{CIRCLE_1} Select “PROF. EICH'S PC” on the PC.\n"
+	.string "{CIRCLE_1} Select “PROF. EICH'S MAC” on the MAC.\n"
 	.string "{CIRCLE_2} PROF. EICH will evaluate your\n"
 	.string "   Lexikon.\n"
 	.string "His evaluations should give you hints\n"
@@ -986,17 +986,17 @@ Help_Text_HowToReadPokedex::
 	.endif
 
 Help_Text_HowToUseHomePC::
-	.string "{CIRCLE_1} Go up to the PC at home, then press\n"
+	.string "{CIRCLE_1} Go up to the MAC at home, then press\n"
 	.string "   the A Button.\n"
-	.string "{CIRCLE_2} The PC will turn on.\n"
+	.string "{CIRCLE_2} The MAC will turn on.\n"
 	.string "{CIRCLE_3} Select either “ITEM STORAGE” or\n"
 	.string "   “MAILBOX.”$"
 
 Help_Text_HowToUseItemStorage::
 	.string "{CIRCLE_1} Select “WITHDRAW ITEM” to withdraw\n"
-	.string "   an item stored on your PC.\n"
+	.string "   an item stored on your MAC.\n"
 	.string "{CIRCLE_2} Select “DEPOSIT ITEM” to put \n"
-	.string "   an item from your BAG into your PC.$"
+	.string "   an item from your BAG into your MAC.$"
 
 Help_Text_HowToUseWithdrawItem2::
 	.string "{CIRCLE_1} Select “WITHDRAW ITEM.”\n"
@@ -1056,7 +1056,7 @@ Help_Text_HowToUseRock::
 	.string "to catch!$"
 
 Help_Text_HowToUseHallOfFame::
-	.string "{CIRCLE_1} Select “HALL OF FAME” on the PC.\n"
+	.string "{CIRCLE_1} Select “HALL OF FAME” on the MAC.\n"
 	.string "{CIRCLE_2} The Pimmel that have entered the\n"
 	.string "   HALL OF FAME can be examined.$"
 

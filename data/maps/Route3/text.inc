@@ -50,7 +50,7 @@ Route3_Text_GregDefeat::
     .string "won!$"
 
 Route3_Text_GregPostBattle::
-    .string "If a Pimmel BOX on the PC gets\n"
+    .string "If a Pimmel BOX on the MAC gets\n"
     .string "full, just switch to another BOX.$"
 
 Route3_Text_SallyIntro::

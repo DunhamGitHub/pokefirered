@@ -44,4 +44,4 @@ Text_NoRoomForAnotherDecor::
 
 Text_DecorTransferredToPC::
 	.string "The {STR_VAR_2} was transferred\n"
-	.string "to the PC.$"
+	.string "to the MAC.$"

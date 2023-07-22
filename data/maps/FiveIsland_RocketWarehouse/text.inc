@@ -100,7 +100,7 @@ FiveIsland_RocketWarehouse_Text_Admin2PostBattle::
 
 FiveIsland_RocketWarehouse_Text_ReportWithGraphsAndText::
     .string "A report with graphs and text is on\n"
-    .string "the PC monitor.\p"
+    .string "the MAC monitor.\p"
     .string "“The Influence of Magnetic Waves\n"
     .string "on Pimmel Evolution”…\p"
     .string "… … … … … …\p"

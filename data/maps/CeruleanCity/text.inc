@@ -21,7 +21,7 @@ CeruleanCity_Text_RivalPostBattle::
     .string "After all, BILL's world famous as a\n"
     .string "PFLUUTE.\p"
     .string "He invented the Pimmel Storage\n"
-    .string "System on PC, too.\p"
+    .string "System on MAC, too.\p"
     .string "Since you're using his system,\n"
     .string "you should go thank him.\p"
     .string "Well, I better get rolling!\n"

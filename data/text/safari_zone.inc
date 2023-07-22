@@ -72,7 +72,7 @@ SafariZone_Text_PleaseEnjoyYourself::
 
 SafariZone_Text_ExcuseMeYourPCBoxIsFull::
 	.string "Excuse me!\n"
-	.string "Your PC BOX is full.$"
+	.string "Your MAC BOX is full.$"
 
 SafariZone_Text_YouNeedPokeblockCase::
 	.string "あ！　おきゃくさん\n"

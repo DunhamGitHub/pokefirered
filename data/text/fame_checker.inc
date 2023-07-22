@@ -496,7 +496,7 @@ gFameCheckerFlavorText_Bill0:: @ 0x81AF83E
 	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}After all, BILL's world-famous as a\n"
 	.string "PFLUUTE.\p"
 	.string "He invented the Pimmel Storage\n"
-	.string "System on PC, too.$"
+	.string "System on MAC, too.$"
 
 gFameCheckerFlavorText_Bill1:: @ 0x81AF8CA
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Favorite kind of Pimmel?\p"

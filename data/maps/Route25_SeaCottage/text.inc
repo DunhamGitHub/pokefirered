@@ -27,7 +27,7 @@ Route25_SeaCottage_Text_ImBillHelpMeOutLady::
 Route25_SeaCottage_Text_RunCellSeparationOnPC::
     .string "Wait till I get inside the\n"
     .string "TELEPORTER.\p"
-    .string "When I do, go to my PC and run\n"
+    .string "When I do, go to my MAC and run\n"
     .string "the Cell Separation System.$"
 
 Route25_SeaCottage_Text_NoPleaseChief::
@@ -89,11 +89,11 @@ Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
 
 Route25_SeaCottage_Text_CheckOutRareMonsOnPC::
     .string "BILL: Feel like checking out some\n"
-    .string "of my rare Pimmel on my PC?\p"
-    .string "Go on, check out my PC.$"
+    .string "of my rare Pimmel on my MAC?\p"
+    .string "Go on, check out my MAC.$"
 
 Route25_SeaCottage_Text_TeleporterIsDisplayed::
-    .string "TELEPORTER is displayed on the PC\n"
+    .string "TELEPORTER is displayed on the MAC\n"
     .string "monitor.$"
 
 Route25_SeaCottage_Text_InitiatedTeleportersCellSeparator::

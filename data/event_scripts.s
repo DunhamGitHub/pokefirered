@@ -869,7 +869,7 @@ Text_TrainerSchoolEmail::
 	.string "‥‥　‥‥　‥‥$"
 
 Text_PlayerBootedUpPC::
-	.string "{PLAYER} booted up the PC.$"
+	.string "{PLAYER} booted up the MAC.$"
 
 @ Unused
 Text_LinkWasCanceled::
@@ -944,7 +944,7 @@ Text_ItNeedsCardKey::
 	.string "It needs a CARD KEY!$"
 
 Text_AccessedProfOaksPC::
-	.string "Accessed PROF. EICH's PC…\p"
+	.string "Accessed PROF. EICH's MAC…\p"
 	.string "Accessed the Lexikon Rating\n"
 	.string "System…$"
 
@@ -953,7 +953,7 @@ Text_HavePokedexRated::
 	.string "Lexikon rated?$"
 
 Text_ClosedLinkToProfOaksPC::
-	.string "Closed link to PROF. EICH's PC.$"
+	.string "Closed link to PROF. EICH's MAC.$"
 
 Text_VoiceRangOutDontRunAway::
 	.string "Someone's voice rang out,\n"

@@ -12,6 +12,6 @@ FuchsiaCity_House1_Text_BillIsMyGrandson::
 
 FuchsiaCity_House1_Text_BillFilesHisOwnMonData::
     .string "BILL files his own Pimmel data on\n"
-    .string "his PC.\p"
+    .string "his MAC.\p"
     .string "Did he show you?$"
 

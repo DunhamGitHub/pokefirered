@@ -83,7 +83,7 @@ ViridianForest_Text_UseAntidoteForPoison::
 
 ViridianForest_Text_ContactOakViaPCToRatePokedex::
     .string "LEHRER TIPS\p"
-    .string "Contact PROF. EICH via a PC to\n"
+    .string "Contact PROF. EICH via a MAC to\n"
     .string "get your Lexikon evaluated!$"
 
 ViridianForest_Text_CantCatchOwnedMons::
