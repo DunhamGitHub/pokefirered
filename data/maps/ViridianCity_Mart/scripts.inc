@@ -100,12 +100,9 @@ ViridianCity_Mart_EventScript_Clerk::
 	.align 2
 ViridianCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
-	.2byte ITEM_MAX_POTION
+	.2byte ITEM_POTION
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_TM38_FIRE_BLAST
-	.2byte ITEM_TM25_THUNDER
-	.2byte ITEM_TM14_BLIZZARD
 	.2byte ITEM_NONE
 	release
 	end
