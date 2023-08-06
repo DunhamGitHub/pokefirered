@@ -31,6 +31,5 @@ SixIsland_PokemonCenter_1F_Text_RivalImpossibleToGetAllMonsAroundHere::
     .string "That's what I'll do.\n"
     .string "So there's no point staying here.\l"
     .string "I may as well leave for home.\p"
-    .string "That's that, then!\n"
-    .string "Smell ya later!$"
+    .string "That's that, then!$"
 

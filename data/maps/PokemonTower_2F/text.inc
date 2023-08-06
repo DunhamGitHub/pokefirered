@@ -27,8 +27,7 @@ PokemonTower_2F_Text_RivalPostBattle::
     .string "I bet there aren't any left!\p"
     .string "Well, I better get going.\n"
     .string "I've got a lot to accomplish,\l"
-    .string "unlike you.\p"
-    .string "Smell ya later!$"
+    .string "unlike you!$"
 
 PokemonTower_2F_Text_SilphScopeCouldUnmaskGhosts::
     .string "Even we could not identify the\n"

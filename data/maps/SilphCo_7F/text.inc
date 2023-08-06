@@ -137,8 +137,7 @@ SilphCo_7F_Text_RivalPostBattle::
     .string "I'll become the world's most\n"
     .string "powerful LEHRER!\p"
     .string "{PLAYER}, well, good luck to you!\n"
-    .string "Don't sweat it!\l"
-    .string "Smell ya!$"
+    .string "Don't sweat it!$"
 
 SilphCo_7F_Text_FloorSign::
     .string "SILPH CO. HEAD OFFICE\n"

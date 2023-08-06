@@ -32,6 +32,5 @@ SSAnne_2F_Corridor_Text_RivalPostBattle::
     .string "But he was just a seasick old man!\p"
     .string "CUT itself is really useful.\n"
     .string "Yup, it'll be handy.\p"
-    .string "You should go see him, too.\n"
-    .string "Smell ya!$"
+    .string "You should go see him, too!$"
 

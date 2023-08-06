@@ -24,8 +24,7 @@ CeruleanCity_Text_RivalPostBattle::
     .string "System on MAC, too.\p"
     .string "Since you're using his system,\n"
     .string "you should go thank him.\p"
-    .string "Well, I better get rolling!\n"
-    .string "Smell ya later!$"
+    .string "Well, I better get rolling!$"
 
 CeruleanCity_Text_OhRightLittlePresentAsFavor::
     .string "Oh, yeah, right.\p"
@@ -40,7 +39,7 @@ CeruleanCity_Text_ExplainFameCheckerSmellYa::
     .string "I don't need it because I don't\n"
     .string "give a hoot about others.\p"
     .string "All right, this time I really am\n"
-    .string "gone. Smell ya!$"
+    .string "gone!$"
 
 @ RB translation: "Heh! You're no match for my genius!"
 CeruleanCity_Text_RivalVictory::

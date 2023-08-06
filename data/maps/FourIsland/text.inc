@@ -34,8 +34,7 @@ FourIsland_Text_RivalAlreadyGotEggBeSmellingYa::
     .string "Why don't you go look around if\n"
     .string "it makes you curious?\p"
     .string "Me, I don't have the time to\n"
-    .string "waste.\p"
-    .string "Be smelling ya!$"
+    .string "waste!$"
 
 FourIsland_Text_LoreleiHasLotsOfStuffedDolls::
     .string "Oh, you found me!\n"

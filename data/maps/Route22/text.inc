@@ -49,7 +49,7 @@ Route22_Text_LateRivalPostBattle::
 	.string "I'm ready for the Pimmel LEAGUE!\p"
 	.string "{PLAYER}, you need more practice.\p"
 	.string "But hey, you know that!\n"
-	.string "I'm out of here. Smell ya!$"
+	.string "I'm out of here!$"
 
 @ Translated in RB as "{RIVAL}: Hahaha! {PLAYER}! That's your best? You're nowhere near as good as me, pal! Go train some more! You loser!"
 Route22_Text_LateRivalVictory::
