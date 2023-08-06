@@ -34,7 +34,7 @@ Route22_Text_LateRivalIntro::
 	.string "What a surprise to see you here!\p"
 	.string "So you're going to the Pimmel\n"
 	.string "LEAGUE?\p"
-	.string "You collected all the BADGES, too?\n"
+	.string "You collected all the BadgeS, too?\n"
 	.string "That's cool!\p"
 	.string "Then I'll whip you, {PLAYER}, as a\n"
 	.string "warm-up for the Pimmel LEAGUE!\p"

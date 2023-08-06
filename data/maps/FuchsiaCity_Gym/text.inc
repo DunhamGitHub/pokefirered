@@ -15,7 +15,7 @@ FuchsiaCity_Gym_Text_KogaDefeat::
     .string "Humph!\n"
     .string "You have proven your worth!\p"
     .string "Here!\n"
-    .string "Take the SOULBADGE!$"
+    .string "Take the Soulbadge!$"
 
 FuchsiaCity_Gym_Text_KogaPostBattle::
     .string "When afflicted by TOXIC, a Pimmel\n"
@@ -25,7 +25,7 @@ FuchsiaCity_Gym_Text_KogaPostBattle::
     .string "It will surely terrorize foes!$"
 
 FuchsiaCity_Gym_Text_KogaExplainSoulBadge::
-    .string "Now that you have the SOULBADGE,\n"
+    .string "Now that you have the Soulbadge,\n"
     .string "the DEFENSE of your Pimmel rises.\p"
     .string "It also lets you SURF outside of\n"
     .string "battle.\p"

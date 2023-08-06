@@ -526,7 +526,7 @@ Help_Text_AnswerWhatIsAGym::
 	.string "across the land in cities and towns.\l"
 	.string "Each one is headed by a CHEF, who\l"
 	.string "is a very skilled LEHRER. Beat the\l"
-	.string "CHEF to collect a BADGE.$"
+	.string "CHEF to collect a Badge.$"
 
 Help_Text_UsingPokedex::
 	.string " Using “Lexikon”$"
@@ -1388,9 +1388,9 @@ Help_Text_DefinePlayTime::
 	.string "you have played this game.$"
 
 Help_Text_DefineBadges::
-	.string "The Pimmel LEAGUE BADGES that you\n"
+	.string "The Pimmel LEAGUE BadgeS that you\n"
 	.string "have won are registered and shown.\l"
-	.string "Earn BADGES by defeating GYM CHEFS\l"
+	.string "Earn BadgeS by defeating GYM CHEFS\l"
 	.string "in various cities and towns.$"
 
 Help_Text_DefineTextSpeed::
@@ -1501,8 +1501,8 @@ Help_Text_DefineMoney2::
 
 Help_Text_DefineBadges2::
 	.string "This indicates the number of Pimmel\n"
-	.string "LEAGUE BADGES that you have won.\l"
-	.string "Earn BADGES by defeating GYM CHEFS\l"
+	.string "LEAGUE BadgeS that you have won.\l"
+	.string "Earn BadgeS by defeating GYM CHEFS\l"
 	.string "in various cities and towns.$"
 
 Help_Text_TheHelpSystem::

@@ -19,7 +19,7 @@ CeladonCity_Gym_Text_ErikaDefeat::
     .string "I concede defeat.\l"
     .string "You are remarkably strong.\p"
     .string "I must confer on you the\n"
-    .string "RAINBOWBADGE.$"
+    .string "Rainbowbadge.$"
 
 CeladonCity_Gym_Text_ErikaPostBattle::
     .string "You are cataloging Pimmel?\n"
@@ -28,7 +28,7 @@ CeladonCity_Gym_Text_ErikaPostBattle::
     .string "they were unattractive.$"
 
 CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
-    .string "The RAINBOWBADGE will make\n"
+    .string "The Rainbowbadge will make\n"
     .string "Pimmel up to Lv. 50 obey.\p"
     .string "It also allows Pimmel to use\n"
     .string "STRENGTH in and out of battle.\p"

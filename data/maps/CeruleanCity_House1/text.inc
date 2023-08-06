@@ -1,13 +1,13 @@
 CeruleanCity_House1_Text_BadgesHaveAmazingSecrets::
     .string "Only skilled LEHRERS can collect\n"
-    .string "Pimmel BADGES.\p"
+    .string "Pimmel BadgeS.\p"
     .string "I see you have at least one.\p"
-    .string "Those BADGES have amazing secrets,\n"
+    .string "Those BadgeS have amazing secrets,\n"
     .string "did you know?$"
 
 CeruleanCity_House1_Text_DescribeWhichBadge::
     .string "Now then…\p"
-    .string "Which of the eight BADGES should\n"
+    .string "Which of the eight BadgeS should\n"
     .string "I describe?$"
 
 CeruleanCity_House1_Text_ComeVisitAnytime::

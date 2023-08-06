@@ -286,7 +286,7 @@ Route13_Text_SusieRematchIntro::
 
 Route13_Text_ValerieRematchIntro::
 	.string "Wow!\n"
-	.string "You got more cool BADGES!$"
+	.string "You got more cool BadgeS!$"
 
 Route13_Text_GwenRematchIntro::
 	.string "My cutely grown Pimmel wish to\n"
