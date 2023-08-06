@@ -1144,6 +1144,9 @@ static void Cmd_ppreduce(void)
         }
     }
 
+    // force it
+    ppToDeduct = 0; //sp
+
     if (!(gHitMarker & (HITMARKER_NO_PPDEDUCT | HITMARKER_NO_ATTACKSTRING)) && gBattleMons[gBattlerAttacker].pp[gCurrMovePos])
     {
         gProtectStructs[gBattlerAttacker].notFirstStrike = 1;
