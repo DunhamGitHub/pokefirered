@@ -1,8 +1,8 @@
-completed
+changed \p"); 
+which requires button press to
+{PAUSE 32}"); // \p"); //was here
 
-- changed too much to remember
 
-
-need to do
-
-- 
+{PAUSE_UNTIL_PRESS}");
+which requires button press to
+{PAUSE 32}"); // {PAUSE_UNTIL_PRESS}");
